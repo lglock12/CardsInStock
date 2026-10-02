@@ -2,7 +2,6 @@ import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -14,14 +13,31 @@ OUT = ROOT / "data" / "latest.json"
 HISTORY = ROOT / "data" / "history.jsonl"
 
 HEADERS = {
-    "User-Agent": "CardsInStock/0.1 (+https://github.com/lglock12/CardsInStock; accuracy-first personal price tracker)"
+    "User-Agent": "Mozilla/5.0 (compatible; CardsInStock/0.2; +https://github.com/lglock12/CardsInStock)",
+    "Accept-Language": "en-US,en;q=0.9",
 }
 
 
 def normalize(text):
-    text = (text or "").lower().replace("/", "-")
+    text = (text or "").lower()
+    text = text.replace("/", "-").replace("’", "'")
+    text = re.sub(r"[^a-z0-9' -]+", " ", text)
     text = re.sub(r"\s+", " ", text)
     return text.strip()
+
+
+def term_matches(term, title):
+    term = normalize(term)
+    title = normalize(title)
+    aliases = {
+        "2024-25": ["2024-25", "2024 25", "2024/25"],
+        "2025-26": ["2025-26", "2025 26", "2025/26"],
+        "2026-27": ["2026-27", "2026 27", "2026/27"],
+        "uefa": ["uefa", "ucc", "club competitions"],
+        "premier league": ["premier league", "epl"],
+    }
+    choices = aliases.get(term, [term])
+    return any(normalize(choice) in title for choice in choices)
 
 
 def extract_jsonld(soup):
@@ -29,10 +45,7 @@ def extract_jsonld(soup):
     for tag in soup.find_all("script", attrs={"type": "application/ld+json"}):
         try:
             payload = json.loads(tag.string or tag.get_text())
-            if isinstance(payload, list):
-                items.extend(payload)
-            else:
-                items.append(payload)
+            items.extend(payload if isinstance(payload, list) else [payload])
         except Exception:
             continue
     return items
@@ -49,14 +62,19 @@ def walk_json(obj):
 
 
 def product_match(product, title):
-    title_n = normalize(title)
-    required = [normalize(x) for x in product["required_terms"]]
-    rejected = [normalize(x) for x in product["reject_terms"]]
-    if not all(term in title_n for term in required):
+    if not all(term_matches(term, title) for term in product["required_terms"]):
         return False, "missing required product terms"
-    if any(term in title_n for term in rejected):
+    title_n = normalize(title)
+    if any(normalize(term) in title_n for term in product["reject_terms"]):
         return False, "matched rejected format term"
-    return True, "exact canonical terms matched"
+    return True, "canonical product and format matched"
+
+
+def money(value):
+    if value is None:
+        return None
+    m = re.search(r"([0-9]+(?:,[0-9]{3})*(?:\.[0-9]{2})?)", str(value))
+    return float(m.group(1).replace(",", "")) if m else None
 
 
 def parse_page(url):
@@ -71,43 +89,54 @@ def parse_page(url):
     og = soup.find("meta", property="og:title")
     if og and og.get("content"):
         title = og["content"].strip()
+    elif soup.find("h1"):
+        title = soup.find("h1").get_text(" ", strip=True)
     elif soup.title:
         title = soup.title.get_text(" ", strip=True)
 
     for root in extract_jsonld(soup):
         for node in walk_json(root):
-            if node.get("@type") == "Product" or "offers" in node:
+            node_type = node.get("@type")
+            if node_type == "Product" or "offers" in node:
                 title = node.get("name") or title
                 offers = node.get("offers")
                 if isinstance(offers, list):
                     offers = offers[0] if offers else None
                 if isinstance(offers, dict):
-                    raw_price = offers.get("price") or offers.get("lowPrice")
-                    try:
-                        price = float(str(raw_price).replace(",", "")) if raw_price is not None else price
-                    except ValueError:
-                        pass
+                    price = money(offers.get("price") or offers.get("lowPrice")) or price
                     currency = offers.get("priceCurrency") or currency
                     av = normalize(offers.get("availability", ""))
                     if "instock" in av or "in stock" in av:
                         availability = "IN_STOCK"
-                    elif "outofstock" in av or "out of stock" in av or "soldout" in av:
+                    elif any(x in av for x in ["outofstock", "out of stock", "soldout", "sold out"]):
                         availability = "OUT_OF_STOCK"
+
+    if price is None:
+        for selector, attr in [
+            ('meta[property="product:price:amount"]', "content"),
+            ('meta[property="og:price:amount"]', "content"),
+            ('meta[itemprop="price"]', "content"),
+        ]:
+            tag = soup.select_one(selector)
+            if tag and tag.get(attr):
+                price = money(tag.get(attr))
+                if price is not None:
+                    break
 
     page_text = normalize(soup.get_text(" ", strip=True))
     if availability == "UNKNOWN":
-        if any(x in page_text for x in ["sold out", "out of stock", "currently unavailable", "no longer available"]):
+        if any(x in page_text for x in ["currently out of stock", "out of stock", "sold out", "currently unavailable", "no longer available"]):
             availability = "OUT_OF_STOCK"
-        elif any(x in page_text for x in ["add to cart", "add to bag", "buy it now", "in stock"]):
+        elif any(x in page_text for x in ["add to cart", "add to bag", "buy it now", "only 1 left", "in stock"]):
             availability = "IN_STOCK"
 
+    # Conservative visible-text price fallback. Structured/meta prices always win.
     if price is None:
-        meta_price = soup.find("meta", property="product:price:amount")
-        if meta_price and meta_price.get("content"):
-            try:
-                price = float(meta_price["content"].replace(",", ""))
-            except ValueError:
-                pass
+        h1 = soup.find("h1")
+        scope = h1.parent.get_text(" ", strip=True) if h1 and h1.parent else page_text[:5000]
+        candidates = re.findall(r"\$\s*([0-9]+(?:,[0-9]{3})*(?:\.[0-9]{2})?)", scope)
+        if candidates:
+            price = money(candidates[0])
 
     return {
         "title": title,
