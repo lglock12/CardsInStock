@@ -13,7 +13,7 @@ OUT = ROOT / "data" / "latest.json"
 HISTORY = ROOT / "data" / "history.jsonl"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; CardsInStock/0.2; +https://github.com/lglock12/CardsInStock)",
+    "User-Agent": "Mozilla/5.0 (compatible; CardsInStock/0.3; +https://github.com/lglock12/CardsInStock)",
     "Accept-Language": "en-US,en;q=0.9",
 }
 
@@ -30,11 +30,14 @@ def term_matches(term, title):
     term = normalize(term)
     title = normalize(title)
     aliases = {
+        "2023-24": ["2023-24", "2023 24", "2023/24"],
         "2024-25": ["2024-25", "2024 25", "2024/25"],
         "2025-26": ["2025-26", "2025 26", "2025/26"],
         "2026-27": ["2026-27", "2026 27", "2026/27"],
         "uefa": ["uefa", "ucc", "club competitions"],
         "premier league": ["premier league", "epl"],
+        "value": ["value", "blaster"],
+        "jumbo": ["jumbo", "hobby jumbo"],
     }
     choices = aliases.get(term, [term])
     return any(normalize(choice) in title for choice in choices)
@@ -96,8 +99,7 @@ def parse_page(url):
 
     for root in extract_jsonld(soup):
         for node in walk_json(root):
-            node_type = node.get("@type")
-            if node_type == "Product" or "offers" in node:
+            if node.get("@type") == "Product" or "offers" in node:
                 title = node.get("name") or title
                 offers = node.get("offers")
                 if isinstance(offers, list):
@@ -130,7 +132,6 @@ def parse_page(url):
         elif any(x in page_text for x in ["add to cart", "add to bag", "buy it now", "only 1 left", "in stock"]):
             availability = "IN_STOCK"
 
-    # Conservative visible-text price fallback. Structured/meta prices always win.
     if price is None:
         h1 = soup.find("h1")
         scope = h1.parent.get_text(" ", strip=True) if h1 and h1.parent else page_text[:5000]
@@ -138,14 +139,8 @@ def parse_page(url):
         if candidates:
             price = money(candidates[0])
 
-    return {
-        "title": title,
-        "price": price,
-        "currency": currency,
-        "availability": availability,
-        "final_url": r.url,
-        "http_status": r.status_code,
-    }
+    return {"title": title, "price": price, "currency": currency, "availability": availability,
+            "final_url": r.url, "http_status": r.status_code}
 
 
 def main():
@@ -157,38 +152,21 @@ def main():
 
     for source in sources:
         product = product_by_id[source["product_id"]]
-        obs = {
-            "checked_at": checked,
-            "product_id": product["id"],
-            "seller": source["seller"],
-            "url": source["url"],
-            "status": "UNKNOWN",
-            "price": None,
-            "currency": "USD",
-            "reason": "",
-        }
+        obs = {"checked_at": checked, "product_id": product["id"], "seller": source["seller"],
+               "url": source["url"], "status": "UNKNOWN", "price": None, "currency": "USD", "reason": ""}
         try:
             page = parse_page(source["url"])
             matched, reason = product_match(product, page["title"])
-            obs.update({
-                "title": page["title"],
-                "price": page["price"],
-                "currency": page["currency"],
-                "availability": page["availability"],
-                "final_url": page["final_url"],
-                "http_status": page["http_status"],
-            })
+            obs.update({"title": page["title"], "price": page["price"], "currency": page["currency"],
+                        "availability": page["availability"], "final_url": page["final_url"],
+                        "http_status": page["http_status"]})
             if not matched:
-                obs["status"] = "REJECTED"
-                obs["reason"] = reason
+                obs["status"], obs["reason"] = "REJECTED", reason
             elif page["availability"] == "OUT_OF_STOCK":
-                obs["status"] = "OUT_OF_STOCK"
-                obs["reason"] = "exact product matched but not purchasable"
+                obs["status"], obs["reason"] = "OUT_OF_STOCK", "exact product matched but not purchasable"
             elif page["availability"] == "IN_STOCK" and page["price"] is not None:
-                obs["status"] = "VERIFIED"
-                obs["reason"] = reason
+                obs["status"], obs["reason"] = "VERIFIED", reason
             else:
-                obs["status"] = "UNKNOWN"
                 obs["reason"] = "could not verify both current price and purchasable stock"
         except Exception as exc:
             obs["reason"] = f"collector error: {type(exc).__name__}: {exc}"
@@ -201,13 +179,8 @@ def main():
         if current is None or obs["price"] < current["price"]:
             lowest[obs["product_id"]] = obs
 
-    result = {
-        "generated_at": checked,
-        "verified_count": len(verified),
-        "observation_count": len(observations),
-        "lowest_verified": lowest,
-        "observations": observations,
-    }
+    result = {"generated_at": checked, "catalog_count": len(products), "verified_count": len(verified),
+              "observation_count": len(observations), "lowest_verified": lowest, "observations": observations}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(result, indent=2))
     with HISTORY.open("a", encoding="utf-8") as f:
