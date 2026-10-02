@@ -14,5 +14,7 @@
   "Sweets and Geeks": {"free_shipping_threshold": null, "shipping_note": "Shipping amount TBD."},
   "Charm City Cards": {"free_shipping_threshold": null, "shipping_note": "Shipping amount TBD."},
   "Kutogo": {"free_shipping_threshold": 0.0, "shipping_note": "Current product page advertises free shipping; rule is product-specific and should be revalidated."},
-  "LA Sports Cards": {"free_shipping_threshold": null, "shipping_note": "Shipping calculated at checkout; exact amount TBD."}
+  "LA Sports Cards": {"free_shipping_threshold": null, "shipping_note": "Shipping calculated at checkout; exact amount TBD."},
+  "Meelypops": {"free_shipping_threshold": null, "shipping_note": "Shipping amount TBD until a reliable public rule is validated."},
+  "SoccerCards.ca": {"free_shipping_threshold": 150.0, "shipping_note": "Store currently advertises free shipping on US and Canada orders over $150; taxes and duties included on US orders."}
 }
