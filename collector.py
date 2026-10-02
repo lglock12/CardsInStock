@@ -22,6 +22,11 @@ def normalize(text):
 def term_matches(term,title):
     term=normalize(term); title=normalize(title)
     aliases={"2023-24":["2023-24","2023 24"],"2024-25":["2024-25","2024 25"],"2025-26":["2025-26","2025 26"],"2026-27":["2026-27","2026 27"],"uefa":["uefa","ucc","club competitions"],"premier league":["premier league","epl"],"value":["value","blaster"],"jumbo":["jumbo","hobby jumbo"]}
+    # Topps and several retailers market the 2025-26 Premier League Chrome release
+    # as simply "2026 Topps Chrome Premier League". Keep the generic season matcher
+    # conservative; only accept bare 2026 when the title itself clearly says Premier League.
+    if term == "2025-26" and ("premier league" in title or " epl " in f" {title} "):
+        return any(normalize(x) in title for x in aliases[term]) or bool(re.search(r"(^| )2026( |$)", title))
     return any(normalize(x) in title for x in aliases.get(term,[term]))
 
 def extract_jsonld(soup):
