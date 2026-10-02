@@ -28,6 +28,8 @@ jobs:
         run: python discover_sources.py
       - name: Collect current prices
         run: python collector.py
+      - name: Collect eBay BIN market
+        run: python collect_ebay.py
       - name: Enrich product images
         run: python enrich_images.py
       - name: Build mobile dashboard
@@ -36,7 +38,7 @@ jobs:
         run: |
           git config user.name "cardsinstock-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add config/discovered_sources.json data/latest.json data/history.jsonl docs/index.html docs/latest.json
+          git add config/discovered_sources.json data/latest.json data/ebay_latest.json data/history.jsonl docs/index.html docs/latest.json
           if git diff --cached --quiet; then
             echo "No data changes"
           else
