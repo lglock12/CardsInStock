@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-02T00:25:11.711529+00:00",
+  "generated_at": "2026-10-02T00:28:10.413238+00:00",
   "verified_count": 2,
-  "observation_count": 3,
+  "observation_count": 7,
   "lowest_verified": {
     "2024-25-merlin-uefa-hobby": {
-      "checked_at": "2026-10-02T00:25:11.711529+00:00",
+      "checked_at": "2026-10-02T00:28:10.413238+00:00",
       "product_id": "2024-25-merlin-uefa-hobby",
       "seller": "CardCollector2",
       "url": "https://www.cardcollector2.com/products/2024-25-topps-chrome-merlin-soccer-hobby-box",
@@ -20,7 +20,7 @@
   },
   "observations": [
     {
-      "checked_at": "2026-10-02T00:25:11.711529+00:00",
+      "checked_at": "2026-10-02T00:28:10.413238+00:00",
       "product_id": "2024-25-merlin-uefa-hobby",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2024-25-topps-uefa-club-competitions-merlin-chrome-soccer-hobby-box",
@@ -34,7 +34,7 @@
       "http_status": 200
     },
     {
-      "checked_at": "2026-10-02T00:25:11.711529+00:00",
+      "checked_at": "2026-10-02T00:28:10.413238+00:00",
       "product_id": "2024-25-merlin-uefa-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/soccer-cards/2024-25-topps-uefa-club-competitions-merlin-chrome-soccer-hobby-box/",
@@ -48,7 +48,7 @@
       "http_status": 200
     },
     {
-      "checked_at": "2026-10-02T00:25:11.711529+00:00",
+      "checked_at": "2026-10-02T00:28:10.413238+00:00",
       "product_id": "2024-25-merlin-uefa-hobby",
       "seller": "CardCollector2",
       "url": "https://www.cardcollector2.com/products/2024-25-topps-chrome-merlin-soccer-hobby-box",
@@ -59,6 +59,62 @@
       "title": "2024-25 Topps Merlin UEFA Club Competitions Hobby Box",
       "availability": "IN_STOCK",
       "final_url": "https://www.cardcollector2.com/products/2024-25-topps-chrome-merlin-soccer-hobby-box",
+      "http_status": 200
+    },
+    {
+      "checked_at": "2026-10-02T00:28:10.413238+00:00",
+      "product_id": "2024-25-chrome-uefa-jumbo",
+      "seller": "Steel City Collectibles",
+      "url": "https://www.steelcitycollectibles.com/i/2024-25-topps-uefa-club-competitions-chrome-soccer-hobby-jumbo-box",
+      "status": "OUT_OF_STOCK",
+      "price": 499.95,
+      "currency": "USD",
+      "reason": "exact product matched but not purchasable",
+      "title": "2024-25 Topps UEFA Club Competitions Chrome Soccer Hobby Jumbo Box",
+      "availability": "OUT_OF_STOCK",
+      "final_url": "https://www.steelcitycollectibles.com/i/2024-25-topps-uefa-club-competitions-chrome-soccer-hobby-jumbo-box",
+      "http_status": 200
+    },
+    {
+      "checked_at": "2026-10-02T00:28:10.413238+00:00",
+      "product_id": "2024-25-chrome-uefa-jumbo",
+      "seller": "Diamond Cards",
+      "url": "https://www.diamondcardsonline.com/2024-25-topps-uefa-club-competitions-chrome-soccer-jumbo-box/",
+      "status": "OUT_OF_STOCK",
+      "price": 649.94,
+      "currency": "USD",
+      "reason": "exact product matched but not purchasable",
+      "title": "2024/25 Topps UEFA Club Competitions Chrome Soccer Jumbo Box",
+      "availability": "OUT_OF_STOCK",
+      "final_url": "https://www.diamondcardsonline.com/2024-25-topps-uefa-club-competitions-chrome-soccer-jumbo-box/",
+      "http_status": 200
+    },
+    {
+      "checked_at": "2026-10-02T00:28:10.413238+00:00",
+      "product_id": "2024-25-chrome-uefa-jumbo",
+      "seller": "Midwest Cards - rejection test: loose pack",
+      "url": "https://www.midwestcards.com/products/2024-25-topps-uefa-club-competitions-chrome-soccer-jumbo-pack",
+      "status": "REJECTED",
+      "price": 89.95,
+      "currency": "USD",
+      "reason": "matched rejected format term",
+      "title": "2024/25 Topps UEFA Club Competitions Chrome Soccer Jumbo Pack",
+      "availability": "IN_STOCK",
+      "final_url": "https://www.midwestcards.com/products/2024-25-topps-uefa-club-competitions-chrome-soccer-jumbo-pack",
+      "http_status": 200
+    },
+    {
+      "checked_at": "2026-10-02T00:28:10.413238+00:00",
+      "product_id": "2024-25-chrome-uefa-jumbo",
+      "seller": "Midwest Cards - rejection test: case",
+      "url": "https://www.midwestcards.com/products/2024-25-topps-uefa-club-competitions-chrome-soccer-jumbo-8-box-case",
+      "status": "REJECTED",
+      "price": 5799.95,
+      "currency": "USD",
+      "reason": "matched rejected format term",
+      "title": "2024/25 Topps UEFA Club Competitions Chrome Soccer Jumbo 8 Box Case",
+      "availability": "OUT_OF_STOCK",
+      "final_url": "https://www.midwestcards.com/products/2024-25-topps-uefa-club-competitions-chrome-soccer-jumbo-8-box-case",
       "http_status": 200
     }
   ]
