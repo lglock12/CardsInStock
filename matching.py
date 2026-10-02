@@ -1,8 +1,9 @@
 import html as html_lib
 import re
 
-# Distinct Topps soccer lines that must never be treated as the standard products
-# CardsInStock tracks. These guards apply to retailer discovery and market sources.
+# Distinct product lines / sale formats that must never be treated as the single
+# sealed Topps soccer products CardsInStock tracks. These guards apply to both
+# retailer discovery and market sources.
 UNTRACKED_PRODUCT_MARKERS = [
     "women", "womens", "women's",
     "match attax",
@@ -15,10 +16,12 @@ UNTRACKED_PRODUCT_MARKERS = [
     "knockout",
     "royalty",
     "simplicidad",
-]
-
-SEALED_FORMAT_MARKERS = [
-    "box", "blaster", "value", "mega", "jumbo", "hobby", "delight", "tin"
+    "sticker",
+    "starter pack",
+    "multipack",
+    "multi pack",
+    "pack set",
+    "bundle",
 ]
 
 
@@ -49,29 +52,19 @@ def term_matches(term, title):
 
 
 def pack_is_loose_product(title):
-    """Reject loose/single packs without rejecting box titles that mention pack count.
+    """Reject loose packs while allowing pack-count wording on a sealed box/tin.
 
-    Example that must PASS: "7-Pack Blaster Box".
-    Example that must FAIL: "Hobby Pack" / "Single Pack".
+    PASS: "7-Pack Blaster Box", "20 Packs Hobby Box", "Mega Tin".
+    FAIL: "Blaster Pack", "Hobby Pack", "Mega Pack", "Single Pack".
+
+    Accuracy-first rule: when a product title mentions pack(s), it must also name
+    an actual sealed container (box or tin). Bundle/multipack/sticker sale formats
+    are rejected separately by UNTRACKED_PRODUCT_MARKERS.
     """
     t = normalize(title)
-    if "pack" not in t:
+    if not re.search(r"\bpacks?\b|multipack|multi pack", t):
         return False
-
-    # A title that explicitly says it is a sealed box/tin format can safely mention
-    # how many packs it contains.
-    if "box" in t or "tin" in t:
-        return False
-
-    loose_phrases = [
-        "single pack", "1 pack", "one pack", "loose pack", "individual pack",
-        "pack only", "hobby pack", "retail pack", "value pack", "jumbo pack",
-    ]
-    if any(phrase in t for phrase in loose_phrases):
-        return True
-
-    # If pack is present but no sealed-container word is present, be conservative.
-    return not any(marker in t for marker in SEALED_FORMAT_MARKERS if marker != "hobby")
+    return not bool(re.search(r"\bbox\b|\btin\b", t))
 
 
 def reject_term_matches(term, title):
@@ -85,7 +78,7 @@ def reject_term_matches(term, title):
 def product_match(product, title):
     t = normalize(title)
     if any(normalize(marker) in t for marker in UNTRACKED_PRODUCT_MARKERS):
-        return False, "matched a different/untracked Topps soccer product line"
+        return False, "matched a different/untracked product or sale format"
     if not all(term_matches(term, t) for term in product["required_terms"]):
         return False, "missing required product terms"
     if any(reject_term_matches(term, t) for term in product["reject_terms"]):
