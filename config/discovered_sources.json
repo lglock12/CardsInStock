@@ -1,0 +1,9 @@
+[
+  {"product_id":"2023-24-chrome-uefa-hobby","seller":"GameStop","url":"https://www.gamestop.com/toys-games/trading-cards/products/2023-24-topps-uefa-club-competitions-chrome-soccer-hobby-box/20020413.html","discovered":"2026-10-02","evidence":"web-search exact product; add-to-cart observed"},
+  {"product_id":"2023-24-chrome-uefa-hobby","seller":"Diamond Cards","url":"https://www.diamondcardsonline.com/2023-24-topps-chrome-uefa-club-competitions-soccer-hobby-box/","discovered":"2026-10-02","evidence":"web-search exact product; current stock observed"},
+  {"product_id":"2023-24-chrome-uefa-hobby","seller":"Walmart Marketplace","url":"https://www.walmart.com/ip/8543657559","discovered":"2026-10-02","evidence":"web-search exact product; seller identity to be resolved by collector/API"},
+  {"product_id":"2023-24-chrome-uefa-jumbo","seller":"Piece Of The Game","url":"https://shoppieceofthegame.com/products/2023-24-topps-uefa-club-competitions-chrome-soccer-jumbo-box","discovered":"2026-10-02","evidence":"web-search exact product; in-stock observed"},
+  {"product_id":"2023-24-chrome-uefa-jumbo","seller":"Walmart Marketplace","url":"https://www.walmart.com/ip/8538066638","discovered":"2026-10-02","evidence":"web-search exact product; seller identity to be resolved by collector/API"},
+  {"product_id":"2023-24-merlin-uefa-hobby","seller":"Total Sports Cards","url":"https://totalsportcards.com/products/2023-24-topps-chrome-merlin-uefa-club-competitions-soccer-hobby-box","discovered":"2026-10-02","evidence":"web-search exact product; in-stock observed"},
+  {"product_id":"2023-24-merlin-uefa-hobby","seller":"Walmart Marketplace","url":"https://www.walmart.com/ip/11951554895","discovered":"2026-10-02","evidence":"web-search exact product; seller identity to be resolved by collector/API"}
+]
