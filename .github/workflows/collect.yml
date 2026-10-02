@@ -25,11 +25,11 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements.txt
       - name: Discover live retailer products
-        run: python discover_sources.py
+        run: python discover_sources_v2.py
       - name: Collect current prices
-        run: python collector.py
+        run: python collector_v2.py
       - name: Collect eBay market via CollectAIO
-        run: python collect_ebay.py
+        run: python collect_market.py
       - name: Enrich product images
         run: python enrich_images.py
       - name: Build mobile dashboard
