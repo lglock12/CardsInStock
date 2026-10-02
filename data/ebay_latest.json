@@ -1,0 +1,261 @@
+{
+  "generated_at": "2026-10-02T18:32:00.302147+00:00",
+  "products": {
+    "2023-24-merlin-uefa-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2023-24\" \"Topps\" \"Merlin\" \"UEFA\" \"Hobby\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22Merlin%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2023-24\" \"Topps\" \"Merlin\" \"UEFA\" \"Hobby\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22Merlin%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2023-24-chrome-uefa-value": {
+      "status": "UNAVAILABLE",
+      "query": "\"2023-24\" \"Topps\" \"Chrome\" \"UEFA\" \"Blaster\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Blaster%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2023-24\" \"Topps\" \"Chrome\" \"UEFA\" \"Blaster\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Blaster%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2023-24-chrome-uefa-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2023-24\" \"Topps\" \"Chrome\" \"UEFA\" \"Hobby\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2023-24\" \"Topps\" \"Chrome\" \"UEFA\" \"Hobby\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2023-24-chrome-uefa-jumbo": {
+      "status": "UNAVAILABLE",
+      "query": "\"2023-24\" \"Topps\" \"Chrome\" \"UEFA\" \"Jumbo\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Jumbo%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2023-24\" \"Topps\" \"Chrome\" \"UEFA\" \"Jumbo\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Jumbo%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2023-24-finest-uefa-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2023-24\" \"Topps\" \"Finest\" \"UEFA\" \"Hobby\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22Finest%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2023-24\" \"Topps\" \"Finest\" \"UEFA\" \"Hobby\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22Finest%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2023-24-uefa-flagship-value": {
+      "status": "UNAVAILABLE",
+      "query": "\"2023-24\" \"Topps\" \"UEFA\" \"Blaster\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22UEFA%22+%22Blaster%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2023-24\" \"Topps\" \"UEFA\" \"Blaster\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine: HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22UEFA%22+%22Blaster%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2023-24-uefa-flagship-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2023-24\" \"Topps\" \"UEFA\" \"Hobby\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22UEFA%22+%22Hobby%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2023-24\" \"Topps\" \"UEFA\" \"Hobby\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine: HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22UEFA%22+%22Hobby%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2024-25-merlin-uefa-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2024-25\" \"Topps\" \"Merlin\" \"UEFA\" \"Hobby\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22Merlin%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2024-25\" \"Topps\" \"Merlin\" \"UEFA\" \"Hobby\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22Merlin%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2024-25-merlin-uefa-delight": {
+      "status": "UNAVAILABLE",
+      "query": "\"2024-25\" \"Topps\" \"Merlin\" \"UEFA\" \"Delight\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22Merlin%22+%22UEFA%22+%22Delight%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2024-25\" \"Topps\" \"Merlin\" \"UEFA\" \"Delight\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22Merlin%22+%22UEFA%22+%22Delight%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2024-25-chrome-uefa-value": {
+      "status": "UNAVAILABLE",
+      "query": "\"2024-25\" \"Topps\" \"Chrome\" \"UEFA\" \"Blaster\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Blaster%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2024-25\" \"Topps\" \"Chrome\" \"UEFA\" \"Blaster\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Blaster%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2024-25-chrome-uefa-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2024-25\" \"Topps\" \"Chrome\" \"UEFA\" \"Hobby\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2024-25\" \"Topps\" \"Chrome\" \"UEFA\" \"Hobby\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2024-25-chrome-uefa-jumbo": {
+      "status": "UNAVAILABLE",
+      "query": "\"2024-25\" \"Topps\" \"Chrome\" \"UEFA\" \"Jumbo\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Jumbo%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2024-25\" \"Topps\" \"Chrome\" \"UEFA\" \"Jumbo\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Jumbo%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2024-25-finest-uefa-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2024-25\" \"Topps\" \"Finest\" \"UEFA\" \"Hobby\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22Finest%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2024-25\" \"Topps\" \"Finest\" \"UEFA\" \"Hobby\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22Finest%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2024-25-uefa-flagship-value": {
+      "status": "UNAVAILABLE",
+      "query": "\"2024-25\" \"Topps\" \"UEFA\" \"Blaster\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22UEFA%22+%22Blaster%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2024-25\" \"Topps\" \"UEFA\" \"Blaster\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine: HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22UEFA%22+%22Blaster%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2024-25-uefa-flagship-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2024-25\" \"Topps\" \"UEFA\" \"Hobby\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22UEFA%22+%22Hobby%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2024-25\" \"Topps\" \"UEFA\" \"Hobby\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine: HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22UEFA%22+%22Hobby%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-merlin-premier-league-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"Merlin\" \"Premier League\" \"Hobby\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Merlin%22+%22Premier+League%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"Merlin\" \"Premier League\" \"Hobby\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Merlin%22+%22Premier+League%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-chrome-uefa-value": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"Chrome\" \"UEFA\" \"Blaster\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Blaster%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"Chrome\" \"UEFA\" \"Blaster\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Blaster%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-chrome-uefa-mega": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"Chrome\" \"UEFA\" \"Mega\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Mega%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"Chrome\" \"UEFA\" \"Mega\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Mega%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-chrome-uefa-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"Chrome\" \"UEFA\" \"Hobby\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"Chrome\" \"UEFA\" \"Hobby\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-chrome-uefa-jumbo": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"Chrome\" \"UEFA\" \"Jumbo\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Jumbo%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"Chrome\" \"UEFA\" \"Jumbo\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Jumbo%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-finest-uefa-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"Finest\" \"UEFA\" \"Hobby\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Finest%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"Finest\" \"UEFA\" \"Hobby\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Finest%22+%22UEFA%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-uefa-flagship-value": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"UEFA\" \"Blaster\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22UEFA%22+%22Blaster%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"UEFA\" \"Blaster\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine: HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22UEFA%22+%22Blaster%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-uefa-flagship-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"UEFA\" \"Hobby\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22UEFA%22+%22Hobby%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"UEFA\" \"Hobby\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine: HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22UEFA%22+%22Hobby%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-premier-league-flagship-value": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"Premier League\" \"Blaster\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Premier+League%22+%22Blaster%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"Premier League\" \"Blaster\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine: HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Premier+League%22+%22Blaster%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-premier-league-flagship-mega": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"Premier League\" \"Mega\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Premier+League%22+%22Mega%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"Premier League\" \"Mega\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine: HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Premier+League%22+%22Mega%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-premier-league-flagship-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"Premier League\" \"Hobby\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Premier+League%22+%22Hobby%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"Premier League\" \"Hobby\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine: HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Premier+League%22+%22Hobby%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-chrome-premier-league-value": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"Chrome\" \"Premier League\" \"Blaster\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22Premier+League%22+%22Blaster%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"Chrome\" \"Premier League\" \"Blaster\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22Premier+League%22+%22Blaster%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-chrome-premier-league-tin": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"Chrome\" \"Premier League\" \"Tin\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22Premier+League%22+%22Tin%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"Chrome\" \"Premier League\" \"Tin\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22Premier+League%22+%22Tin%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2025-26-chrome-premier-league-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2025-26\" \"Topps\" \"Chrome\" \"Premier League\" \"Hobby\" \"box\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22Premier+League%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2025-26\" \"Topps\" \"Chrome\" \"Premier League\" \"Hobby\" \"box\": HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22Premier+League%22+%22Hobby%22+%22box%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2026-27-premier-league-flagship-value": {
+      "status": "UNAVAILABLE",
+      "query": "\"2026-27\" \"Topps\" \"Premier League\" \"Blaster\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222026-27%22+%22Topps%22+%22Premier+League%22+%22Blaster%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2026-27\" \"Topps\" \"Premier League\" \"Blaster\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine: HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222026-27%22+%22Topps%22+%22Premier+League%22+%22Blaster%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2026-27-premier-league-flagship-mega": {
+      "status": "UNAVAILABLE",
+      "query": "\"2026-27\" \"Topps\" \"Premier League\" \"Mega\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222026-27%22+%22Topps%22+%22Premier+League%22+%22Mega%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2026-27\" \"Topps\" \"Premier League\" \"Mega\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine: HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222026-27%22+%22Topps%22+%22Premier+League%22+%22Mega%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    },
+    "2026-27-premier-league-flagship-hobby": {
+      "status": "UNAVAILABLE",
+      "query": "\"2026-27\" \"Topps\" \"Premier League\" \"Hobby\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222026-27%22+%22Topps%22+%22Premier+League%22+%22Hobby%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "\"2026-27\" \"Topps\" \"Premier League\" \"Hobby\" \"box\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine: HTTPError: 403 Client Error: Forbidden for url: https://www.ebay.com/sch/i.html?_nkw=%222026-27%22+%22Topps%22+%22Premier+League%22+%22Hobby%22+%22box%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
+    }
+  }
+}
