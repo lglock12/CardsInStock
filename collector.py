@@ -1,3 +1,4 @@
+import html as html_lib
 import json
 import re
 import time
@@ -16,11 +17,30 @@ RETAILERS = ROOT / "config" / "retailers.json"
 DETAILS = ROOT / "config" / "product_details.json"
 OUT = ROOT / "data" / "latest.json"
 HISTORY = ROOT / "data" / "history.jsonl"
-HEADERS = {"User-Agent":"Mozilla/5.0 (compatible; CardsInStock/0.6; +https://github.com/lglock12/CardsInStock)","Accept-Language":"en-US,en;q=0.9","Accept":"text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8"}
+HEADERS = {"User-Agent":"Mozilla/5.0 (compatible; CardsInStock/0.8; +https://github.com/lglock12/CardsInStock)","Accept-Language":"en-US,en;q=0.9","Accept":"text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8"}
+
+# These are distinct Topps soccer product lines that are not part of the catalog we
+# currently track. Without this guard, generic terms such as "Topps + UEFA + Hobby"
+# can accidentally classify Women's Chrome, Match Attax, Deco, Pristine, etc. as a
+# Flagship/Chrome box and poison the low-price result.
+UNTRACKED_PRODUCT_MARKERS = [
+    "women", "womens", "women's",
+    "match attax",
+    "sapphire",
+    "pristine",
+    "inception",
+    "deco",
+    "museum collection",
+    "museum",
+    "knockout",
+]
+
 
 def normalize(text):
-    text=(text or "").lower().replace("/","-").replace("’","'")
+    text = html_lib.unescape(str(text or ""))
+    text = text.lower().replace("/","-").replace("’","'")
     return re.sub(r"\s+"," ",re.sub(r"[^a-z0-9' -]+"," ",text)).strip()
+
 
 def term_matches(term,title):
     term=normalize(term); title=normalize(title)
@@ -28,6 +48,7 @@ def term_matches(term,title):
     if term == "2025-26" and ("premier league" in title or " epl " in f" {title} "):
         return any(normalize(x) in title for x in aliases[term]) or bool(re.search(r"(^| )2026( |$)", title))
     return any(normalize(x) in title for x in aliases.get(term,[term]))
+
 
 def extract_jsonld(soup):
     out=[]
@@ -37,6 +58,7 @@ def extract_jsonld(soup):
         except Exception: pass
     return out
 
+
 def walk_json(obj):
     if isinstance(obj,dict):
         yield obj
@@ -44,17 +66,24 @@ def walk_json(obj):
     elif isinstance(obj,list):
         for v in obj: yield from walk_json(v)
 
+
 def product_match(product,title):
-    if not all(term_matches(t,title) for t in product["required_terms"]): return False,"missing required product terms"
     t=normalize(title)
-    if any(normalize(x) in t for x in product["reject_terms"]): return False,"matched rejected format term"
+    if any(normalize(marker) in t for marker in UNTRACKED_PRODUCT_MARKERS):
+        return False,"matched a different/untracked Topps soccer product line"
+    if not all(term_matches(term,t) for term in product["required_terms"]):
+        return False,"missing required product terms"
+    if any(normalize(x) in t for x in product["reject_terms"]):
+        return False,"matched rejected format term"
     return True,"canonical product and format matched"
+
 
 def money(value):
     if value is None:return None
     if isinstance(value,(int,float)):
         v=float(value); return v/100 if v > 10000 else v
     m=re.search(r"([0-9]+(?:,[0-9]{3})*(?:\.[0-9]{1,2})?)",str(value)); return float(m.group(1).replace(",","")) if m else None
+
 
 def fetch(url, timeout=25, attempts=2):
     last=None
@@ -67,9 +96,11 @@ def fetch(url, timeout=25, attempts=2):
         except Exception: raise
     raise last
 
+
 def blocked_page(text):
     t=normalize(text[:50000]); markers=["robot or human","verify you are human","access denied","captcha","automated access","unusual traffic"]
     return next((m for m in markers if m in t),None)
+
 
 def parse_shopify_product(url):
     p=urlparse(url)
@@ -79,6 +110,7 @@ def parse_shopify_product(url):
         r=fetch(js_url,timeout=15,attempts=1); data=r.json(); title=data.get("title") or ""; variants=data.get("variants") or []; available=[v for v in variants if v.get("available")]; chosen=available[0] if available else (variants[0] if variants else {}); raw=chosen.get("price"); price=float(raw)/100 if isinstance(raw,(int,float)) else money(raw); availability="IN_STOCK" if available else ("OUT_OF_STOCK" if variants else "UNKNOWN")
         return {"title":title,"price":price,"currency":"USD","availability":availability,"final_url":url,"http_status":r.status_code,"parser":"shopify_product_json"}
     except Exception:return None
+
 
 def parse_embedded_json(soup,title,price,availability):
     scripts=[]; nxt=soup.find("script",id="__NEXT_DATA__")
@@ -105,6 +137,7 @@ def parse_embedded_json(soup,title,price,availability):
                 if any(x in av for x in ["in stock","instock","available"]):availability="IN_STOCK"
                 elif any(x in av for x in ["out of stock","outofstock","sold out","unavailable"]):availability="OUT_OF_STOCK"
     return title,price,availability
+
 
 def parse_page(url):
     host=urlparse(url).netloc.lower(); shopify=parse_shopify_product(url)
@@ -140,10 +173,12 @@ def parse_page(url):
         if c:price=money(c[0])
     return {"title":title,"price":price,"currency":currency,"availability":availability,"final_url":r.url,"http_status":r.status_code,"parser":"html_structured"}
 
+
 def shipping_for(seller,price,retailers):
     rule=retailers.get(seller,{});threshold=rule.get("free_shipping_threshold")
     if price is not None and threshold is not None and price>=threshold:return 0.0,"KNOWN"
     return None,"TBD"
+
 
 def load_sources():
     sources=json.loads(SOURCES.read_text()); extra=json.loads(DISCOVERED.read_text()) if DISCOVERED.exists() else []
@@ -153,10 +188,11 @@ def load_sources():
         if key not in seen:seen.add(key);merged.append(source)
     return merged
 
+
 def main():
-    products=json.loads(PRODUCTS.read_text());sources=load_sources();retailers=json.loads(RETAILERS.read_text()) if RETAILERS.exists() else {};details=json.loads(DETAILS.read_text()) if DETAILS.exists() else {};product_by_id={p["id"]:p for p in products};checked=datetime.now(timezone.utc).isoformat();observations=[]
+    products=json.loads(PRODUCTS.read_text());sources=load_sources();retailers=json.loads(RETAILERS.read_text()) if RETAILERS.exists() else {};details=json.loads(DETAILS.read_text()) if DETAILS.exists() else {};product_by_id={p["id"]:p for p in products};checked=datetime.now(timezone.utc).isoformat();observations=[];discovered_entries=json.loads(DISCOVERED.read_text()) if DISCOVERED.exists() else []
     for source in sources:
-        product=product_by_id[source["product_id"]];obs={"checked_at":checked,"product_id":product["id"],"seller":source["seller"],"url":source["url"],"status":"UNKNOWN","price":None,"shipping":None,"delivered_price":None,"cost_per_pack":None,"currency":"USD","reason":"","source_kind":"discovered" if source in (json.loads(DISCOVERED.read_text()) if DISCOVERED.exists() else []) else "mapped"}
+        product=product_by_id[source["product_id"]];obs={"checked_at":checked,"product_id":product["id"],"seller":source["seller"],"url":source["url"],"status":"UNKNOWN","price":None,"shipping":None,"delivered_price":None,"cost_per_pack":None,"currency":"USD","reason":"","source_kind":"discovered" if source in discovered_entries else "mapped"}
         try:
             page=parse_page(source["url"]);matched,reason=product_match(product,page["title"]);obs.update({"title":page["title"],"price":page["price"],"currency":page["currency"],"availability":page["availability"],"final_url":page["final_url"],"http_status":page["http_status"],"parser":page.get("parser")});shipping,ship_status=shipping_for(source["seller"],page["price"],retailers);obs["shipping"]=shipping;obs["shipping_status"]=ship_status
             if shipping is not None and page["price"] is not None:obs["delivered_price"]=round(page["price"]+shipping,2)
