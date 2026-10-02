@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-02T02:04:16.338611+00:00",
+  "generated_at": "2026-10-02T02:22:47.141910+00:00",
   "catalog_count": 32,
-  "verified_count": 13,
+  "verified_count": 15,
   "observation_count": 71,
   "lowest_verified": {
     "2024-25-merlin-uefa-hobby": {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2024-25-merlin-uefa-hobby",
       "seller": "CardCollector2",
       "url": "https://www.cardcollector2.com/products/2024-25-topps-chrome-merlin-soccer-hobby-box",
@@ -20,30 +20,32 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.cardcollector2.com/products/2024-25-topps-chrome-merlin-soccer-hobby-box",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     "2025-26-chrome-uefa-hobby": {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-hobby",
-      "seller": "VSM Sports Card Outlet",
-      "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-hobby-box",
+      "seller": "MP Sports Cards",
+      "url": "https://www.mpsportscards.com/products/2025-26-topps-chrome-uefa-club-competition-soccer-hobby-box",
       "status": "VERIFIED",
-      "price": 369.0,
+      "price": 325.0,
       "shipping": null,
       "delivered_price": null,
-      "cost_per_pack": 18.45,
+      "cost_per_pack": 16.25,
       "currency": "USD",
       "reason": "canonical product and format matched",
-      "title": "2025/26 Topps Chrome UEFA Club Competitions Soccer Hobby Box",
+      "title": "2025-26 Topps Chrome UEFA Club Competition Soccer Hobby Box",
       "availability": "IN_STOCK",
-      "final_url": "https://ceea5b-7e.myshopify.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-hobby-box?shpxid=b4240dac-a5fc-4238-8d4b-d5c07ac85aad",
+      "final_url": "https://www.mpsportscards.com/products/2025-26-topps-chrome-uefa-club-competition-soccer-hobby-box",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     "2025-26-finest-uefa-hobby": {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-finest-uefa-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/soccer-cards/2025-26-topps-uefa-club-competitions-finest-soccer-hobby-box/",
@@ -58,28 +60,30 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.midwestcards.com/products/2025-26-topps-uefa-club-competitions-finest-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD"
     },
     "2025-26-uefa-flagship-value": {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-uefa-flagship-value",
-      "seller": "JP Sports",
-      "url": "https://jpsports.net/products/2025-26-topps-uefa-club-competitions-soccer-value-blaster-box",
+      "seller": "Badger Breaks",
+      "url": "https://www.badgerbreaks.com/products/2025-26-topps-uefa-club-competitions-soccer-blaster-box",
       "status": "VERIFIED",
-      "price": 29.99,
+      "price": 25.0,
       "shipping": null,
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
       "reason": "canonical product and format matched",
-      "title": "2025-26 Topps UEFA Club Competitions Soccer Value Blaster Box",
+      "title": "2025/26 Topps UEFA Club Competitions Soccer Blaster Box",
       "availability": "IN_STOCK",
-      "final_url": "https://jpsports.net/products/2025-26-topps-uefa-club-competitions-soccer-value-blaster-box",
+      "final_url": "https://www.badgerbreaks.com/products/2025-26-topps-uefa-club-competitions-soccer-blaster-box",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD"
     },
     "2025-26-uefa-flagship-hobby": {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-uefa-flagship-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/soccer-cards/2025-26-topps-uefa-club-competitions-soccer-hobby-box/",
@@ -94,11 +98,12 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.midwestcards.com/products/2025-26-topps-uefa-club-competitions-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     "2025-26-chrome-premier-league-value": {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-premier-league-value",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/products/2025-26-topps-chrome-english-premier-league-soccer-blaster-box",
@@ -113,11 +118,12 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.midwestcards.com/products/2025-26-topps-chrome-english-premier-league-soccer-blaster-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     "2025-26-chrome-premier-league-hobby": {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-premier-league-hobby",
       "seller": "CardCollector2",
       "url": "https://www.cardcollector2.com/products/2026-topps-chrome-premier-league-epl-soccer-hobby-box-presale",
@@ -132,11 +138,12 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.cardcollector2.com/products/2026-topps-chrome-premier-league-epl-soccer-hobby-box-presale",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     "2026-27-premier-league-flagship-value": {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2026-27-premier-league-flagship-value",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/products/2026-27-topps-flagship-english-premier-league-value-box",
@@ -151,10 +158,11 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.midwestcards.com/products/2026-27-topps-flagship-english-premier-league-value-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD"
     },
     "2026-27-premier-league-flagship-hobby": {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2026-27-premier-league-flagship-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/products/2026-27-topps-flagship-english-premier-league-hobby-box",
@@ -169,13 +177,14 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.midwestcards.com/products/2026-27-topps-flagship-english-premier-league-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     }
   },
   "observations": [
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2023-24-merlin-uefa-hobby",
       "seller": "Topps",
       "url": "https://www.topps.com/products/2023-24-topps-merlin-uefa-club-competitions-hobby-box",
@@ -188,7 +197,7 @@
       "reason": "collector error: HTTPError: 403 Client Error: Forbidden for url: https://www.topps.com/products/2023-24-topps-merlin-uefa-club-competitions-hobby-box"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2023-24-chrome-uefa-value",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/shop/soccer-cards/2023-24-topps-uefa-club-competitions-chrome-soccer-blaster-box/",
@@ -203,10 +212,11 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.midwestcards.com/products/2023-24-topps-uefa-club-competitions-chrome-soccer-blaster-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2023-24-chrome-uefa-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/shop/soccer-cards/2023-24-topps-uefa-club-competitions-chrome-soccer-hobby-box/",
@@ -221,10 +231,11 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.midwestcards.com/products/2023-24-topps-uefa-club-competitions-chrome-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2023-24-chrome-uefa-hobby",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2023-24-topps-chrome-uefa-club-competitions-soccer-hobby-box",
@@ -239,10 +250,11 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.steelcitycollectibles.com/i/2023-24-topps-chrome-uefa-club-competitions-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "KNOWN"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2023-24-chrome-uefa-jumbo",
       "seller": "Giant Sports Cards",
       "url": "https://giantsportscards.com/products/2023-24-topps-uefa-club-competitions-chrome-soccer-jumbo-box",
@@ -257,11 +269,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://giantsportscards.com/products/2023-24-topps-uefa-club-competitions-chrome-soccer-jumbo-box",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2023-24-chrome-uefa-jumbo",
       "seller": "DA Card World",
       "url": "https://www.dacardworld.com/sports-cards/2023-24-topps-chrome-uefa-club-competitions-soccer-hobby-jumbo-box",
@@ -274,7 +287,7 @@
       "reason": "collector error: HTTPError: 403 Client Error: Forbidden for url: https://www.dacardworld.com/sports-cards/2023-24-topps-chrome-uefa-club-competitions-soccer-hobby-jumbo-box"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2023-24-finest-uefa-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/shop/football-cards/2023-24-topps-uefa-club-competitions-finest-soccer-hobby-box/",
@@ -289,10 +302,11 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.midwestcards.com/products/2023-24-topps-uefa-club-competitions-finest-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2023-24-uefa-flagship-value",
       "seller": "Best Buy",
       "url": "https://www.bestbuy.com/product/2023-24-topps-uefa-club-competitions-soccer-7-pack-blaster-box/J3ZPGXJ5ZX",
@@ -302,10 +316,10 @@
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "collector error: ReadTimeout: HTTPSConnectionPool(host='www.bestbuy.com', port=443): Read timed out. (read timeout=25)"
+      "reason": "collector error: ReadTimeout: HTTPSConnectionPool(host='www.bestbuy.com', port=443): Read timed out. (read timeout=18)"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2023-24-uefa-flagship-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/shop/soccer-cards/2023-24-topps-uefa-competitions-club-soccer-hobby-box/",
@@ -320,11 +334,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.midwestcards.com/products/2023-24-topps-uefa-competitions-club-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2023-24-uefa-flagship-hobby",
       "seller": "Topps",
       "url": "https://www.topps.com/products/2023-24-topps-uefa-club-competitions-hobby-box",
@@ -337,7 +352,7 @@
       "reason": "collector error: HTTPError: 403 Client Error: Forbidden for url: https://www.topps.com/products/2023-24-topps-uefa-club-competitions-hobby-box"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2024-25-merlin-uefa-hobby",
       "seller": "Topps",
       "url": "https://www.topps.com/products/2024-25-topps-merlin-ucc-hobby-box",
@@ -350,7 +365,7 @@
       "reason": "collector error: HTTPError: 403 Client Error: Forbidden for url: https://www.topps.com/products/2024-25-topps-merlin-ucc-hobby-box"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2024-25-merlin-uefa-hobby",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2024-25-topps-uefa-club-competitions-merlin-chrome-soccer-hobby-box",
@@ -365,11 +380,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.steelcitycollectibles.com/i/2024-25-topps-uefa-club-competitions-merlin-chrome-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "KNOWN",
       "cost_per_pack_basis": "delivered"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2024-25-merlin-uefa-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/soccer-cards/2024-25-topps-uefa-club-competitions-merlin-chrome-soccer-hobby-box/",
@@ -384,11 +400,12 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.midwestcards.com/products/2024-25-topps-uefa-club-competitions-merlin-chrome-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2024-25-merlin-uefa-hobby",
       "seller": "CardCollector2",
       "url": "https://www.cardcollector2.com/products/2024-25-topps-chrome-merlin-soccer-hobby-box",
@@ -403,11 +420,12 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.cardcollector2.com/products/2024-25-topps-chrome-merlin-soccer-hobby-box",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2024-25-chrome-uefa-value",
       "seller": "Best Buy",
       "url": "https://www.bestbuy.com/product/2024-25-topps-chrome-uefa-club-competitions-blaster-box/J3ZPGXCFY8/sku/6614364",
@@ -417,10 +435,10 @@
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "collector error: ReadTimeout: HTTPSConnectionPool(host='www.bestbuy.com', port=443): Read timed out. (read timeout=25)"
+      "reason": "collector error: ReadTimeout: HTTPSConnectionPool(host='www.bestbuy.com', port=443): Read timed out. (read timeout=18)"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2024-25-chrome-uefa-hobby",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/index.php/i/2024-25-topps-uefa-club-competitions-chrome-soccer-hobby-box",
@@ -435,11 +453,12 @@
       "availability": "UNKNOWN",
       "final_url": "https://www.steelcitycollectibles.com/index.php/i/2024-25-topps-uefa-club-competitions-chrome-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "KNOWN",
       "cost_per_pack_basis": "delivered"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2024-25-chrome-uefa-jumbo",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2024-25-topps-uefa-club-competitions-chrome-soccer-hobby-jumbo-box",
@@ -454,30 +473,25 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.steelcitycollectibles.com/i/2024-25-topps-uefa-club-competitions-chrome-soccer-hobby-jumbo-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "KNOWN",
       "cost_per_pack_basis": "delivered"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2024-25-chrome-uefa-jumbo",
       "seller": "Diamond Cards",
       "url": "https://www.diamondcardsonline.com/2024-25-topps-uefa-club-competitions-chrome-soccer-jumbo-box/",
-      "status": "OUT_OF_STOCK",
-      "price": 649.94,
+      "status": "UNKNOWN",
+      "price": null,
       "shipping": null,
       "delivered_price": null,
-      "cost_per_pack": 54.16,
+      "cost_per_pack": null,
       "currency": "USD",
-      "reason": "exact product matched but not purchasable",
-      "title": "2024/25 Topps UEFA Club Competitions Chrome Soccer Jumbo Box",
-      "availability": "OUT_OF_STOCK",
-      "final_url": "https://www.diamondcardsonline.com/2024-25-topps-uefa-club-competitions-chrome-soccer-jumbo-box/",
-      "http_status": 200,
-      "shipping_status": "TBD",
-      "cost_per_pack_basis": "item_price_shipping_tbd"
+      "reason": "collector error: RuntimeError: retailer block/interstitial detected: captcha"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2024-25-finest-uefa-hobby",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2024-25-topps-uefa-club-competitions-finest-soccer-hobby-box",
@@ -492,11 +506,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.steelcitycollectibles.com/i/2024-25-topps-uefa-club-competitions-finest-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "KNOWN",
       "cost_per_pack_basis": "delivered"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2024-25-finest-uefa-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/soccer-cards/2024-25-topps-uefa-club-competitions-finest-soccer-hobby-box/",
@@ -511,11 +526,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.midwestcards.com/products/2024-25-topps-uefa-club-competitions-finest-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2024-25-uefa-flagship-hobby",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2024-25-topps-uefa-club-competitions-soccer-hobby-box",
@@ -530,11 +546,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.steelcitycollectibles.com/i/2024-25-topps-uefa-club-competitions-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "KNOWN",
       "cost_per_pack_basis": "delivered"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2024-25-uefa-flagship-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/shop/soccer-cards/2024-25-topps-uefa-club-competitions-soccer-hobby-box/",
@@ -549,11 +566,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.midwestcards.com/products/2024-25-topps-uefa-club-competitions-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-merlin-premier-league-hobby",
       "seller": "Topps",
       "url": "https://www.topps.com/products/merlin-premier-league-2026-hobby-box",
@@ -566,25 +584,20 @@
       "reason": "collector error: HTTPError: 403 Client Error: Forbidden for url: https://www.topps.com/products/merlin-premier-league-2026-hobby-box"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-merlin-premier-league-hobby",
       "seller": "Grand Slam Collectibles",
       "url": "https://onlyatgrandslam.com/collections/soccer-boxes",
-      "status": "REJECTED",
+      "status": "UNKNOWN",
       "price": null,
       "shipping": null,
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "missing required product terms",
-      "title": "Soccer Boxes",
-      "availability": "UNKNOWN",
-      "final_url": "https://onlyatgrandslam.com/collections/soccer-boxes",
-      "http_status": 200,
-      "shipping_status": "TBD"
+      "reason": "collector error: RuntimeError: retailer block/interstitial detected: captcha"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-value",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2025-26-topps-chrome-uefa-club-competitions-soccer-blaster-box",
@@ -599,11 +612,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.steelcitycollectibles.com/i/2025-26-topps-chrome-uefa-club-competitions-soccer-blaster-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-value",
       "seller": "Target",
       "url": "https://www.target.com/p/-/A-1011060494",
@@ -613,15 +627,10 @@
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "could not verify both current price and purchasable stock",
-      "title": "2025-26 Topps UEFA Chrome Soccer Trading Card Value Box",
-      "availability": "IN_STOCK",
-      "final_url": "https://www.target.com/p/-/A-1011060494",
-      "http_status": 200,
-      "shipping_status": "TBD"
+      "reason": "collector error: RuntimeError: retailer block/interstitial detected: captcha"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-mega",
       "seller": "Topps",
       "url": "https://www.topps.com/products/topps-chrome%C2%AE-uefa-club-competitions-2025-26-mega-box-1",
@@ -634,7 +643,7 @@
       "reason": "collector error: HTTPError: 403 Client Error: Forbidden for url: https://www.topps.com/products/topps-chrome%C2%AE-uefa-club-competitions-2025-26-mega-box-1"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-mega",
       "seller": "Target",
       "url": "https://www.target.com/p/-/A-1011060498",
@@ -644,33 +653,23 @@
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "could not verify both current price and purchasable stock",
-      "title": "2025-26 Topps UEFA Chrome Soccer Trading Card Mega Box",
-      "availability": "IN_STOCK",
-      "final_url": "https://www.target.com/p/-/A-1011060498",
-      "http_status": 200,
-      "shipping_status": "TBD"
+      "reason": "collector error: RuntimeError: retailer block/interstitial detected: captcha"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-mega",
       "seller": "Academy Sports + Outdoors",
       "url": "https://www.academy.com/p/topps-2025-26-chrome-uefa-mega-box",
-      "status": "REJECTED",
+      "status": "UNKNOWN",
       "price": null,
       "shipping": null,
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "missing required product terms",
-      "title": "Access to this page has been denied.",
-      "availability": "UNKNOWN",
-      "final_url": "https://www.academy.com/captcha/knfjvdun/challenge.html?url=L3AvdG9wcHMtMjAyNS0yNi1jaHJvbWUtdWVmYS1tZWdhLWJveA==&uuid=badd760f-be05-11f1-b762-b90ad4d524f1&vid=",
-      "http_status": 200,
-      "shipping_status": "TBD"
+      "reason": "collector error: HTTPError: 403 Client Error: Forbidden for url: https://www.academy.com/p/topps-2025-26-chrome-uefa-mega-box"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-mega",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2025-26-topps-chrome-uefa-club-competitions-soccer-mega-box",
@@ -685,11 +684,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.steelcitycollectibles.com/i/2025-26-topps-chrome-uefa-club-competitions-soccer-mega-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-mega",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/soccer-cards/2025-26-topps-uefa-club-competitions-chrome-soccer-mega-box/",
@@ -704,11 +704,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.midwestcards.com/products/2025-26-topps-uefa-club-competitions-chrome-soccer-mega-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-hobby",
       "seller": "Walmart Marketplace - BiggSports",
       "url": "https://www.walmart.com/ip/20150212981",
@@ -718,15 +719,10 @@
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "could not verify both current price and purchasable stock",
-      "title": "Collectible 2025-26 Topps Chrome UEFA Club Competitions Soccer Hobby Box English - Walmart.com",
-      "availability": "IN_STOCK",
-      "final_url": "https://www.walmart.com/ip/2025-26-Topps-Chrome-UEFA-Club-Competitions-Hobby-Box/20150212981",
-      "http_status": 200,
-      "shipping_status": "TBD"
+      "reason": "collector error: RuntimeError: retailer block/interstitial detected: captcha"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/soccer-cards/2025-26-topps-uefa-club-competitions-chrome-soccer-hobby-box/",
@@ -741,11 +737,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.midwestcards.com/products/2025-26-topps-uefa-club-competitions-chrome-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-hobby",
       "seller": "CardCollector2",
       "url": "https://www.cardcollector2.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-hobby-box",
@@ -758,7 +755,7 @@
       "reason": "collector error: HTTPError: 404 Client Error: Not Found for url: https://www.cardcollector2.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-hobby-box"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-hobby",
       "seller": "JP Sports",
       "url": "https://jpsports.net/products/2025-26-topps-chrome-ucc-uefa-champions-league-soccer-hobby-box",
@@ -773,11 +770,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://jpsports.net/products/2025-26-topps-chrome-ucc-uefa-champions-league-soccer-hobby-box",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-hobby",
       "seller": "VSM Sports Card Outlet",
       "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-hobby-box",
@@ -790,13 +788,14 @@
       "reason": "canonical product and format matched",
       "title": "2025/26 Topps Chrome UEFA Club Competitions Soccer Hobby Box",
       "availability": "IN_STOCK",
-      "final_url": "https://ceea5b-7e.myshopify.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-hobby-box?shpxid=b4240dac-a5fc-4238-8d4b-d5c07ac85aad",
+      "final_url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-hobby-box",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-hobby",
       "seller": "Aloha Card Shop",
       "url": "https://www.alohacardshop.com/products/2025-26-topps-uefa-club-competitions-chrome-soccer-hobby-box",
@@ -811,29 +810,32 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.alohacardshop.com/products/2025-26-topps-uefa-club-competitions-chrome-soccer-hobby-box",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-hobby",
       "seller": "MP Sports Cards",
       "url": "https://www.mpsportscards.com/products/2025-26-topps-chrome-uefa-club-competition-soccer-hobby-box",
-      "status": "UNKNOWN",
-      "price": null,
+      "status": "VERIFIED",
+      "price": 325.0,
       "shipping": null,
       "delivered_price": null,
-      "cost_per_pack": null,
+      "cost_per_pack": 16.25,
       "currency": "USD",
-      "reason": "could not verify both current price and purchasable stock",
-      "title": "2025-26 Topps Chrome UEFA Club Competitions Hobby Box | MP Sports Cards",
+      "reason": "canonical product and format matched",
+      "title": "2025-26 Topps Chrome UEFA Club Competition Soccer Hobby Box",
       "availability": "IN_STOCK",
       "final_url": "https://www.mpsportscards.com/products/2025-26-topps-chrome-uefa-club-competition-soccer-hobby-box",
       "http_status": 200,
-      "shipping_status": "TBD"
+      "parser": "shopify_product_json",
+      "shipping_status": "TBD",
+      "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-jumbo",
       "seller": "Topps",
       "url": "https://www.topps.com/products/topps-chrome%C2%AE-uefa-club-competitions-2025-26-jumbo-box",
@@ -846,7 +848,7 @@
       "reason": "collector error: HTTPError: 403 Client Error: Forbidden for url: https://www.topps.com/products/topps-chrome%C2%AE-uefa-club-competitions-2025-26-jumbo-box"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-jumbo",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/soccer-cards/2025-26-topps-uefa-club-competitions-chrome-soccer-jumbo-box/",
@@ -861,11 +863,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.midwestcards.com/products/2025-26-topps-uefa-club-competitions-chrome-soccer-jumbo-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-uefa-jumbo",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2025-26-topps-chrome-uefa-club-competitions-soccer-hobby-jumbo-box",
@@ -880,11 +883,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.steelcitycollectibles.com/i/2025-26-topps-chrome-uefa-club-competitions-soccer-hobby-jumbo-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "KNOWN",
       "cost_per_pack_basis": "delivered"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-finest-uefa-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/soccer-cards/2025-26-topps-uefa-club-competitions-finest-soccer-hobby-box/",
@@ -899,10 +903,11 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.midwestcards.com/products/2025-26-topps-uefa-club-competitions-finest-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-finest-uefa-hobby",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2025-26-topps-uefa-club-competitions-finest-soccer-hobby-box",
@@ -917,10 +922,11 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.steelcitycollectibles.com/i/2025-26-topps-uefa-club-competitions-finest-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "KNOWN"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-uefa-flagship-value",
       "seller": "JP Sports",
       "url": "https://jpsports.net/products/2025-26-topps-uefa-club-competitions-soccer-value-blaster-box",
@@ -935,28 +941,30 @@
       "availability": "IN_STOCK",
       "final_url": "https://jpsports.net/products/2025-26-topps-uefa-club-competitions-soccer-value-blaster-box",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-uefa-flagship-value",
       "seller": "Badger Breaks",
       "url": "https://www.badgerbreaks.com/products/2025-26-topps-uefa-club-competitions-soccer-blaster-box",
-      "status": "OUT_OF_STOCK",
+      "status": "VERIFIED",
       "price": 25.0,
       "shipping": null,
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "exact product matched but not purchasable",
+      "reason": "canonical product and format matched",
       "title": "2025/26 Topps UEFA Club Competitions Soccer Blaster Box",
-      "availability": "OUT_OF_STOCK",
+      "availability": "IN_STOCK",
       "final_url": "https://www.badgerbreaks.com/products/2025-26-topps-uefa-club-competitions-soccer-blaster-box",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-uefa-flagship-value",
       "seller": "Monmouth Sports Cards",
       "url": "https://monmouthcards.com/products/2025-26-topps-uefa-club-competitions-soccer-blaster-box",
@@ -971,10 +979,11 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://monmouthcards.com/products/2025-26-topps-uefa-club-competitions-soccer-blaster-box",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-uefa-flagship-value",
       "seller": "Cardboard Legacy",
       "url": "https://shop.cardboardlegacy.com/product/2025-26-topps-uefa-club-competitions-soccer-blaster-box/",
@@ -989,10 +998,11 @@
       "availability": "IN_STOCK",
       "final_url": "https://shop.cardboardlegacy.com/product/2025-26-topps-uefa-club-competitions-soccer-blaster-box/",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-uefa-flagship-value",
       "seller": "Sportsamerica Sports Cards",
       "url": "https://sportsamericasportscards.com/2025-26-topps-uefa-club-competitions-blaster-box/",
@@ -1005,7 +1015,7 @@
       "reason": "collector error: HTTPError: 404 Client Error: Not Found for url: https://sportsamericasportscards.com/2025-26-topps-uefa-club-competitions-blaster-box/"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-uefa-flagship-value",
       "seller": "Best Buy",
       "url": "https://www.bestbuy.com/product/2025-2026-topps-uefa-club-competitions-blaster-box/J3ZPGX2T9S",
@@ -1015,10 +1025,10 @@
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "collector error: ReadTimeout: HTTPSConnectionPool(host='www.bestbuy.com', port=443): Read timed out. (read timeout=25)"
+      "reason": "collector error: ReadTimeout: HTTPSConnectionPool(host='www.bestbuy.com', port=443): Read timed out. (read timeout=18)"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-uefa-flagship-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/soccer-cards/2025-26-topps-uefa-club-competitions-soccer-hobby-box/",
@@ -1033,11 +1043,12 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.midwestcards.com/products/2025-26-topps-uefa-club-competitions-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-premier-league-flagship-hobby",
       "seller": "Topps",
       "url": "https://launches.topps.com/en-US/launch/2026-topps-premier-league-hobby-box/login",
@@ -1052,10 +1063,11 @@
       "availability": "UNKNOWN",
       "final_url": "https://launches.topps.com/en-US/launch/2026-topps-premier-league-hobby-box/login",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-premier-league-flagship-hobby",
       "seller": "Target Marketplace - Superior Sports Investments",
       "url": "https://www.target.com/p/-/A-1009790361",
@@ -1065,15 +1077,10 @@
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "could not verify both current price and purchasable stock",
-      "title": "2025-26 Topps Premier League EPL Soccer Hobby Box",
-      "availability": "IN_STOCK",
-      "final_url": "https://www.target.com/p/-/A-1009790361",
-      "http_status": 200,
-      "shipping_status": "TBD"
+      "reason": "collector error: RuntimeError: retailer block/interstitial detected: captcha"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-premier-league-flagship-hobby",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2025-26-topps-english-premier-league-soccer-hobby-box",
@@ -1088,29 +1095,25 @@
       "availability": "UNKNOWN",
       "final_url": "https://www.steelcitycollectibles.com/i/2025-26-topps-english-premier-league-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "KNOWN",
       "cost_per_pack_basis": "delivered"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-premier-league-flagship-hobby",
       "seller": "The Coffee Breakers",
       "url": "https://www.thecoffeebreakers.com/collections/soccer-boxes",
-      "status": "REJECTED",
+      "status": "UNKNOWN",
       "price": null,
       "shipping": null,
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "missing required product terms",
-      "title": "Soccer Boxes",
-      "availability": "OUT_OF_STOCK",
-      "final_url": "https://www.thecoffeebreakers.com/collections/soccer-boxes",
-      "http_status": 200,
-      "shipping_status": "TBD"
+      "reason": "collector error: RuntimeError: retailer block/interstitial detected: captcha"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-premier-league-value",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/products/2025-26-topps-chrome-english-premier-league-soccer-blaster-box",
@@ -1125,11 +1128,12 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.midwestcards.com/products/2025-26-topps-chrome-english-premier-league-soccer-blaster-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-premier-league-value",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2026-topps-chrome-english-premier-league-soccer-blaster-box",
@@ -1144,11 +1148,12 @@
       "availability": "UNKNOWN",
       "final_url": "https://www.steelcitycollectibles.com/i/2026-topps-chrome-english-premier-league-soccer-blaster-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-premier-league-value",
       "seller": "BCK",
       "url": "https://shopbck.com/other-sports/",
@@ -1163,11 +1168,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://shopbck.com/other-sports/",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-premier-league-hobby",
       "seller": "Topps",
       "url": "https://www.topps.com/products/2026-topps-chrome-premier-league-hobby-box",
@@ -1180,7 +1186,7 @@
       "reason": "collector error: HTTPError: 403 Client Error: Forbidden for url: https://www.topps.com/products/2026-topps-chrome-premier-league-hobby-box"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-premier-league-hobby",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2026-topps-chrome-english-premier-league-soccer-hobby-box",
@@ -1195,11 +1201,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://www.steelcitycollectibles.com/i/2026-topps-chrome-english-premier-league-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "KNOWN",
       "cost_per_pack_basis": "delivered"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-premier-league-hobby",
       "seller": "CardCollector2",
       "url": "https://www.cardcollector2.com/products/2026-topps-chrome-premier-league-epl-soccer-hobby-box-presale",
@@ -1214,11 +1221,12 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.cardcollector2.com/products/2026-topps-chrome-premier-league-epl-soccer-hobby-box-presale",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-premier-league-hobby",
       "seller": "Hobby Card Shop",
       "url": "https://www.hobbycardshop.com/products/2026-topps-chrome-english-premier-league-soccer-hobby-box",
@@ -1233,65 +1241,51 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.hobbycardshop.com/products/2026-topps-chrome-english-premier-league-soccer-hobby-box",
       "http_status": 200,
+      "parser": "shopify_product_json",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2025-26-chrome-premier-league-hobby",
       "seller": "Port City Sports Collectibles",
       "url": "https://portcitysportscollectibles.com/collections/soccer",
-      "status": "REJECTED",
+      "status": "UNKNOWN",
       "price": null,
       "shipping": null,
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "missing required product terms",
-      "title": "Soccer",
-      "availability": "OUT_OF_STOCK",
-      "final_url": "https://portcitysportscollectibles.com/collections/soccer",
-      "http_status": 200,
-      "shipping_status": "TBD"
+      "reason": "collector error: RuntimeError: retailer block/interstitial detected: captcha"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2026-27-premier-league-flagship-value",
       "seller": "RBI Cru 7",
       "url": "https://rbicru7.com/collections/soccer-boxes/blaster",
-      "status": "REJECTED",
+      "status": "UNKNOWN",
       "price": null,
       "shipping": null,
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "missing required product terms",
-      "title": "Soccer Boxes",
-      "availability": "OUT_OF_STOCK",
-      "final_url": "https://rbicru7.com/collections/soccer-boxes/blaster",
-      "http_status": 200,
-      "shipping_status": "TBD"
+      "reason": "collector error: RuntimeError: retailer block/interstitial detected: captcha"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2026-27-premier-league-flagship-value",
       "seller": "Grand Slam Collectibles",
       "url": "https://onlyatgrandslam.com/collections/soccer-boxes",
-      "status": "REJECTED",
+      "status": "UNKNOWN",
       "price": null,
       "shipping": null,
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "missing required product terms",
-      "title": "Soccer Boxes",
-      "availability": "UNKNOWN",
-      "final_url": "https://onlyatgrandslam.com/collections/soccer-boxes",
-      "http_status": 200,
-      "shipping_status": "TBD"
+      "reason": "collector error: RuntimeError: retailer block/interstitial detected: captcha"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2026-27-premier-league-flagship-value",
       "seller": "BCK",
       "url": "https://shopbck.com/other-sports/",
@@ -1306,10 +1300,11 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://shopbck.com/other-sports/",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2026-27-premier-league-flagship-value",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/products/2026-27-topps-flagship-english-premier-league-value-box",
@@ -1324,10 +1319,11 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.midwestcards.com/products/2026-27-topps-flagship-english-premier-league-value-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2026-27-premier-league-flagship-value",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2026-27-topps-english-premier-league-soccer-blaster-box",
@@ -1342,28 +1338,24 @@
       "availability": "UNKNOWN",
       "final_url": "https://www.steelcitycollectibles.com/i/2026-27-topps-english-premier-league-soccer-blaster-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2026-27-premier-league-flagship-hobby",
       "seller": "RBI Cru 7",
       "url": "https://rbicru7.com/collections/soccer-boxes",
-      "status": "REJECTED",
+      "status": "UNKNOWN",
       "price": null,
       "shipping": null,
       "delivered_price": null,
       "cost_per_pack": null,
       "currency": "USD",
-      "reason": "missing required product terms",
-      "title": "Soccer Boxes",
-      "availability": "OUT_OF_STOCK",
-      "final_url": "https://rbicru7.com/collections/soccer-boxes",
-      "http_status": 200,
-      "shipping_status": "TBD"
+      "reason": "collector error: RuntimeError: retailer block/interstitial detected: captcha"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2026-27-premier-league-flagship-hobby",
       "seller": "BCK",
       "url": "https://shopbck.com/other-sports/",
@@ -1378,11 +1370,12 @@
       "availability": "OUT_OF_STOCK",
       "final_url": "https://shopbck.com/other-sports/",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2026-27-premier-league-flagship-hobby",
       "seller": "Midwest Cards",
       "url": "https://www.midwestcards.com/products/2026-27-topps-flagship-english-premier-league-hobby-box",
@@ -1397,11 +1390,12 @@
       "availability": "IN_STOCK",
       "final_url": "https://www.midwestcards.com/products/2026-27-topps-flagship-english-premier-league-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "TBD",
       "cost_per_pack_basis": "item_price_shipping_tbd"
     },
     {
-      "checked_at": "2026-10-02T02:04:16.338611+00:00",
+      "checked_at": "2026-10-02T02:22:47.141910+00:00",
       "product_id": "2026-27-premier-league-flagship-hobby",
       "seller": "Steel City Collectibles",
       "url": "https://www.steelcitycollectibles.com/i/2026-27-topps-english-premier-league-soccer-hobby-box",
@@ -1416,6 +1410,7 @@
       "availability": "UNKNOWN",
       "final_url": "https://www.steelcitycollectibles.com/i/2026-27-topps-english-premier-league-soccer-hobby-box",
       "http_status": 200,
+      "parser": "html_structured",
       "shipping_status": "KNOWN",
       "cost_per_pack_basis": "delivered"
     }
