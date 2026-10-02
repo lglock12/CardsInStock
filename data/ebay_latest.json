@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T19:35:51.280114+00:00",
+  "generated_at": "2026-10-02T20:49:20.583080+00:00",
   "source": "collectaio_public_api",
   "source_docs": "https://www.collectaio.com/developers",
   "products": {
@@ -778,6 +778,52 @@
           "root.daily_prices[2].metadata.sold_velocity.sold_median_21d": 291.45,
           "root.daily_prices[2].metadata.sold_velocity.sold_median_30d": 267.7
         }
+      },
+      "sold_market": {
+        "basis": "ebay_sold_aggregate",
+        "fmv": 212.5,
+        "snapshot_date": "2026-10-02",
+        "updated_at": "2026-10-02T17:43:33Z",
+        "stale": false,
+        "freshness_days": 0,
+        "confidence": "high",
+        "calculation_method": "median",
+        "count_7d": 0,
+        "median_7d": null,
+        "count_21d": 1,
+        "median_21d": 291.45,
+        "count_30d": 2,
+        "median_30d": 267.7,
+        "min_30d": 243.95,
+        "max_30d": 291.45,
+        "long_window_days": 390,
+        "long_count": 27,
+        "long_median": 212.5,
+        "daily_rollups_30d": [
+          {
+            "max": 243.95,
+            "min": 243.95,
+            "date": "2026-09-11",
+            "count": 1,
+            "median": 243.95
+          },
+          {
+            "max": 291.45,
+            "min": 291.45,
+            "date": "2026-09-25",
+            "count": 1,
+            "median": 291.45
+          }
+        ]
+      },
+      "active_market": {
+        "basis": "unsold_floor",
+        "floor": 308.0,
+        "snapshot_date": "2026-10-02",
+        "updated_at": "2026-10-02T17:43:33Z",
+        "listing_count": 9,
+        "stale": false,
+        "freshness_days": 0
       }
     },
     "2024-25-chrome-uefa-jumbo": {
@@ -1956,6 +2002,108 @@
           "root.daily_prices[15].metadata.sold_velocity.sold_median_21d": 256.99,
           "root.daily_prices[15].metadata.sold_velocity.sold_median_30d": 248.47
         }
+      },
+      "sold_market": {
+        "basis": "ebay_sold_aggregate",
+        "fmv": 248.47,
+        "snapshot_date": "2026-09-18",
+        "updated_at": "2026-09-19T03:10:02Z",
+        "stale": true,
+        "freshness_days": 13,
+        "confidence": "high",
+        "calculation_method": "recent_median",
+        "count_7d": 1,
+        "median_7d": 313.82,
+        "count_21d": 9,
+        "median_21d": 256.99,
+        "count_30d": 12,
+        "median_30d": 248.47,
+        "min_30d": 229.89,
+        "max_30d": 313.99,
+        "long_window_days": 390,
+        "long_count": 37,
+        "long_median": 249.99,
+        "daily_rollups_30d": [
+          {
+            "max": 291.96,
+            "min": 230.02,
+            "date": "2026-08-25",
+            "count": 2,
+            "median": 260.99
+          },
+          {
+            "max": 229.99,
+            "min": 229.99,
+            "date": "2026-08-26",
+            "count": 1,
+            "median": 229.99
+          },
+          {
+            "max": 229.89,
+            "min": 229.89,
+            "date": "2026-08-29",
+            "count": 1,
+            "median": 229.89
+          },
+          {
+            "max": 230.0,
+            "min": 230.0,
+            "date": "2026-08-31",
+            "count": 1,
+            "median": 230.0
+          },
+          {
+            "max": 239.95,
+            "min": 239.95,
+            "date": "2026-09-01",
+            "count": 1,
+            "median": 239.95
+          },
+          {
+            "max": 313.99,
+            "min": 239.05,
+            "date": "2026-09-03",
+            "count": 2,
+            "median": 276.52
+          },
+          {
+            "max": 256.99,
+            "min": 256.99,
+            "date": "2026-09-08",
+            "count": 1,
+            "median": 256.99
+          },
+          {
+            "max": 275.95,
+            "min": 275.95,
+            "date": "2026-09-09",
+            "count": 1,
+            "median": 275.95
+          },
+          {
+            "max": 312.63,
+            "min": 312.63,
+            "date": "2026-09-10",
+            "count": 1,
+            "median": 312.63
+          },
+          {
+            "max": 313.82,
+            "min": 313.82,
+            "date": "2026-09-13",
+            "count": 1,
+            "median": 313.82
+          }
+        ]
+      },
+      "active_market": {
+        "basis": "unsold_floor",
+        "floor": 276.0,
+        "snapshot_date": "2026-09-18",
+        "updated_at": "2026-09-19T03:10:02Z",
+        "listing_count": 8,
+        "stale": true,
+        "freshness_days": 13
       }
     },
     "2025-26-chrome-uefa-value": {
@@ -2956,6 +3104,37 @@
           "root.daily_prices[15].metadata.sold_velocity.sold_count_21d": 0,
           "root.daily_prices[15].metadata.sold_velocity.sold_count_30d": 0
         }
+      },
+      "sold_market": {
+        "basis": "ebay_sold_aggregate",
+        "fmv": 359.61,
+        "snapshot_date": "2026-09-18",
+        "updated_at": "2026-09-19T03:26:30Z",
+        "stale": true,
+        "freshness_days": 13,
+        "confidence": "medium",
+        "calculation_method": "median",
+        "count_7d": 0,
+        "median_7d": null,
+        "count_21d": 0,
+        "median_21d": null,
+        "count_30d": 0,
+        "median_30d": null,
+        "min_30d": null,
+        "max_30d": null,
+        "long_window_days": 390,
+        "long_count": 3,
+        "long_median": 359.61,
+        "daily_rollups_30d": []
+      },
+      "active_market": {
+        "basis": "unsold_floor",
+        "floor": 356.56,
+        "snapshot_date": "2026-09-18",
+        "updated_at": "2026-09-19T03:26:30Z",
+        "listing_count": 4,
+        "stale": true,
+        "freshness_days": 13
       }
     },
     "2025-26-uefa-flagship-value": {
@@ -3609,6 +3788,52 @@
           "root.daily_prices[1].metadata.sold_velocity.sold_median_21d": 305.99,
           "root.daily_prices[1].metadata.sold_velocity.sold_median_30d": 277.24
         }
+      },
+      "sold_market": {
+        "basis": "ebay_sold_aggregate",
+        "fmv": 293.97,
+        "snapshot_date": "2026-10-02",
+        "updated_at": "2026-10-02T15:29:45Z",
+        "stale": false,
+        "freshness_days": 0,
+        "confidence": "medium",
+        "calculation_method": "median",
+        "count_7d": 1,
+        "median_7d": 305.99,
+        "count_21d": 1,
+        "median_21d": 305.99,
+        "count_30d": 2,
+        "median_30d": 277.24,
+        "min_30d": 248.49,
+        "max_30d": 305.99,
+        "long_window_days": 390,
+        "long_count": 4,
+        "long_median": 293.97,
+        "daily_rollups_30d": [
+          {
+            "max": 248.49,
+            "min": 248.49,
+            "date": "2026-09-06",
+            "count": 1,
+            "median": 248.49
+          },
+          {
+            "max": 305.99,
+            "min": 305.99,
+            "date": "2026-09-26",
+            "count": 1,
+            "median": 305.99
+          }
+        ]
+      },
+      "active_market": {
+        "basis": "unsold_floor",
+        "floor": 375.95,
+        "snapshot_date": "2026-10-02",
+        "updated_at": "2026-10-02T14:23:58Z",
+        "listing_count": 1,
+        "stale": false,
+        "freshness_days": 0
       }
     },
     "2026-27-premier-league-flagship-value": {
@@ -4836,6 +5061,164 @@
           "root.daily_prices[15].metadata.sold_velocity.sold_median_21d": 303.55,
           "root.daily_prices[15].metadata.sold_velocity.sold_median_30d": 301.24
         }
+      },
+      "sold_market": {
+        "basis": "ebay_sold_aggregate",
+        "fmv": 301.24,
+        "snapshot_date": "2026-09-18",
+        "updated_at": "2026-09-19T03:26:27Z",
+        "stale": true,
+        "freshness_days": 13,
+        "confidence": "high",
+        "calculation_method": "recent_median",
+        "count_7d": 5,
+        "median_7d": 355.17,
+        "count_21d": 29,
+        "median_21d": 303.55,
+        "count_30d": 44,
+        "median_30d": 301.24,
+        "min_30d": 257.02,
+        "max_30d": 398.41,
+        "long_window_days": 390,
+        "long_count": 73,
+        "long_median": 288.99,
+        "daily_rollups_30d": [
+          {
+            "max": 304.74,
+            "min": 260.0,
+            "date": "2026-08-20",
+            "count": 3,
+            "median": 290.16
+          },
+          {
+            "max": 274.55,
+            "min": 257.02,
+            "date": "2026-08-21",
+            "count": 2,
+            "median": 265.78
+          },
+          {
+            "max": 284.55,
+            "min": 279.0,
+            "date": "2026-08-22",
+            "count": 3,
+            "median": 279.55
+          },
+          {
+            "max": 277.34,
+            "min": 277.34,
+            "date": "2026-08-23",
+            "count": 1,
+            "median": 277.34
+          },
+          {
+            "max": 292.2,
+            "min": 292.2,
+            "date": "2026-08-25",
+            "count": 1,
+            "median": 292.2
+          },
+          {
+            "max": 302.93,
+            "min": 281.51,
+            "date": "2026-08-26",
+            "count": 5,
+            "median": 288.49
+          },
+          {
+            "max": 290.79,
+            "min": 290.79,
+            "date": "2026-08-30",
+            "count": 1,
+            "median": 290.79
+          },
+          {
+            "max": 302.5,
+            "min": 290.79,
+            "date": "2026-08-31",
+            "count": 3,
+            "median": 290.79
+          },
+          {
+            "max": 299.21,
+            "min": 299.21,
+            "date": "2026-09-02",
+            "count": 1,
+            "median": 299.21
+          },
+          {
+            "max": 302.84,
+            "min": 302.84,
+            "date": "2026-09-03",
+            "count": 2,
+            "median": 302.84
+          },
+          {
+            "max": 303.55,
+            "min": 303.55,
+            "date": "2026-09-05",
+            "count": 1,
+            "median": 303.55
+          },
+          {
+            "max": 313.19,
+            "min": 299.99,
+            "date": "2026-09-06",
+            "count": 2,
+            "median": 306.59
+          },
+          {
+            "max": 327.17,
+            "min": 302.49,
+            "date": "2026-09-07",
+            "count": 2,
+            "median": 314.83
+          },
+          {
+            "max": 327.17,
+            "min": 302.49,
+            "date": "2026-09-08",
+            "count": 2,
+            "median": 314.83
+          },
+          {
+            "max": 362.16,
+            "min": 276.02,
+            "date": "2026-09-10",
+            "count": 6,
+            "median": 321.56
+          },
+          {
+            "max": 382.2,
+            "min": 305.24,
+            "date": "2026-09-11",
+            "count": 4,
+            "median": 364.8
+          },
+          {
+            "max": 398.41,
+            "min": 398.41,
+            "date": "2026-09-12",
+            "count": 1,
+            "median": 398.41
+          },
+          {
+            "max": 383.13,
+            "min": 294.99,
+            "date": "2026-09-13",
+            "count": 4,
+            "median": 340.06
+          }
+        ]
+      },
+      "active_market": {
+        "basis": "unsold_floor",
+        "floor": 294.99,
+        "snapshot_date": "2026-09-18",
+        "updated_at": "2026-09-19T03:26:27Z",
+        "listing_count": 2,
+        "stale": true,
+        "freshness_days": 13
       }
     }
   }

@@ -172,14 +172,6 @@
   },
   {
     "product_id": "2025-26-chrome-premier-league-value",
-    "seller": "Aloha Card Shop",
-    "url": "https://www.alohacardshop.com/products/2026-topps-chrome-premier-league-epl-soccer-blaster-pack",
-    "title": "2026 Topps Chrome Premier League EPL Soccer Blaster Pack",
-    "discovered": "2026-10-02",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $5.00"
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-value",
     "seller": "Jawbreakers",
     "url": "https://jawbreakers.cards/products/2026-topps-chrome-premier-league-soccer-blaster-box",
     "title": "2026 Topps Chrome Premier League Soccer Blaster Box",
@@ -247,14 +239,6 @@
     "url": "https://burbankcards.com/products/2025-26-topps-uefa-club-competitions-chrome-soccer-blaster-box",
     "discovered": "2026-10-02",
     "evidence": "exact product page; established physical card shop; $39.99"
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-value",
-    "seller": "LA Sports Cards",
-    "url": "https://lasportscards.com/products/2025-26-topps-chrome-uefa-blaster-pack",
-    "title": "2025-26 Topps Chrome UEFA Blaster Pack",
-    "discovered": "2026-10-02",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $8.00"
   },
   {
     "product_id": "2025-26-chrome-uefa-value",
@@ -377,38 +361,6 @@
     "evidence": "exact Mega Tin product page; $28.46 USD sale price observed"
   },
   {
-    "product_id": "2025-26-premier-league-flagship-mega",
-    "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2025-26-topps-premier-league-stickers-100-pack-box-mega-starter-pack-set",
-    "title": "2025-26 TOPPS PREMIER LEAGUE STICKERS - 100-PACK BOX & MEGA STARTER PACK SET (ALBUM + 649 STICKERS)",
-    "discovered": "2026-10-02",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $149.95"
-  },
-  {
-    "product_id": "2025-26-premier-league-flagship-mega",
-    "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2025-26-topps-premier-league-stickers-50-packs-mega-starter-pack-set",
-    "title": "2025-26 TOPPS PREMIER LEAGUE STICKERS - 50 PACKS & MEGA STARTER PACK SET (ALBUM + 349 STICKERS)",
-    "discovered": "2026-10-02",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $84.95"
-  },
-  {
-    "product_id": "2025-26-premier-league-flagship-mega",
-    "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2025-26-topps-premier-league-stickers-mega-pack",
-    "title": "2025-26 TOPPS PREMIER LEAGUE STICKERS - 18-PACK MEGA PACK (108 STICKERS)",
-    "discovered": "2026-10-02",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $39.95"
-  },
-  {
-    "product_id": "2025-26-premier-league-flagship-mega",
-    "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2025-26-topps-premier-league-stickers-mega-starter-pack",
-    "title": "2025-26 TOPPS PREMIER LEAGUE STICKERS - MEGA STARTER PACK (ALBUM + 49 STICKERS)",
-    "discovered": "2026-10-02",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $34.95"
-  },
-  {
     "product_id": "2025-26-uefa-flagship-hobby",
     "seller": "Aloha Card Shop",
     "url": "https://www.alohacardshop.com/products/topps-uefa-club-competitions-2025-26-soccer-hobby-box",
@@ -467,26 +419,10 @@
   {
     "product_id": "2026-27-premier-league-flagship-mega",
     "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-mega-multipack",
-    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 MEGA MULTIPACK (40 CARDS + 3 EXCLUSIVES)",
-    "discovered": "2026-10-02",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $31.95"
-  },
-  {
-    "product_id": "2026-27-premier-league-flagship-mega",
-    "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-mega-tin",
     "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 MEGA TIN (40 CARDS + 4 EXCLUSIVES)",
     "discovered": "2026-10-02",
     "evidence": "auto-discovered from live retailer catalog; catalog price $39.95"
-  },
-  {
-    "product_id": "2026-27-premier-league-flagship-mega",
-    "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-mega-tin-3-pack-set",
-    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 MEGA TIN 3-PACK SET (120 CARDS + 12 EXCLUSIVES)",
-    "discovered": "2026-10-02",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $119.95"
   },
   {
     "product_id": "2026-27-premier-league-flagship-value",
