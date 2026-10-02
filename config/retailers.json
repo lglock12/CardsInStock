@@ -1,0 +1,6 @@
+{
+  "Steel City Collectibles": {"free_shipping_threshold": 199.0, "shipping_note": "Free continental-US shipping at $199+; below threshold shipping is TBD."},
+  "Midwest Cards": {"free_shipping_threshold": null, "shipping_note": "Shipping TBD until a reliable public rule is validated."},
+  "CardCollector2": {"free_shipping_threshold": null, "shipping_note": "Shipping TBD until a reliable public rule is validated."},
+  "Diamond Cards": {"free_shipping_threshold": null, "shipping_note": "Shipping TBD until a reliable public rule is validated."}
+}
