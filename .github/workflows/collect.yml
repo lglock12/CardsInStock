@@ -29,6 +29,9 @@ jobs:
       - name: Collect current prices
         run: python collector.py
       - name: Collect eBay BIN market
+        env:
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
         run: python collect_ebay.py
       - name: Enrich product images
         run: python enrich_images.py
