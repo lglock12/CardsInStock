@@ -38,6 +38,10 @@ def quoted_query(product, season_override=None):
         terms[0] = season_override
     quoted = " ".join(f'"{term}"' for term in terms)
 
+    # Women's UEFA products are a separate product line and can dominate otherwise
+    # valid soccer searches. Keep them out of every human-facing eBay search URL.
+    quoted += " -women -womens -\"women's\""
+
     # Flagship searches are intentionally broad enough to catch listings that omit
     # the word "Flagship", so remove adjacent Topps product families at search time.
     name = product["product"].lower()
