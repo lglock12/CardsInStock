@@ -26,32 +26,53 @@ def market_block(soup, market):
     if not sold:
         return None
 
-    median_30 = sold.get("median_30d") or sold.get("fmv")
+    median_30 = sold.get("median_30d")
     count_30 = sold.get("count_30d")
     min_30 = sold.get("min_30d")
     max_30 = sold.get("max_30d")
     long_days = sold.get("long_window_days")
     long_count = sold.get("long_count")
     long_median = sold.get("long_median")
+    fmv = sold.get("fmv")
     snapshot = sold.get("snapshot_date") or "unknown"
     age = sold.get("freshness_days")
     stale = bool(sold.get("stale"))
     collectaio_url = market.get("collectaio_url") or "#"
 
+    # Never call a long-window estimate a 30-day median when there were no
+    # recent sold comps. The label must describe exactly what the number is.
+    if median_30 is not None and (count_30 or 0) > 0:
+        headline_price = median_30
+        headline_caption = f"30-day sold median · {count_30} sales"
+        headline_basis = "30d"
+    elif long_median is not None:
+        headline_price = long_median
+        window = f"{long_days}d" if long_days else "Long-window"
+        comps = f" · {long_count} comps" if long_count is not None else ""
+        headline_caption = f"{window} sold median{comps}"
+        headline_basis = "long"
+    elif fmv is not None:
+        headline_price = fmv
+        headline_caption = "Sold-market estimate"
+        headline_basis = "estimate"
+    else:
+        return None
+
     bits = []
-    if min_30 is not None and max_30 is not None:
+    if (count_30 or 0) > 0 and min_30 is not None and max_30 is not None:
         bits.append(f"30d range {money(min_30)}–{money(max_30)}")
-    if long_days and long_median is not None:
+    if headline_basis != "long" and long_days and long_median is not None:
         comp_text = f" · {long_count} comps" if long_count is not None else ""
         bits.append(f"{long_days}d median {money(long_median)}{comp_text}")
+    elif headline_basis == "long" and (count_30 or 0) == 0:
+        bits.append("No qualifying sales in the last 30 days")
 
     age_text = f" · {age}d old" if age is not None else ""
     stale_text = " · STALE SOURCE" if stale else ""
-    count_text = f" · {count_30} sales" if count_30 is not None else ""
     classes = "sold-market stale" if stale else "sold-market"
     markup = f'''<div class="{classes}">
       <div class="sold-head"><span>SOLD MARKET</span><a href="{collectaio_url}" target="_blank" rel="noopener">CollectAIO ↗</a></div>
-      <div class="sold-main"><div class="sold-price">{money(median_30)}</div><div class="sold-caption">30-day sold median{count_text}</div></div>
+      <div class="sold-main"><div class="sold-price">{money(headline_price)}</div><div class="sold-caption">{headline_caption}</div></div>
       <div class="sold-detail">{' · '.join(bits) if bits else 'Aggregate sold-market evidence'}</div>
       <div class="sold-fresh">eBay sold snapshot {snapshot}{age_text}{stale_text}</div>
     </div>'''
@@ -95,6 +116,7 @@ def main():
     sold_blocks = 0
     stale_active = 0
     image_upgrades = 0
+    fresh_coverage = set()
 
     for article in soup.select("article.format-card"):
         product = search_to_product.get(str(article.get("data-search") or "").strip())
@@ -118,16 +140,27 @@ def main():
         statuses = [o.get("status") for o in observations]
         if retail_verified or active_is_fresh:
             article["class"].append("available")
+            fresh_coverage.add(pid)
         elif statuses and all(s == "OUT_OF_STOCK" for s in statuses):
             article["class"].append("soldout")
         else:
             article["class"].append("unverified")
 
         # Prefer a standardized CollectAIO product image where its catalog match
-        # has passed our exact SKU matcher.
+        # has passed our exact SKU matcher. This also upgrades IMAGE PENDING cards.
         image = market.get("collectaio_image_url")
-        img_tag = article.select_one(".product-visual img")
-        if image and img_tag:
+        visual = article.select_one(".product-visual")
+        if image and visual:
+            img_tag = visual.find("img", recursive=False)
+            if not img_tag:
+                placeholder = visual.select_one(".image-placeholder")
+                img_tag = soup.new_tag("img")
+                img_tag["alt"] = f"{product['product']} {product['format']}"
+                img_tag["loading"] = "lazy"
+                if placeholder:
+                    placeholder.replace_with(img_tag)
+                else:
+                    visual.insert(0, img_tag)
             img_tag["src"] = image
             img_tag["data-image-source"] = "collectaio"
             image_upgrades += 1
@@ -172,6 +205,19 @@ def main():
 
         enhanced += 1
 
+    # The builder's initial coverage count includes any eBay snapshot. Recalculate
+    # after applying freshness semantics so the headline never overstates live stock.
+    coverage = soup.select_one(".coverage")
+    if coverage:
+        coverage.clear()
+        strong = soup.new_tag("b")
+        strong.string = f"{len(fresh_coverage)}/{len(products)}"
+        coverage.append(strong)
+        coverage.append(
+            f" formats currently have verified retail or fresh eBay inventory · "
+            f"{len(products) - len(fresh_coverage)} coverage gaps"
+        )
+
     style = soup.find("style")
     if style:
         style.append('''
@@ -201,7 +247,8 @@ def main():
     INDEX.write_text(str(soup))
     print(
         f"Enhanced dashboard: {enhanced} product cards, {sold_blocks} sold-market blocks, "
-        f"{stale_active} stale eBay warnings, {image_upgrades} standardized image upgrades"
+        f"{stale_active} stale eBay warnings, {image_upgrades} standardized image upgrades, "
+        f"{len(fresh_coverage)}/{len(products)} live-covered formats"
     )
 
 
