@@ -2,5 +2,17 @@
   "Steel City Collectibles": {"free_shipping_threshold": 199.0, "shipping_note": "Free continental-US shipping at $199+; below threshold shipping is TBD."},
   "Midwest Cards": {"free_shipping_threshold": null, "shipping_note": "Shipping TBD until a reliable public rule is validated."},
   "CardCollector2": {"free_shipping_threshold": null, "shipping_note": "Shipping TBD until a reliable public rule is validated."},
-  "Diamond Cards": {"free_shipping_threshold": null, "shipping_note": "Shipping TBD until a reliable public rule is validated."}
+  "Diamond Cards": {"free_shipping_threshold": null, "shipping_note": "Shipping TBD until a reliable public rule is validated."},
+  "Burbank Sportscards": {"free_shipping_threshold": 50.0, "shipping_note": "Product pages currently advertise free shipping on orders $50+."},
+  "Piece Of The Game": {"free_shipping_threshold": 500.0, "shipping_note": "Store currently advertises free express shipping on orders $500+."},
+  "Monmouth Sports Cards": {"free_shipping_threshold": null, "shipping_note": "Shipping calculated at checkout; exact amount TBD."},
+  "Collect Binghamton": {"free_shipping_threshold": null, "shipping_note": "Shipping calculated at checkout; exact amount TBD."},
+  "BlackTie Breaks": {"free_shipping_threshold": null, "shipping_note": "Shipping amount TBD."},
+  "World Champion Sports Cards": {"free_shipping_threshold": null, "shipping_note": "Shipping calculated at checkout; exact amount TBD."},
+  "East Coast Card Collector": {"free_shipping_threshold": null, "shipping_note": "Shipping amount TBD."},
+  "Skybox Collectibles": {"free_shipping_threshold": null, "shipping_note": "Shipping calculated at checkout; exact amount TBD."},
+  "Sweets and Geeks": {"free_shipping_threshold": null, "shipping_note": "Shipping amount TBD."},
+  "Charm City Cards": {"free_shipping_threshold": null, "shipping_note": "Shipping amount TBD."},
+  "Kutogo": {"free_shipping_threshold": 0.0, "shipping_note": "Current product page advertises free shipping; rule is product-specific and should be revalidated."},
+  "LA Sports Cards": {"free_shipping_threshold": null, "shipping_note": "Shipping calculated at checkout; exact amount TBD."}
 }
