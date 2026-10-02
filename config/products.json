@@ -1,0 +1,42 @@
+[
+  {
+    "id": "2024-25-merlin-uefa-hobby",
+    "season": "2024-25",
+    "product": "Topps Merlin UEFA",
+    "format": "Hobby",
+    "required_terms": ["2024-25", "merlin", "uefa", "hobby"],
+    "reject_terms": ["delight", "blaster", "value", "pack", "case", "break"]
+  },
+  {
+    "id": "2024-25-chrome-uefa-jumbo",
+    "season": "2024-25",
+    "product": "Topps Chrome UEFA Club Competitions",
+    "format": "Hobby Jumbo",
+    "required_terms": ["2024-25", "topps", "chrome", "uefa", "jumbo"],
+    "reject_terms": ["pack", "case", "break", "blaster", "value"]
+  },
+  {
+    "id": "2025-26-merlin-premier-league-hobby",
+    "season": "2025-26",
+    "product": "Topps Merlin Premier League",
+    "format": "Hobby",
+    "required_terms": ["2025-26", "merlin", "premier league", "hobby"],
+    "reject_terms": ["delight", "blaster", "value", "pack", "case", "break"]
+  },
+  {
+    "id": "2025-26-chrome-premier-league-mega",
+    "season": "2025-26",
+    "product": "Topps Chrome Premier League",
+    "format": "Mega",
+    "required_terms": ["2025-26", "topps", "chrome", "premier league", "mega"],
+    "reject_terms": ["hobby", "jumbo", "blaster", "value", "pack", "case", "break"]
+  },
+  {
+    "id": "2026-27-premier-league-flagship-hobby",
+    "season": "2026-27",
+    "product": "Topps Premier League Flagship",
+    "format": "Hobby",
+    "required_terms": ["2026-27", "topps", "premier league", "hobby"],
+    "reject_terms": ["chrome", "mega", "blaster", "value", "pack", "case", "break"]
+  }
+]
