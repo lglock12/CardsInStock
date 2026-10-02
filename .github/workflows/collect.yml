@@ -20,14 +20,16 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Collect current prices
         run: python collector.py
-      - name: Commit observations
+      - name: Build mobile dashboard
+        run: python build_dashboard.py
+      - name: Commit observations and dashboard
         run: |
           git config user.name "cardsinstock-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/latest.json data/history.jsonl
+          git add data/latest.json data/history.jsonl docs/index.html docs/latest.json
           if git diff --cached --quiet; then
             echo "No data changes"
           else
-            git commit -m "Update price observations"
+            git commit -m "Update price observations and dashboard"
             git push
           fi
