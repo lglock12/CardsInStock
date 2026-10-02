@@ -5,6 +5,7 @@
   {"product_id":"2023-24-merlin-uefa-hobby","seller":"LA Sports Cards","url":"https://lasportscards.com/products/2023-24-topps-uefa-club-competitions-merlin-chrome-soccer-hobby-box","discovered":"2026-10-02","evidence":"exact product page; physical California card shop; Shopify"},
   {"product_id":"2023-24-uefa-flagship-hobby","seller":"Piece Of The Game","url":"https://shoppieceofthegame.com/products/2023-24-topps-uefa-club-competitions-soccer-hobby-box","discovered":"2026-10-02","evidence":"exact product page; Shopify"},
 
+  {"product_id":"2024-25-merlin-uefa-delight","seller":"Meelypops","url":"https://www.meelypops.com/shops/soccer-cards/soccer-boxes/2024-25-topps-chrome-merlin-uefa-club-competitions-soccer-breaker-delight-box/","discovered":"2026-10-02","evidence":"exact product page; $645; 6 in stock; 2 autographs per box"},
   {"product_id":"2024-25-chrome-uefa-value","seller":"Sweets and Geeks","url":"https://www.sweetsandgeeks.com/products/2024-25-topps-chrome-uefa-club-competitions-soccer-blaster-box","discovered":"2026-10-02","evidence":"exact product page; $29.99 listing observed in web search"},
   {"product_id":"2024-25-chrome-uefa-value","seller":"Charm City Cards","url":"https://www.charmcitycards.com/2024-25-topps-chrome-uefa-club-competitions-soccer-7.html","discovered":"2026-10-02","evidence":"exact product page; 7 boxes reported available in web result"},
   {"product_id":"2024-25-chrome-uefa-hobby","seller":"Burbank Sportscards","url":"https://burbankcards.com/products/2024-25-topps-uefa-club-competitions-chrome-soccer-hobby-box","discovered":"2026-10-02","evidence":"exact product page; established physical card shop; Shopify"},
@@ -23,5 +24,8 @@
   {"product_id":"2025-26-chrome-uefa-value","seller":"Burbank Sportscards","url":"https://burbankcards.com/products/2025-26-topps-uefa-club-competitions-chrome-soccer-blaster-box","discovered":"2026-10-02","evidence":"exact product page; established physical card shop; $39.99"},
   {"product_id":"2025-26-chrome-uefa-hobby","seller":"Monmouth Sports Cards","url":"https://monmouthcards.com/products/2025-26-topps-uefa-club-competitions-chrome-soccer-hobby-box","discovered":"2026-10-02","evidence":"exact product carried in current 2025-26 soccer catalog"},
 
-  {"product_id":"2025-26-chrome-premier-league-hobby","seller":"Burbank Sportscards","url":"https://burbankcards.com/products/2026-topps-chrome-premier-league-soccer-hobby-box","discovered":"2026-10-02","evidence":"current Burbank soccer catalog shows 2026 Chrome Premier League hobby at $354.99"}
+  {"product_id":"2025-26-premier-league-flagship-mega","seller":"SoccerCards.ca","url":"https://buysoccercardsonline.com/products/2025-26-topps-premier-league-debut-edition-cards-mega-tin","discovered":"2026-10-02","evidence":"exact Mega Tin product page; $28.46 USD sale price observed"},
+  {"product_id":"2025-26-chrome-premier-league-hobby","seller":"Burbank Sportscards","url":"https://burbankcards.com/products/2026-topps-chrome-premier-league-soccer-hobby-box","discovered":"2026-10-02","evidence":"exact product page; current stock state exposed"},
+
+  {"product_id":"2026-27-premier-league-flagship-mega","seller":"SoccerCards.ca","url":"https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-mega-tin","discovered":"2026-10-02","evidence":"exact Mega Tin product page; $39.95 USD; Add to Cart"}
 ]
