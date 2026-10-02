@@ -1,4 +1,5 @@
 import json
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -14,10 +15,15 @@ DISCOVERY_RETAILERS = ROOT / "config" / "discovery_retailers.json"
 DISCOVERED = ROOT / "config" / "discovered_sources.json"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; CardsInStock/0.7; +https://github.com/lglock12/CardsInStock)",
+    "User-Agent": "Mozilla/5.0 (compatible; CardsInStock/0.8; +https://github.com/lglock12/CardsInStock)",
     "Accept": "application/json,text/plain,*/*",
     "Accept-Language": "en-US,en;q=0.9",
 }
+
+BAD_URL_MARKERS = [
+    "women", "womens", "match-attax", "match_attax", "sapphire",
+    "pristine", "inception", "deco", "museum", "knockout",
+]
 
 
 def product_url(catalog_url, handle):
@@ -66,8 +72,6 @@ def discover_store(store, products):
                 continue
             variants = item.get("variants") or []
             if variants and not any(v.get("available") for v in variants):
-                # Discovery is for expanding live buying coverage. Existing mappings remain
-                # in the file and the normal collector continues monitoring them for restocks.
                 continue
             for product in products:
                 matched, _ = product_match(product, title)
@@ -81,6 +85,7 @@ def discover_store(store, products):
                     "product_id": product["id"],
                     "seller": store["name"],
                     "url": product_url(catalog, handle),
+                    "title": title,
                     "discovered": datetime.now(timezone.utc).date().isoformat(),
                     "evidence": note,
                 })
@@ -92,10 +97,25 @@ def discover_store(store, products):
     return found
 
 
+def looks_obviously_wrong(entry, product_by_id):
+    url = str(entry.get("url") or "").lower()
+    if any(marker in url for marker in BAD_URL_MARKERS):
+        return True
+    title = entry.get("title")
+    product = product_by_id.get(entry.get("product_id"))
+    if title and product:
+        matched, _ = product_match(product, title)
+        return not matched
+    return False
+
+
 def main():
     products = json.loads(PRODUCTS.read_text())
+    product_by_id = {p["id"]: p for p in products}
     stores = json.loads(DISCOVERY_RETAILERS.read_text())
-    existing = json.loads(DISCOVERED.read_text()) if DISCOVERED.exists() else []
+    existing_raw = json.loads(DISCOVERED.read_text()) if DISCOVERED.exists() else []
+    existing = [x for x in existing_raw if not looks_obviously_wrong(x, product_by_id)]
+    pruned = len(existing_raw) - len(existing)
 
     by_key = {(x["product_id"], x["seller"], x["url"]): x for x in existing}
     before = len(by_key)
@@ -106,13 +126,12 @@ def main():
         store_counts[store["name"]] = len(matches)
         for entry in matches:
             key = (entry["product_id"], entry["seller"], entry["url"])
-            if key not in by_key:
-                by_key[key] = entry
+            by_key[key] = entry
 
     output = sorted(by_key.values(), key=lambda x: (x["product_id"], x["seller"], x["url"]))
     DISCOVERED.write_text(json.dumps(output, indent=2) + "\n")
     added = len(output) - before
-    print(f"Discovery complete: {len(output)} exact discovered mappings ({added:+d} new)")
+    print(f"Discovery complete: {len(output)} exact discovered mappings ({added:+d} new, {pruned} bad mappings pruned)")
     for seller, count in store_counts.items():
         if count:
             print(f"  {seller}: {count} live catalog matches")
