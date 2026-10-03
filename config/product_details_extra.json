@@ -1,0 +1,145 @@
+{
+  "2023-24-chrome-uefa-value": {
+    "packs_per_box": 7,
+    "cards_per_pack": 4,
+    "guarantees": ["4 exclusive Aqua Prism parallels"],
+    "possible_hits": ["Chrome autographs", "Numbered parallels", "Hero Variations", "Legendary Base Card short prints"],
+    "official_product_url": "https://www.topps.com/products/2023-24-topps-chrome-uefa-club-competitions-value-box"
+  },
+  "2023-24-chrome-uefa-hobby": {
+    "packs_per_box": 20,
+    "cards_per_pack": 4,
+    "guarantees": ["1 Chrome autograph"],
+    "possible_hits": ["Shadow Etch case hit", "TIFO", "Hobby Masters", "White Noise", "Marks of Excellence on-card autographs", "Dual and Triple autographs"],
+    "official_product_url": "https://www.topps.com/products/2023-24-topps-chrome-uefa-club-competitions-hobby-box"
+  },
+  "2023-24-chrome-uefa-sapphire": {
+    "packs_per_box": 8,
+    "cards_per_pack": 4,
+    "guarantees": ["1 Chrome Sapphire autograph", "3 numbered parallels /99 or lower", "2 Star Identity cards", "1 Sapphire image variation"],
+    "possible_hits": ["Sapphire Selections", "Infinite Sapphire", "Sapphire Selections autographs"],
+    "official_product_url": "https://www.topps.com/products/2023-24-topps-chrome-uefa-club-competitions-sapphire-edition"
+  },
+  "2023-24-finest-uefa-hobby": {
+    "packs_per_box": 6,
+    "cards_per_pack": 10,
+    "guarantees": ["2 autographs"],
+    "possible_hits": ["Finest Idols", "Prized Footballers", "The Man", "Finest Rivals dual autographs"],
+    "official_product_url": "https://www.topps.com/products/2023-24-topps-finest-uefa-club-competitions-hobby-box"
+  },
+  "2023-24-deco-uefa-box": {
+    "packs_per_box": 10,
+    "cards_per_pack": 8,
+    "guarantees": ["1 autograph", "2 numbered parallels"],
+    "possible_hits": ["Short Print autos", "Dual autographs", "Triple autographs", "Artistry cards"],
+    "official_product_url": "https://uk.topps.com/products/topps-uefa-club-competitions-deco-2023-24-set-topps-uk"
+  },
+  "2024-chrome-uefa-euro-hobby": {
+    "packs_per_box": 8,
+    "cards_per_pack": 10,
+    "guarantees": ["1 Chrome autograph", "3 numbered parallels"],
+    "possible_hits": ["Berlin at Night", "Black Lazer autographs", "Dual and Triple autographs", "Euro Final Goal Net autograph relics", "1/1 sketch cards"],
+    "official_product_url": "https://in.topps.com/products/2024-topps-chromer-uefa-euro-hobby-box"
+  },
+  "2024-chrome-uefa-euro-sapphire": {
+    "packs_per_box": 8,
+    "cards_per_pack": 4,
+    "guarantees": ["1 Chrome Sapphire autograph", "1 base image variation", "Several numbered parallels"],
+    "possible_hits": ["Sapphire Selections", "Infinite Sapphire", "Dream Big Sapphire"],
+    "official_product_url": "https://www.topps.com/products/2024-topps-chrome-r-uefa-euro-sapphire-edition-hobby-box"
+  },
+  "2024-25-merlin-uefa-delight": {
+    "packs_per_box": 1,
+    "cards_per_pack": 12,
+    "guarantees": ["2 autographs", "3 numbered parallels", "5 Base Mojo refractors", "1 numbered Mojo refractor", "1 insert"],
+    "possible_hits": ["Renaissance", "Merlin 1995 30th Anniversary", "The Grail", "Marks of Excellence"],
+    "reference_url": "https://www.meelypops.com/shops/soccer-cards/soccer-boxes/2024-25-topps-chrome-merlin-uefa-club-competitions-soccer-breaker-delight-box/"
+  },
+  "2024-25-chrome-uefa-sapphire": {
+    "packs_per_box": 8,
+    "cards_per_pack": 4,
+    "guarantees": ["1 Chrome Sapphire autograph /99 or lower", "3 numbered parallels /75 or lower", "1 Sapphire image variation"],
+    "possible_hits": ["Infinite Sapphire", "Sapphire Selections", "Wonderkids Sapphire", "Final Destination Sapphire"],
+    "official_product_url": "https://www.topps.com/products/2024-25-topps-chrome%C2%AE-sapphire-uefa-club-competitions-hobby-box-pre-order"
+  },
+  "2024-25-inception-uefa-hobby": {
+    "packs_per_box": 1,
+    "cards_per_pack": 7,
+    "guarantees": ["1 autograph", "2 numbered parallels"],
+    "possible_hits": ["Premium autograph and relic content", "Low-numbered parallels"],
+    "official_product_url": "https://uk.topps.com/products/2024-25-topps%C2%AE-inception-uefa-club-competitions-hobby-box"
+  },
+  "2024-25-museum-uefa-hobby": {
+    "packs_per_box": 1,
+    "cards_per_pack": 8,
+    "guarantees": ["1 autograph", "1 autograph relic", "1 relic", "1 base parallel"],
+    "possible_hits": ["Marks of Excellence on-card autos", "Framed autographs", "Supreme Script book cards", "The Grail"],
+    "official_product_url": "https://www.topps.com/products/2024-25-topps-museum-collection-ucc-hobby-box"
+  },
+  "2025-26-chrome-uefa-sapphire": {
+    "packs_per_box": 8,
+    "cards_per_pack": 4,
+    "guarantees": ["1 autograph", "4 sequentially numbered Sapphire parallels"],
+    "possible_hits": ["Infinite Sapphire", "Sapphire Selections", "Low-numbered Sapphire autograph parallels"],
+    "msrp": 499.99,
+    "official_product_url": "https://launches.topps.com/en-US/launch/topps-chrome-sapphire-uefa-club-competitions-202526"
+  },
+  "2025-26-finest-uefa-hobby": {
+    "packs_per_box": 6,
+    "cards_per_pack": 10,
+    "guarantees": ["2 autographs"],
+    "possible_hits": ["Finest Idols", "Prized Footballers", "The Man", "Marks of Excellence", "Dual autographs"],
+    "official_product_url": "https://www.topps.com/pages/topps-finest-uefa-club-competitions"
+  },
+  "2025-26-inception-uefa-hobby": {
+    "packs_per_box": 1,
+    "cards_per_pack": 7,
+    "guarantees": ["1 autograph", "2 numbered parallels", "4 base cards"],
+    "possible_hits": ["Premium autograph and relic content", "Low-numbered parallels"],
+    "official_product_url": "https://www.topps.com/products/topps-inception-uefa-club-competitions-2025-26"
+  },
+  "2025-26-museum-uefa-hobby": {
+    "packs_per_box": 1,
+    "cards_per_pack": 8,
+    "guarantees": ["1 autograph", "1 autograph relic", "1 relic", "1 numbered base parallel"],
+    "possible_hits": ["Museum Roll of Honor", "The Grail", "Framed autographs", "Archival Dual autographs"],
+    "official_product_url": "https://www.topps.com/pages/topps-museum-ucc"
+  },
+  "2025-26-uefa-flagship-value": {
+    "packs_per_box": 7,
+    "cards_per_pack": 8,
+    "guarantees": ["1 sequentially numbered Inferno/Holo parallel"],
+    "possible_hits": ["Epicenter retail-exclusive inserts", "Inferno autographs", "Starball relics"],
+    "official_product_url": "https://www.topps.com/products/2025-26-topps-uefa-club-competitions-value-box"
+  },
+  "2025-26-chrome-premier-league-tin": {
+    "packs_per_box": 5,
+    "cards_per_pack": 4,
+    "guarantees": ["2 Clinical Chrome inserts", "4 Pulsar parallels"],
+    "possible_hits": ["Numbered parallels", "Autographs"],
+    "official_product_url": "https://uk.topps.com/pages/topps-chrome-premier-league"
+  },
+  "2025-26-chrome-premier-league-sapphire": {
+    "packs_per_box": 8,
+    "cards_per_pack": 4,
+    "guarantees": ["1 Sapphire autograph", "4 numbered parallels", "3 inserts"],
+    "possible_hits": ["Sapphire Selections", "Infinite Sapphire", "Sapphire Selections autographs", "On-card low-numbered autos"],
+    "msrp": 429.99,
+    "official_product_url": "https://www.topps.com/products/2026-topps%C2%AE-chrome-premier-league-sapphire-edition"
+  },
+  "2026-27-premier-league-flagship-value": {
+    "packs_per_box": 6,
+    "cards_per_pack": 10,
+    "guarantees": ["4 Green Voltage base parallels", "2 exclusive Mayhem inserts"],
+    "possible_hits": ["Mayhem autographs", "Gold Lion", "Numbered parallels"],
+    "official_product_url": "https://www.topps.com/pages/topps-flagship-premier-league"
+  },
+  "2026-27-premier-league-flagship-hobby": {
+    "packs_per_box": 8,
+    "cards_per_pack": 25,
+    "bonus_cards": 3,
+    "guarantees": ["3 autograph/relic/autograph-relic hits with at least 1 autograph", "4 numbered parallels", "2 Chrome Classics", "3-card Black Edge pack"],
+    "possible_hits": ["Autographs", "Player-worn relics", "Case-hit inserts", "Rare parallels"],
+    "official_product_url": "https://www.topps.com/pages/topps-flagship-premier-league"
+  }
+}
