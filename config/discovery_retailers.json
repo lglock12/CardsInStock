@@ -15,5 +15,6 @@
   {"name":"Skybox Collectibles","catalog_url":"https://skyboxct.com/collections/soccer/products.json","max_pages":4},
   {"name":"Hobby Card Shop","catalog_url":"https://www.hobbycardshop.com/collections/soccer/products.json","max_pages":4},
   {"name":"Jawbreakers","catalog_url":"https://jawbreakers.cards/collections/soccer/products.json","max_pages":4},
-  {"name":"SoccerCards.ca","catalog_url":"https://buysoccercardsonline.com/collections/cards-stickers/products.json","max_pages":5}
+  {"name":"SoccerCards.ca","catalog_url":"https://buysoccercardsonline.com/collections/cards-stickers/products.json","max_pages":5},
+  {"name":"Giant Sports Cards","catalog_url":"https://giantsportscards.com/collections/soccer-cards/products.json","max_pages":5}
 ]
