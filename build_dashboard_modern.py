@@ -1,9 +1,9 @@
 import html
 import json
-import re
 from pathlib import Path
 
 from ebay_utils import search_url
+from matching import is_plausible_sealed_listing
 
 ROOT = Path(__file__).parent
 PRODUCTS = ROOT / "config" / "products.json"
@@ -33,16 +33,21 @@ def money(value):
 
 
 def short_product(name):
-    text = str(name).replace("Topps ", "", 1).replace(" Club Competitions", "")
-    return text
+    return str(name).replace("Topps ", "", 1).replace(" Club Competitions", "")
 
 
 def format_label(value):
     return {
-        "Blaster / Value": "VALUE",
-        "Hobby Jumbo": "JUMBO",
+        "Blaster / Value": "VALUE / BLASTER",
+        "Hobby": "HOBBY BOX",
+        "Hobby Jumbo": "JUMBO HOBBY",
+        "Mega": "MEGA BOX",
         "Mega Tin": "MEGA TIN",
-        "Full Box": "FULL BOX",
+        "Tin": "TIN",
+        "Full Box": "DISPLAY BOX",
+        "Box": "BOX",
+        "Delight": "BREAKER'S DELIGHT",
+        "Sapphire": "SAPPHIRE",
     }.get(value, str(value).upper())
 
 
@@ -56,61 +61,68 @@ def retail_rank(row):
     return (0, delivered) if delivered is not None else (1, price if price is not None else 10**12)
 
 
-def hard_bad_lead(row):
-    title = str(row.get("title") or "").lower()
-    # Keep validation failures visible as leads unless the page itself clearly says
-    # it is a different sale unit. The lead never becomes a verified market price.
-    if "case" in title or "break" in title:
-        return True
-    if any(x in title for x in ["starter pack", "sticker", "multipack", "multi pack", "bundle"]):
-        return True
-    if re.search(r"\bpack\b", title) and not re.search(r"\bbox\b|\btin\b", title):
-        return True
-    return False
-
-
-def lead_rows(rows):
+def lead_rows(product, rows):
+    """Only show CHECK leads that still look like the correct sealed SKU."""
     out = []
     for row in rows:
         if row.get("status") in ("VERIFIED", "OUT_OF_STOCK"):
             continue
-        if row.get("price") is None or hard_bad_lead(row):
+        if row.get("price") is None:
+            continue
+        title = row.get("title") or ""
+        if not is_plausible_sealed_listing(product, title):
             continue
         out.append(row)
     out.sort(key=lambda r: float(r.get("price") or 10**12))
     return out
 
 
-def hit_summary(detail):
-    bits = []
-    packs = detail.get("packs_per_box")
-    cards = detail.get("cards_per_pack")
-    if packs and cards:
-        bits.append(f"{packs}×{cards}")
-    guarantees = detail.get("guarantees") or []
-    for g in guarantees[:3]:
-        bits.append(str(g))
-    return " • ".join(bits) if bits else "Box configuration being sourced"
-
-
 def sold_view(market):
     sold = market.get("sold_market") or {}
     c30 = sold.get("count_30d") or 0
     if c30 and sold.get("median_30d") is not None:
-        return sold.get("median_30d"), "30d sold", f"{c30} sales", sold
+        return sold.get("median_30d"), "30D SOLD", f"{c30} sales", sold
     if sold.get("long_median") is not None:
         count = sold.get("long_count")
         days = sold.get("long_window_days") or 390
-        return sold.get("long_median"), f"{days}d sold", f"{count} comps" if count is not None else "market comp", sold
+        return sold.get("long_median"), f"{days}D SOLD", f"{count} comps" if count is not None else "market comp", sold
     if sold.get("fmv") is not None:
-        return sold.get("fmv"), "sold FMV", "aggregate", sold
-    return None, "Sold market", "no data", sold
+        return sold.get("fmv"), "SOLD FMV", "aggregate", sold
+    return None, "SOLD HISTORY", "no sold data", sold
+
+
+def config_text(detail):
+    packs = detail.get("packs_per_box")
+    cards = detail.get("cards_per_pack")
+    if packs and cards:
+        return f"{packs} packs × {cards} cards"
+    if packs:
+        return f"{packs} packs / box"
+    return "Configuration being sourced"
+
+
+def facts_html(detail, cost_per_pack):
+    packs = detail.get("packs_per_box")
+    cards = detail.get("cards_per_pack")
+    facts = []
+    if packs:
+        facts.append((str(packs), "PACKS"))
+    if cards:
+        facts.append((str(cards), "CARDS / PACK"))
+    if cost_per_pack is not None:
+        facts.append((money(cost_per_pack), "COST / PACK"))
+    if packs and cards:
+        facts.append((str(int(packs) * int(cards)), "CARDS / BOX"))
+    return "".join(
+        f'<div class="fact"><b>{esc(value)}</b><span>{esc(label)}</span></div>'
+        for value, label in facts
+    )
 
 
 def product_card(product, rows, detail, market, image):
     verified = sorted([r for r in rows if r.get("status") == "VERIFIED"], key=retail_rank)
     best_retail = verified[0] if verified else None
-    leads = lead_rows(rows)
+    leads = lead_rows(product, rows)
     best_lead = leads[0] if leads else None
 
     active = market.get("active_market") or {}
@@ -132,122 +144,146 @@ def product_card(product, rows, detail, market, image):
     else:
         state = "unknown"
 
-    # Product visual
+    state_label = {
+        "live": "LIVE",
+        "lead": "CHECK",
+        "market": "MARKET ONLY",
+        "soldout": "OOS",
+        "unknown": "TRACKING",
+    }[state]
+
     img = market.get("collectaio_image_url") or image
     if img:
         visual = f'<img src="{esc(img)}" alt="{esc(product["product"])}" loading="lazy">'
     else:
-        initials = "".join(word[0] for word in short_product(product["product"]).split()[:3]).upper()
-        visual = f'<div class="ph">{esc(initials or "BOX")}</div>'
+        visual = '<div class="ph"><div class="box-glyph">▰</div><small>IMAGE<br>PENDING</small></div>'
 
-    # Retail tile
+    retail_compare = None
+    cost_per_pack = None
     if best_retail:
-        rp = best_retail.get("delivered_price") if best_retail.get("delivered_price") is not None else best_retail.get("price")
-        ship_known = best_retail.get("shipping") is not None
-        retail_sub = "delivered" if best_retail.get("delivered_price") is not None else "shipping TBD"
-        retail_link = listing_url(best_retail)
-        retail_html = f'''<a class="price-cell retail" href="{esc(retail_link)}" target="_blank" rel="noopener">
-          <span class="price-label">RETAIL</span><b>{money(rp)}</b><small>{esc(best_retail.get('seller'))} · {retail_sub}</small></a>'''
-        retail_compare = rp if ship_known and best_retail.get("delivered_price") is not None else None
+        retail_price = best_retail.get("delivered_price") if best_retail.get("delivered_price") is not None else best_retail.get("price")
+        if best_retail.get("delivered_price") is not None:
+            retail_sub = "delivered"
+            retail_compare = retail_price
+        elif best_retail.get("shipping") == 0:
+            retail_sub = "free shipping"
+            retail_compare = retail_price
+        else:
+            retail_sub = "shipping TBD"
+        cost_per_pack = best_retail.get("cost_per_pack")
+        if cost_per_pack is None and detail.get("packs_per_box") and retail_price is not None:
+            cost_per_pack = round(float(retail_price) / float(detail["packs_per_box"]), 2)
+        retail_html = f'''<a class="retail-primary" href="{esc(listing_url(best_retail))}" target="_blank" rel="noopener">
+          <div><span class="eyebrow">BEST VERIFIED RETAIL</span><b class="retail-price">{money(retail_price)}</b></div>
+          <div class="retail-meta"><strong>{esc(best_retail.get('seller'))}</strong><span>{esc(retail_sub)} · open listing ↗</span></div>
+        </a>'''
     else:
-        retail_html = '<div class="price-cell"><span class="price-label">RETAIL</span><b>—</b><small>no verified stock</small></div>'
-        retail_compare = None
+        retail_html = '''<div class="retail-primary empty-price">
+          <div><span class="eyebrow">BEST VERIFIED RETAIL</span><b class="retail-price">—</b></div>
+          <div class="retail-meta"><strong>No verified stock</strong><span>Sources are still being checked</span></div>
+        </div>'''
 
-    # eBay tile
+    ebay_compare = None
     if ebay_best:
-        ep = ebay_best.get("delivered_price")
+        ebay_price = ebay_best.get("delivered_price")
         age = active.get("freshness_days")
-        badge = f"{age}d snapshot" if age is not None else "snapshot"
-        status_word = "live snapshot" if ebay_fresh else "verify first"
-        ebay_html = f'''<a class="price-cell ebay {'stale' if ebay_stale else ''}" href="{esc(ebay_best.get('url') or search_url(product))}" target="_blank" rel="noopener">
-          <span class="price-label">EBAY BIN</span><b>{money(ep)}</b><small>{badge} · {status_word}</small></a>'''
-        ebay_compare = ep if ebay_fresh else None
+        if ebay_fresh:
+            ebay_compare = ebay_price
+            ebay_title = "EBAY BIN"
+            ebay_note = "fresh delivered snapshot"
+        else:
+            ebay_title = "LAST EBAY SNAPSHOT"
+            ebay_note = f"{age}d old · verify first" if age is not None else "stale · verify first"
+        ebay_html = f'''<a class="market-mini {'fresh' if ebay_fresh else 'stale'}" href="{esc(ebay_best.get('url') or search_url(product))}" target="_blank" rel="noopener">
+          <span>{esc(ebay_title)}</span><b>{money(ebay_price)}</b><small>{esc(ebay_note)} ↗</small></a>'''
     else:
-        ebay_html = f'''<a class="price-cell ebay" href="{esc(search_url(product))}" target="_blank" rel="noopener">
-          <span class="price-label">EBAY BIN</span><b>—</b><small>search live ↗</small></a>'''
-        ebay_compare = None
+        ebay_html = f'''<a class="market-mini empty-market" href="{esc(search_url(product))}" target="_blank" rel="noopener">
+          <span>EBAY BIN</span><b>SEARCH LIVE ↗</b><small>live price feed unavailable</small></a>'''
 
-    # Sold tile
-    sold_age = sold.get("freshness_days") if sold else None
-    sold_stale = bool(sold.get("stale")) if sold else False
-    sold_sub = sold_meta + (f" · {sold_age}d old" if sold_age is not None else "")
-    sold_html = f'''<div class="price-cell sold {'stale' if sold_stale else ''}">
-      <span class="price-label">{esc(sold_label.upper())}</span><b>{money(sold_price)}</b><small>{esc(sold_sub)}</small></div>'''
+    if sold_price is not None:
+        sold_age = sold.get("freshness_days") if sold else None
+        sold_note = sold_meta + (f" · {sold_age}d old" if sold_age is not None else "")
+        sold_html = f'''<div class="market-mini sold"><span>{esc(sold_label)}</span><b>{money(sold_price)}</b><small>{esc(sold_note)}</small></div>'''
+    else:
+        sold_html = '''<div class="market-mini empty-market"><span>SOLD HISTORY</span><b>NO DATA</b><small>validated sold comps unavailable</small></div>'''
 
-    # Highlight only apples-to-apples fresh delivered asks.
     live_values = [("retail", retail_compare), ("ebay", ebay_compare)]
     live_values = [(k, v) for k, v in live_values if v is not None]
     winner = min(live_values, key=lambda x: x[1])[0] if live_values else None
     if winner == "retail":
-        retail_html = retail_html.replace('class="price-cell retail"', 'class="price-cell retail winner"', 1)
+        retail_html = retail_html.replace('class="retail-primary"', 'class="retail-primary winner"', 1)
     elif winner == "ebay":
-        ebay_html = ebay_html.replace('class="price-cell ebay ', 'class="price-cell ebay winner ', 1)
+        ebay_html = ebay_html.replace('class="market-mini fresh"', 'class="market-mini fresh winner"', 1)
 
-    # Potential lead: intentionally not promoted to market price until confirmed.
     lead_html = ""
     if best_lead:
         lead_price = best_lead.get("price")
-        is_interesting = best_retail is None or best_retail.get("price") is None or lead_price < best_retail.get("price")
-        if is_interesting:
-            lead_html = f'''<a class="lead-chip" href="{esc(listing_url(best_lead))}" target="_blank" rel="noopener">
-              <span>⚡ POSSIBLE DEAL</span><b>{money(lead_price)}</b><em>{esc(best_lead.get('seller'))} · unverified, check ↗</em></a>'''
+        current_price = best_retail.get("price") if best_retail else None
+        if current_price is None or lead_price < current_price:
+            lead_html = f'''<a class="lead-line" href="{esc(listing_url(best_lead))}" target="_blank" rel="noopener">
+              <span>UNVERIFIED RETAILER LEAD</span><b>{money(lead_price)}</b><em>{esc(best_lead.get('seller'))} · check listing ↗</em></a>'''
 
-    # Compact hit line and detailed drawer
-    summary = hit_summary(detail)
     guarantees = detail.get("guarantees") or []
     chases = detail.get("possible_hits") or []
     hits_items = "".join(f"<li>{esc(x)}</li>" for x in guarantees)
     chase_items = "".join(f"<li>{esc(x)}</li>" for x in chases)
     official = detail.get("checklist_url") or detail.get("official_product_url") or detail.get("reference_url")
-    details_link = f'<a href="{esc(official)}" target="_blank" rel="noopener">Official / checklist ↗</a>' if official else ''
+    details_link = f'<a class="detail-link" href="{esc(official)}" target="_blank" rel="noopener">Official / checklist ↗</a>' if official else ""
 
-    # Retailer/source drawer: keep every lead visible. Confirmed OOS is labeled, not erased.
     source_rows = []
     order = {"VERIFIED": 0, "UNKNOWN": 1, "REJECTED": 2, "OUT_OF_STOCK": 3}
     for row in sorted(rows, key=lambda r: (order.get(r.get("status"), 9), r.get("price") is None, r.get("price") or 10**12)):
         status = row.get("status") or "UNKNOWN"
-        label = {"VERIFIED": "LIVE", "OUT_OF_STOCK": "OOS", "REJECTED": "LEAD", "UNKNOWN": "CHECK"}.get(status, "CHECK")
+        if status not in ("VERIFIED", "OUT_OF_STOCK") and row.get("price") is not None:
+            if not is_plausible_sealed_listing(product, row.get("title") or ""):
+                continue
+        label = {"VERIFIED": "LIVE", "OUT_OF_STOCK": "OOS", "REJECTED": "CHECK", "UNKNOWN": "CHECK"}.get(status, "CHECK")
         cls = status.lower()
         p = row.get("delivered_price") if row.get("delivered_price") is not None else row.get("price")
         source_rows.append(f'''<a class="source-row {cls}" href="{esc(listing_url(row))}" target="_blank" rel="noopener">
           <span><i>{label}</i>{esc(row.get('seller'))}</span><b>{money(p)}</b></a>''')
 
-    ebay_search = f'<a class="mini-link" href="{esc(search_url(product))}" target="_blank" rel="noopener">eBay search ↗</a>'
-    collect_link = f'<a class="mini-link" href="{esc(market.get("collectaio_url"))}" target="_blank" rel="noopener">market source ↗</a>' if market.get("collectaio_url") else ''
-
     market_note = ""
     if sold_price is not None:
-        range_text = ""
+        bits = []
         if sold.get("min_30d") is not None and sold.get("max_30d") is not None:
-            range_text = f"30d range {money(sold.get('min_30d'))}–{money(sold.get('max_30d'))}"
-        long_text = ""
+            bits.append(f"30d range {money(sold.get('min_30d'))}–{money(sold.get('max_30d'))}")
         if sold.get("long_median") is not None:
-            long_text = f"{sold.get('long_window_days') or 390}d median {money(sold.get('long_median'))} · {sold.get('long_count') or 0} comps"
-        market_note = " · ".join(x for x in [range_text, long_text] if x)
+            bits.append(f"{sold.get('long_window_days') or 390}d median {money(sold.get('long_median'))} · {sold.get('long_count') or 0} comps")
+        market_note = " · ".join(bits)
 
-    state_label = {"live": "LIVE", "lead": "LEAD", "market": "MARKET", "soldout": "OOS", "unknown": "TRACKING"}[state]
+    facts = facts_html(detail, cost_per_pack)
+    config = config_text(detail)
+    ebay_search = search_url(product)
 
     return f'''<article class="product-card state-{state}" data-state="{state}" data-season="{esc(product['season'])}" data-search="{esc((product['product']+' '+product['season']+' '+product['format']).lower())}">
-      <div class="card-top">
+      <div class="card-head">
         <div class="thumb">{visual}</div>
-        <div class="identity"><div class="meta"><span>{esc(product['season'])}</span><span>{esc(format_label(product['format']))}</span><span class="state-pill {state}">{state_label}</span></div>
-        <h3>{esc(short_product(product['product']))}</h3><div class="card-actions">{ebay_search}{collect_link}</div></div>
+        <div class="identity">
+          <div class="sku-title"><strong>{esc(product['season'])}</strong><b>{esc(format_label(product['format']))}</b></div>
+          <div class="family-name">{esc(short_product(product['product']))}</div>
+          <div class="subline"><span class="state-pill {state}">{state_label}</span><span>{esc(config)}</span></div>
+        </div>
       </div>
-      <div class="price-grid">{retail_html}{ebay_html}{sold_html}</div>
+      {f'<div class="facts">{facts}</div>' if facts else ''}
+      <div class="price-area">
+        {retail_html}
+        <div class="market-pair">{ebay_html}{sold_html}</div>
+      </div>
       {lead_html}
-      <div class="hit-strip"><span>BOX</span>{esc(summary)}</div>
+      <div class="quick-links"><a href="{esc(ebay_search)}" target="_blank" rel="noopener">Search eBay live ↗</a></div>
       <div class="drawers">
-        <details><summary>Sources <span>{len(verified)} live · {len(leads)} leads · {len(rows)} checked</span></summary><div class="source-list">{''.join(source_rows) if source_rows else '<p class="empty">No mapped sources yet.</p>'}</div></details>
+        <details><summary>Retailer sources <span>{len(verified)} live · {len(leads)} leads · {len(source_rows)} shown</span></summary><div class="source-list">{''.join(source_rows) if source_rows else '<p class="empty">No usable mapped sources yet.</p>'}</div></details>
         <details><summary>Box hits <span>{len(guarantees)} guaranteed · {len(chases)} chase</span></summary><div class="hit-detail"><div><strong>Guaranteed / box</strong><ul>{hits_items or '<li>Not yet sourced</li>'}</ul></div><div><strong>Chase content</strong><ul>{chase_items or '<li>Not yet sourced</li>'}</ul></div>{details_link}</div></details>
-        {f'<details><summary>Market detail <span>{sold_meta}</span></summary><div class="market-detail">{esc(market_note or "No additional sold-market detail yet.")}</div></details>' if sold_price is not None else ''}
+        {f'<details><summary>Sold-market detail <span>{esc(sold_meta)}</span></summary><div class="market-detail">{esc(market_note or "No additional sold-market detail yet.")}</div></details>' if sold_price is not None else ''}
       </div>
     </article>'''
 
 
 def main():
     products = load_json(PRODUCTS, [])
-    base_details = load_json(DETAILS, {})
-    base_details.update(load_json(DETAILS_EXTRA, {}))
+    details = load_json(DETAILS, {})
+    details.update(load_json(DETAILS_EXTRA, {}))
     latest = load_json(LATEST, {"observations": []})
     market_data = load_json(MARKET, {"products": {}})
     markets = market_data.get("products") or {}
@@ -258,74 +294,72 @@ def main():
         by_product.setdefault(row.get("product_id"), []).append(row)
 
     groups = {}
-    states = {"live": 0, "lead": 0, "market": 0, "soldout": 0, "unknown": 0}
     cards_by_id = {}
+    states = {"live": 0, "lead": 0, "market": 0, "soldout": 0, "unknown": 0}
+
     for product in products:
         rows = by_product.get(product["id"], [])
         market = markets.get(product["id"], {})
-        card = product_card(product, rows, base_details.get(product["id"], {}), market, images.get(product["id"]))
-        cards_by_id[product["id"]] = card
-        # Mirror product_card state cheaply for headline counts.
+        cards_by_id[product["id"]] = product_card(
+            product, rows, details.get(product["id"], {}), market, images.get(product["id"])
+        )
+
         verified = any(r.get("status") == "VERIFIED" for r in rows)
-        leads = bool(lead_rows(rows))
+        leads = bool(lead_rows(product, rows))
         active = market.get("active_market") or {}
         fresh_ebay = bool(market.get("best")) and bool(active) and not active.get("stale")
         sold_price = sold_view(market)[0]
         statuses = [r.get("status") for r in rows]
-        if verified or fresh_ebay: state = "live"
-        elif leads: state = "lead"
-        elif sold_price is not None: state = "market"
-        elif statuses and all(s == "OUT_OF_STOCK" for s in statuses): state = "soldout"
-        else: state = "unknown"
+        if verified or fresh_ebay:
+            state = "live"
+        elif leads:
+            state = "lead"
+        elif sold_price is not None:
+            state = "market"
+        elif statuses and all(s == "OUT_OF_STOCK" for s in statuses):
+            state = "soldout"
+        else:
+            state = "unknown"
         states[state] += 1
         groups.setdefault(product["product"], []).append(product)
 
-    format_order = {"Blaster / Value": 0, "Tin": 1, "Mega": 1, "Mega Tin": 1, "Full Box": 2, "Hobby": 3, "Hobby Jumbo": 4, "Delight": 5, "Sapphire": 6, "Box": 7}
+    format_order = {
+        "Blaster / Value": 0, "Tin": 1, "Mega": 2, "Mega Tin": 2, "Full Box": 3,
+        "Hobby": 4, "Hobby Jumbo": 5, "Delight": 6, "Sapphire": 7, "Box": 8,
+    }
     family_html = []
     for family, ps in groups.items():
         ps = sorted(ps, key=lambda p: (p["season"], -format_order.get(p["format"], 99)), reverse=True)
-        family_html.append(f'''<section class="family"><div class="family-title"><div><span>PRODUCT LINE</span><h2>{esc(short_product(family))}</h2></div><small>{len(ps)} formats</small></div><div class="card-grid">{''.join(cards_by_id[p['id']] for p in ps)}</div></section>''')
+        family_html.append(
+            f'''<section class="family"><div class="family-title"><h2>{esc(short_product(family))}</h2><small>{len(ps)} tracked formats</small></div><div class="card-grid">{''.join(cards_by_id[p['id']] for p in ps)}</div></section>'''
+        )
 
     seasons = sorted({p["season"] for p in products}, reverse=True)
     season_options = ''.join(f'<option value="{esc(s)}">{esc(s)}</option>' for s in seasons)
     generated = str(latest.get("generated_at") or "not collected")
 
     css = r'''
-:root{--bg:#070b12;--surface:#0d1421;--surface2:#101a2a;--line:#22304a;--text:#f6f8fc;--muted:#8c9ab0;--green:#54e0ad;--blue:#68a0ff;--amber:#f2bf63;--red:#ff7f86}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#13213a 0,#070b12 38rem);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}.shell{width:min(1680px,100%);margin:auto;padding:18px clamp(12px,2vw,28px) 70px}.mast{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;padding:12px 0 18px}.brand{grid-column:2;display:flex;align-items:center;gap:10px}.logo{width:38px;height:38px}.brand h1{font-size:clamp(27px,3vw,40px);letter-spacing:-1.8px;margin:0;font-weight:950}.tag{font-size:11px;color:var(--muted);text-align:center;margin-top:4px}.statusbar{grid-column:3;justify-self:end;text-align:right;color:var(--muted);font-size:10px}.statusbar b{color:var(--green)}.controls{position:sticky;z-index:20;top:0;display:grid;grid-template-columns:minmax(180px,1fr) auto auto;gap:8px;padding:10px 0;background:linear-gradient(#070b12f5,#070b12e8 78%,transparent);backdrop-filter:blur(12px)}input,select{min-width:0;border:1px solid var(--line);background:#0b1320;color:var(--text);border-radius:11px;padding:10px 12px;font:inherit;font-size:12px}.family{margin:26px 0 38px}.family-title{display:flex;align-items:end;justify-content:space-between;border-bottom:1px solid #18253a;padding:0 2px 9px;margin-bottom:11px}.family-title span{font-size:8px;letter-spacing:.16em;font-weight:900;color:var(--green)}.family-title h2{margin:2px 0 0;font-size:17px;letter-spacing:-.3px}.family-title small{color:var(--muted);font-size:9px}.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,310px),1fr));gap:10px;align-items:start}.product-card{min-width:0;border:1px solid var(--line);border-radius:15px;background:linear-gradient(145deg,#0e1726,#0a111d);padding:11px;box-shadow:0 12px 30px rgba(0,0,0,.12)}.product-card:hover{border-color:#354766}.card-top{display:grid;grid-template-columns:78px minmax(0,1fr);gap:10px;align-items:center}.thumb{width:78px;height:68px;background:#f2f4f8;border-radius:10px;overflow:hidden;display:grid;place-items:center}.thumb img{width:100%;height:100%;object-fit:contain;padding:4px;image-orientation:from-image}.ph{font-weight:950;color:#31415b;letter-spacing:-1px}.identity{min-width:0}.identity h3{margin:4px 0 4px;font-size:14px;line-height:1.12;letter-spacing:-.2px;white-space:normal}.meta{display:flex;gap:5px;align-items:center;flex-wrap:wrap}.meta>span{font-size:7px;font-weight:850;letter-spacing:.08em;color:#a6b3c5;background:#131e2f;padding:4px 6px;border-radius:999px}.state-pill.live{color:#73e7ba}.state-pill.lead{color:#f4c76a}.state-pill.market{color:#80aaff}.state-pill.soldout{color:#f08b8f}.card-actions{display:flex;gap:9px;flex-wrap:wrap}.mini-link{font-size:8px;color:#8fb0f8;text-decoration:none}.price-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:10px}.price-cell{min-width:0;text-decoration:none;border:1px solid #24324a;border-radius:10px;background:#0a111c;padding:8px 7px;display:flex;flex-direction:column;gap:1px;position:relative}.price-cell b{font-size:clamp(14px,1.6vw,18px);letter-spacing:-.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.price-cell small{font-size:7px;color:var(--muted);line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.price-label{font-size:7px;color:#7f90aa;font-weight:900;letter-spacing:.1em}.price-cell.winner{border-color:#397962;box-shadow:inset 0 0 0 1px #2a5c4b}.price-cell.winner:after{content:"BEST";position:absolute;right:5px;top:5px;font-size:6px;font-weight:950;color:var(--green)}.price-cell.ebay{border-color:#293a60}.price-cell.sold{border-color:#225044}.price-cell.stale{border-color:#68542e}.lead-chip{margin-top:7px;display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:7px;align-items:center;padding:7px 8px;border:1px solid #725b2d;background:#1d180f;border-radius:9px;text-decoration:none}.lead-chip span{font-size:7px;font-weight:950;letter-spacing:.08em;color:var(--amber)}.lead-chip b{font-size:12px}.lead-chip em{font-style:normal;color:#b6a47e;font-size:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.hit-strip{margin-top:8px;padding:7px 0 2px;color:#bcc7d7;font-size:9px;line-height:1.35}.hit-strip>span{font-size:7px;color:var(--green);font-weight:950;letter-spacing:.1em;margin-right:6px}.drawers{margin-top:7px;border-top:1px solid #1c293e}.drawers details{border-bottom:1px solid #172338;padding:0}.drawers summary{list-style:none;cursor:pointer;padding:8px 1px;font-size:9px;font-weight:850;display:flex;justify-content:space-between;gap:8px}.drawers summary::-webkit-details-marker{display:none}.drawers summary span{color:var(--muted);font-weight:500;font-size:8px}.source-list{padding:0 0 5px}.source-row{display:flex;justify-content:space-between;gap:10px;align-items:center;text-decoration:none;padding:6px 4px;border-radius:6px;font-size:8px;color:#bac5d5}.source-row:hover{background:#141f31}.source-row span{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.source-row i{font-style:normal;font-size:6px;font-weight:950;padding:3px 4px;border-radius:4px;margin-right:5px;background:#1b2738;color:#91a0b5}.source-row.verified i{color:#61deb0}.source-row.out_of_stock i{color:#eb8e92}.source-row.rejected i,.source-row.unknown i{color:#efc66f}.source-row b{font-size:8px}.hit-detail{padding:1px 3px 9px;color:#acb8ca;font-size:8px;line-height:1.35}.hit-detail strong{color:#dbe2ec}.hit-detail ul{margin:4px 0 8px;padding-left:16px}.hit-detail a{color:var(--green);text-decoration:none;font-weight:800}.market-detail{font-size:8px;color:#9aa9be;padding:0 3px 9px}.empty{font-size:8px;color:var(--muted)}.state-soldout,.state-unknown{display:none}body.show-all .state-soldout,body.show-all .state-unknown{display:block;opacity:.7}body.live-only .product-card:not(.state-live){display:none}body.searching .filtered{display:none}@media(max-width:780px){.mast{grid-template-columns:1fr}.brand{grid-column:1;justify-self:center}.statusbar{grid-column:1;justify-self:center;text-align:center}.controls{grid-template-columns:1fr 1fr}.controls input{grid-column:1/-1}.card-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr))}.family{margin-top:22px}}@media(max-width:560px){.shell{padding:10px 10px 50px}.card-grid{grid-template-columns:1fr}.product-card{padding:10px}.card-top{grid-template-columns:72px minmax(0,1fr)}.thumb{width:72px;height:62px}.price-cell{padding:7px 6px}.price-cell b{font-size:16px}.lead-chip{grid-template-columns:auto auto}.lead-chip em{grid-column:1/-1}.family-title h2{font-size:16px}}@media(min-width:700px) and (max-width:1050px){.card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}'''
+:root{--bg:#070b12;--panel:#0c1523;--panel2:#0a111d;--line:#22314a;--text:#f7f9fc;--muted:#8e9bb0;--green:#57dfad;--blue:#7ca8ff;--amber:#e9bb63;--red:#ef8a91}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -12%,#12213b 0,#070b12 36rem);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}.shell{width:min(1500px,100%);margin:auto;padding:14px clamp(12px,2vw,26px) 64px}.mast{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:8px 0 14px}.brand{grid-column:2;display:flex;align-items:center;gap:10px}.logo{width:34px;height:40px;display:grid;place-items:center}.logo svg{width:100%;height:100%}.brand h1{margin:0;font-size:clamp(25px,3vw,38px);font-weight:950;letter-spacing:-1.6px}.statusbar{grid-column:3;justify-self:end;text-align:right;color:var(--muted);font-size:9px;line-height:1.5}.statusbar b{color:var(--green)}.controls{position:sticky;top:0;z-index:20;display:grid;grid-template-columns:minmax(220px,1fr) 170px 190px;gap:8px;padding:9px 0 12px;background:linear-gradient(#070b12fa,#070b12ee 78%,transparent);backdrop-filter:blur(12px)}input,select{min-width:0;border:1px solid var(--line);background:#0b1422;color:var(--text);border-radius:12px;padding:11px 13px;font:inherit;font-size:12px}.family{margin:24px 0 34px}.family-title{display:flex;align-items:end;justify-content:space-between;border-bottom:1px solid #1b293e;padding:0 2px 9px;margin-bottom:11px}.family-title h2{margin:0;font-size:20px;letter-spacing:-.5px}.family-title small{color:var(--muted);font-size:9px}.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:11px;align-items:start}.product-card{min-width:0;border:1px solid var(--line);border-radius:16px;background:linear-gradient(150deg,#0e1828,#09111d);padding:12px;box-shadow:0 12px 30px rgba(0,0,0,.13)}.product-card:hover{border-color:#385070}.card-head{display:grid;grid-template-columns:84px minmax(0,1fr);gap:12px;align-items:center}.thumb{width:84px;height:82px;background:#f4f5f7;border-radius:11px;overflow:hidden;display:grid;place-items:center}.thumb img{width:100%;height:100%;object-fit:contain;padding:4px;image-orientation:from-image}.ph{text-align:center;color:#53627a}.box-glyph{font-size:24px;transform:rotate(-12deg);opacity:.7}.ph small{display:block;font-size:6px;font-weight:900;letter-spacing:.12em;line-height:1.25;margin-top:3px}.identity{min-width:0}.sku-title{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.sku-title strong{font-size:19px;letter-spacing:-.6px}.sku-title b{font-size:11px;letter-spacing:.06em;color:#dce5f3}.family-name{font-size:12px;color:#aebbd0;margin-top:2px;font-weight:700}.subline{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:8px;margin-top:7px;min-width:0}.subline>span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.state-pill{font-size:7px;font-weight:950;letter-spacing:.08em;padding:4px 6px;border-radius:999px;background:#132033}.state-pill.live{color:var(--green)}.state-pill.lead{color:var(--amber)}.state-pill.market{color:var(--blue)}.state-pill.soldout{color:var(--red)}.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(70px,1fr));gap:1px;margin-top:10px;border:1px solid #1c2b41;border-radius:10px;overflow:hidden;background:#1c2b41}.fact{background:#0a1320;padding:7px 8px;min-width:0}.fact b{display:block;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.fact span{display:block;color:var(--muted);font-size:6px;font-weight:900;letter-spacing:.08em;margin-top:2px}.price-area{margin-top:9px}.retail-primary{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);align-items:end;gap:12px;text-decoration:none;border:1px solid #315545;background:linear-gradient(135deg,#0c1b19,#0a141d);border-radius:12px;padding:9px 10px}.retail-primary.winner:after,.market-mini.winner:after{content:"BEST";position:absolute;right:7px;top:6px;font-size:6px;font-weight:950;letter-spacing:.08em;color:var(--green)}.eyebrow{display:block;color:#77c9aa;font-size:6px;font-weight:950;letter-spacing:.11em}.retail-price{display:block;font-size:23px;letter-spacing:-.8px;line-height:1.05;margin-top:2px}.retail-meta{min-width:0;padding-right:24px}.retail-meta strong,.retail-meta span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.retail-meta strong{font-size:9px}.retail-meta span{font-size:7px;color:var(--muted);margin-top:2px}.empty-price{border-color:#233149;background:#0a121e}.market-pair{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px}.market-mini{position:relative;display:flex;flex-direction:column;min-width:0;text-decoration:none;border:1px solid #263750;border-radius:10px;padding:7px 8px;background:#09111c}.market-mini>span{font-size:6px;font-weight:950;letter-spacing:.1em;color:#8394ad}.market-mini b{font-size:13px;line-height:1.2;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.market-mini small{font-size:7px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}.market-mini.fresh{border-color:#345e51}.market-mini.stale{border-color:#67542f}.market-mini.sold{border-color:#29463e}.empty-market b{font-size:9px;color:#a8b6ca;letter-spacing:.02em}.lead-line{display:grid;grid-template-columns:auto auto minmax(0,1fr);align-items:center;gap:7px;text-decoration:none;border-left:2px solid #765d2c;margin-top:7px;padding:5px 7px;background:#14130f;border-radius:4px}.lead-line span{font-size:6px;font-weight:950;letter-spacing:.08em;color:var(--amber)}.lead-line b{font-size:11px}.lead-line em{font-style:normal;font-size:7px;color:#a99a7b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.quick-links{display:flex;gap:10px;margin-top:7px}.quick-links a{font-size:7px;color:#86aaf4;text-decoration:none}.drawers{margin-top:8px;border-top:1px solid #1c2a3f}.drawers details{border-bottom:1px solid #18253a}.drawers summary{list-style:none;cursor:pointer;padding:8px 1px;font-size:9px;font-weight:850;display:flex;justify-content:space-between;gap:8px}.drawers summary::-webkit-details-marker{display:none}.drawers summary span{color:var(--muted);font-weight:500;font-size:8px}.source-list{padding:0 0 5px}.source-row{display:flex;justify-content:space-between;gap:10px;align-items:center;text-decoration:none;padding:6px 4px;border-radius:6px;font-size:8px;color:#bac5d5}.source-row:hover{background:#141f31}.source-row span{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.source-row i{font-style:normal;font-size:6px;font-weight:950;padding:3px 4px;border-radius:4px;margin-right:5px;background:#1b2738;color:#91a0b5}.source-row.verified i{color:#61deb0}.source-row.out_of_stock i{color:#eb8e92}.source-row.rejected i,.source-row.unknown i{color:#e5bd69}.hit-detail{padding:2px 4px 9px;color:#bac5d5;font-size:8px;line-height:1.45}.hit-detail>div{margin-bottom:7px}.hit-detail strong{color:#e5eaf2}.hit-detail ul{margin:4px 0 0;padding-left:16px}.detail-link{font-size:8px;color:#8eb1fa}.market-detail{padding:2px 4px 10px;color:#aebbd0;font-size:8px}.empty{color:var(--muted);font-size:8px}.hidden{display:none!important}.footer{margin-top:30px;color:#6f7d92;font-size:8px;text-align:center}
+@media(max-width:760px){.shell{padding:8px 10px 54px}.mast{grid-template-columns:1fr auto 1fr;padding:7px 2px 10px}.brand{gap:7px}.logo{width:28px;height:32px}.brand h1{font-size:23px}.statusbar{font-size:7px}.controls{grid-template-columns:1fr 1fr;padding-top:7px}.controls input{grid-column:1/-1}.family{margin:18px 0 28px}.family-title{margin-bottom:9px}.family-title h2{font-size:20px}.card-grid{grid-template-columns:1fr;gap:10px}.product-card{padding:11px;border-radius:15px}.card-head{grid-template-columns:86px minmax(0,1fr)}.thumb{width:86px;height:84px}.sku-title strong{font-size:20px}.sku-title b{font-size:11px}.facts{margin-top:9px}.fact{padding:7px}.retail-primary{padding:9px}.retail-price{font-size:24px}.market-mini{padding:7px}.market-mini b{font-size:12px}}
+@media(max-width:420px){.statusbar{display:none}.mast{grid-template-columns:1fr}.brand{grid-column:1;justify-self:center}.controls{gap:6px}.market-pair{grid-template-columns:1fr 1fr}.retail-primary{grid-template-columns:1fr auto}.retail-meta{text-align:right}.fact:nth-child(4){display:none}}
+'''
 
-    js = r'''
-const q=document.querySelector('#q'), season=document.querySelector('#season'), view=document.querySelector('#view');
-function apply(){
-  const text=q.value.trim().toLowerCase(), s=season.value, mode=view.value;
-  document.body.classList.toggle('show-all',mode==='all');
-  document.body.classList.toggle('live-only',mode==='live');
-  document.body.classList.toggle('searching',Boolean(text||s));
-  document.querySelectorAll('.product-card').forEach(card=>{
-    const match=(!text||card.dataset.search.includes(text))&&(!s||card.dataset.season===s);
-    card.classList.toggle('filtered',!match);
-  });
-  document.querySelectorAll('.family').forEach(f=>{
-    const visible=[...f.querySelectorAll('.product-card')].some(c=>{
-      if(c.classList.contains('filtered')) return false;
-      if(mode==='live') return c.classList.contains('state-live');
-      if(mode==='all') return true;
-      return !c.classList.contains('state-soldout')&&!c.classList.contains('state-unknown');
-    });
-    f.style.display=visible?'':'none';
-  });
-}
-[q,season,view].forEach(x=>x.addEventListener(x===q?'input':'change',apply)); apply();'''
+    logo = '''<svg viewBox="0 0 42 50" aria-hidden="true"><path d="M5 4h24l8 8v34H5z" fill="none" stroke="#57dfad" stroke-width="3"/><path d="M11 14h16M11 21h20M11 28h14" stroke="#7ca8ff" stroke-width="3" stroke-linecap="round"/><path d="M30 4v10h7" fill="none" stroke="#57dfad" stroke-width="3"/></svg>'''
 
-    page = f'''<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#070b12"><title>CardsInStock</title><style>{css}</style></head><body><main class="shell">
-    <header class="mast"><div></div><div><div class="brand"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><rect x="13" y="5" width="27" height="35" rx="7" fill="#54e0ad"/><rect x="6" y="10" width="27" height="33" rx="7" fill="#0d1421" stroke="#f6f8fc" stroke-width="2.3"/><path d="M12 26l5 5 10-13" fill="none" stroke="#54e0ad" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg><h1>CardsInStock</h1></div><div class="tag">Soccer wax price intelligence — retail, eBay asks and sold market</div></div><div class="statusbar"><b>{states['live']} live</b> · {states['lead']} lead-only · {len(products)} tracked<br>Retail refresh {esc(generated)}</div></header>
-    <div class="controls"><input id="q" type="search" placeholder="Search product, season or format…"><select id="season"><option value="">All seasons</option>{season_options}</select><select id="view"><option value="deals">Deals + leads + market</option><option value="live">Verified live only</option><option value="all">All tracked</option></select></div>
-    {''.join(family_html)}
-    </main><script>{js}</script></body></html>'''
+    body = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070b12"><title>CardsInStock</title><style>{css}</style></head><body><main class="shell">
+      <header class="mast"><div class="brand"><div class="logo">{logo}</div><h1>CardsInStock</h1></div><div class="statusbar"><b>{states['live']} live</b> · {len(products)} SKUs<br>updated {esc(generated[:16].replace('T',' '))} UTC</div></header>
+      <div class="controls"><input id="search" type="search" placeholder="Search product, season or box type…"><select id="season"><option value="">All seasons</option>{season_options}</select><select id="mode"><option value="all">All tracked products</option><option value="live">Verified live stock</option><option value="priced">Any price / market data</option><option value="gaps">Coverage gaps</option></select></div>
+      <div id="families">{''.join(family_html)}</div>
+      <div class="footer">Verified retailer prices are separated from unverified leads and stale market snapshots. Shipping is included only when known.</div>
+    </main><script>
+const q=document.getElementById('search'),season=document.getElementById('season'),mode=document.getElementById('mode');
+function apply(){{const needle=q.value.trim().toLowerCase(),s=season.value,m=mode.value;document.querySelectorAll('.product-card').forEach(card=>{{const state=card.dataset.state;let ok=(!needle||card.dataset.search.includes(needle))&&(!s||card.dataset.season===s);if(m==='live')ok=ok&&state==='live';else if(m==='priced')ok=ok&&['live','lead','market'].includes(state);else if(m==='gaps')ok=ok&&['unknown','soldout'].includes(state);card.classList.toggle('hidden',!ok)}});document.querySelectorAll('.family').forEach(f=>{{f.classList.toggle('hidden',![...f.querySelectorAll('.product-card')].some(c=>!c.classList.contains('hidden')))}})}}
+[q,season,mode].forEach(el=>el.addEventListener(el===q?'input':'change',apply));apply();
+</script></body></html>'''
 
     INDEX.parent.mkdir(parents=True, exist_ok=True)
-    INDEX.write_text(page)
-    (ROOT / "docs" / "latest.json").write_text(json.dumps(latest, indent=2))
-    print(f"Built modern dashboard: {len(products)} products; {states['live']} live, {states['lead']} lead-only, {states['market']} market-only")
+    INDEX.write_text(body)
+    print(f"Built clearer SKU dashboard with {len(products)} products across {len(groups)} product families")
 
 
 if __name__ == "__main__":
