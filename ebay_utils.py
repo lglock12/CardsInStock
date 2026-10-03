@@ -8,12 +8,20 @@ def canonical_terms(product):
 
     if "merlin" in name:
         terms.append("Merlin")
-    elif "chrome" in name:
-        terms.append("Chrome")
     elif "finest" in name:
         terms.append("Finest")
+    elif "inception" in name:
+        terms.append("Inception")
+    elif "museum" in name:
+        terms.append("Museum")
+    elif "deco" in name:
+        terms.append("Deco")
+    elif "chrome" in name:
+        terms.append("Chrome")
 
-    if "uefa" in name:
+    if "uefa euro" in name:
+        terms.append("UEFA EURO")
+    elif "uefa" in name:
         terms.append("UEFA")
     elif "premier league" in name:
         terms.append("Premier League")
@@ -25,8 +33,12 @@ def canonical_terms(product):
         terms.extend(["Jumbo", "box"])
     elif fmt == "Delight":
         terms.extend(["Delight", "box"])
-    elif fmt == "Tin":
-        terms.append("Tin")
+    elif fmt in ("Tin", "Mega Tin"):
+        terms.append(fmt)
+    elif fmt == "Full Box":
+        terms.append("Full Box")
+    elif fmt == "Box":
+        terms.append("box")
     else:
         terms.extend([fmt, "box"])
     return terms
@@ -38,8 +50,8 @@ def quoted_query(product, season_override=None):
         terms[0] = season_override
     quoted = " ".join(f'"{term}"' for term in terms)
 
-    # Women's UEFA products are a separate product line and can dominate otherwise
-    # valid soccer searches. Keep them out of every human-facing eBay search URL.
+    # Women's UEFA products are separate releases and can dominate otherwise valid
+    # searches. Keep them out of every human-facing eBay search URL.
     quoted += " -women -womens -\"women's\""
 
     # Flagship searches are intentionally broad enough to catch listings that omit
@@ -60,7 +72,7 @@ def search_url(product, season_override=None):
 
 
 def fallback_seasons(product):
-    """Aliases used only if the primary exact-season eBay search yields no valid BIN."""
+    """Aliases used only if the primary exact-season market search yields no match."""
     season = product["season"]
     out = []
     if season == "2023-24":
