@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 import requests
 
 import discover_sources
-from matching import normalize, product_match, term_matches
+from matching import plausible_product_lead, product_match
 
 # Reuse the existing retailer-catalog scanner but make discovery obey the same
 # matcher as collection and market comparison. Premium lines are first-class
@@ -15,72 +15,6 @@ discover_sources.BAD_URL_MARKERS[:] = [
     "sticker", "starter-pack", "multipack", "multi-pack",
     "royalty", "simplicidad", "reverence", "definitive",
 ]
-
-
-def expected_family(product):
-    name = normalize(product.get("product"))
-    for marker in ("stadium club", "merlin", "finest", "inception", "museum", "deco", "chrome"):
-        if marker in name:
-            return marker
-    return "flagship"
-
-
-def competition_ok(product, title):
-    name = normalize(product.get("product"))
-    t = normalize(title)
-    if "premier league" in name:
-        return any(x in t for x in ["premier league", "english premier league", " epl "])
-    if "uefa euro" in name:
-        return "euro" in t and "uefa" in t
-    if "uefa" in name:
-        return any(x in t for x in ["uefa", " ucc ", "club competitions", "champions league"])
-    return True
-
-
-def family_ok(product, title):
-    family = expected_family(product)
-    t = normalize(title)
-    if family == "flagship":
-        return not any(x in t for x in ["stadium club", "chrome", "merlin", "finest", "sapphire", "inception", "museum", "deco"])
-    return family in t
-
-
-def format_conflict(product, title):
-    t = normalize(title)
-    fmt = product.get("format")
-    if "case" in t:
-        return True
-    if any(x in t for x in ["sticker", "starter pack", "multipack", "multi pack", "bundle"]):
-        return True
-    if fmt == "Hobby":
-        return any(x in t for x in ["blaster", "value box", "mega box", "mega tin", "jumbo", "sapphire", "delight", "breakers delight", "breaker's delight"])
-    if fmt == "Blaster / Value":
-        return any(x in t for x in ["hobby", "jumbo", "mega box", "mega tin", "sapphire", "delight"])
-    if fmt == "Hobby Jumbo":
-        return any(x in t for x in ["blaster", "value box", "mega box", "mega tin", "sapphire", "delight"])
-    if fmt == "Sapphire":
-        return "sapphire" not in t
-    if fmt == "Delight":
-        return not any(x in t for x in ["delight", "breaker delight", "breaker's delight", "breakers delight"])
-    if fmt in ("Tin", "Mega Tin"):
-        return "tin" not in t
-    if fmt == "Full Box":
-        return not any(x in t for x in ["full box", "full display", "display box"])
-    return False
-
-
-def plausible_lead(product, title):
-    # Leads are intentionally looser than VERIFIED. They never feed the best-price
-    # calculation; they exist so an oddly named retailer listing is not silently lost.
-    if product_match(product, title)[0]:
-        return False
-    if not term_matches(product.get("season"), title):
-        return False
-    if not family_ok(product, title) or not competition_ok(product, title):
-        return False
-    if format_conflict(product, title):
-        return False
-    return True
 
 
 def discover_store_with_leads(store, products):
@@ -136,11 +70,14 @@ def discover_store_with_leads(store, products):
                 })
                 continue
 
+            # Preserve a near-match only when it still looks like the correct sealed
+            # product family/competition/format. Singles, women's boxes, adjacent
+            # product lines, cases, breaks and loose packs are rejected here.
             for product in products:
                 key = product["id"]
-                if key in lead_seen or not plausible_lead(product, title):
+                if key in lead_seen or not plausible_product_lead(product, title):
                     continue
-                note = "potential live catalog lead; strict validation not satisfied"
+                note = "potential sealed-product lead; strict validation not satisfied"
                 if price is not None:
                     note += f"; catalog price ${price:.2f}"
                 found.append({
@@ -162,9 +99,15 @@ def discover_store_with_leads(store, products):
 
 _original_wrong = discover_sources.looks_obviously_wrong
 
+
 def looks_obviously_wrong(entry, product_by_id):
     if entry.get("lead_only"):
-        return False
+        product = product_by_id.get(entry.get("product_id"))
+        title = entry.get("title")
+        # Revalidate saved leads every run so a bad lead never becomes permanent.
+        if not product or not title:
+            return True
+        return not plausible_product_lead(product, title)
     return _original_wrong(entry, product_by_id)
 
 
