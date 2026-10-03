@@ -1,10 +1,10 @@
 import html as html_lib
 import re
 
-# Distinct product lines / sale formats that must never be treated as the single
-# sealed Topps soccer products CardsInStock tracks. These guards apply to both
-# retailer discovery and market sources.
-UNTRACKED_PRODUCT_MARKERS = [
+# Adjacent product lines / sale formats. They are rejected unless the catalog SKU
+# explicitly expects that marker. This lets us track Sapphire/Inception/Museum as
+# first-class products without allowing them to contaminate standard Chrome/Flagship.
+DISTINCT_PRODUCT_MARKERS = [
     "women", "womens", "women's",
     "match attax",
     "sapphire",
@@ -16,6 +16,8 @@ UNTRACKED_PRODUCT_MARKERS = [
     "knockout",
     "royalty",
     "simplicidad",
+    "reverence",
+    "definitive",
     "sticker",
     "starter pack",
     "multipack",
@@ -35,14 +37,17 @@ def term_matches(term, title):
     term = normalize(term)
     title = normalize(title)
     aliases = {
-        "2023-24": ["2023-24", "2023 24", "2023-2024", "2023 2024"],
-        "2024-25": ["2024-25", "2024 25", "2024-2025", "2024 2025"],
-        "2025-26": ["2025-26", "2025 26", "2025-2026", "2025 2026"],
-        "2026-27": ["2026-27", "2026 27", "2026-2027", "2026 2027"],
+        "2023-24": ["2023-24", "2023 24", "2023-2024", "2023 2024", "2023/24"],
+        "2024-25": ["2024-25", "2024 25", "2024-2025", "2024 2025", "2024/25"],
+        "2025-26": ["2025-26", "2025 26", "2025-2026", "2025 2026", "2025/26"],
+        "2026-27": ["2026-27", "2026 27", "2026-2027", "2026 2027", "2026/27"],
         "uefa": ["uefa", "ucc", "club competitions"],
+        "uefa euro": ["uefa euro", "euro 2024", "euro 24"],
         "premier league": ["premier league", "epl", "english premier league"],
         "value": ["value", "blaster"],
         "jumbo": ["jumbo", "hobby jumbo"],
+        "delight": ["delight", "breaker delight", "breaker's delight", "breakers delight"],
+        "museum": ["museum", "museum collection"],
     }
     if term == "2025-26" and ("premier league" in title or " epl " in f" {title} "):
         return any(normalize(x) in title for x in aliases[term]) or bool(
@@ -52,15 +57,7 @@ def term_matches(term, title):
 
 
 def pack_is_loose_product(title):
-    """Reject loose packs while allowing pack-count wording on a sealed box/tin.
-
-    PASS: "7-Pack Blaster Box", "20 Packs Hobby Box", "Mega Tin".
-    FAIL: "Blaster Pack", "Hobby Pack", "Mega Pack", "Single Pack".
-
-    Accuracy-first rule: when a product title mentions pack(s), it must also name
-    an actual sealed container (box or tin). Bundle/multipack/sticker sale formats
-    are rejected separately by UNTRACKED_PRODUCT_MARKERS.
-    """
+    """Reject loose packs while allowing pack-count wording on a sealed box/tin."""
     t = normalize(title)
     if not re.search(r"\bpacks?\b|multipack|multi pack", t):
         return False
@@ -77,8 +74,19 @@ def reject_term_matches(term, title):
 
 def product_match(product, title):
     t = normalize(title)
-    if any(normalize(marker) in t for marker in UNTRACKED_PRODUCT_MARKERS):
-        return False, "matched a different/untracked product or sale format"
+    expected = normalize(
+        " ".join([
+            product.get("product", ""),
+            product.get("format", ""),
+            *product.get("required_terms", []),
+        ])
+    )
+
+    for marker in DISTINCT_PRODUCT_MARKERS:
+        m = normalize(marker)
+        if m in t and m not in expected:
+            return False, "matched a different/untracked product or sale format"
+
     if not all(term_matches(term, t) for term in product["required_terms"]):
         return False, "missing required product terms"
     if any(reject_term_matches(term, t) for term in product["reject_terms"]):
