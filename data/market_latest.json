@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T07:48:25.536071+00:00",
+  "generated_at": "2026-10-03T11:42:27.585358+00:00",
   "source": "collectaio_public_api",
   "source_docs": "https://www.collectaio.com/developers",
   "products": {
@@ -8115,7 +8115,6 @@
           "root.daily_prices[15].metadata.sold_velocity.sold_median_30d": 301.24
         }
       },
-      "discovered_by_query": "2026-27 Topps Premier League Hobby box",
       "sold_market": {
         "basis": "ebay_sold_aggregate",
         "fmv": 301.24,
