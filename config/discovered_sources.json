@@ -1,73 +1,10 @@
 [
   {
     "product_id": "2023-24-chrome-uefa-hobby",
-    "seller": "Aloha Card Shop",
-    "url": "https://www.alohacardshop.com/products/2023-24-topps-chrome-uefa-womens-hobby-box",
-    "title": "2023-24 Topps Chrome UEFA Women's Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $130.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2023-24-chrome-uefa-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262425",
-    "title": "2023-24 Topps Chrome UEFA Euro 1960 Topps Chrome #60A-DU Destiny Udogie Auto",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $10.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2023-24-chrome-uefa-hobby",
-    "seller": "Hobby Card Shop",
-    "url": "https://www.hobbycardshop.com/products/francesco-camarda-2023-2024-topps-stadium-club-chrome-champions-league-rookie-auto-psa-9-mint",
-    "title": "Francesco Camarda 2023-2024 Topps Stadium Club Chrome Champions League Rookie Auto, PSA 9 Mint",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $80.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2023-24-chrome-uefa-hobby",
     "seller": "Piece Of The Game",
     "url": "https://shoppieceofthegame.com/products/2023-24-topps-uefa-club-competitions-chrome-soccer-hobby-box",
     "discovered": "2026-10-02",
     "evidence": "exact product page; Shopify"
-  },
-  {
-    "product_id": "2023-24-chrome-uefa-hobby",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2023-24-topps-chrome-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2023/24 Topps Chrome UEFA Women's Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $99.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2023-24-chrome-uefa-jumbo",
-    "seller": "Aloha Card Shop",
-    "url": "https://www.alohacardshop.com/products/2023-24-topps-chrome-uefa-womens-hobby-box",
-    "title": "2023-24 Topps Chrome UEFA Women's Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $130.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2023-24-chrome-uefa-jumbo",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262425",
-    "title": "2023-24 Topps Chrome UEFA Euro 1960 Topps Chrome #60A-DU Destiny Udogie Auto",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $10.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2023-24-chrome-uefa-jumbo",
-    "seller": "Hobby Card Shop",
-    "url": "https://www.hobbycardshop.com/products/francesco-camarda-2023-2024-topps-stadium-club-chrome-champions-league-rookie-auto-psa-9-mint",
-    "title": "Francesco Camarda 2023-2024 Topps Stadium Club Chrome Champions League Rookie Auto, PSA 9 Mint",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $80.00",
-    "lead_only": true
   },
   {
     "product_id": "2023-24-chrome-uefa-jumbo",
@@ -85,42 +22,6 @@
     "evidence": "exact product page; collector verified in prior run"
   },
   {
-    "product_id": "2023-24-chrome-uefa-jumbo",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2023-24-topps-chrome-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2023/24 Topps Chrome UEFA Women's Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $99.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2023-24-chrome-uefa-value",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262425",
-    "title": "2023-24 Topps Chrome UEFA Euro 1960 Topps Chrome #60A-DU Destiny Udogie Auto",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $10.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2023-24-chrome-uefa-value",
-    "seller": "Hobby Card Shop",
-    "url": "https://www.hobbycardshop.com/products/francesco-camarda-2023-2024-topps-stadium-club-chrome-champions-league-rookie-auto-psa-9-mint",
-    "title": "Francesco Camarda 2023-2024 Topps Stadium Club Chrome Champions League Rookie Auto, PSA 9 Mint",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $80.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2023-24-chrome-uefa-value",
-    "seller": "Jawbreakers",
-    "url": "https://jawbreakers.cards/products/2023-24-topps-chrome\u00ae-uefa-womens-champions-league-value-box",
-    "title": "2023-24 Topps Chrome\u00ae UEFA Women's Champions League - Value Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $19.99",
-    "lead_only": true
-  },
-  {
     "product_id": "2023-24-chrome-uefa-value",
     "seller": "Piece Of The Game",
     "url": "https://shoppieceofthegame.com/products/2023-24-topps-chrome-uefa-club-competitions-soccer-7-pack-blaster-box",
@@ -128,56 +29,11 @@
     "evidence": "exact product page; Shopify; current stock state can be checked directly"
   },
   {
-    "product_id": "2023-24-finest-uefa-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262438",
-    "title": "2023-24 Topps Finest Road to UEFA EURO 2024 Refractor #41 Oscar Gloukh",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $15.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2023-24-merlin-uefa-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle244152",
-    "title": "2023-24 Topps Chrome Merlin UEFA Club Gold Atomic #117 Nico Paz RC /50 PSA 9",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $320.00",
-    "lead_only": true
-  },
-  {
     "product_id": "2023-24-merlin-uefa-hobby",
     "seller": "LA Sports Cards",
     "url": "https://lasportscards.com/products/2023-24-topps-uefa-club-competitions-merlin-chrome-soccer-hobby-box",
     "discovered": "2026-10-02",
     "evidence": "exact product page; physical California card shop; Shopify"
-  },
-  {
-    "product_id": "2023-24-stadium-club-chrome-uefa-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle191198",
-    "title": "2023-24 Topps Stadium Club Chrome UEFA Beam Team #BT-XS Xavi Simons",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $12.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2023-24-stadium-club-chrome-uefa-hobby",
-    "seller": "Hobby Card Shop",
-    "url": "https://www.hobbycardshop.com/products/francesco-camarda-2023-2024-topps-stadium-club-chrome-champions-league-rookie-auto-psa-9-mint",
-    "title": "Francesco Camarda 2023-2024 Topps Stadium Club Chrome Champions League Rookie Auto, PSA 9 Mint",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $80.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2023-24-uefa-flagship-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262308",
-    "title": "2023-24 Topps Carnaval UEFA Club Competitions Gustav Isaksen RC #5 Gold 1/1",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $65.00",
-    "lead_only": true
   },
   {
     "product_id": "2023-24-uefa-flagship-hobby",
@@ -192,16 +48,7 @@
     "url": "https://buysoccercardsonline.com/products/2023-24-topps-superstars-uefa-champions-league-cards-hanger-box",
     "title": "2023-24 TOPPS SUPERSTARS UEFA CHAMPIONS LEAGUE CARDS - 4-PACK HANGER BOX (32 CARDS + 2 MYSTIC PARALLELS)",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $26.95",
-    "lead_only": true
-  },
-  {
-    "product_id": "2023-24-uefa-flagship-value",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262308",
-    "title": "2023-24 Topps Carnaval UEFA Club Competitions Gustav Isaksen RC #5 Gold 1/1",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $65.00",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $26.95",
     "lead_only": true
   },
   {
@@ -210,7 +57,7 @@
     "url": "https://buysoccercardsonline.com/products/2023-24-topps-superstars-uefa-champions-league-cards-hanger-box",
     "title": "2023-24 TOPPS SUPERSTARS UEFA CHAMPIONS LEAGUE CARDS - 4-PACK HANGER BOX (32 CARDS + 2 MYSTIC PARALLELS)",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $26.95",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $26.95",
     "lead_only": true
   },
   {
@@ -219,15 +66,6 @@
     "url": "https://burbankcards.com/products/2024-25-topps-uefa-club-competitions-chrome-soccer-hobby-box",
     "discovered": "2026-10-02",
     "evidence": "exact product page; established physical card shop; Shopify"
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262290",
-    "title": "2024-25 Topps Chrome UEFA Club Competitions Blue Lava #76 Christian Pulisic /150",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $10.00",
-    "lead_only": true
   },
   {
     "product_id": "2024-25-chrome-uefa-hobby",
@@ -245,90 +83,10 @@
   },
   {
     "product_id": "2024-25-chrome-uefa-hobby",
-    "seller": "Monmouth Sports Cards",
-    "url": "https://monmouthcards.com/products/2024-25-topps-uefa-womens-champions-league-chrome-soccer-hobby-box",
-    "title": "2024-25 Topps Chrome UEFA Women's Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $84.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-hobby",
     "seller": "Skybox Collectibles",
     "url": "https://skyboxct.com/products/2024-25-topps-chrome-uefa-club-competitions-soccer-hobby-box-pre-order",
     "discovered": "2026-10-02",
     "evidence": "exact product page; add-to-cart observed"
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-hobby",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2024-25-topps-chrome-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2024/25 Topps Chrome UEFA Womens Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $77.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-hobby",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2024-25-topps-chrome-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2024/25 Topps Chrome UEFA Women's C.L. Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $95.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-jumbo",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262290",
-    "title": "2024-25 Topps Chrome UEFA Club Competitions Blue Lava #76 Christian Pulisic /150",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $10.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-jumbo",
-    "seller": "Monmouth Sports Cards",
-    "url": "https://monmouthcards.com/products/2024-25-topps-uefa-womens-champions-league-chrome-soccer-hobby-box",
-    "title": "2024-25 Topps Chrome UEFA Women's Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $84.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-jumbo",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2024-25-topps-chrome-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2024/25 Topps Chrome UEFA Womens Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $77.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-jumbo",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2024-25-topps-chrome-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2024/25 Topps Chrome UEFA Women's C.L. Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $95.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-sapphire",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262295",
-    "title": "2024-25 Topps UEFA Chrome Sapphire Rose Gold Mayra Ramirez Auto /50",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $15.00"
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-sapphire",
-    "seller": "Giant Sports Cards",
-    "url": "https://giantsportscards.com/products/2024-25-topps-chrome-sapphire-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2024/25 Topps Chrome Sapphire UEFA Women's Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $164.95",
-    "lead_only": true
   },
   {
     "product_id": "2024-25-chrome-uefa-sapphire",
@@ -337,24 +95,6 @@
     "title": "2024-25 Topps UEFA Club Competitions Chrome Soccer Sapphire Edition Box",
     "discovered": "2026-10-03",
     "evidence": "auto-discovered from live retailer catalog; catalog price $900.00"
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-sapphire",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2024-25-topps-chrome-sapphire-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2024/25 Topps Chrome Sapphire UEFA Womens Champions League Soccer Hobby Box (SALE)",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $160.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-value",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262290",
-    "title": "2024-25 Topps Chrome UEFA Club Competitions Blue Lava #76 Christian Pulisic /150",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $10.00",
-    "lead_only": true
   },
   {
     "product_id": "2024-25-chrome-uefa-value",
@@ -373,46 +113,10 @@
   },
   {
     "product_id": "2024-25-chrome-uefa-value",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2024-25-topps-chrome-uefa-womens-champions-league-soccer-blaster-box-pre-order",
-    "title": "2024/25 Topps Chrome UEFA Womens Champions League Soccer Blaster Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $15.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-value",
     "seller": "Sweets and Geeks",
     "url": "https://www.sweetsandgeeks.com/products/2024-25-topps-chrome-uefa-club-competitions-soccer-blaster-box",
     "discovered": "2026-10-02",
     "evidence": "exact product page; $29.99 listing observed in web search"
-  },
-  {
-    "product_id": "2024-25-chrome-uefa-value",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2024-25-topps-chrome-uefa-christian-pulisic-gold-refractor-50-ac-milan",
-    "title": "2024-25 Topps Chrome UEFA Christian Pulisic Gold Refractor /50 AC Milan",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $49.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-finest-uefa-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle252721",
-    "title": "2024-25 Finest UEFA Club Competitions Green Wave #BA-EN Endrick Auto /99 PSA 9",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $320.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-inception-uefa-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle228773",
-    "title": "2024-25 Topps Inception UEFA Club Competitions Orange #79 Warren Zaire-Emery /5",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $95.00",
-    "lead_only": true
   },
   {
     "product_id": "2024-25-merlin-uefa-delight",
@@ -436,14 +140,6 @@
     "title": "2024-25 topps chrome Merlin UEFA Club Competitions Hobby Box",
     "discovered": "2026-10-03",
     "evidence": "auto-discovered from live retailer catalog; catalog price $275.00"
-  },
-  {
-    "product_id": "2024-25-merlin-uefa-hobby",
-    "seller": "Giant Sports Cards",
-    "url": "https://giantsportscards.com/products/2024-25-topps-chrome-merlin-uefa-club-competitions-soccer-hobby-box",
-    "title": "2024/25 Topps Chrome Merlin UEFA Club Competitions Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $249.95"
   },
   {
     "product_id": "2024-25-merlin-uefa-hobby",
@@ -471,72 +167,11 @@
   },
   {
     "product_id": "2024-25-merlin-uefa-value",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2024-25-topps-uefa-club-competitions-merlin-chrome-soccer-blaster-box-pre-order",
-    "title": "2024/25 Topps UEFA Club Competitions Merlin Chrome Soccer Blaster Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $39.00"
-  },
-  {
-    "product_id": "2024-25-merlin-uefa-value",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2024-25-topps-chrome-merlin-uefa-club-competitions-cards-blaster-box",
     "title": "2024-25 TOPPS CHROME MERLIN UEFA CLUB COMPETITIONS CARDS - 7-PACK BLASTER BOX (28 CARDS)",
     "discovered": "2026-10-03",
     "evidence": "auto-discovered from live retailer catalog; catalog price $44.95"
-  },
-  {
-    "product_id": "2024-25-merlin-uefa-value",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2024-25-topps-chrome-merlin-uefa-club-competitions-soccer-7-pack-blaster-box",
-    "title": "2024/25 Topps Chrome Merlin UEFA Club Competitions Soccer Blaster Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $35.00"
-  },
-  {
-    "product_id": "2024-25-uefa-flagship-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262470",
-    "title": "2024-25 Topps UEFA Club Competitions Gold Foilboard #48 Rodrygo /50",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $10.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-uefa-flagship-hobby",
-    "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2024-25-topps-match-attax-uefa-champions-league-cards-mini-tin",
-    "title": "2024-25 TOPPS MATCH ATTAX UEFA CHAMPIONS LEAGUE CARDS - MINI TIN (28 CARDS + 3 LE)",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $31.95",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-uefa-flagship-value",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262470",
-    "title": "2024-25 Topps UEFA Club Competitions Gold Foilboard #48 Rodrygo /50",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $10.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-25-uefa-flagship-value",
-    "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2024-25-topps-match-attax-extra-champions-league-cards-eco-blaster",
-    "title": "2024-25 TOPPS MATCH ATTAX UEFA CHAMPIONS LEAGUE CARDS \u2013 ECO BLASTER (39 CARDS + 3 LE)",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $24.96",
-    "lead_only": true
-  },
-  {
-    "product_id": "2024-chrome-uefa-euro-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle239950",
-    "title": "2024 Topps Chrome UEFA Euro Team Logo Crest #T-3 Romania /24 SSP",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $100.00",
-    "lead_only": true
   },
   {
     "product_id": "2025-26-chrome-premier-league-hobby",
@@ -555,38 +190,11 @@
   },
   {
     "product_id": "2025-26-chrome-premier-league-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262407",
-    "title": "2026 Topps Chrome Premier League RayWave Refractor #68 Estevao Willian RC",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $10.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-hobby",
     "seller": "Hobby Card Shop",
     "url": "https://www.hobbycardshop.com/products/2026-topps-chrome-english-premier-league-soccer-hobby-box",
     "title": "2026 Topps Chrome English Premier League Soccer Hobby Box",
     "discovered": "2026-10-03",
     "evidence": "auto-discovered from live retailer catalog; catalog price $449.99"
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-hobby",
-    "seller": "Hobby Card Shop",
-    "url": "https://www.hobbycardshop.com/products/robert-pires-2026-topps-chrome-premier-league-gold-wave-refractor-auto-27-50",
-    "title": "Robert Pires 2026 Topps Chrome Premier League Gold Wave Refractor Auto, 27/50",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $60.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-hobby",
-    "seller": "LA Sports Cards",
-    "url": "https://lasportscards.com/products/2026-topps-chrome-premier-league-pack",
-    "title": "2026 Topps Chrome Premier League Soccer Pack",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $5.00",
-    "lead_only": true
   },
   {
     "product_id": "2025-26-chrome-premier-league-hobby",
@@ -598,78 +206,12 @@
   },
   {
     "product_id": "2025-26-chrome-premier-league-hobby",
-    "seller": "Monmouth Sports Cards",
-    "url": "https://monmouthcards.com/products/2026-topps-chrome-premier-league-ca-ct-carlos-tevez-purple-auto-75",
-    "title": "2026 Topps Chrome Premier League Legend Carlos Tevez Auto #CA-CT /75",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $79.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-hobby",
     "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-premier-league-cards-15-card-pack",
-    "title": "2025-26 TOPPS CHROME PREMIER LEAGUE CARDS \u2013 15 CARD PACK",
+    "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-premier-league-cards-hanger-box",
+    "title": "2025-26 TOPPS CHROME PREMIER LEAGUE CARDS \u2013 HANGER BOX (15 CARDS)",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $29.95",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $29.95",
     "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-hobby",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2026-topps-chrome-premier-league-nikola-milenkovic-auto-autograph-blue-refractor-150",
-    "title": "2026 Topps Chrome Premier League Nikola Milenkovic Auto Autograph Blue Refractor /150",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $19.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-sapphire",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle242264",
-    "title": "2026 Topps Chrome Sapphire Premier League Gold Refractor #127 Rodri /50",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $15.00"
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-sapphire",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle244741",
-    "title": "2026 Topps Chrome Sapphire Premier League Selections #SS-9 Clint Dempsey",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $20.00"
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-sapphire",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle259624",
-    "title": "2026 Topps Chrome Sapphire Premier League Gold Refractor #93 Raul Jimenez /50",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $12.00"
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-sapphire",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle259632",
-    "title": "2026 Topps Chrome Sapphire Premier League Sapphire #CA-BM Bryan Mbeumo Auto",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $70.00"
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-sapphire",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle259661",
-    "title": "2026 Topps Chrome Sapphire Premier League Sapphire Purple #GP Gus Poyet Auto /15",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $45.00"
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-sapphire",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle259680",
-    "title": "2026 Topps Chrome Sapphire Premier League Gold Refractor #45 Kaoru Mitoma /50",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $12.00"
   },
   {
     "product_id": "2025-26-chrome-premier-league-tin",
@@ -689,33 +231,6 @@
   },
   {
     "product_id": "2025-26-chrome-premier-league-value",
-    "seller": "Aloha Card Shop",
-    "url": "https://www.alohacardshop.com/products/2026-topps-chrome-premier-league-epl-soccer-blaster-pack",
-    "title": "2026 Topps Chrome Premier League EPL Soccer Blaster Pack",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $5.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-value",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262407",
-    "title": "2026 Topps Chrome Premier League RayWave Refractor #68 Estevao Willian RC",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $10.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-value",
-    "seller": "Hobby Card Shop",
-    "url": "https://www.hobbycardshop.com/products/robert-pires-2026-topps-chrome-premier-league-gold-wave-refractor-auto-27-50",
-    "title": "Robert Pires 2026 Topps Chrome Premier League Gold Wave Refractor Auto, 27/50",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $60.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-value",
     "seller": "Jawbreakers",
     "url": "https://jawbreakers.cards/products/2026-topps-chrome-premier-league-soccer-blaster-box",
     "title": "2026 Topps Chrome Premier League Soccer Blaster Box",
@@ -724,37 +239,11 @@
   },
   {
     "product_id": "2025-26-chrome-premier-league-value",
-    "seller": "LA Sports Cards",
-    "url": "https://lasportscards.com/products/2026-topps-chrome-premier-league-pack",
-    "title": "2026 Topps Chrome Premier League Soccer Pack",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $5.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-value",
-    "seller": "Monmouth Sports Cards",
-    "url": "https://monmouthcards.com/products/2026-topps-chrome-premier-league-ca-ct-carlos-tevez-purple-auto-75",
-    "title": "2026 Topps Chrome Premier League Legend Carlos Tevez Auto #CA-CT /75",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $79.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-value",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2025-26-topps-chrome-english-premier-league-soccer-blaster-box",
-    "title": "2025/26 Topps Chrome English Premier League Soccer Blaster Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $37.00"
-  },
-  {
-    "product_id": "2025-26-chrome-premier-league-value",
     "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-premier-league-cards-15-card-pack",
-    "title": "2025-26 TOPPS CHROME PREMIER LEAGUE CARDS \u2013 15 CARD PACK",
+    "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-premier-league-cards-hanger-box",
+    "title": "2025-26 TOPPS CHROME PREMIER LEAGUE CARDS \u2013 HANGER BOX (15 CARDS)",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $29.95",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $29.95",
     "lead_only": true
   },
   {
@@ -766,74 +255,12 @@
     "evidence": "auto-discovered from live retailer catalog; catalog price $54.95"
   },
   {
-    "product_id": "2025-26-chrome-premier-league-value",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2026-topps-chrome-premier-league-nikola-milenkovic-auto-autograph-blue-refractor-150",
-    "title": "2026 Topps Chrome Premier League Nikola Milenkovic Auto Autograph Blue Refractor /150",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $19.99",
-    "lead_only": true
-  },
-  {
     "product_id": "2025-26-chrome-uefa-hobby",
     "seller": "Aloha Card Shop",
     "url": "https://www.alohacardshop.com/products/2025-26-topps-uefa-club-competitions-chrome-soccer-hobby-box",
     "title": "2025-26 Topps UEFA Club Competitions Chrome Soccer Hobby Box",
     "discovered": "2026-10-03",
     "evidence": "auto-discovered from live retailer catalog; catalog price $399.99"
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-hobby",
-    "seller": "Aloha Card Shop",
-    "url": "https://www.alohacardshop.com/products/topps-chrome-2025-26-womens-uefa-champions-league-soccer-hobby-box",
-    "title": "Topps Chrome 2025-26 Women's UEFA Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $110.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262422",
-    "title": "2025-26 Topps Chrome UEFA Club Competitions Blue Refractor #111 Dro RC /150",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $12.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-hobby",
-    "seller": "Giant Sports Cards",
-    "url": "https://giantsportscards.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-hobby-box",
-    "title": "2025/26 Topps Chrome UEFA Club Competitions Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $349.95"
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-hobby",
-    "seller": "Hobby Card Shop",
-    "url": "https://www.hobbycardshop.com/products/2025-2026-topps-chrome-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2025-2026 Topps Chrome UEFA Womens Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $99.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-hobby",
-    "seller": "Jawbreakers",
-    "url": "https://jawbreakers.cards/products/2025-26-topps-chrome-womens-champions-league-soccer-hobby-box",
-    "title": "2025-26 Topps Chrome Women's Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $89.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-hobby",
-    "seller": "Monmouth Sports Cards",
-    "url": "https://monmouthcards.com/products/2025-26-topps-chrome-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2025-26 Topps Chrome UEFA Women's Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $99.99",
-    "lead_only": true
   },
   {
     "product_id": "2025-26-chrome-uefa-hobby",
@@ -844,91 +271,11 @@
   },
   {
     "product_id": "2025-26-chrome-uefa-hobby",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2025-26-topps-chrome-women-x27-s-uefa-champions-league-soccer-hobby-box",
-    "title": "2025/26 Topps Chrome Women&#x27;s UEFA Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $131.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-hobby",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-uefa-club-competitions-cards-hanger-box",
     "title": "2025-26 TOPPS CHROME UEFA CLUB COMPETITIONS CARDS - HANGER BOX (15 CARDS) (LIMIT OF 6 PER CUSTOMER)",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $34.95",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-hobby",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-hobby-box",
-    "title": "2025/26 Topps Chrome UEFA Club Competitions Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $369.00"
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-hobby",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-chrome-uefa-fernando-torres-ultra-violet-all-stars",
-    "title": "2025-26 Topps Chrome UEFA Fernando Torres Ultra Violet All-Stars",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $89.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-jumbo",
-    "seller": "Aloha Card Shop",
-    "url": "https://www.alohacardshop.com/products/topps-chrome-2025-26-womens-uefa-champions-league-soccer-hobby-box",
-    "title": "Topps Chrome 2025-26 Women's UEFA Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $110.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-jumbo",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262422",
-    "title": "2025-26 Topps Chrome UEFA Club Competitions Blue Refractor #111 Dro RC /150",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $12.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-jumbo",
-    "seller": "Hobby Card Shop",
-    "url": "https://www.hobbycardshop.com/products/2025-2026-topps-chrome-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2025-2026 Topps Chrome UEFA Womens Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $99.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-jumbo",
-    "seller": "Jawbreakers",
-    "url": "https://jawbreakers.cards/products/2025-26-topps-chrome-womens-champions-league-soccer-hobby-box",
-    "title": "2025-26 Topps Chrome Women's Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $89.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-jumbo",
-    "seller": "Monmouth Sports Cards",
-    "url": "https://monmouthcards.com/products/2025-26-topps-chrome-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2025-26 Topps Chrome UEFA Women's Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $99.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-jumbo",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2025-26-topps-chrome-women-x27-s-uefa-champions-league-soccer-hobby-box",
-    "title": "2025/26 Topps Chrome Women&#x27;s UEFA Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $131.00",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $34.95",
     "lead_only": true
   },
   {
@@ -937,16 +284,7 @@
     "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-uefa-club-competitions-cards-hanger-box",
     "title": "2025-26 TOPPS CHROME UEFA CLUB COMPETITIONS CARDS - HANGER BOX (15 CARDS) (LIMIT OF 6 PER CUSTOMER)",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $34.95",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-jumbo",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-chrome-uefa-fernando-torres-ultra-violet-all-stars",
-    "title": "2025-26 Topps Chrome UEFA Fernando Torres Ultra Violet All-Stars",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $89.99",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $34.95",
     "lead_only": true
   },
   {
@@ -959,134 +297,11 @@
   },
   {
     "product_id": "2025-26-chrome-uefa-mega",
-    "seller": "Aloha Card Shop",
-    "url": "https://www.alohacardshop.com/products/topps-chrome-2025-26-womens-uefa-champions-league-soccer-hobby-box",
-    "title": "Topps Chrome 2025-26 Women's UEFA Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $110.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-mega",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262422",
-    "title": "2025-26 Topps Chrome UEFA Club Competitions Blue Refractor #111 Dro RC /150",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $12.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-mega",
-    "seller": "Giant Sports Cards",
-    "url": "https://giantsportscards.com/products/2025-26-topps-chrome-womens-sapphire-uefa-champions-league-soccer-hobby-box",
-    "title": "2025/26 Topps Chrome Women's Sapphire UEFA Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $139.95",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-mega",
-    "seller": "Hobby Card Shop",
-    "url": "https://www.hobbycardshop.com/products/2025-2026-topps-chrome-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2025-2026 Topps Chrome UEFA Womens Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $99.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-mega",
-    "seller": "Jawbreakers",
-    "url": "https://jawbreakers.cards/products/2025-26-topps-chrome-womens-champions-league-soccer-hobby-box",
-    "title": "2025-26 Topps Chrome Women's Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $89.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-mega",
-    "seller": "LA Sports Cards",
-    "url": "https://lasportscards.com/products/2025-26-topps-chrome-uefa-blaster-pack",
-    "title": "2025-26 Topps Chrome UEFA Blaster Pack",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $8.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-mega",
-    "seller": "Monmouth Sports Cards",
-    "url": "https://monmouthcards.com/products/2025-26-topps-chrome-uefa-womens-champions-league-soccer-hobby-box",
-    "title": "2025-26 Topps Chrome UEFA Women's Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $99.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-mega",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2025-26-topps-chrome-women-x27-s-uefa-champions-league-soccer-hobby-box",
-    "title": "2025/26 Topps Chrome Women&#x27;s UEFA Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $131.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-mega",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-uefa-club-competitions-cards-hanger-box",
     "title": "2025-26 TOPPS CHROME UEFA CLUB COMPETITIONS CARDS - HANGER BOX (15 CARDS) (LIMIT OF 6 PER CUSTOMER)",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $34.95",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-mega",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-chrome-uefa-fernando-torres-ultra-violet-all-stars",
-    "title": "2025-26 Topps Chrome UEFA Fernando Torres Ultra Violet All-Stars",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $89.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-sapphire",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle259628",
-    "title": "2025-26 Topps Chrome UEFA Club Competitions Sapphire #191 Rio Ngumoha RC",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $15.00"
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-sapphire",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle259629",
-    "title": "2025-26 Topps Chrome UEFA Club Competitions Sapphire #187 Lennart Karl RC",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $15.00"
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-sapphire",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle259693",
-    "title": "2025-26 Topps Chrome UEFA Club Competitions Sapphire #66 Estevao Willian RC",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $35.00"
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-sapphire",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262369",
-    "title": "2025-26 Topps Chrome UEFA Women Sapphire Green Sapphire #42 Sophie Proost RC /99",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $10.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-sapphire",
-    "seller": "Giant Sports Cards",
-    "url": "https://giantsportscards.com/products/2025-26-topps-chrome-womens-sapphire-uefa-champions-league-soccer-hobby-box",
-    "title": "2025/26 Topps Chrome Women's Sapphire UEFA Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $139.95",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $34.95",
     "lead_only": true
   },
   {
@@ -1106,33 +321,6 @@
   },
   {
     "product_id": "2025-26-chrome-uefa-value",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262422",
-    "title": "2025-26 Topps Chrome UEFA Club Competitions Blue Refractor #111 Dro RC /150",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $12.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-value",
-    "seller": "Jawbreakers",
-    "url": "https://jawbreakers.cards/products/2025-26-topps-chrome-uefa-womens-champions-league-value-box",
-    "title": "2025-26 Topps Chrome UEFA Women's Champions League Value Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $29.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-value",
-    "seller": "LA Sports Cards",
-    "url": "https://lasportscards.com/products/2025-26-topps-chrome-uefa-blaster-pack",
-    "title": "2025-26 Topps Chrome UEFA Blaster Pack",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $8.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-value",
     "seller": "Monmouth Sports Cards",
     "url": "https://monmouthcards.com/products/2025-26-topps-uefa-club-competitions-chrome-soccer-blaster-box",
     "discovered": "2026-10-02",
@@ -1140,36 +328,11 @@
   },
   {
     "product_id": "2025-26-chrome-uefa-value",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-blaster-box",
-    "title": "2025/26 Topps Chrome UEFA Club Competitions Soccer Blaster Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $47.00"
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-value",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-uefa-club-competitions-cards-hanger-box",
     "title": "2025-26 TOPPS CHROME UEFA CLUB COMPETITIONS CARDS - HANGER BOX (15 CARDS) (LIMIT OF 6 PER CUSTOMER)",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $34.95",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-value",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-blaster-box",
-    "title": "2025/26 Topps Chrome UEFA Club Competitions Soccer Blaster Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $45.00"
-  },
-  {
-    "product_id": "2025-26-chrome-uefa-value",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-chrome-uefa-fernando-torres-ultra-violet-all-stars",
-    "title": "2025-26 Topps Chrome UEFA Fernando Torres Ultra Violet All-Stars",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $89.99",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $34.95",
     "lead_only": true
   },
   {
@@ -1182,32 +345,6 @@
   },
   {
     "product_id": "2025-26-finest-uefa-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle259733",
-    "title": "2025-26 Topps Finest UEFA Club Competition X-Fractor #157 Khvicha Kvaratskhelia",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $25.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-finest-uefa-hobby",
-    "seller": "Giant Sports Cards",
-    "url": "https://giantsportscards.com/products/2025-26-topps-uefa-club-competitions-finest-soccer-hobby-box",
-    "title": "2025/26 Topps UEFA Club Competitions Finest Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $474.95"
-  },
-  {
-    "product_id": "2025-26-finest-uefa-hobby",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-finest-uefa-olivier-giroud-auto-autograph-yellow-refractor-250-lille",
-    "title": "2025-26 Topps Finest UEFA Olivier Giroud Auto Autograph Yellow Refractor /250 Lille",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $39.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-finest-uefa-hobby",
     "seller": "VSM Sports Card Outlet",
     "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-uefa-club-competitions-finest-soccer-hobby-box",
     "title": "2025-26 Topps UEFA Club Competitions Finest Soccer Hobby Box",
@@ -1216,28 +353,11 @@
   },
   {
     "product_id": "2025-26-inception-uefa-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262326",
-    "title": "2025-26 Topps Inception UEFA Club Competitions Foil #9 Desire Doue /199",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $20.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-inception-uefa-hobby",
     "seller": "LA Sports Cards",
     "url": "https://lasportscards.com/products/2025-26-topps-inception-uefa-club-competitions-soccer-hobby-box",
     "title": "2025-26 Topps Inception UEFA Club Competitions Soccer Hobby Box",
     "discovered": "2026-10-03",
     "evidence": "auto-discovered from live retailer catalog; catalog price $600.00"
-  },
-  {
-    "product_id": "2025-26-inception-uefa-hobby",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2025-26-topps-inception-uefa-club-competitions-soccer-hobby-box",
-    "title": "2025/26 Topps Inception UEFA Club Competitions Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $604.00"
   },
   {
     "product_id": "2025-26-merlin-premier-league-hobby",
@@ -1263,27 +383,10 @@
   },
   {
     "product_id": "2025-26-merlin-premier-league-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262289",
-    "title": "2026 Topps Merlin Premier League Orange Mojo Refractor #159 Chris Wood /25",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $10.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-merlin-premier-league-hobby",
     "seller": "Collect Binghamton",
     "url": "https://www.collectbinghamton.com/products/2025-26-topps-merlin-premier-league-soccer-hobby-box",
     "discovered": "2026-10-02",
     "evidence": "exact product page; add-to-cart observed; $229.94"
-  },
-  {
-    "product_id": "2025-26-merlin-premier-league-hobby",
-    "seller": "LA Sports Cards",
-    "url": "https://lasportscards.com/products/2025-26-topps-merlin-premier-league-epl-soccer-hobby-box",
-    "title": "2025/26 Topps Merlin Premier League EPL Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $230.00"
   },
   {
     "product_id": "2025-26-merlin-premier-league-hobby",
@@ -1309,23 +412,6 @@
   },
   {
     "product_id": "2025-26-merlin-premier-league-hobby",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2025-26-topps-merlin-english-premier-league-soccer-hobby-box",
-    "title": "2025/26 Topps Merlin English Premier League Soccer Hobby Box (SALE)",
-    "discovered": "2026-10-02",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $215.00"
-  },
-  {
-    "product_id": "2025-26-merlin-premier-league-hobby",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2026-topps-merlin-premier-league-rafael-van-der-vaart-auto-autograph-enchanted-gold-50",
-    "title": "2026 Topps Merlin Premier League Rafael Van Der Vaart Auto Autograph Enchanted Gold /50",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $74.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-merlin-premier-league-hobby",
     "seller": "World Champion Sports Cards",
     "url": "https://www.worldchampionsportscards.org/products/2025-26-topps-merlin-premier-league-epl-soccer-hobby-box",
     "discovered": "2026-10-02",
@@ -1338,15 +424,6 @@
     "title": "Topps Merlin 2025-26 English Premier League Soccer Blaster Box",
     "discovered": "2026-10-03",
     "evidence": "auto-discovered from live retailer catalog; catalog price $40.00"
-  },
-  {
-    "product_id": "2025-26-merlin-premier-league-value",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262289",
-    "title": "2026 Topps Merlin Premier League Orange Mojo Refractor #159 Chris Wood /25",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $10.00",
-    "lead_only": true
   },
   {
     "product_id": "2025-26-merlin-premier-league-value",
@@ -1366,14 +443,6 @@
   },
   {
     "product_id": "2025-26-merlin-premier-league-value",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2025-26-topps-merlin-english-premier-league-soccer-blaster-box",
-    "title": "2025/26 Topps Merlin English Premier League Soccer Blaster Box (SALE)",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $35.00"
-  },
-  {
-    "product_id": "2025-26-merlin-premier-league-value",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2026-topps-merlin-premier-league-cards-value-blaster-box",
     "title": "2026 TOPPS MERLIN PREMIER LEAGUE CARDS \u2013 VALUE BLASTER BOX (28 CARDS)",
@@ -1381,118 +450,30 @@
     "evidence": "auto-discovered from live retailer catalog; catalog price $54.95"
   },
   {
-    "product_id": "2025-26-merlin-premier-league-value",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2026-topps-merlin-premier-league-rafael-van-der-vaart-auto-autograph-enchanted-gold-50",
-    "title": "2026 Topps Merlin Premier League Rafael Van Der Vaart Auto Autograph Enchanted Gold /50",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $74.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-museum-uefa-hobby",
-    "seller": "Giant Sports Cards",
-    "url": "https://giantsportscards.com/products/2025-26-topps-uefa-club-competitions-museum-collection-soccer-hobby-box",
-    "title": "2025/26 Topps UEFA Club Competitions Museum Collection Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $699.95"
-  },
-  {
     "product_id": "2025-26-museum-uefa-hobby",
     "seller": "Hobby Card Shop",
     "url": "https://www.hobbycardshop.com/products/2025-2026-uefa-club-competitions-museum-collection-soccer-hobby-box",
     "title": "2025-2026 UEFA Club Competitions Museum Collection Soccer Hobby Box",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $799.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-museum-uefa-hobby",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2025-26-topps-uefa-club-competitions-museum-collection-soccer-hobby-box",
-    "title": "2025/26 Topps UEFA Club Competitions Museum Collection Soccer Hobby Box (SALE)",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $700.00"
-  },
-  {
-    "product_id": "2025-26-premier-league-flagship-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle259704",
-    "title": "2025-26 Topps Premier League Gold Rainbow Foil #210 Alejandro Garnacho /50",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $12.00",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $799.99",
     "lead_only": true
   },
   {
     "product_id": "2025-26-premier-league-flagship-hobby",
-    "seller": "Hobby Card Shop",
-    "url": "https://www.hobbycardshop.com/products/mikel-merino-2025-2026-topps-premier-league-variation-auto-orange-12-25",
-    "title": "Mikel Merino 2025-2026 Topps Premier League Variation Auto Orange, 12/25",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $80.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-premier-league-flagship-hobby",
-    "seller": "LA Sports Cards",
-    "url": "https://lasportscards.com/products/2026-topps-premier-league-debut-edition-soccer-tin-pack",
-    "title": "2026 Topps Premier League Debut Edition Soccer Tin Pack",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $4.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-premier-league-flagship-hobby",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2025-26-topps-pristine-epl-soccer-hobby-box-pre-order",
-    "title": "2025/26 Topps Pristine EPL Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $1050.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-premier-league-flagship-hobby",
-    "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2025-26-topps-premier-league-debut-edition-cards-8-pack-set",
-    "title": "2025-26 TOPPS PREMIER LEAGUE DEBUT EDITION CARDS - 8-PACK SET (80 CARDS)",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $29.95",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-premier-league-flagship-mega",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle168837",
-    "title": "2025-26 Topps Premier League Red Rainbow Foil #48 Justin Kluivert /5",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $54.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-premier-league-flagship-mega",
     "seller": "Hobby Card Shop",
     "url": "https://www.hobbycardshop.com/products/2026-topps-epl-golden-boot-soccer-tin",
     "title": "2026 Topps EPL Golden Boot Soccer Tin",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $59.99",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $59.99",
     "lead_only": true
   },
   {
-    "product_id": "2025-26-premier-league-flagship-mega",
+    "product_id": "2025-26-premier-league-flagship-hobby",
     "seller": "LA Sports Cards",
     "url": "https://lasportscards.com/products/2026-topps-premier-league-debut-edition-soccer-tin-pack",
     "title": "2026 Topps Premier League Debut Edition Soccer Tin Pack",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $4.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-premier-league-flagship-mega",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2025-26-topps-pristine-epl-soccer-hobby-box-pre-order",
-    "title": "2025/26 Topps Pristine EPL Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $1050.00",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $4.00",
     "lead_only": true
   },
   {
@@ -1508,7 +489,7 @@
     "url": "https://www.alohacardshop.com/products/topps-uefa-club-competitions-2025-26-soccer-hanger-box",
     "title": "Topps UEFA Club Competitions 2025-26 Soccer Hanger Box",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $15.00",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $15.00",
     "lead_only": true
   },
   {
@@ -1521,29 +502,11 @@
   },
   {
     "product_id": "2025-26-uefa-flagship-hobby",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262451",
-    "title": "2025-26 Topps UEFA Club Competitions Autograph #BA-NW Nico Williams Auto",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $15.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-uefa-flagship-hobby",
-    "seller": "Giant Sports Cards",
-    "url": "https://giantsportscards.com/products/2025-26-topps-knockout-uefa-champions-league-soccer-hobby-box",
-    "title": "2025/26 Topps Knockout UEFA Champions League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $249.95",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-uefa-flagship-hobby",
     "seller": "Jawbreakers",
     "url": "https://jawbreakers.cards/products/2025-2026-uefa-champions-league-flagship-soccer-easter-tin",
     "title": "2025-2026 UEFA Champions League Flagship Soccer Easter Tin",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $14.99",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $14.99",
     "lead_only": true
   },
   {
@@ -1552,7 +515,7 @@
     "url": "https://lasportscards.com/products/2025-26-topps-uefa-club-competitions-soccer-hanger-box",
     "title": "2025-26 Topps UEFA Club Competitions Soccer Hanger Box",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $15.00",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $15.00",
     "lead_only": true
   },
   {
@@ -1561,25 +524,16 @@
     "url": "https://monmouthcards.com/products/2025-26-topps-uefa-club-competitions-soccer-hanger-box",
     "title": "2025-26 Topps UEFA Club Competitions Soccer Hanger Box",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $19.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-uefa-flagship-hobby",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2025-26-topps-uefa-club-competitions-soccer-tin",
-    "title": "2025/26 Topps UEFA Club Competitions Soccer Tin",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $18.00",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $19.99",
     "lead_only": true
   },
   {
     "product_id": "2025-26-uefa-flagship-hobby",
     "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2025-26-topps-match-attax-extra-uefa-champions-league-cards-8-pack-set",
-    "title": "2025-26 TOPPS MATCH ATTAX EXTRA UEFA CHAMPIONS LEAGUE CARDS - 8-PACK SET (96 CARDS)",
+    "url": "https://buysoccercardsonline.com/products/2025-26-topps-uefa-club-competitions-flagship-cards-hanger-box",
+    "title": "2025-26 TOPPS UEFA CLUB COMPETITIONS FLAGSHIP CARDS - HANGER BOX (35 CARDS)",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $27.71",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $26.95",
     "lead_only": true
   },
   {
@@ -1588,7 +542,7 @@
     "url": "https://www.vsmsportscardoutlet.com/products/2025-26-toppsuefa-club-competitions-spring-tin",
     "title": "2025-26 ToppsUEFA Club Competitions Spring Tin",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $19.00",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $19.00",
     "lead_only": true
   },
   {
@@ -1605,16 +559,7 @@
     "url": "https://www.alohacardshop.com/products/topps-uefa-club-competitions-2025-26-soccer-hanger-box",
     "title": "Topps UEFA Club Competitions 2025-26 Soccer Hanger Box",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $15.00",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-uefa-flagship-value",
-    "seller": "Burbank Sportscards",
-    "url": "https://burbankcards.com/products/handle262451",
-    "title": "2025-26 Topps UEFA Club Competitions Autograph #BA-NW Nico Williams Auto",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $15.00",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $15.00",
     "lead_only": true
   },
   {
@@ -1631,7 +576,7 @@
     "url": "https://jawbreakers.cards/products/2025-2026-uefa-champions-league-flagship-soccer-easter-tin",
     "title": "2025-2026 UEFA Champions League Flagship Soccer Easter Tin",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $14.99",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $14.99",
     "lead_only": true
   },
   {
@@ -1640,7 +585,7 @@
     "url": "https://lasportscards.com/products/2025-26-topps-uefa-club-competitions-soccer-hanger-box",
     "title": "2025-26 Topps UEFA Club Competitions Soccer Hanger Box",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $15.00",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $15.00",
     "lead_only": true
   },
   {
@@ -1649,34 +594,17 @@
     "url": "https://monmouthcards.com/products/2025-26-topps-uefa-club-competitions-soccer-hanger-box",
     "title": "2025-26 Topps UEFA Club Competitions Soccer Hanger Box",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $19.99",
-    "lead_only": true
-  },
-  {
-    "product_id": "2025-26-uefa-flagship-value",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2025-26-topps-uefa-club-competitions-soccer-tin",
-    "title": "2025/26 Topps UEFA Club Competitions Soccer Tin",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $18.00",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $19.99",
     "lead_only": true
   },
   {
     "product_id": "2025-26-uefa-flagship-value",
     "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2025-26-topps-match-attax-extra-uefa-champions-league-cards-8-pack-set",
-    "title": "2025-26 TOPPS MATCH ATTAX EXTRA UEFA CHAMPIONS LEAGUE CARDS - 8-PACK SET (96 CARDS)",
+    "url": "https://buysoccercardsonline.com/products/2025-26-topps-uefa-club-competitions-flagship-cards-hanger-box",
+    "title": "2025-26 TOPPS UEFA CLUB COMPETITIONS FLAGSHIP CARDS - HANGER BOX (35 CARDS)",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $27.71",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $26.95",
     "lead_only": true
-  },
-  {
-    "product_id": "2025-26-uefa-flagship-value",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-uefa-club-competitions-soccer-7-pack-blaster-box",
-    "title": "2025/26 Topps UEFA Club Competitions Soccer 7-Pack Blaster Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $29.00"
   },
   {
     "product_id": "2025-26-uefa-flagship-value",
@@ -1684,24 +612,8 @@
     "url": "https://www.vsmsportscardoutlet.com/products/2025-26-toppsuefa-club-competitions-spring-tin",
     "title": "2025-26 ToppsUEFA Club Competitions Spring Tin",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $19.00",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $19.00",
     "lead_only": true
-  },
-  {
-    "product_id": "2026-27-premier-league-flagship-hobby",
-    "seller": "Giant Sports Cards",
-    "url": "https://giantsportscards.com/products/2026-27-topps-premier-league-soccer-hobby-box",
-    "title": "2026/27 Topps Premier League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $329.95"
-  },
-  {
-    "product_id": "2026-27-premier-league-flagship-hobby",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2026-27-topps-epl-soccer-hobby-box-pre-order",
-    "title": "2026/27 Topps EPL Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $325.00"
   },
   {
     "product_id": "2026-27-premier-league-flagship-hobby",
@@ -1714,19 +626,11 @@
   {
     "product_id": "2026-27-premier-league-flagship-hobby",
     "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-super-tin-3-pack-set",
-    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 SUPER TIN 3-PACK SET (150 CARDS + 15 EXCLUSIVES)",
+    "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-super-tin",
+    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 SUPER TIN (50 CARDS + 5 EXCLUSIVES)",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $149.95",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $49.95",
     "lead_only": true
-  },
-  {
-    "product_id": "2026-27-premier-league-flagship-hobby",
-    "seller": "VSM Sports Card Outlet",
-    "url": "https://www.vsmsportscardoutlet.com/products/2026-27-topps-premier-league-soccer-hobby-box",
-    "title": "2026/27 Topps Premier League Soccer Hobby Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $349.00"
   },
   {
     "product_id": "2026-27-premier-league-flagship-mega",
@@ -1735,15 +639,6 @@
     "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 MEGA TIN (40 CARDS + 4 EXCLUSIVES)",
     "discovered": "2026-10-03",
     "evidence": "auto-discovered from live retailer catalog; catalog price $39.95"
-  },
-  {
-    "product_id": "2026-27-premier-league-flagship-mega",
-    "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-super-tin-3-pack-set",
-    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 SUPER TIN 3-PACK SET (150 CARDS + 15 EXCLUSIVES)",
-    "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $149.95",
-    "lead_only": true
   },
   {
     "product_id": "2026-27-premier-league-flagship-value",
@@ -1763,19 +658,11 @@
   },
   {
     "product_id": "2026-27-premier-league-flagship-value",
-    "seller": "Skybox Collectibles",
-    "url": "https://skyboxct.com/products/2026-27-topps-epl-soccer-blaster-box-pre-order",
-    "title": "2026/27 Topps EPL Soccer Blaster Box",
-    "discovered": "2026-10-03",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $26.00"
-  },
-  {
-    "product_id": "2026-27-premier-league-flagship-value",
     "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-super-tin-3-pack-set",
-    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 SUPER TIN 3-PACK SET (150 CARDS + 15 EXCLUSIVES)",
+    "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-super-tin",
+    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 SUPER TIN (50 CARDS + 5 EXCLUSIVES)",
     "discovered": "2026-10-03",
-    "evidence": "potential live catalog lead; strict validation not satisfied; catalog price $149.95",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $49.95",
     "lead_only": true
   },
   {
