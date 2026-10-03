@@ -28,6 +28,12 @@ DISTINCT_PRODUCT_MARKERS = [
 ]
 
 
+SEASON_SLASH_RE = re.compile(
+    r"\b(?:2023\s*/\s*24|2024\s*/\s*25|2025\s*/\s*26|2026\s*/\s*27|"
+    r"23\s*/\s*24|24\s*/\s*25|25\s*/\s*26|26\s*/\s*27)\b"
+)
+
+
 def normalize(text):
     text = html_lib.unescape(str(text or ""))
     text = text.lower().replace("/", "-").replace("’", "'")
@@ -107,8 +113,10 @@ def obvious_single_or_wrong_unit(title):
     ]):
         return True
 
-    # Serial-numbered singles such as /99, 22/99, 1/1 or #/25.
-    if re.search(r"(?:#\s*)?\d{1,3}\s*/\s*\d{1,3}\b|#/\s*\d{1,3}\b", raw):
+    # Do not confuse season notation (2024/25, 25/26, etc.) with a serial-numbered
+    # card. Strip known soccer season tokens first, then detect /99, 22/99, 1/1, #/25.
+    serial_text = SEASON_SLASH_RE.sub("", raw)
+    if re.search(r"(?:#\s*)?\d{1,3}\s*/\s*\d{1,3}\b|#/\s*\d{1,3}\b", serial_text):
         return True
 
     if re.search(r"\b(?:group|team|player|random)\s+break\b|\bbreak spot\b", t):
