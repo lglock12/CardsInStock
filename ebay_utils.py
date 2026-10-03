@@ -6,7 +6,9 @@ def canonical_terms(product):
     terms = [product["season"], "Topps"]
     name = product["product"].lower()
 
-    if "merlin" in name:
+    if "stadium club" in name:
+        terms.extend(["Stadium Club", "Chrome"])
+    elif "merlin" in name:
         terms.append("Merlin")
     elif "finest" in name:
         terms.append("Finest")
@@ -49,22 +51,16 @@ def quoted_query(product, season_override=None):
     if season_override:
         terms[0] = season_override
     quoted = " ".join(f'"{term}"' for term in terms)
-
-    # Women's UEFA products are separate releases and can dominate otherwise valid
-    # searches. Keep them out of every human-facing eBay search URL.
     quoted += " -women -womens -\"women's\""
 
-    # Flagship searches are intentionally broad enough to catch listings that omit
-    # the word "Flagship", so remove adjacent Topps product families at search time.
     name = product["product"].lower()
     if "flagship" in name:
-        quoted += " -chrome -merlin -finest -sapphire -deco -museum -inception -pristine"
+        quoted += " -chrome -merlin -finest -sapphire -deco -museum -inception -pristine -\"stadium club\""
     return quoted
 
 
 def search_url(product, season_override=None):
     query = quoted_query(product, season_override)
-    # BIN only, new items, and Price + Shipping lowest first.
     return (
         "https://www.ebay.com/sch/i.html?_nkw=" + quote_plus(query)
         + "&LH_BIN=1&LH_ItemCondition=1000&_sop=15"
