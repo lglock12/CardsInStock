@@ -86,9 +86,54 @@ def reject_term_matches(term, title):
     return term in t
 
 
+def sealed_unit_signal(title):
+    t = normalize(title)
+    return bool(re.search(r"\bbox\b|\btin\b|\bdisplay\b|\bsealed\b", t)) or any(
+        x in t for x in [
+            "breaker delight", "breaker's delight", "breakers delight", "sapphire edition"
+        ]
+    )
+
+
+def obvious_single_or_wrong_unit(title):
+    """High-confidence evidence that a result is a card/lot/break, not sealed wax."""
+    raw = html_lib.unescape(str(title or "")).lower().replace("’", "'")
+    t = normalize(raw)
+
+    if any(x in t for x in [
+        "single card", "you pick", "pick your card", "choose your card", "card lot",
+        "lot of cards", "team set", "complete set", "replacement card",
+        "psa ", "bgs ", "sgc ", "cgc ", "graded", "gem mint",
+    ]):
+        return True
+
+    # Serial-numbered singles such as /99, 22/99, 1/1 or #/25.
+    if re.search(r"(?:#\s*)?\d{1,3}\s*/\s*\d{1,3}\b|#/\s*\d{1,3}\b", raw):
+        return True
+
+    if re.search(r"\b(?:group|team|player|random)\s+break\b|\bbreak spot\b", t):
+        return True
+
+    # Card-level language is safe only when the title also clearly describes the
+    # sealed container (e.g. "Hobby Box - 1 Autograph").
+    card_level = bool(re.search(
+        r"\b(?:autograph|auto|refractor|parallel|rookie|rc|variation|insert|patch|relic|single)\b",
+        t,
+    ))
+    if card_level and not sealed_unit_signal(t):
+        return True
+
+    if pack_is_loose_product(t):
+        return True
+    return False
+
+
 def product_match(product, title):
     t = normalize(title)
     expected = expected_text(product)
+
+    if obvious_single_or_wrong_unit(title):
+        return False, "matched a single card, break, or non-box sale unit"
 
     for marker in DISTINCT_PRODUCT_MARKERS:
         m = normalize(marker)
@@ -99,6 +144,13 @@ def product_match(product, title):
         return False, "missing required product terms"
     if any(reject_term_matches(term, t) for term in product["reject_terms"]):
         return False, "matched rejected format term"
+
+    # Premium/retail formats whose name can also appear on individual cards must
+    # explicitly look like sealed packaging before becoming VERIFIED.
+    if product.get("format") in {"Sapphire", "Delight", "Box", "Full Box", "Tin", "Mega Tin"}:
+        if not sealed_unit_signal(title):
+            return False, "format matched but sealed box/tin packaging was not explicit"
+
     return True, "canonical product and format matched"
 
 
@@ -137,7 +189,6 @@ def family_matches(product, title):
 def format_conflicts(product, title):
     t = normalize(title)
     fmt = product.get("format")
-    # A sealed Breaker's Delight box is a product, not a group break.
     if re.search(r"\b(?:group|team|player|random)\s+break\b|\bbreak spot\b", t):
         return True
     if "case" in t:
@@ -163,53 +214,9 @@ def format_conflicts(product, title):
     return False
 
 
-def _single_card_or_nonsealed(title):
-    """High-confidence signals that a catalog result is not sealed wax."""
-    raw = html_lib.unescape(str(title or "")).lower().replace("’", "'")
-    t = normalize(raw)
-
-    if any(x in t for x in [
-        "single card", "you pick", "pick your card", "choose your card", "card lot",
-        "lot of cards", "team set", "complete set", "replacement card",
-        "psa ", "bgs ", "sgc ", "cgc ", "graded", "gem mint",
-    ]):
-        return True
-
-    # Serial-numbered singles such as /99, 22/99, 1/1 or #/25 are not boxes.
-    if re.search(r"(?:#\s*)?\d{1,3}\s*/\s*\d{1,3}\b|#/\s*\d{1,3}\b", raw):
-        return True
-
-    sealed_signal = bool(re.search(r"\bbox\b|\btin\b|\bdisplay\b|\bsealed\b", t))
-    special_sealed = any(x in t for x in [
-        "breaker delight", "breaker's delight", "breakers delight", "sapphire edition"
-    ])
-
-    # A lead without a packaging signal is too risky when its wording looks like a
-    # card-level listing (autograph, refractor, parallel, rookie, numbered card, etc.).
-    card_level = bool(re.search(
-        r"\b(?:autograph|auto|refractor|parallel|rookie|rc|variation|insert|patch|relic|card)\b",
-        t,
-    ))
-    if not (sealed_signal or special_sealed) and card_level:
-        return True
-
-    # For a loose "pack" to be a box lead, a sealed container must also be named.
-    if pack_is_loose_product(t):
-        return True
-
-    # Potential-deal leads need some sealed-product signal. This intentionally
-    # sacrifices dubious singles rather than presenting a fake $20 "box" bargain.
-    return not (sealed_signal or special_sealed)
-
-
 def is_plausible_sealed_listing(product, title):
-    """Return True for exact or near-exact sealed product listings.
-
-    This is looser than product_match only around retailer naming conventions. It is
-    deliberately strict about product family, competition, format and sale unit so
-    single cards and adjacent releases can never become a "possible deal".
-    """
-    if not title or _single_card_or_nonsealed(title):
+    """True for exact or near-exact sealed product listings suitable for CHECK."""
+    if not title or obvious_single_or_wrong_unit(title) or not sealed_unit_signal(title):
         return False
 
     t = normalize(title)
