@@ -143,6 +143,14 @@
   },
   {
     "product_id": "2024-25-merlin-uefa-hobby",
+    "seller": "Giant Sports Cards",
+    "url": "https://giantsportscards.com/products/2024-25-topps-chrome-merlin-uefa-club-competitions-soccer-hobby-box",
+    "title": "2024/25 Topps Chrome Merlin UEFA Club Competitions Soccer Hobby Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $249.95"
+  },
+  {
+    "product_id": "2024-25-merlin-uefa-hobby",
     "seller": "LA Sports Cards",
     "url": "https://lasportscards.com/products/11608",
     "title": "2024-25 Topps Chrome Merlin Soccer UEFA Club Competitions Hobby Box",
@@ -167,11 +175,27 @@
   },
   {
     "product_id": "2024-25-merlin-uefa-value",
+    "seller": "Skybox Collectibles",
+    "url": "https://skyboxct.com/products/2024-25-topps-uefa-club-competitions-merlin-chrome-soccer-blaster-box-pre-order",
+    "title": "2024/25 Topps UEFA Club Competitions Merlin Chrome Soccer Blaster Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $39.00"
+  },
+  {
+    "product_id": "2024-25-merlin-uefa-value",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2024-25-topps-chrome-merlin-uefa-club-competitions-cards-blaster-box",
     "title": "2024-25 TOPPS CHROME MERLIN UEFA CLUB COMPETITIONS CARDS - 7-PACK BLASTER BOX (28 CARDS)",
     "discovered": "2026-10-03",
     "evidence": "auto-discovered from live retailer catalog; catalog price $44.95"
+  },
+  {
+    "product_id": "2024-25-merlin-uefa-value",
+    "seller": "VSM Sports Card Outlet",
+    "url": "https://www.vsmsportscardoutlet.com/products/2024-25-topps-chrome-merlin-uefa-club-competitions-soccer-7-pack-blaster-box",
+    "title": "2024/25 Topps Chrome Merlin UEFA Club Competitions Soccer Blaster Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $35.00"
   },
   {
     "product_id": "2025-26-chrome-premier-league-hobby",
@@ -239,6 +263,14 @@
   },
   {
     "product_id": "2025-26-chrome-premier-league-value",
+    "seller": "Skybox Collectibles",
+    "url": "https://skyboxct.com/products/2025-26-topps-chrome-english-premier-league-soccer-blaster-box",
+    "title": "2025/26 Topps Chrome English Premier League Soccer Blaster Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $37.00"
+  },
+  {
+    "product_id": "2025-26-chrome-premier-league-value",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-premier-league-cards-hanger-box",
     "title": "2025-26 TOPPS CHROME PREMIER LEAGUE CARDS \u2013 HANGER BOX (15 CARDS)",
@@ -264,6 +296,14 @@
   },
   {
     "product_id": "2025-26-chrome-uefa-hobby",
+    "seller": "Giant Sports Cards",
+    "url": "https://giantsportscards.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-hobby-box",
+    "title": "2025/26 Topps Chrome UEFA Club Competitions Soccer Hobby Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $349.95"
+  },
+  {
+    "product_id": "2025-26-chrome-uefa-hobby",
     "seller": "Monmouth Sports Cards",
     "url": "https://monmouthcards.com/products/2025-26-topps-uefa-club-competitions-chrome-soccer-hobby-box",
     "discovered": "2026-10-02",
@@ -277,6 +317,14 @@
     "discovered": "2026-10-03",
     "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $34.95",
     "lead_only": true
+  },
+  {
+    "product_id": "2025-26-chrome-uefa-hobby",
+    "seller": "VSM Sports Card Outlet",
+    "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-hobby-box",
+    "title": "2025/26 Topps Chrome UEFA Club Competitions Soccer Hobby Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $369.00"
   },
   {
     "product_id": "2025-26-chrome-uefa-jumbo",
@@ -328,6 +376,14 @@
   },
   {
     "product_id": "2025-26-chrome-uefa-value",
+    "seller": "Skybox Collectibles",
+    "url": "https://skyboxct.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-blaster-box",
+    "title": "2025/26 Topps Chrome UEFA Club Competitions Soccer Blaster Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $47.00"
+  },
+  {
+    "product_id": "2025-26-chrome-uefa-value",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-uefa-club-competitions-cards-hanger-box",
     "title": "2025-26 TOPPS CHROME UEFA CLUB COMPETITIONS CARDS - HANGER BOX (15 CARDS) (LIMIT OF 6 PER CUSTOMER)",
@@ -336,12 +392,28 @@
     "lead_only": true
   },
   {
+    "product_id": "2025-26-chrome-uefa-value",
+    "seller": "VSM Sports Card Outlet",
+    "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-chrome-uefa-club-competitions-soccer-blaster-box",
+    "title": "2025/26 Topps Chrome UEFA Club Competitions Soccer Blaster Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $45.00"
+  },
+  {
     "product_id": "2025-26-finest-uefa-hobby",
     "seller": "Aloha Card Shop",
     "url": "https://www.alohacardshop.com/products/topps-finest-2025-26-uefa-club-competitions-soccer-hobby-box",
     "title": "Topps Finest 2025-26 UEFA Club Competitions Soccer Hobby Box",
     "discovered": "2026-10-03",
     "evidence": "auto-discovered from live retailer catalog; catalog price $375.00"
+  },
+  {
+    "product_id": "2025-26-finest-uefa-hobby",
+    "seller": "Giant Sports Cards",
+    "url": "https://giantsportscards.com/products/2025-26-topps-uefa-club-competitions-finest-soccer-hobby-box",
+    "title": "2025/26 Topps UEFA Club Competitions Finest Soccer Hobby Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $474.95"
   },
   {
     "product_id": "2025-26-finest-uefa-hobby",
@@ -358,6 +430,14 @@
     "title": "2025-26 Topps Inception UEFA Club Competitions Soccer Hobby Box",
     "discovered": "2026-10-03",
     "evidence": "auto-discovered from live retailer catalog; catalog price $600.00"
+  },
+  {
+    "product_id": "2025-26-inception-uefa-hobby",
+    "seller": "Skybox Collectibles",
+    "url": "https://skyboxct.com/products/2025-26-topps-inception-uefa-club-competitions-soccer-hobby-box",
+    "title": "2025/26 Topps Inception UEFA Club Competitions Soccer Hobby Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $604.00"
   },
   {
     "product_id": "2025-26-merlin-premier-league-hobby",
@@ -387,6 +467,14 @@
     "url": "https://www.collectbinghamton.com/products/2025-26-topps-merlin-premier-league-soccer-hobby-box",
     "discovered": "2026-10-02",
     "evidence": "exact product page; add-to-cart observed; $229.94"
+  },
+  {
+    "product_id": "2025-26-merlin-premier-league-hobby",
+    "seller": "LA Sports Cards",
+    "url": "https://lasportscards.com/products/2025-26-topps-merlin-premier-league-epl-soccer-hobby-box",
+    "title": "2025/26 Topps Merlin Premier League EPL Soccer Hobby Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $230.00"
   },
   {
     "product_id": "2025-26-merlin-premier-league-hobby",
@@ -443,11 +531,27 @@
   },
   {
     "product_id": "2025-26-merlin-premier-league-value",
+    "seller": "Skybox Collectibles",
+    "url": "https://skyboxct.com/products/2025-26-topps-merlin-english-premier-league-soccer-blaster-box",
+    "title": "2025/26 Topps Merlin English Premier League Soccer Blaster Box (SALE)",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $35.00"
+  },
+  {
+    "product_id": "2025-26-merlin-premier-league-value",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2026-topps-merlin-premier-league-cards-value-blaster-box",
     "title": "2026 TOPPS MERLIN PREMIER LEAGUE CARDS \u2013 VALUE BLASTER BOX (28 CARDS)",
     "discovered": "2026-10-03",
     "evidence": "auto-discovered from live retailer catalog; catalog price $54.95"
+  },
+  {
+    "product_id": "2025-26-museum-uefa-hobby",
+    "seller": "Giant Sports Cards",
+    "url": "https://giantsportscards.com/products/2025-26-topps-uefa-club-competitions-museum-collection-soccer-hobby-box",
+    "title": "2025/26 Topps UEFA Club Competitions Museum Collection Soccer Hobby Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $699.95"
   },
   {
     "product_id": "2025-26-museum-uefa-hobby",
@@ -457,6 +561,14 @@
     "discovered": "2026-10-03",
     "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $799.99",
     "lead_only": true
+  },
+  {
+    "product_id": "2025-26-museum-uefa-hobby",
+    "seller": "Skybox Collectibles",
+    "url": "https://skyboxct.com/products/2025-26-topps-uefa-club-competitions-museum-collection-soccer-hobby-box",
+    "title": "2025/26 Topps UEFA Club Competitions Museum Collection Soccer Hobby Box (SALE)",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $700.00"
   },
   {
     "product_id": "2025-26-premier-league-flagship-hobby",
@@ -525,6 +637,15 @@
     "title": "2025-26 Topps UEFA Club Competitions Soccer Hanger Box",
     "discovered": "2026-10-03",
     "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $19.99",
+    "lead_only": true
+  },
+  {
+    "product_id": "2025-26-uefa-flagship-hobby",
+    "seller": "Skybox Collectibles",
+    "url": "https://skyboxct.com/products/2025-26-topps-uefa-club-competitions-soccer-tin",
+    "title": "2025/26 Topps UEFA Club Competitions Soccer Tin",
+    "discovered": "2026-10-03",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $18.00",
     "lead_only": true
   },
   {
@@ -599,6 +720,15 @@
   },
   {
     "product_id": "2025-26-uefa-flagship-value",
+    "seller": "Skybox Collectibles",
+    "url": "https://skyboxct.com/products/2025-26-topps-uefa-club-competitions-soccer-tin",
+    "title": "2025/26 Topps UEFA Club Competitions Soccer Tin",
+    "discovered": "2026-10-03",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $18.00",
+    "lead_only": true
+  },
+  {
+    "product_id": "2025-26-uefa-flagship-value",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2025-26-topps-uefa-club-competitions-flagship-cards-hanger-box",
     "title": "2025-26 TOPPS UEFA CLUB COMPETITIONS FLAGSHIP CARDS - HANGER BOX (35 CARDS)",
@@ -609,11 +739,35 @@
   {
     "product_id": "2025-26-uefa-flagship-value",
     "seller": "VSM Sports Card Outlet",
+    "url": "https://www.vsmsportscardoutlet.com/products/2025-26-topps-uefa-club-competitions-soccer-7-pack-blaster-box",
+    "title": "2025/26 Topps UEFA Club Competitions Soccer 7-Pack Blaster Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $29.00"
+  },
+  {
+    "product_id": "2025-26-uefa-flagship-value",
+    "seller": "VSM Sports Card Outlet",
     "url": "https://www.vsmsportscardoutlet.com/products/2025-26-toppsuefa-club-competitions-spring-tin",
     "title": "2025-26 ToppsUEFA Club Competitions Spring Tin",
     "discovered": "2026-10-03",
     "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $19.00",
     "lead_only": true
+  },
+  {
+    "product_id": "2026-27-premier-league-flagship-hobby",
+    "seller": "Giant Sports Cards",
+    "url": "https://giantsportscards.com/products/2026-27-topps-premier-league-soccer-hobby-box",
+    "title": "2026/27 Topps Premier League Soccer Hobby Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $329.95"
+  },
+  {
+    "product_id": "2026-27-premier-league-flagship-hobby",
+    "seller": "Skybox Collectibles",
+    "url": "https://skyboxct.com/products/2026-27-topps-epl-soccer-hobby-box-pre-order",
+    "title": "2026/27 Topps EPL Soccer Hobby Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $325.00"
   },
   {
     "product_id": "2026-27-premier-league-flagship-hobby",
@@ -631,6 +785,14 @@
     "discovered": "2026-10-03",
     "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $49.95",
     "lead_only": true
+  },
+  {
+    "product_id": "2026-27-premier-league-flagship-hobby",
+    "seller": "VSM Sports Card Outlet",
+    "url": "https://www.vsmsportscardoutlet.com/products/2026-27-topps-premier-league-soccer-hobby-box",
+    "title": "2026/27 Topps Premier League Soccer Hobby Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $349.00"
   },
   {
     "product_id": "2026-27-premier-league-flagship-mega",
@@ -655,6 +817,14 @@
     "title": "2026-2027 Topps Flagship Premier League Blaster Box",
     "discovered": "2026-10-03",
     "evidence": "auto-discovered from live retailer catalog; catalog price $24.99"
+  },
+  {
+    "product_id": "2026-27-premier-league-flagship-value",
+    "seller": "Skybox Collectibles",
+    "url": "https://skyboxct.com/products/2026-27-topps-epl-soccer-blaster-box-pre-order",
+    "title": "2026/27 Topps EPL Soccer Blaster Box",
+    "discovered": "2026-10-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $26.00"
   },
   {
     "product_id": "2026-27-premier-league-flagship-value",
