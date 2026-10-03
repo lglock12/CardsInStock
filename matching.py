@@ -2,11 +2,12 @@ import html as html_lib
 import re
 
 # Adjacent product lines / sale formats. They are rejected unless the catalog SKU
-# explicitly expects that marker. This lets us track Sapphire/Inception/Museum as
-# first-class products without allowing them to contaminate standard Chrome/Flagship.
+# explicitly expects that marker. This lets us track premium lines as first-class
+# products without allowing them to contaminate standard Chrome/Flagship.
 DISTINCT_PRODUCT_MARKERS = [
     "women", "womens", "women's",
     "match attax",
+    "stadium club",
     "sapphire",
     "pristine",
     "inception",
@@ -48,6 +49,9 @@ def term_matches(term, title):
         "jumbo": ["jumbo", "hobby jumbo"],
         "delight": ["delight", "breaker delight", "breaker's delight", "breakers delight"],
         "museum": ["museum", "museum collection"],
+        "stadium club": ["stadium club", "stadium club chrome"],
+        "full box": ["full box", "full display", "display box"],
+        "mega tin": ["mega tin"],
     }
     if term == "2025-26" and ("premier league" in title or " epl " in f" {title} "):
         return any(normalize(x) in title for x in aliases[term]) or bool(
