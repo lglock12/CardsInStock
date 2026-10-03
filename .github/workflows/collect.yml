@@ -4,6 +4,26 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '17 */6 * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - 'matching.py'
+      - 'collector_v2.py'
+      - 'discover_sources.py'
+      - 'discover_sources_v2.py'
+      - 'collect_market.py'
+      - 'collect_ebay_public.py'
+      - 'enrich_market.py'
+      - 'enrich_images.py'
+      - 'build_dashboard_modern.py'
+      - 'ebay_utils.py'
+      - 'config/products.json'
+      - 'config/product_details.json'
+      - 'config/product_details_extra.json'
+      - 'config/retailers.json'
+      - 'config/discovery_retailers.json'
+      - '.github/workflows/collect.yml'
 
 permissions:
   contents: write
@@ -32,6 +52,8 @@ jobs:
         run: python collect_market.py
       - name: Extract sold market and freshness
         run: python enrich_market.py
+      - name: Refresh live eBay BIN from public search
+        run: python collect_ebay_public.py
       - name: Enrich product images
         run: python enrich_images.py
       - name: Build compact responsive dashboard
