@@ -7,9 +7,8 @@ import discover_sources
 from matching import normalize, product_match, term_matches
 
 # Reuse the existing retailer-catalog scanner but make discovery obey the same
-# matcher as collection and market comparison. Premium lines such as Sapphire,
-# Inception, Deco and Museum are now first-class catalog products, so URL words for
-# those products must not be globally pruned before the matcher sees them.
+# matcher as collection and market comparison. Premium lines are first-class
+# catalog products, so their URL words must not be globally pruned.
 discover_sources.product_match = product_match
 discover_sources.BAD_URL_MARKERS[:] = [
     "women", "womens", "match-attax", "match_attax",
@@ -20,7 +19,7 @@ discover_sources.BAD_URL_MARKERS[:] = [
 
 def expected_family(product):
     name = normalize(product.get("product"))
-    for marker in ("merlin", "finest", "inception", "museum", "deco", "chrome"):
+    for marker in ("stadium club", "merlin", "finest", "inception", "museum", "deco", "chrome"):
         if marker in name:
             return marker
     return "flagship"
@@ -34,7 +33,7 @@ def competition_ok(product, title):
     if "uefa euro" in name:
         return "euro" in t and "uefa" in t
     if "uefa" in name:
-        return any(x in t for x in ["uefa", " ucc ", "club competitions"])
+        return any(x in t for x in ["uefa", " ucc ", "club competitions", "champions league"])
     return True
 
 
@@ -42,19 +41,19 @@ def family_ok(product, title):
     family = expected_family(product)
     t = normalize(title)
     if family == "flagship":
-        return not any(x in t for x in ["chrome", "merlin", "finest", "sapphire", "inception", "museum", "deco"])
+        return not any(x in t for x in ["stadium club", "chrome", "merlin", "finest", "sapphire", "inception", "museum", "deco"])
     return family in t
 
 
 def format_conflict(product, title):
     t = normalize(title)
     fmt = product.get("format")
-    if "case" in t or "break" in t:
+    if "case" in t:
         return True
     if any(x in t for x in ["sticker", "starter pack", "multipack", "multi pack", "bundle"]):
         return True
     if fmt == "Hobby":
-        return any(x in t for x in ["blaster", "value box", "mega box", "mega tin", "jumbo", "sapphire", "delight"])
+        return any(x in t for x in ["blaster", "value box", "mega box", "mega tin", "jumbo", "sapphire", "delight", "breakers delight", "breaker's delight"])
     if fmt == "Blaster / Value":
         return any(x in t for x in ["hobby", "jumbo", "mega box", "mega tin", "sapphire", "delight"])
     if fmt == "Hobby Jumbo":
@@ -63,8 +62,10 @@ def format_conflict(product, title):
         return "sapphire" not in t
     if fmt == "Delight":
         return not any(x in t for x in ["delight", "breaker delight", "breaker's delight", "breakers delight"])
-    if fmt == "Tin":
+    if fmt in ("Tin", "Mega Tin"):
         return "tin" not in t
+    if fmt == "Full Box":
+        return not any(x in t for x in ["full box", "full display", "display box"])
     return False
 
 
@@ -135,8 +136,6 @@ def discover_store_with_leads(store, products):
                 })
                 continue
 
-            # At most one lead per product/store. Prefer the first live catalog match;
-            # collection will visit the exact product page and expose it as CHECK/LEAD.
             for product in products:
                 key = product["id"]
                 if key in lead_seen or not plausible_lead(product, title):
@@ -161,8 +160,6 @@ def discover_store_with_leads(store, products):
     return found
 
 
-# Preserve prior leads between runs instead of pruning them just because they fail
-# the strict matcher. They are deliberately surfaced as unverified leads in the UI.
 _original_wrong = discover_sources.looks_obviously_wrong
 
 def looks_obviously_wrong(entry, product_by_id):
