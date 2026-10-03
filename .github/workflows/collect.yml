@@ -34,10 +34,8 @@ jobs:
         run: python enrich_market.py
       - name: Enrich product images
         run: python enrich_images.py
-      - name: Build mobile dashboard
-        run: python build_dashboard.py
-      - name: Enhance market UI and branding
-        run: python enhance_dashboard.py
+      - name: Build compact responsive dashboard
+        run: python build_dashboard_modern.py
       - name: Commit observations and dashboard
         run: |
           git config user.name "cardsinstock-bot"
