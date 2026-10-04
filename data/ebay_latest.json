@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T21:17:39.844617+00:00",
+  "generated_at": "2026-10-04T05:55:12.207155+00:00",
   "source": "collectaio_public_api",
   "source_docs": "https://www.collectaio.com/developers",
   "products": {
@@ -2175,23 +2175,6 @@
             "snapshot_date": "2026-09-04"
           },
           "updated_at": "2026-09-04T17:36:35Z"
-        },
-        {
-          "variation_id": 192833,
-          "date": "2026-09-03",
-          "price": 64.28,
-          "basis": "collectaio_value",
-          "total_listings": 5,
-          "metadata": {
-            "basis": "collectaio_value",
-            "scope": "sealed_sports",
-            "confidence": "medium",
-            "computed_at": "2026-09-03T17:26:49Z",
-            "price_basis": "sold_fmv",
-            "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
-            "snapshot_date": "2026-09-03"
-          },
-          "updated_at": "2026-09-03T17:26:49Z"
         }
       ],
       "evidence_debug": {
@@ -3275,23 +3258,6 @@
             "snapshot_date": "2026-09-04"
           },
           "updated_at": "2026-09-04T17:36:35Z"
-        },
-        {
-          "variation_id": 192832,
-          "date": "2026-09-03",
-          "price": 293.6,
-          "basis": "collectaio_value",
-          "total_listings": 4,
-          "metadata": {
-            "basis": "collectaio_value",
-            "scope": "sealed_sports",
-            "confidence": "medium",
-            "computed_at": "2026-09-03T17:26:49Z",
-            "price_basis": "sold_fmv",
-            "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
-            "snapshot_date": "2026-09-03"
-          },
-          "updated_at": "2026-09-03T17:26:49Z"
         }
       ],
       "evidence_debug": {
@@ -5008,23 +4974,6 @@
             "snapshot_date": "2026-09-04"
           },
           "updated_at": "2026-09-04T17:36:35Z"
-        },
-        {
-          "variation_id": 407662,
-          "date": "2026-09-03",
-          "price": 359.61,
-          "basis": "collectaio_value",
-          "total_listings": 3,
-          "metadata": {
-            "basis": "collectaio_value",
-            "scope": "sealed_sports",
-            "confidence": "medium",
-            "computed_at": "2026-09-03T17:26:49Z",
-            "price_basis": "sold_fmv",
-            "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
-            "snapshot_date": "2026-09-03"
-          },
-          "updated_at": "2026-09-03T17:26:49Z"
         }
       ],
       "evidence_debug": {
@@ -6062,23 +6011,6 @@
             "price_basis": "sold_fmv",
             "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
             "snapshot_date": "2026-09-04"
-          },
-          "updated_at": "2026-09-17T18:58:50Z"
-        },
-        {
-          "variation_id": 470523,
-          "date": "2026-09-03",
-          "price": 539.99,
-          "basis": "collectaio_value",
-          "total_listings": 9,
-          "metadata": {
-            "basis": "collectaio_value",
-            "scope": "sealed_sports",
-            "confidence": "medium",
-            "computed_at": "2026-09-17T18:58:50Z",
-            "price_basis": "sold_fmv",
-            "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
-            "snapshot_date": "2026-09-03"
           },
           "updated_at": "2026-09-17T18:58:50Z"
         }
@@ -8065,23 +7997,6 @@
             "price_basis": "sold_fmv",
             "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
             "snapshot_date": "2026-09-04"
-          },
-          "updated_at": "2026-09-14T15:12:23Z"
-        },
-        {
-          "variation_id": 407270,
-          "date": "2026-09-03",
-          "price": 293.6,
-          "basis": "collectaio_value",
-          "total_listings": 52,
-          "metadata": {
-            "basis": "collectaio_value",
-            "scope": "sealed_sports",
-            "confidence": "high",
-            "computed_at": "2026-09-14T15:12:23Z",
-            "price_basis": "sold_fmv",
-            "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
-            "snapshot_date": "2026-09-03"
           },
           "updated_at": "2026-09-14T15:12:23Z"
         }
