@@ -198,6 +198,14 @@
     "evidence": "auto-discovered from live retailer catalog; catalog price $35.00"
   },
   {
+    "product_id": "2024-25-uefa-flagship-hobby",
+    "seller": "Monmouth Sports Cards",
+    "url": "https://monmouthcards.com/products/2024-25-topps-dynasty-uefa-club-competitions-soccer-hobby-box",
+    "title": "2024-25 Topps Dynasty UEFA Club Competitions Soccer Hobby Box",
+    "discovered": "2026-10-05",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $4499.99"
+  },
+  {
     "product_id": "2025-26-chrome-premier-league-hobby",
     "seller": "Aloha Card Shop",
     "url": "https://www.alohacardshop.com/products/topps-chrome-2026-premier-league-soccer-hobby-box",
@@ -227,6 +235,14 @@
     "title": "2026 Topps Chrome Premier League Soccer Hobby Box",
     "discovered": "2026-10-05",
     "evidence": "auto-discovered from live retailer catalog; catalog price $355.00"
+  },
+  {
+    "product_id": "2025-26-chrome-premier-league-hobby",
+    "seller": "Monmouth Sports Cards",
+    "url": "https://monmouthcards.com/products/2026-topps-chrome-premier-league-soccer-hobby-box",
+    "title": "2026 Topps Chrome Premier League Soccer Hobby Box",
+    "discovered": "2026-10-05",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $319.99"
   },
   {
     "product_id": "2025-26-chrome-premier-league-hobby",
@@ -260,6 +276,14 @@
     "title": "2026 Topps Chrome Premier League Soccer Blaster Box",
     "discovered": "2026-10-05",
     "evidence": "auto-discovered from live retailer catalog; catalog price $29.99"
+  },
+  {
+    "product_id": "2025-26-chrome-premier-league-value",
+    "seller": "Monmouth Sports Cards",
+    "url": "https://monmouthcards.com/products/2026-topps-chrome-premier-league-soccer-blaster-box",
+    "title": "2026 Topps Chrome Premier League Soccer Blaster Box",
+    "discovered": "2026-10-05",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $34.99"
   },
   {
     "product_id": "2025-26-chrome-premier-league-value",
