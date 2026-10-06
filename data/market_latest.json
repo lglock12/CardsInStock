@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T06:23:02.454065+00:00",
+  "generated_at": "2026-10-06T18:25:32.941666+00:00",
   "source": "collectaio_public_api",
   "source_docs": "https://www.collectaio.com/developers",
   "products": {
@@ -1414,7 +1414,7 @@
       "daily_prices": [
         {
           "variation_id": 192833,
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "price": 62.72,
           "basis": "collectaio_value",
           "total_listings": 7,
@@ -1549,21 +1549,38 @@
               "sold_recent_listing_count": 7
             },
             "confidence": "medium",
-            "computed_at": "2026-10-05T18:40:38Z",
+            "computed_at": "2026-10-06T18:25:36Z",
             "explanation": "Uses clean sold comps as the primary value.",
             "price_basis": "sold_fmv",
             "triggered_by": "tcgcsv_seed_all",
             "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
-            "snapshot_date": "2026-10-05",
+            "snapshot_date": "2026-10-06",
             "stale_sources": [
               "ebay_sold",
               "ebay_active"
             ],
             "eligibility_reason": "release_watch",
             "source_freshness_days": {
-              "ebay_sold": 16,
-              "ebay_active": 16
+              "ebay_sold": 17,
+              "ebay_active": 17
             }
+          },
+          "updated_at": "2026-10-06T18:25:36Z"
+        },
+        {
+          "variation_id": 192833,
+          "date": "2026-10-05",
+          "price": 62.72,
+          "basis": "collectaio_value",
+          "total_listings": 7,
+          "metadata": {
+            "basis": "collectaio_value",
+            "scope": "sealed_sports",
+            "confidence": "medium",
+            "computed_at": "2026-10-05T18:40:38Z",
+            "price_basis": "sold_fmv",
+            "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
+            "snapshot_date": "2026-10-05"
           },
           "updated_at": "2026-10-05T18:40:38Z"
         },
@@ -2239,7 +2256,7 @@
           "root.refresh_schedule.daily_watch_refresh_interval_hours": 168,
           "root.refresh_schedule.is_collection_refresh_candidate": false,
           "root.refresh_schedule.last_automatic_refresh_at": "2026-09-19T03:11:40Z",
-          "root.variations[0].price_refreshed_at": "2026-10-05T18:40:38Z",
+          "root.variations[0].price_refreshed_at": "2026-10-06T18:25:36Z",
           "root.variations[0].listings_refreshed_at": "2026-09-19T03:11:40Z",
           "root.variations[0].sold_listings_refreshed_at": "2026-09-19T03:11:40Z",
           "root.variations[0].listings_refresh_status": "completed",
@@ -2294,20 +2311,20 @@
           "root.daily_prices[0].metadata.inputs.ebay_sold.metadata.sold_velocity.sold_median_30d": 62.72,
           "root.daily_prices[0].metadata.components.sold_fmv": 62.72,
           "root.daily_prices[0].metadata.components.sold_recent_listing_count": 7,
-          "root.daily_prices[0].metadata.source_freshness_days.ebay_sold": 16,
-          "root.daily_prices[17].metadata.sold_velocity.sold_max_7d": 62.72,
-          "root.daily_prices[17].metadata.sold_velocity.sold_min_7d": 39.95,
-          "root.daily_prices[17].metadata.sold_velocity.sold_max_21d": 82.28,
-          "root.daily_prices[17].metadata.sold_velocity.sold_max_30d": 101.56,
-          "root.daily_prices[17].metadata.sold_velocity.sold_min_21d": 39.95,
-          "root.daily_prices[17].metadata.sold_velocity.sold_min_30d": 39.95,
-          "root.daily_prices[17].metadata.sold_velocity.sold_count_1d": 0,
-          "root.daily_prices[17].metadata.sold_velocity.sold_count_7d": 2,
-          "root.daily_prices[17].metadata.sold_velocity.sold_count_21d": 4,
-          "root.daily_prices[17].metadata.sold_velocity.sold_count_30d": 7,
-          "root.daily_prices[17].metadata.sold_velocity.sold_median_7d": 51.34,
-          "root.daily_prices[17].metadata.sold_velocity.sold_median_21d": 54.16,
-          "root.daily_prices[17].metadata.sold_velocity.sold_median_30d": 62.72
+          "root.daily_prices[0].metadata.source_freshness_days.ebay_sold": 17,
+          "root.daily_prices[18].metadata.sold_velocity.sold_max_7d": 62.72,
+          "root.daily_prices[18].metadata.sold_velocity.sold_min_7d": 39.95,
+          "root.daily_prices[18].metadata.sold_velocity.sold_max_21d": 82.28,
+          "root.daily_prices[18].metadata.sold_velocity.sold_max_30d": 101.56,
+          "root.daily_prices[18].metadata.sold_velocity.sold_min_21d": 39.95,
+          "root.daily_prices[18].metadata.sold_velocity.sold_min_30d": 39.95,
+          "root.daily_prices[18].metadata.sold_velocity.sold_count_1d": 0,
+          "root.daily_prices[18].metadata.sold_velocity.sold_count_7d": 2,
+          "root.daily_prices[18].metadata.sold_velocity.sold_count_21d": 4,
+          "root.daily_prices[18].metadata.sold_velocity.sold_count_30d": 7,
+          "root.daily_prices[18].metadata.sold_velocity.sold_median_7d": 51.34,
+          "root.daily_prices[18].metadata.sold_velocity.sold_median_21d": 54.16,
+          "root.daily_prices[18].metadata.sold_velocity.sold_median_30d": 62.72
         }
       },
       "sold_market": {
@@ -2316,7 +2333,7 @@
         "snapshot_date": "2026-09-18",
         "updated_at": "2026-09-19T03:11:40Z",
         "stale": true,
-        "freshness_days": 16,
+        "freshness_days": 17,
         "confidence": "medium",
         "calculation_method": "recent_median",
         "count_7d": 2,
@@ -2382,7 +2399,7 @@
         "updated_at": "2026-09-19T03:11:40Z",
         "listing_count": 7,
         "stale": true,
-        "freshness_days": 16
+        "freshness_days": 17
       }
     },
     "2025-26-merlin-premier-league-hobby": {
@@ -2440,7 +2457,7 @@
       "daily_prices": [
         {
           "variation_id": 192832,
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "price": 248.47,
           "basis": "collectaio_value",
           "total_listings": 12,
@@ -2604,21 +2621,38 @@
               "sold_recent_listing_count": 12
             },
             "confidence": "high",
-            "computed_at": "2026-10-05T18:40:38Z",
+            "computed_at": "2026-10-06T18:25:36Z",
             "explanation": "Uses clean sold comps as the primary value.",
             "price_basis": "sold_fmv",
             "triggered_by": "tcgcsv_seed_all",
             "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
-            "snapshot_date": "2026-10-05",
+            "snapshot_date": "2026-10-06",
             "stale_sources": [
               "ebay_sold",
               "ebay_active"
             ],
             "eligibility_reason": "release_watch",
             "source_freshness_days": {
-              "ebay_sold": 16,
-              "ebay_active": 16
+              "ebay_sold": 17,
+              "ebay_active": 17
             }
+          },
+          "updated_at": "2026-10-06T18:25:36Z"
+        },
+        {
+          "variation_id": 192832,
+          "date": "2026-10-05",
+          "price": 248.47,
+          "basis": "collectaio_value",
+          "total_listings": 12,
+          "metadata": {
+            "basis": "collectaio_value",
+            "scope": "sealed_sports",
+            "confidence": "high",
+            "computed_at": "2026-10-05T18:40:38Z",
+            "price_basis": "sold_fmv",
+            "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
+            "snapshot_date": "2026-10-05"
           },
           "updated_at": "2026-10-05T18:40:38Z"
         },
@@ -3323,7 +3357,7 @@
           "root.refresh_schedule.daily_watch_refresh_interval_hours": 168,
           "root.refresh_schedule.is_collection_refresh_candidate": false,
           "root.refresh_schedule.last_automatic_refresh_at": "2026-09-19T03:10:02Z",
-          "root.variations[0].price_refreshed_at": "2026-10-05T18:40:38Z",
+          "root.variations[0].price_refreshed_at": "2026-10-06T18:25:36Z",
           "root.variations[0].listings_refreshed_at": "2026-09-19T03:10:02Z",
           "root.variations[0].sold_listings_refreshed_at": "2026-09-19T03:10:02Z",
           "root.variations[0].listings_refresh_status": "completed",
@@ -3378,20 +3412,20 @@
           "root.daily_prices[0].metadata.inputs.ebay_sold.metadata.sold_velocity.sold_median_30d": 248.47,
           "root.daily_prices[0].metadata.components.sold_fmv": 248.47,
           "root.daily_prices[0].metadata.components.sold_recent_listing_count": 12,
-          "root.daily_prices[0].metadata.source_freshness_days.ebay_sold": 16,
-          "root.daily_prices[18].metadata.sold_velocity.sold_max_7d": 313.82,
-          "root.daily_prices[18].metadata.sold_velocity.sold_min_7d": 313.82,
-          "root.daily_prices[18].metadata.sold_velocity.sold_max_21d": 313.99,
-          "root.daily_prices[18].metadata.sold_velocity.sold_max_30d": 313.99,
-          "root.daily_prices[18].metadata.sold_velocity.sold_min_21d": 229.89,
-          "root.daily_prices[18].metadata.sold_velocity.sold_min_30d": 229.89,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_1d": 0,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_7d": 1,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_21d": 9,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_30d": 12,
-          "root.daily_prices[18].metadata.sold_velocity.sold_median_7d": 313.82,
-          "root.daily_prices[18].metadata.sold_velocity.sold_median_21d": 256.99,
-          "root.daily_prices[18].metadata.sold_velocity.sold_median_30d": 248.47
+          "root.daily_prices[0].metadata.source_freshness_days.ebay_sold": 17,
+          "root.daily_prices[19].metadata.sold_velocity.sold_max_7d": 313.82,
+          "root.daily_prices[19].metadata.sold_velocity.sold_min_7d": 313.82,
+          "root.daily_prices[19].metadata.sold_velocity.sold_max_21d": 313.99,
+          "root.daily_prices[19].metadata.sold_velocity.sold_max_30d": 313.99,
+          "root.daily_prices[19].metadata.sold_velocity.sold_min_21d": 229.89,
+          "root.daily_prices[19].metadata.sold_velocity.sold_min_30d": 229.89,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_1d": 0,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_7d": 1,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_21d": 9,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_30d": 12,
+          "root.daily_prices[19].metadata.sold_velocity.sold_median_7d": 313.82,
+          "root.daily_prices[19].metadata.sold_velocity.sold_median_21d": 256.99,
+          "root.daily_prices[19].metadata.sold_velocity.sold_median_30d": 248.47
         }
       },
       "sold_market": {
@@ -3400,7 +3434,7 @@
         "snapshot_date": "2026-09-18",
         "updated_at": "2026-09-19T03:10:02Z",
         "stale": true,
-        "freshness_days": 16,
+        "freshness_days": 17,
         "confidence": "high",
         "calculation_method": "recent_median",
         "count_7d": 1,
@@ -3494,7 +3528,7 @@
         "updated_at": "2026-09-19T03:10:02Z",
         "listing_count": 8,
         "stale": true,
-        "freshness_days": 16
+        "freshness_days": 17
       }
     },
     "2025-26-chrome-uefa-value": {
@@ -3694,7 +3728,7 @@
       "daily_prices": [
         {
           "variation_id": 489507,
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "price": 1249.0,
           "basis": "collectaio_value",
           "total_listings": 5,
@@ -3773,19 +3807,36 @@
               "sold_recent_listing_count": 5
             },
             "confidence": "medium",
-            "computed_at": "2026-10-05T18:40:38Z",
+            "computed_at": "2026-10-06T18:25:36Z",
             "explanation": "Uses clean sold comps as the primary value.",
             "price_basis": "sold_fmv",
             "triggered_by": "tcgcsv_seed_all",
             "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
-            "snapshot_date": "2026-10-05",
+            "snapshot_date": "2026-10-06",
             "stale_sources": [
               "ebay_sold"
             ],
             "eligibility_reason": "release_watch",
             "source_freshness_days": {
-              "ebay_sold": 16
+              "ebay_sold": 17
             }
+          },
+          "updated_at": "2026-10-06T18:25:36Z"
+        },
+        {
+          "variation_id": 489507,
+          "date": "2026-10-05",
+          "price": 1249.0,
+          "basis": "collectaio_value",
+          "total_listings": 5,
+          "metadata": {
+            "basis": "collectaio_value",
+            "scope": "sealed_sports",
+            "confidence": "medium",
+            "computed_at": "2026-10-05T18:40:38Z",
+            "price_basis": "sold_fmv",
+            "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
+            "snapshot_date": "2026-10-05"
           },
           "updated_at": "2026-10-05T18:40:38Z"
         },
@@ -4201,7 +4252,7 @@
           "root.refresh_schedule.daily_watch_refresh_interval_hours": 168,
           "root.refresh_schedule.is_collection_refresh_candidate": false,
           "root.refresh_schedule.last_automatic_refresh_at": "2026-09-18T23:06:41Z",
-          "root.variations[0].price_refreshed_at": "2026-10-05T18:40:38Z",
+          "root.variations[0].price_refreshed_at": "2026-10-06T18:25:36Z",
           "root.variations[0].listings_refreshed_at": "2026-09-18T23:06:41Z",
           "root.variations[0].sold_listings_refreshed_at": "2026-09-18T23:06:41Z",
           "root.variations[0].listings_refresh_status": "completed",
@@ -4225,14 +4276,14 @@
           "root.listings[3].updated_at": "2026-09-18T23:06:41Z",
           "root.listings[4].updated_at": "2026-09-18T23:06:41Z",
           "root.listing_summaries[0].latest_updated_at": "2026-09-18T23:06:41Z",
-          "root.daily_prices[0].updated_at": "2026-10-05T18:40:38Z",
-          "root.daily_prices[0].metadata.snapshot_date": "2026-10-05",
+          "root.daily_prices[0].updated_at": "2026-10-06T18:25:36Z",
+          "root.daily_prices[0].metadata.snapshot_date": "2026-10-06",
           "root.daily_prices[0].metadata.inputs.ebay_sold.updated_at": "2026-09-18T23:06:41Z",
           "root.daily_prices[0].metadata.inputs.ebay_sold.snapshot_date": "2026-09-18",
           "root.daily_prices[0].metadata.components.source_snapshot_basis": "sold",
-          "root.daily_prices[1].updated_at": "2026-10-04T18:55:02Z",
-          "root.daily_prices[1].metadata.snapshot_date": "2026-10-04",
-          "root.daily_prices[2].updated_at": "2026-10-03T18:53:48Z"
+          "root.daily_prices[1].updated_at": "2026-10-05T18:40:38Z",
+          "root.daily_prices[1].metadata.snapshot_date": "2026-10-05",
+          "root.daily_prices[2].updated_at": "2026-10-04T18:55:02Z"
         },
         "sold_signal_fields": {
           "root.variations[0].sold_listings_refreshed_at": "2026-09-18T23:06:41Z",
@@ -4253,17 +4304,17 @@
           "root.daily_prices[0].metadata.inputs.ebay_sold.metadata.sold_velocity.sold_median_30d": 1874.0,
           "root.daily_prices[0].metadata.components.sold_fmv": 1249.0,
           "root.daily_prices[0].metadata.components.sold_recent_listing_count": 5,
-          "root.daily_prices[0].metadata.source_freshness_days.ebay_sold": 16,
-          "root.daily_prices[18].metadata.sold_velocity.sold_max_21d": 2499.0,
-          "root.daily_prices[18].metadata.sold_velocity.sold_max_30d": 2499.0,
-          "root.daily_prices[18].metadata.sold_velocity.sold_min_21d": 1249.0,
-          "root.daily_prices[18].metadata.sold_velocity.sold_min_30d": 1249.0,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_1d": 0,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_7d": 0,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_21d": 2,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_30d": 2,
-          "root.daily_prices[18].metadata.sold_velocity.sold_median_21d": 1874.0,
-          "root.daily_prices[18].metadata.sold_velocity.sold_median_30d": 1874.0
+          "root.daily_prices[0].metadata.source_freshness_days.ebay_sold": 17,
+          "root.daily_prices[19].metadata.sold_velocity.sold_max_21d": 2499.0,
+          "root.daily_prices[19].metadata.sold_velocity.sold_max_30d": 2499.0,
+          "root.daily_prices[19].metadata.sold_velocity.sold_min_21d": 1249.0,
+          "root.daily_prices[19].metadata.sold_velocity.sold_min_30d": 1249.0,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_1d": 0,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_7d": 0,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_21d": 2,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_30d": 2,
+          "root.daily_prices[19].metadata.sold_velocity.sold_median_21d": 1874.0,
+          "root.daily_prices[19].metadata.sold_velocity.sold_median_30d": 1874.0
         }
       },
       "sold_market": {
@@ -4272,7 +4323,7 @@
         "snapshot_date": "2026-09-18",
         "updated_at": "2026-09-18T23:06:41Z",
         "stale": true,
-        "freshness_days": 16,
+        "freshness_days": 17,
         "confidence": "medium",
         "calculation_method": "median",
         "count_7d": 0,
@@ -4352,7 +4403,7 @@
       "daily_prices": [
         {
           "variation_id": 407662,
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "price": 359.61,
           "basis": "collectaio_value",
           "total_listings": 3,
@@ -4436,21 +4487,38 @@
               "sold_recent_listing_count": 3
             },
             "confidence": "medium",
-            "computed_at": "2026-10-05T18:40:38Z",
+            "computed_at": "2026-10-06T18:26:13Z",
             "explanation": "Uses clean sold comps as the primary value.",
             "price_basis": "sold_fmv",
             "triggered_by": "tcgcsv_seed_all",
             "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
-            "snapshot_date": "2026-10-05",
+            "snapshot_date": "2026-10-06",
             "stale_sources": [
               "ebay_sold",
               "ebay_active"
             ],
             "eligibility_reason": "release_watch",
             "source_freshness_days": {
-              "ebay_sold": 16,
-              "ebay_active": 16
+              "ebay_sold": 17,
+              "ebay_active": 17
             }
+          },
+          "updated_at": "2026-10-06T18:26:13Z"
+        },
+        {
+          "variation_id": 407662,
+          "date": "2026-10-05",
+          "price": 359.61,
+          "basis": "collectaio_value",
+          "total_listings": 3,
+          "metadata": {
+            "basis": "collectaio_value",
+            "scope": "sealed_sports",
+            "confidence": "medium",
+            "computed_at": "2026-10-05T18:40:38Z",
+            "price_basis": "sold_fmv",
+            "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
+            "snapshot_date": "2026-10-05"
           },
           "updated_at": "2026-10-05T18:40:38Z"
         },
@@ -5075,7 +5143,7 @@
           "root.refresh_schedule.daily_watch_refresh_interval_hours": 168,
           "root.refresh_schedule.is_collection_refresh_candidate": false,
           "root.refresh_schedule.last_automatic_refresh_at": "2026-06-22T15:35:07Z",
-          "root.variations[0].price_refreshed_at": "2026-10-05T18:40:38Z",
+          "root.variations[0].price_refreshed_at": "2026-10-06T18:26:13Z",
           "root.variations[0].listings_refreshed_at": "2026-06-22T15:35:07Z",
           "root.variations[0].sold_listings_refreshed_at": "2026-06-22T15:35:07Z",
           "root.variations[0].listings_refresh_status": "completed",
@@ -5101,8 +5169,8 @@
           "root.listings[5].updated_at": "2026-06-22T15:35:07Z",
           "root.listings[6].updated_at": "2026-06-22T15:35:07Z",
           "root.listing_summaries[0].latest_updated_at": "2026-06-22T15:35:07Z",
-          "root.daily_prices[0].updated_at": "2026-10-05T18:40:38Z",
-          "root.daily_prices[0].metadata.snapshot_date": "2026-10-05",
+          "root.daily_prices[0].updated_at": "2026-10-06T18:26:13Z",
+          "root.daily_prices[0].metadata.snapshot_date": "2026-10-06",
           "root.daily_prices[0].metadata.inputs.ebay_sold.updated_at": "2026-09-19T03:26:30Z",
           "root.daily_prices[0].metadata.inputs.ebay_sold.snapshot_date": "2026-09-18",
           "root.daily_prices[0].metadata.inputs.ebay_active.updated_at": "2026-09-19T03:26:30Z",
@@ -5121,11 +5189,11 @@
           "root.daily_prices[0].metadata.inputs.ebay_sold.metadata.sold_velocity.sold_count_30d": 0,
           "root.daily_prices[0].metadata.components.sold_fmv": 359.61,
           "root.daily_prices[0].metadata.components.sold_recent_listing_count": 3,
-          "root.daily_prices[0].metadata.source_freshness_days.ebay_sold": 16,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_1d": 0,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_7d": 0,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_21d": 0,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_30d": 0
+          "root.daily_prices[0].metadata.source_freshness_days.ebay_sold": 17,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_1d": 0,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_7d": 0,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_21d": 0,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_30d": 0
         }
       },
       "sold_market": {
@@ -5134,7 +5202,7 @@
         "snapshot_date": "2026-09-18",
         "updated_at": "2026-09-19T03:26:30Z",
         "stale": true,
-        "freshness_days": 16,
+        "freshness_days": 17,
         "confidence": "medium",
         "calculation_method": "median",
         "count_7d": 0,
@@ -5157,7 +5225,7 @@
         "updated_at": "2026-09-19T03:26:30Z",
         "listing_count": 4,
         "stale": true,
-        "freshness_days": 16
+        "freshness_days": 17
       }
     },
     "2025-26-inception-uefa-hobby": {
@@ -5324,7 +5392,7 @@
       "daily_prices": [
         {
           "variation_id": 470523,
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "price": 539.99,
           "basis": "collectaio_value",
           "total_listings": 9,
@@ -5418,21 +5486,38 @@
               "sold_recent_listing_count": 9
             },
             "confidence": "medium",
-            "computed_at": "2026-10-05T18:40:38Z",
+            "computed_at": "2026-10-06T18:26:13Z",
             "explanation": "Uses clean sold comps as the primary value.",
             "price_basis": "sold_fmv",
             "triggered_by": "tcgcsv_seed_all",
             "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
-            "snapshot_date": "2026-10-05",
+            "snapshot_date": "2026-10-06",
             "stale_sources": [
               "ebay_sold",
               "ebay_active"
             ],
             "eligibility_reason": "release_watch",
             "source_freshness_days": {
-              "ebay_sold": 16,
-              "ebay_active": 16
+              "ebay_sold": 17,
+              "ebay_active": 17
             }
+          },
+          "updated_at": "2026-10-06T18:26:13Z"
+        },
+        {
+          "variation_id": 470523,
+          "date": "2026-10-05",
+          "price": 539.99,
+          "basis": "collectaio_value",
+          "total_listings": 9,
+          "metadata": {
+            "basis": "collectaio_value",
+            "scope": "sealed_sports",
+            "confidence": "medium",
+            "computed_at": "2026-10-05T18:40:38Z",
+            "price_basis": "sold_fmv",
+            "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
+            "snapshot_date": "2026-10-05"
           },
           "updated_at": "2026-10-05T18:40:38Z"
         },
@@ -6117,7 +6202,7 @@
           "root.refresh_schedule.daily_watch_refresh_interval_hours": 168,
           "root.refresh_schedule.is_collection_refresh_candidate": false,
           "root.refresh_schedule.last_automatic_refresh_at": "2026-09-17T18:58:50Z",
-          "root.variations[0].price_refreshed_at": "2026-10-05T18:40:38Z",
+          "root.variations[0].price_refreshed_at": "2026-10-06T18:26:13Z",
           "root.variations[0].listings_refreshed_at": "2026-09-17T18:58:50Z",
           "root.variations[0].sold_listings_refreshed_at": "2026-09-17T18:58:50Z",
           "root.variations[0].listings_refresh_status": "completed",
@@ -6146,8 +6231,8 @@
           "root.listings[8].updated_at": "2026-09-17T18:58:50Z",
           "root.listings[9].updated_at": "2026-09-17T18:58:50Z",
           "root.listing_summaries[0].latest_updated_at": "2026-09-17T18:58:50Z",
-          "root.daily_prices[0].updated_at": "2026-10-05T18:40:38Z",
-          "root.daily_prices[0].metadata.snapshot_date": "2026-10-05",
+          "root.daily_prices[0].updated_at": "2026-10-06T18:26:13Z",
+          "root.daily_prices[0].metadata.snapshot_date": "2026-10-06",
           "root.daily_prices[0].metadata.inputs.ebay_sold.updated_at": "2026-09-19T03:28:23Z"
         },
         "sold_signal_fields": {
@@ -6172,20 +6257,20 @@
           "root.daily_prices[0].metadata.inputs.ebay_sold.metadata.sold_velocity.sold_median_30d": 535.05,
           "root.daily_prices[0].metadata.components.sold_fmv": 539.99,
           "root.daily_prices[0].metadata.components.sold_recent_listing_count": 9,
-          "root.daily_prices[0].metadata.source_freshness_days.ebay_sold": 16,
-          "root.daily_prices[18].metadata.sold_velocity.sold_max_7d": 535.05,
-          "root.daily_prices[18].metadata.sold_velocity.sold_min_7d": 535.05,
-          "root.daily_prices[18].metadata.sold_velocity.sold_max_21d": 535.05,
-          "root.daily_prices[18].metadata.sold_velocity.sold_max_30d": 535.05,
-          "root.daily_prices[18].metadata.sold_velocity.sold_min_21d": 535.05,
-          "root.daily_prices[18].metadata.sold_velocity.sold_min_30d": 535.05,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_1d": 0,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_7d": 1,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_21d": 1,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_30d": 1,
-          "root.daily_prices[18].metadata.sold_velocity.sold_median_7d": 535.05,
-          "root.daily_prices[18].metadata.sold_velocity.sold_median_21d": 535.05,
-          "root.daily_prices[18].metadata.sold_velocity.sold_median_30d": 535.05
+          "root.daily_prices[0].metadata.source_freshness_days.ebay_sold": 17,
+          "root.daily_prices[19].metadata.sold_velocity.sold_max_7d": 535.05,
+          "root.daily_prices[19].metadata.sold_velocity.sold_min_7d": 535.05,
+          "root.daily_prices[19].metadata.sold_velocity.sold_max_21d": 535.05,
+          "root.daily_prices[19].metadata.sold_velocity.sold_max_30d": 535.05,
+          "root.daily_prices[19].metadata.sold_velocity.sold_min_21d": 535.05,
+          "root.daily_prices[19].metadata.sold_velocity.sold_min_30d": 535.05,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_1d": 0,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_7d": 1,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_21d": 1,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_30d": 1,
+          "root.daily_prices[19].metadata.sold_velocity.sold_median_7d": 535.05,
+          "root.daily_prices[19].metadata.sold_velocity.sold_median_21d": 535.05,
+          "root.daily_prices[19].metadata.sold_velocity.sold_median_30d": 535.05
         }
       },
       "sold_market": {
@@ -6194,7 +6279,7 @@
         "snapshot_date": "2026-09-18",
         "updated_at": "2026-09-19T03:28:23Z",
         "stale": true,
-        "freshness_days": 16,
+        "freshness_days": 17,
         "confidence": "medium",
         "calculation_method": "median",
         "count_7d": 1,
@@ -6225,7 +6310,7 @@
         "updated_at": "2026-09-19T03:28:23Z",
         "listing_count": 1,
         "stale": true,
-        "freshness_days": 16
+        "freshness_days": 17
       }
     },
     "2025-26-uefa-flagship-value": {
@@ -7097,7 +7182,7 @@
       "daily_prices": [
         {
           "variation_id": 407270,
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "price": 301.24,
           "basis": "collectaio_value",
           "total_listings": 44,
@@ -7311,21 +7396,38 @@
               "sold_recent_listing_count": 44
             },
             "confidence": "high",
-            "computed_at": "2026-10-05T18:40:38Z",
+            "computed_at": "2026-10-06T18:26:51Z",
             "explanation": "Uses clean sold comps as the primary value.",
             "price_basis": "sold_fmv",
             "triggered_by": "tcgcsv_seed_all",
             "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
-            "snapshot_date": "2026-10-05",
+            "snapshot_date": "2026-10-06",
             "stale_sources": [
               "ebay_sold",
               "ebay_active"
             ],
             "eligibility_reason": "hot,release_watch",
             "source_freshness_days": {
-              "ebay_sold": 16,
-              "ebay_active": 16
+              "ebay_sold": 17,
+              "ebay_active": 17
             }
+          },
+          "updated_at": "2026-10-06T18:26:51Z"
+        },
+        {
+          "variation_id": 407270,
+          "date": "2026-10-05",
+          "price": 301.24,
+          "basis": "collectaio_value",
+          "total_listings": 44,
+          "metadata": {
+            "basis": "collectaio_value",
+            "scope": "sealed_sports",
+            "confidence": "high",
+            "computed_at": "2026-10-05T18:40:38Z",
+            "price_basis": "sold_fmv",
+            "model_version": "generic_collectaio_value_20260823_discogs_ask_priority",
+            "snapshot_date": "2026-10-05"
           },
           "updated_at": "2026-10-05T18:40:38Z"
         },
@@ -8105,7 +8207,7 @@
           "root.refresh_schedule.daily_watch_refresh_interval_hours": 168,
           "root.refresh_schedule.is_collection_refresh_candidate": false,
           "root.refresh_schedule.last_automatic_refresh_at": "2026-09-14T15:12:22Z",
-          "root.variations[0].price_refreshed_at": "2026-10-05T18:40:38Z",
+          "root.variations[0].price_refreshed_at": "2026-10-06T18:26:51Z",
           "root.variations[0].listings_refreshed_at": "2026-09-14T15:12:22Z",
           "root.variations[0].sold_listings_refreshed_at": "2026-09-14T15:12:22Z",
           "root.variations[0].listings_refresh_status": "completed",
@@ -8160,20 +8262,20 @@
           "root.daily_prices[0].metadata.inputs.ebay_sold.metadata.sold_velocity.sold_median_30d": 301.24,
           "root.daily_prices[0].metadata.components.sold_fmv": 301.24,
           "root.daily_prices[0].metadata.components.sold_recent_listing_count": 44,
-          "root.daily_prices[0].metadata.source_freshness_days.ebay_sold": 16,
-          "root.daily_prices[18].metadata.sold_velocity.sold_max_7d": 398.41,
-          "root.daily_prices[18].metadata.sold_velocity.sold_min_7d": 294.99,
-          "root.daily_prices[18].metadata.sold_velocity.sold_max_21d": 398.41,
-          "root.daily_prices[18].metadata.sold_velocity.sold_max_30d": 398.41,
-          "root.daily_prices[18].metadata.sold_velocity.sold_min_21d": 276.02,
-          "root.daily_prices[18].metadata.sold_velocity.sold_min_30d": 257.02,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_1d": 0,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_7d": 5,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_21d": 29,
-          "root.daily_prices[18].metadata.sold_velocity.sold_count_30d": 44,
-          "root.daily_prices[18].metadata.sold_velocity.sold_median_7d": 355.17,
-          "root.daily_prices[18].metadata.sold_velocity.sold_median_21d": 303.55,
-          "root.daily_prices[18].metadata.sold_velocity.sold_median_30d": 301.24
+          "root.daily_prices[0].metadata.source_freshness_days.ebay_sold": 17,
+          "root.daily_prices[19].metadata.sold_velocity.sold_max_7d": 398.41,
+          "root.daily_prices[19].metadata.sold_velocity.sold_min_7d": 294.99,
+          "root.daily_prices[19].metadata.sold_velocity.sold_max_21d": 398.41,
+          "root.daily_prices[19].metadata.sold_velocity.sold_max_30d": 398.41,
+          "root.daily_prices[19].metadata.sold_velocity.sold_min_21d": 276.02,
+          "root.daily_prices[19].metadata.sold_velocity.sold_min_30d": 257.02,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_1d": 0,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_7d": 5,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_21d": 29,
+          "root.daily_prices[19].metadata.sold_velocity.sold_count_30d": 44,
+          "root.daily_prices[19].metadata.sold_velocity.sold_median_7d": 355.17,
+          "root.daily_prices[19].metadata.sold_velocity.sold_median_21d": 303.55,
+          "root.daily_prices[19].metadata.sold_velocity.sold_median_30d": 301.24
         }
       },
       "sold_market": {
@@ -8182,7 +8284,7 @@
         "snapshot_date": "2026-09-18",
         "updated_at": "2026-09-19T03:26:27Z",
         "stale": true,
-        "freshness_days": 16,
+        "freshness_days": 17,
         "confidence": "high",
         "calculation_method": "recent_median",
         "count_7d": 5,
@@ -8332,7 +8434,7 @@
         "updated_at": "2026-09-19T03:26:27Z",
         "listing_count": 2,
         "stale": true,
-        "freshness_days": 16
+        "freshness_days": 17
       }
     }
   }
