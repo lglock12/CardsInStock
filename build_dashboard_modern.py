@@ -167,9 +167,9 @@ def liquidity_snapshot(rows, market, detailed_sold):
     if sold_90 == 0:
         sold_90 = int(fallback.get("count_30d") or fallback.get("long_count") or 0)
 
-    # User preference: skip thin/dead products. Require at least one current
-    # source plus three validated sold comps so displayed pricing is actionable.
-    return supply_count, sold_90, supply_count >= 1 and sold_90 >= 3
+    # Hide only products that are truly dead. A product is useful if it has
+    # current supply OR enough sold activity to establish a market.
+    return supply_count, sold_90, supply_count >= 1 or sold_90 >= 3
 
 
 def product_card(product, rows, detail, market, image, detailed_sold=None):
