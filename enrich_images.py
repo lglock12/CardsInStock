@@ -14,6 +14,30 @@ PRODUCTS = ROOT / "config" / "products.json"
 ACTIVE_CACHE = ROOT / "data" / "active_ebay_cache.json"
 ASSETS = ROOT / "docs" / "assets" / "products"
 OFFICIAL_OP_PRODUCTS = "https://en.onepiece-cardgame.com/products/?subcategory=boosters"
+OFFICIAL_OP_PAGES = {
+    "OP-01": "https://en.onepiece-cardgame.com/products/boosters/op01.php",
+    "OP-02": "https://en.onepiece-cardgame.com/products/boosters/op02.php",
+    "OP-03": "https://en.onepiece-cardgame.com/products/boosters/op03.php",
+    "OP-04": "https://en.onepiece-cardgame.com/products/boosters/op04.php",
+    "OP-05": "https://en.onepiece-cardgame.com/products/boosters/op05/",
+    "OP-06": "https://en.onepiece-cardgame.com/products/boosters/op06.php",
+    "OP-07": "https://en.onepiece-cardgame.com/products/boosters/op07.php",
+    "OP-08": "https://en.onepiece-cardgame.com/products/boosters/op08.php",
+    "OP-09": "https://en.onepiece-cardgame.com/products/boosters/op09/",
+    "OP-10": "https://en.onepiece-cardgame.com/products/boosters/op10.php",
+    "OP-11": "https://en.onepiece-cardgame.com/products/boosters/op11.php",
+    "OP-12": "https://en.onepiece-cardgame.com/products/boosters/op12.php",
+    "OP-13": "https://en.onepiece-cardgame.com/products/boosters/op13/",
+    "OP-14": "https://en.onepiece-cardgame.com/products/boosters/op14-eb04.php",
+    "OP-15": "https://en.onepiece-cardgame.com/products/boosters/op15-eb04.php",
+    "OP-16": "https://en.onepiece-cardgame.com/products/op16.html",
+    "OP-17": "https://en.onepiece-cardgame.com/products/boosters/op17/",
+    "EB-01": "https://en.onepiece-cardgame.com/products/boosters/eb01.php",
+    "EB-02": "https://en.onepiece-cardgame.com/products/boosters/eb02.php",
+    "EB-03": "https://en.onepiece-cardgame.com/products/boosters/eb03.php",
+    "PRB-01": "https://en.onepiece-cardgame.com/products/boosters/prb01.php",
+    "PRB-02": "https://en.onepiece-cardgame.com/products/boosters/prb02.php",
+}
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; CardsInStock/1.0; +https://github.com/lglock12/CardsInStock)",
@@ -47,6 +71,92 @@ def official_one_piece_pages():
         except Exception as exc:
             print(f"Official One Piece catalog page {page} failed: {type(exc).__name__}: {exc}")
     return pages
+
+
+
+def slugify(text):
+    text = str(text or "").lower().replace("’", "").replace("'", "")
+    text = re.sub(r"[^a-z0-9]+", "-", text).strip("-")
+    return text
+
+
+def gamenerdz_urls(product):
+    code = str(product.get("season") or "").lower()
+    name = slugify(product.get("product"))
+    base = "https://www.gamenerdz.com/"
+    if code.startswith("eb-"):
+        forms = [
+            f"one-piece-tcg-{name}-extra-booster-box-{code}",
+            f"one-piece-tcg-{name}-booster-box-{code}",
+        ]
+    elif code.startswith("prb-"):
+        forms = [
+            f"one-piece-tcg-{name}-premium-booster-box-{code}",
+            f"one-piece-tcg-{name}-booster-box-{code}",
+        ]
+    else:
+        forms = [f"one-piece-tcg-{name}-booster-box-{code}"]
+    return [base + x for x in forms]
+
+
+def trusted_retailer_box_image(product):
+    code = str(product.get("season") or "").lower()
+    for page_url in gamenerdz_urls(product):
+        try:
+            r = requests.get(page_url, headers=HEADERS, timeout=20, allow_redirects=True)
+            if r.status_code != 200:
+                continue
+            soup = BeautifulSoup(r.text, "html.parser")
+            title = soup.title.get_text(" ", strip=True).lower() if soup.title else ""
+            body_title = " ".join(x.get_text(" ", strip=True) for x in soup.select("h1")[:2]).lower()
+            check = title + " " + body_title
+            if "booster box" not in check or code.replace("-", "") not in check.replace("-", ""):
+                continue
+            for selector, attr in [
+                ('meta[property="og:image"]', "content"),
+                ('meta[name="twitter:image"]', "content"),
+            ]:
+                tag = soup.select_one(selector)
+                if tag and tag.get(attr):
+                    return page_url, urljoin(r.url, tag.get(attr).strip())
+        except Exception:
+            continue
+    return None, None
+
+
+def official_one_piece_package_image(page_url, code):
+    """English official packaging fallback when no display-box photo is available."""
+    if not page_url:
+        return None
+    try:
+        r = requests.get(page_url, headers=HEADERS, timeout=30)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+        scored = []
+        for img in soup.find_all("img"):
+            url = img_url(img, r.url)
+            if not url:
+                continue
+            alt = (img.get("alt") or "").lower()
+            low = url.lower()
+            score = 0
+            if "product packaging image" in alt:
+                score += 100
+            if "booster pack" in alt or "booster" in alt:
+                score += 40
+            if code.replace("-", "").lower() in (alt + low).replace("-", ""):
+                score += 30
+            if "mv_01" in low:
+                score += 20
+            if score:
+                scored.append((score, url))
+        return max(scored)[1] if scored else None
+    except Exception:
+        return None
+
+
+def source_marker(pid):
+    return ASSETS / f"{pid}.source.txt"
 
 
 def img_url(tag, base_url):
@@ -113,7 +223,7 @@ def official_one_piece_box_image(page_url, code):
 
 
 def official_marker(pid):
-    return ASSETS / f"{pid}.official.txt"
+    return source_marker(pid)
 
 
 def image_from(url):
@@ -179,7 +289,7 @@ def main():
     products = json.loads(PRODUCTS.read_text())
     active_cache = json.loads(ACTIVE_CACHE.read_text()) if ACTIVE_CACHE.exists() else {"products": {}}
     observations = data.get("observations", [])
-    official_pages = official_one_piece_pages() if any(p.get("category") == "one-piece" for p in products) else {}
+    official_pages = OFFICIAL_OP_PAGES
 
     by_product = {}
     for o in observations:
@@ -203,13 +313,18 @@ def main():
                 continue
 
             code = product.get("season")
+            source_page, trusted_url = trusted_retailer_box_image(product)
             page_url = official_pages.get(code)
-            official_url = official_one_piece_box_image(page_url, code)
-            if official_url:
-                local = download_image(official_url, pid)
+            official_box_url = official_one_piece_box_image(page_url, code)
+            official_pack_url = official_one_piece_package_image(page_url, code)
+
+            chosen_url = trusted_url or official_box_url or official_pack_url
+            chosen_page = source_page or page_url
+            if chosen_url:
+                local = download_image(chosen_url, pid)
                 if local:
                     marker.parent.mkdir(parents=True, exist_ok=True)
-                    marker.write_text(page_url + "\n" + official_url + "\n")
+                    marker.write_text((chosen_page or "") + "\n" + chosen_url + "\n")
                     images[pid] = local
                     downloaded += 1
                     official_count += 1
@@ -260,7 +375,7 @@ def main():
 
     data["product_images"] = images
     LATEST.write_text(json.dumps(data, indent=2) + "\n")
-    print(f"Image cache: {len(images)}/{len(products)} products populated ({downloaded} new, {reused} reused); {official_count} One Piece official English images")
+    print(f"Image cache: {len(images)}/{len(products)} products populated ({downloaded} new, {reused} reused); {official_count} One Piece trusted English images")
 
 if __name__ == "__main__":
     main()
