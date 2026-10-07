@@ -271,10 +271,10 @@ def request_sales(product):
 
 def main():
     products = json.loads(PRODUCTS.read_text())
+    target_ids = {p["id"] for p in products if not ONLY_CATEGORY or p.get("category") == ONLY_CATEGORY}
     if ONLY_CATEGORY:
-        products = [p for p in products if p.get("category") == ONLY_CATEGORY]
-        print(f"Detailed sold collector limited to category: {ONLY_CATEGORY} ({len(products)} products)")
-    products_by_id = {p["id"]: p for p in json.loads(PRODUCTS.read_text())}
+        print(f"Detailed sold collector API scope: {ONLY_CATEGORY} ({len(target_ids)} products); output still includes full catalog")
+    products_by_id = {p["id"]: p for p in products}
     history, dropped_history = load_history(products_by_id)
     checked = now_utc()
     latest = {
@@ -287,10 +287,11 @@ def main():
     usage = account_usage() if use_api else None
     if use_api and usage and usage.get("remaining") is not None:
         remaining_before = int(usage["remaining"])
-        if remaining_before < len(products):
+        needed = len(target_ids)
+        if remaining_before < needed:
             print(
                 f"Sold API plan {usage.get('plan')} has {remaining_before} requests remaining; "
-                f"{len(products)} are needed for a complete catalog refresh. Preserving quota and rebuilding from history."
+                f"{needed} are needed for the requested refresh scope. Preserving quota and rebuilding from history."
             )
             use_api = False
     if not use_api:
@@ -305,7 +306,8 @@ def main():
         matched = []
         error = None
 
-        if use_api:
+        fetch_this = use_api and product["id"] in target_ids
+        if fetch_this:
             try:
                 query, raw_rows, remaining = request_sales(product)
                 for raw in raw_rows:
@@ -329,15 +331,15 @@ def main():
         all_rows.sort(key=lambda r: r.get("sold_at") or "", reverse=True)
         latest["products"][product["id"]] = {
             "query": query,
-            "raw_result_count": len(raw_rows) if use_api else None,
-            "matched_this_run": len(matched) if use_api else None,
+            "raw_result_count": len(raw_rows) if fetch_this else None,
+            "matched_this_run": len(matched) if fetch_this else None,
             "history_revalidated": True,
             "stats": summarize(all_rows, checked),
         }
         if error:
             latest["products"][product["id"]]["error"] = error
 
-        if use_api:
+        if fetch_this:
             print(
                 f"SOLD {product['id']}: {len(raw_rows)} raw / {len(matched)} matched / "
                 f"{len(all_rows)} stored; usage remaining={remaining}"
@@ -348,7 +350,7 @@ def main():
         if remaining == "0":
             print("API monthly allowance exhausted; preserving history and rebuilding remaining products from stored data.")
             use_api = False
-        if use_api and index < len(products):
+        if fetch_this:
             time.sleep(1.05)
 
     HISTORY.parent.mkdir(parents=True, exist_ok=True)
