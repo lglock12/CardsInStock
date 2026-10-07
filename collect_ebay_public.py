@@ -170,8 +170,8 @@ def api_money(value):
 
 
 def api_active(product):
-    from ebay_utils import canonical_terms
-    query = " ".join(canonical_terms(product))
+    from ebay_utils import quoted_query
+    query = quoted_query(product)
     r = requests.get(
         API,
         headers={"Authorization": f"Bearer {KEY}", "Accept": "application/json"},
@@ -193,17 +193,20 @@ def api_active(product):
     raw = payload.get("results") if isinstance(payload, dict) else payload
     candidates = []
     seen = set()
+    exact_titles = 0
     for row in raw or []:
         title = str(row.get("title") or "")
         if not product_match(product, title)[0]:
             continue
+        exact_titles += 1
         item_price = api_money(row.get("soldPrice") or row.get("price") or row.get("itemPrice"))
         shipping = api_money(row.get("shippingPrice") or row.get("shipping"))
         total = api_money(row.get("totalPrice") or row.get("deliveredPrice"))
         if total is None and item_price is not None and shipping is not None:
             total = round(item_price + shipping, 2)
-        if item_price is None or total is None:
+        if item_price is None:
             continue
+        comparison_price = total if total is not None else item_price
         url = row.get("url") or row.get("itemUrl") or row.get("listingUrl")
         key = (row.get("itemId") or url, item_price, shipping, total)
         if key in seen:
@@ -215,13 +218,16 @@ def api_active(product):
             "item_price": item_price,
             "shipping": shipping,
             "delivered_price": total,
-            "shipping_text": "FREE" if shipping == 0 else (f"${shipping:.2f}" if shipping is not None else "included in total"),
+            "comparison_price": comparison_price,
+            "shipping_known": shipping is not None or total is not None,
+            "shipping_text": "FREE" if shipping == 0 else (f"${shipping:.2f}" if shipping is not None else "shipping TBD"),
             "market_state": "ACTIVE_BIN_API",
             "source": "ebaysoldlistingsapi_active",
             "seller": row.get("sellerUsername"),
             "listing_id": row.get("itemId"),
         })
-    candidates.sort(key=lambda x: (x["delivered_price"], x["item_price"]))
+    candidates.sort(key=lambda x: (x["comparison_price"], x["item_price"]))
+    print(f"ACTIVE {product['id']}: {len(raw or [])} raw / {exact_titles} exact titles / {len(candidates)} priced candidates")
     return candidates, remaining
 
 
@@ -285,7 +291,7 @@ def main():
             market["public_ebay_reason"] = "authenticated active API snapshot"
             market["active_market"] = {
                 "basis": "ebaysoldlistingsapi_active",
-                "floor": best["delivered_price"],
+                "floor": best.get("comparison_price") or best.get("delivered_price") or best.get("item_price"),
                 "snapshot_date": str(ts)[:10],
                 "updated_at": ts,
                 "listing_count": len(candidates),
