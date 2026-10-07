@@ -4,7 +4,7 @@ from urllib.parse import quote_plus
 def canonical_terms(product):
     """Build a tight, human-readable eBay query for one sealed product SKU."""
     if product.get("category") == "one-piece":
-        return [product["season"], "One Piece", "English", "Booster Box"]
+        return [product["season"], "One Piece", "Booster Box"]
     terms = [product["season"], "Topps"]
     name = product["product"].lower()
 
