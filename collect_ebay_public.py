@@ -18,6 +18,7 @@ EBAY = ROOT / "data" / "ebay_latest.json"
 ACTIVE_CACHE = ROOT / "data" / "active_ebay_cache.json"
 API = "https://api.ebaysoldlistingsapi.com/scrape"
 KEY = os.getenv("EBAY_SOLD_API_KEY", "").strip()
+FULL_REFRESH = os.getenv("EBAY_ACTIVE_FULL_REFRESH", "").strip().lower() in {"1","true","yes"}
 
 HEADERS = {
     "User-Agent": (
@@ -225,6 +226,7 @@ def api_active(product):
             "source": "ebaysoldlistingsapi_active",
             "seller": row.get("sellerUsername"),
             "listing_id": row.get("itemId"),
+            "thumbnail_url": row.get("thumbnailUrl"),
         })
     candidates.sort(key=lambda x: (x["comparison_price"], x["item_price"]))
     print(f"ACTIVE {product['id']}: {len(raw or [])} raw / {exact_titles} exact titles / {len(candidates)} priced candidates")
@@ -253,7 +255,7 @@ def main():
         cache = load_active_cache()
         cache.setdefault("products", {})
         slot = (checked.hour // 3) % 8
-        selected = [product for i, product in enumerate(products) if i % 8 == slot]
+        selected = products if FULL_REFRESH else [product for i, product in enumerate(products) if i % 8 == slot]
         refreshed = 0
         matched_candidates = 0
         errors = 0
@@ -303,7 +305,8 @@ def main():
         text = json.dumps(data, indent=2) + "\n"
         MARKET.write_text(text)
         EBAY.write_text(text)
-        print(f"Authenticated active eBay rotation: slot {slot}/8, {refreshed}/{len(selected)} queried, {matched_candidates} exact BIN candidates, {errors} errors, usage remaining={remaining}")
+        mode = "full bootstrap" if FULL_REFRESH else f"slot {slot}/8"
+        print(f"Authenticated active eBay {mode}: {refreshed}/{len(selected)} queried, {matched_candidates} exact BIN candidates, {errors} errors, usage remaining={remaining}")
         return
 
     by_id = {p["id"]: p for p in products}
