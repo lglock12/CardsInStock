@@ -111,7 +111,7 @@ def parse_search(product, page_html):
         if key in seen:
             continue
         seen.add(key)
-        candidate = {
+        candidates.append({
             "title": title,
             "url": href,
             "item_price": item_price,
@@ -251,7 +251,7 @@ def api_active(product, sold_data):
         if key in seen:
             continue
         seen.add(key)
-        candidates.append({
+        candidate = {
             "title": title,
             "url": url,
             "item_price": item_price,
