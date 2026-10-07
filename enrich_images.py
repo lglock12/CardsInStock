@@ -10,6 +10,7 @@ LATEST = ROOT / "data" / "latest.json"
 MARKET = ROOT / "data" / "market_latest.json"
 SOLD = ROOT / "data" / "sold_latest.json"
 PRODUCTS = ROOT / "config" / "products.json"
+ACTIVE_CACHE = ROOT / "data" / "active_ebay_cache.json"
 ASSETS = ROOT / "docs" / "assets" / "products"
 
 HEADERS = {
@@ -78,12 +79,12 @@ def main():
     market = json.loads(MARKET.read_text()) if MARKET.exists() else {"products": {}}
     sold = json.loads(SOLD.read_text()) if SOLD.exists() else {"products": {}}
     products = json.loads(PRODUCTS.read_text())
+    active_cache = json.loads(ACTIVE_CACHE.read_text()) if ACTIVE_CACHE.exists() else {"products": {}}
     observations = data.get("observations", [])
 
     by_product = {}
     for o in observations:
-        if o.get("status") == "VERIFIED":
-            by_product.setdefault(o["product_id"], []).append(o)
+        by_product.setdefault(o.get("product_id"), []).append(o)
 
     images = {}
     downloaded = 0
@@ -105,12 +106,19 @@ def main():
         if m.get("collectaio_image_url"):
             candidates.append(m.get("collectaio_image_url"))
 
+        snap = (active_cache.get("products") or {}).get(pid) or {}
+        for row in (snap.get("candidates") or [])[:5]:
+            if row.get("thumbnail_url"):
+                candidates.append(row.get("thumbnail_url"))
+
         s = (sold.get("products") or {}).get(pid) or {}
         recent = ((s.get("stats") or {}).get("recent_sales") or [])
         for sale in recent[:5]:
             if sale.get("thumbnail_url"):
                 candidates.append(sale.get("thumbnail_url"))
 
+        # Product-page images are useful even if the listing is currently OOS.
+        # Once downloaded, the site uses the local copy and no longer depends on it.
         for o in by_product.get(pid, []):
             img = image_from(o.get("final_url") or o.get("url"))
             if img:
