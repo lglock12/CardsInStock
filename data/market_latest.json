@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T07:45:43.574672+00:00",
+  "generated_at": "2026-10-07T08:03:47.107852+00:00",
   "source": "collectaio_public_api",
   "source_docs": "https://www.collectaio.com/developers",
   "products": {
@@ -7066,6 +7066,842 @@
       "candidate_count": 0,
       "best": null,
       "reason": "2026-27 Topps Premier League Hobby box: no exact catalog match | 2026/27 Topps Premier League Hobby box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-01": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-01\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-01%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-01 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-02": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-02\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-02%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-02 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-03": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-03\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-03%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-03 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-04": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-04\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-04%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-04 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-05": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-05\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-05%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-05 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-06": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-06\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-06%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-06 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-07": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-07\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-07%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-07 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-08": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-08\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-08%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-08 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-09": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-09\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-09%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-09 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-10": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-10\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-10%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-10 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-11": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-11\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-11%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-11 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-12": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-12\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-12%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-12 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-13": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-13\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-13%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-13 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-14": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-14\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-14%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-14 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-15": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-15\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-15%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-15 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-16": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-16\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-16%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-16 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-op-17": {
+      "status": "UNAVAILABLE",
+      "query": "\"OP-17\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-17%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "OP-17 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-eb-01": {
+      "status": "UNAVAILABLE",
+      "query": "\"EB-01\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22EB-01%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "EB-01 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-eb-02": {
+      "status": "UNAVAILABLE",
+      "query": "\"EB-02\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22EB-02%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "EB-02 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-eb-03": {
+      "status": "UNAVAILABLE",
+      "query": "\"EB-03\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22EB-03%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "EB-03 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-prb-01": {
+      "status": "UNAVAILABLE",
+      "query": "\"PRB-01\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22PRB-01%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "PRB-01 Topps Booster Box box: no exact catalog match",
+      "source": "collectaio_public_api",
+      "sold": {
+        "count": 0,
+        "latest_sale_at": null,
+        "median_all_item_price": null,
+        "median_all_delivered": null,
+        "windows": {
+          "30": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "90": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "180": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          },
+          "365": {
+            "count": 0,
+            "median_item_price": null,
+            "median_delivered": null
+          }
+        },
+        "recent": []
+      }
+    },
+    "one-piece-prb-02": {
+      "status": "UNAVAILABLE",
+      "query": "\"PRB-02\" \"Topps\" \"Booster Box\" \"box\" -women -womens -\"women's\"",
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22PRB-02%22+%22Topps%22+%22Booster+Box%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
+      "candidate_count": 0,
+      "best": null,
+      "reason": "PRB-02 Topps Booster Box box: no exact catalog match",
       "source": "collectaio_public_api",
       "sold": {
         "count": 0,
