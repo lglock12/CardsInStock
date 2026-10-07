@@ -8,7 +8,7 @@ from pathlib import Path
 import requests
 
 from ebay_utils import quoted_query
-from matching import product_match, is_plausible_sealed_listing
+from matching import product_match
 
 ROOT = Path(__file__).parent
 PRODUCTS = ROOT / "config" / "products.json"
@@ -65,8 +65,10 @@ def normalize_sale(product, row):
         return None
 
     exact = product_match(product, title)[0]
-    plausible = is_plausible_sealed_listing(product, title)
-    if not exact and not plausible:
+    # Detailed sold comps must be exact SKU matches. Near/plausible sealed
+    # listings are useful as discovery leads, but they must never affect
+    # historical sold pricing or trend calculations.
+    if not exact:
         return None
 
     condition = str(pick(row, "condition", "conditionName") or "").lower()
@@ -209,7 +211,9 @@ def load_history(products_by_id):
             dropped += 1
             continue
         title = row.get("title") or ""
-        if not (product_match(product, title)[0] or is_plausible_sealed_listing(product, title)):
+        # Revalidate historical transactions against the exact current SKU
+        # matcher. This intentionally prunes older near-match/plausible rows.
+        if not product_match(product, title)[0]:
             dropped += 1
             continue
         # Migrate older rows that excluded accepted Best Offers before the
