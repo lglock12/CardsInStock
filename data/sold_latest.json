@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T17:30:39.245830+00:00",
+  "generated_at": "2026-10-07T17:38:25.688080+00:00",
   "source": "ebaysoldlistingsapi.com",
   "products": {
     "2023-24-finest-uefa-hobby": {
@@ -19248,6 +19248,414 @@
             "source": "ebaysoldlistingsapi.com"
           }
         ]
+      }
+    },
+    "2023-24-chrome-uefa-delight": {
+      "query": "\"2023-24\" \"Topps\" \"Chrome\" \"UEFA\" \"Delight\" \"box\" -women -womens -\"women's\"",
+      "raw_result_count": null,
+      "matched_this_run": null,
+      "history_revalidated": true,
+      "stats": {
+        "matched_sales": 0,
+        "priced_sales": 0,
+        "best_offer_hidden_count": 0,
+        "auction_count": 0,
+        "bin_count": 0,
+        "latest_sale_at": null,
+        "windows": {
+          "7": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "30": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "90": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "180": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "365": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          }
+        },
+        "prior_31_90": {
+          "count": 0,
+          "median": null,
+          "low": null,
+          "high": null
+        },
+        "recent_sales": []
+      }
+    },
+    "2023-24-chrome-uefa-sapphire": {
+      "query": "\"2023-24\" \"Topps\" \"Chrome\" \"UEFA\" \"Sapphire\" \"box\" -women -womens -\"women's\"",
+      "raw_result_count": null,
+      "matched_this_run": null,
+      "history_revalidated": true,
+      "stats": {
+        "matched_sales": 0,
+        "priced_sales": 0,
+        "best_offer_hidden_count": 0,
+        "auction_count": 0,
+        "bin_count": 0,
+        "latest_sale_at": null,
+        "windows": {
+          "7": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "30": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "90": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "180": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "365": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          }
+        },
+        "prior_31_90": {
+          "count": 0,
+          "median": null,
+          "low": null,
+          "high": null
+        },
+        "recent_sales": []
+      }
+    },
+    "2023-24-deco-uefa-box": {
+      "query": "\"2023-24\" \"Topps\" \"Deco\" \"UEFA\" \"box\" -women -womens -\"women's\"",
+      "raw_result_count": null,
+      "matched_this_run": null,
+      "history_revalidated": true,
+      "stats": {
+        "matched_sales": 0,
+        "priced_sales": 0,
+        "best_offer_hidden_count": 0,
+        "auction_count": 0,
+        "bin_count": 0,
+        "latest_sale_at": null,
+        "windows": {
+          "7": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "30": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "90": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "180": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "365": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          }
+        },
+        "prior_31_90": {
+          "count": 0,
+          "median": null,
+          "low": null,
+          "high": null
+        },
+        "recent_sales": []
+      }
+    },
+    "2024-chrome-uefa-euro-sapphire": {
+      "query": "\"2024\" \"Topps\" \"Chrome\" \"UEFA EURO\" \"Sapphire\" \"box\" -women -womens -\"women's\"",
+      "raw_result_count": null,
+      "matched_this_run": null,
+      "history_revalidated": true,
+      "stats": {
+        "matched_sales": 0,
+        "priced_sales": 0,
+        "best_offer_hidden_count": 0,
+        "auction_count": 0,
+        "bin_count": 0,
+        "latest_sale_at": null,
+        "windows": {
+          "7": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "30": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "90": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "180": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "365": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          }
+        },
+        "prior_31_90": {
+          "count": 0,
+          "median": null,
+          "low": null,
+          "high": null
+        },
+        "recent_sales": []
+      }
+    },
+    "2024-25-uefa-flagship-value": {
+      "query": "\"2024-25\" \"Topps\" \"UEFA\" \"Blaster\" \"box\" -women -womens -\"women's\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine -\"stadium club\"",
+      "raw_result_count": null,
+      "matched_this_run": null,
+      "history_revalidated": true,
+      "stats": {
+        "matched_sales": 0,
+        "priced_sales": 0,
+        "best_offer_hidden_count": 0,
+        "auction_count": 0,
+        "bin_count": 0,
+        "latest_sale_at": null,
+        "windows": {
+          "7": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "30": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "90": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "180": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "365": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          }
+        },
+        "prior_31_90": {
+          "count": 0,
+          "median": null,
+          "low": null,
+          "high": null
+        },
+        "recent_sales": []
+      }
+    },
+    "2025-26-premier-league-flagship-mega": {
+      "query": "\"2025-26\" \"Topps\" \"Premier League\" \"Mega Tin\" -women -womens -\"women's\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine -\"stadium club\"",
+      "raw_result_count": null,
+      "matched_this_run": null,
+      "history_revalidated": true,
+      "stats": {
+        "matched_sales": 0,
+        "priced_sales": 0,
+        "best_offer_hidden_count": 0,
+        "auction_count": 0,
+        "bin_count": 0,
+        "latest_sale_at": null,
+        "windows": {
+          "7": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "30": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "90": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "180": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          },
+          "365": {
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
+          }
+        },
+        "prior_31_90": {
+          "count": 0,
+          "median": null,
+          "low": null,
+          "high": null
+        },
+        "recent_sales": []
       }
     }
   }
