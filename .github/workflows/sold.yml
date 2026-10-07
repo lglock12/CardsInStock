@@ -8,6 +8,13 @@ on:
     # 00:15 in America/Chicago (CDT=05:15 UTC, CST=06:15 UTC).
     - cron: '15 5 * * *'
     - cron: '15 6 * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - 'collect_sold_detail.py'
+      - 'build_dashboard_modern.py'
+      - '.github/workflows/sold.yml'
 
 permissions:
   contents: write
