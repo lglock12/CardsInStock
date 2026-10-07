@@ -19,6 +19,7 @@ USAGE_API = "https://api.ebaysoldlistingsapi.com/account/usage"
 KEY = os.getenv("EBAY_SOLD_API_KEY", "").strip()
 CLEAN_ONLY = os.getenv("SOLD_CLEAN_ONLY", "").strip().lower() in {"1", "true", "yes"}
 ONLY_CATEGORY = os.getenv("SOLD_ONLY_CATEGORY", "").strip()
+ROTATE_PARTS = max(1, int(os.getenv("SOLD_ROTATE_PARTS", "1") or 1))
 
 
 def now_utc():
