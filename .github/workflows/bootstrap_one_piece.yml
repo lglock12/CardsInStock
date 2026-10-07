@@ -1,0 +1,60 @@
+name: Bootstrap One Piece sold data
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/bootstrap_one_piece.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cardsinstock-data
+  cancel-in-progress: false
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - name: Bootstrap One Piece sold transactions
+        env:
+          EBAY_SOLD_API_KEY: ${{ secrets.EBAY_SOLD_API_KEY }}
+          SOLD_ONLY_CATEGORY: "one-piece"
+          SOLD_CLEAN_ONLY: "0"
+        run: python collect_sold_detail.py
+      - name: Rebuild dashboard
+        run: python build_dashboard_modern.py
+      - name: Commit One Piece sold history
+        run: |
+          git config user.name "cardsinstock-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          OUT=/tmp/cardsinstock-op-bootstrap
+          rm -rf "$OUT"
+          mkdir -p "$OUT/data" "$OUT/docs"
+          cp data/sold_latest.json data/sold_history.jsonl "$OUT/data/"
+          cp docs/index.html "$OUT/docs/"
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          cp "$OUT/data/"* data/
+          cp "$OUT/docs/"* docs/
+
+          git add data/sold_latest.json data/sold_history.jsonl docs/index.html
+          if git diff --cached --quiet; then
+            echo "No One Piece sold-data changes"
+          else
+            git commit -m "Bootstrap One Piece sold comps"
+            git push origin HEAD:main
+          fi
