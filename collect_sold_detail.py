@@ -221,12 +221,9 @@ def request_sales(product):
 
 
 def main():
-    if not KEY:
-        print("EBAY_SOLD_API_KEY is not configured; detailed sold collection skipped cleanly.")
-        return
-
     products = json.loads(PRODUCTS.read_text())
-    history = load_history()
+    products_by_id = {p["id"]: p for p in products}
+    history, dropped_history = load_history(products_by_id)
     checked = now_utc()
     latest = {
         "generated_at": checked.isoformat(),
@@ -234,51 +231,59 @@ def main():
         "products": {},
     }
 
+    use_api = bool(KEY) and not CLEAN_ONLY
+    if not use_api:
+        mode = "history cleanup" if CLEAN_ONLY else "history rebuild (API key unavailable)"
+        print(f"Detailed sold collector running in {mode} mode.")
+
     new_rows = 0
     remaining = None
     for index, product in enumerate(products, start=1):
-        try:
-            query, raw_rows, remaining = request_sales(product)
-            matched = []
-            for raw in raw_rows:
-                sale = normalize_sale(product, raw)
-                if not sale:
-                    continue
-                matched.append(sale)
-                key = (sale["product_id"], sale["dedupe_key"])
-                if key not in history:
-                    history[key] = sale
-                    new_rows += 1
+        query = quoted_query(product)
+        raw_rows = []
+        matched = []
+        error = None
 
-            # Build each product summary from our persistent local history, not
-            # merely today's API response. This is how CardsInStock grows beyond
-            # the provider/eBay rolling window over time.
-            all_rows = [r for (pid, _), r in history.items() if pid == product["id"]]
-            all_rows.sort(key=lambda r: r.get("sold_at") or "", reverse=True)
-            latest["products"][product["id"]] = {
-                "query": query,
-                "raw_result_count": len(raw_rows),
-                "matched_this_run": len(matched),
-                "stats": summarize(all_rows, checked),
-            }
+        if use_api:
+            try:
+                query, raw_rows, remaining = request_sales(product)
+                for raw in raw_rows:
+                    sale = normalize_sale(product, raw)
+                    if not sale:
+                        continue
+                    matched.append(sale)
+                    key = (sale["product_id"], sale["dedupe_key"])
+                    if key not in history:
+                        history[key] = sale
+                        new_rows += 1
+            except Exception as exc:
+                error = f"{type(exc).__name__}: {exc}"
+                print(f"SOLD {product['id']}: ERROR {error}")
+
+        all_rows = [r for (pid, _), r in history.items() if pid == product["id"]]
+        all_rows.sort(key=lambda r: r.get("sold_at") or "", reverse=True)
+        latest["products"][product["id"]] = {
+            "query": query,
+            "raw_result_count": len(raw_rows) if use_api else None,
+            "matched_this_run": len(matched) if use_api else None,
+            "history_revalidated": True,
+            "stats": summarize(all_rows, checked),
+        }
+        if error:
+            latest["products"][product["id"]]["error"] = error
+
+        if use_api:
             print(
                 f"SOLD {product['id']}: {len(raw_rows)} raw / {len(matched)} matched / "
                 f"{len(all_rows)} stored; usage remaining={remaining}"
             )
-        except Exception as exc:
-            print(f"SOLD {product['id']}: ERROR {type(exc).__name__}: {exc}")
-            all_rows = [r for (pid, _), r in history.items() if pid == product["id"]]
-            all_rows.sort(key=lambda r: r.get("sold_at") or "", reverse=True)
-            latest["products"][product["id"]] = {
-                "query": quoted_query(product),
-                "error": f"{type(exc).__name__}: {exc}",
-                "stats": summarize(all_rows, checked),
-            }
+        else:
+            print(f"SOLD {product['id']}: history-only rebuild / {len(all_rows)} stored")
 
         if remaining == "0":
-            print("API monthly allowance exhausted; stopping without losing stored history.")
-            break
-        if index < len(products):
+            print("API monthly allowance exhausted; preserving history and rebuilding remaining products from stored data.")
+            use_api = False
+        if use_api and index < len(products):
             time.sleep(1.05)
 
     HISTORY.parent.mkdir(parents=True, exist_ok=True)
@@ -288,7 +293,7 @@ def main():
 
     print(
         f"Detailed sold collection complete: {new_rows} new unique transactions; "
-        f"{len(history)} total stored transactions."
+        f"{len(history)} total stored transactions; {dropped_history} historical rows pruned."
     )
 
 
