@@ -1,52 +1,5 @@
 [
   {
-    "id": "2023-24-chrome-uefa-delight",
-    "season": "2023-24",
-    "product": "Topps Chrome UEFA Club Competitions",
-    "format": "Delight",
-    "required_terms": [
-      "2023-24",
-      "chrome",
-      "uefa",
-      "delight"
-    ],
-    "reject_terms": [
-      "jumbo",
-      "mega",
-      "blaster",
-      "value",
-      "pack",
-      "case"
-    ],
-    "league": "UEFA",
-    "type": "Chrome UEFA"
-  },
-  {
-    "id": "2023-24-chrome-uefa-sapphire",
-    "season": "2023-24",
-    "product": "Topps Chrome Sapphire UEFA Club Competitions",
-    "format": "Sapphire",
-    "required_terms": [
-      "2023-24",
-      "chrome",
-      "sapphire",
-      "uefa"
-    ],
-    "reject_terms": [
-      "merlin",
-      "finest",
-      "jumbo",
-      "mega",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ],
-    "league": "UEFA",
-    "type": "Chrome Sapphire UEFA"
-  },
-  {
     "id": "2023-24-finest-uefa-hobby",
     "season": "2023-24",
     "product": "Topps Finest UEFA",
@@ -70,25 +23,6 @@
     ],
     "league": "UEFA",
     "type": "Finest UEFA"
-  },
-  {
-    "id": "2023-24-deco-uefa-box",
-    "season": "2023-24",
-    "product": "Topps Deco UEFA Club Competitions",
-    "format": "Box",
-    "required_terms": [
-      "2023-24",
-      "topps",
-      "deco",
-      "uefa"
-    ],
-    "reject_terms": [
-      "pack",
-      "case",
-      "break"
-    ],
-    "league": "UEFA",
-    "type": "Deco UEFA"
   },
   {
     "id": "2023-24-uefa-flagship-hobby",
@@ -115,30 +49,6 @@
     ],
     "league": "UEFA",
     "type": "UEFA Flagship"
-  },
-  {
-    "id": "2024-chrome-uefa-euro-sapphire",
-    "season": "2024",
-    "product": "Topps Chrome UEFA EURO Sapphire",
-    "format": "Sapphire",
-    "required_terms": [
-      "2024",
-      "topps",
-      "chrome",
-      "uefa euro",
-      "sapphire"
-    ],
-    "reject_terms": [
-      "jumbo",
-      "mega",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ],
-    "league": "UEFA",
-    "type": "Chrome UEFA EURO Sapphire"
   },
   {
     "id": "2024-25-merlin-uefa-value",
@@ -325,31 +235,6 @@
     ],
     "league": "UEFA",
     "type": "Museum Collection UEFA"
-  },
-  {
-    "id": "2024-25-uefa-flagship-value",
-    "season": "2024-25",
-    "product": "Topps UEFA Flagship",
-    "format": "Blaster / Value",
-    "required_terms": [
-      "2024-25",
-      "topps",
-      "uefa",
-      "value"
-    ],
-    "reject_terms": [
-      "chrome",
-      "merlin",
-      "finest",
-      "hobby",
-      "jumbo",
-      "mega",
-      "pack",
-      "case",
-      "break"
-    ],
-    "league": "UEFA",
-    "type": "UEFA Flagship"
   },
   {
     "id": "2024-25-uefa-flagship-hobby",
@@ -638,32 +523,6 @@
     ],
     "league": "UEFA",
     "type": "UEFA Flagship"
-  },
-  {
-    "id": "2025-26-premier-league-flagship-mega",
-    "season": "2025-26",
-    "product": "Topps Premier League Flagship",
-    "format": "Mega Tin",
-    "required_terms": [
-      "2025-26",
-      "topps",
-      "premier league",
-      "mega tin"
-    ],
-    "reject_terms": [
-      "chrome",
-      "merlin",
-      "finest",
-      "hobby",
-      "jumbo",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ],
-    "league": "Premier League",
-    "type": "Premier League Flagship"
   },
   {
     "id": "2025-26-chrome-premier-league-value",
