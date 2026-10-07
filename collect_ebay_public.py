@@ -1,6 +1,7 @@
 import os
 import json
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
@@ -173,21 +174,29 @@ def api_money(value):
 def api_active(product):
     from ebay_utils import quoted_query
     query = quoted_query(product)
-    r = requests.get(
-        API,
-        headers={"Authorization": f"Bearer {KEY}", "Accept": "application/json"},
-        params={
-            "keyword": query,
-            "ebaySite": "ebay.com",
-            "count": 120,
-            "sold": "false",
-            "itemCondition": "new",
-            "buyingFormat": "buyItNow",
-            "sortOrder": "pricePlusPostageLowest",
-            "itemLocation": "domestic",
-        },
-        timeout=100,
-    )
+    params = {
+        "keyword": query,
+        "ebaySite": "ebay.com",
+        "count": 120,
+        "sold": "false",
+        "itemCondition": "new",
+        "buyingFormat": "buyItNow",
+        "sortOrder": "pricePlusPostageLowest",
+        "itemLocation": "domestic",
+    }
+    r = None
+    for attempt in range(5):
+        r = requests.get(
+            API,
+            headers={"Authorization": f"Bearer {KEY}", "Accept": "application/json"},
+            params=params,
+            timeout=100,
+        )
+        if r.status_code not in (429, 502, 503, 504):
+            break
+        wait = float(r.headers.get("Retry-After") or max(1.0, 1.5 * (attempt + 1)))
+        print(f"ACTIVE {product['id']}: HTTP {r.status_code}, retrying in {wait:.1f}s")
+        time.sleep(wait)
     remaining = r.headers.get("X-Usage-Remaining")
     r.raise_for_status()
     payload = r.json()
@@ -271,6 +280,7 @@ def main():
             except Exception as exc:
                 errors += 1
                 print(f"ACTIVE {product['id']}: ERROR {type(exc).__name__}: {exc}")
+            time.sleep(0.65)
 
         for product in products:
             pid = product["id"]
