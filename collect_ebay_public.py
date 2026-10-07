@@ -253,12 +253,8 @@ def load_active_cache():
         return {"products": {}}
 
 def main():
-    if not MARKET.exists():
-        print("No market_latest.json; skipping public eBay fallback")
-        return
-
     products = json.loads(PRODUCTS.read_text())
-    data = json.loads(MARKET.read_text())
+    data = json.loads(MARKET.read_text()) if MARKET.exists() else {"generated_at": None, "products": {}}
     checked = datetime.now(timezone.utc)
 
     if KEY:
