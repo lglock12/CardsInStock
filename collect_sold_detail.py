@@ -15,6 +15,7 @@ PRODUCTS = ROOT / "config" / "products.json"
 LATEST = ROOT / "data" / "sold_latest.json"
 HISTORY = ROOT / "data" / "sold_history.jsonl"
 API = "https://api.ebaysoldlistingsapi.com/scrape"
+USAGE_API = "https://api.ebaysoldlistingsapi.com/account/usage"
 KEY = os.getenv("EBAY_SOLD_API_KEY", "").strip()
 CLEAN_ONLY = os.getenv("SOLD_CLEAN_ONLY", "").strip().lower() in {"1", "true", "yes"}
 
@@ -217,6 +218,28 @@ def load_history(products_by_id):
         rows[key] = row
     return rows, dropped
 
+def account_usage():
+    if not KEY:
+        return None
+    try:
+        response = requests.get(
+            USAGE_API,
+            headers={"Authorization": f"Bearer {KEY}", "Accept": "application/json"},
+            timeout=30,
+        )
+        response.raise_for_status()
+        payload = response.json()
+        return {
+            "plan": payload.get("plan"),
+            "quota": payload.get("quota"),
+            "used": payload.get("used"),
+            "remaining": payload.get("remaining"),
+            "period_end": payload.get("periodEnd"),
+        }
+    except Exception as exc:
+        print(f"Could not read sold API usage: {type(exc).__name__}: {exc}")
+        return None
+
 def request_sales(product):
     # This independent API accepts the same kind of keyword string a user would
     # type into eBay. Our quoted query keeps season/family/format tight.
@@ -253,8 +276,17 @@ def main():
     }
 
     use_api = bool(KEY) and not CLEAN_ONLY
+    usage = account_usage() if use_api else None
+    if use_api and usage and usage.get("remaining") is not None:
+        remaining_before = int(usage["remaining"])
+        if remaining_before < len(products):
+            print(
+                f"Sold API plan {usage.get('plan')} has {remaining_before} requests remaining; "
+                f"{len(products)} are needed for a complete catalog refresh. Preserving quota and rebuilding from history."
+            )
+            use_api = False
     if not use_api:
-        mode = "history cleanup" if CLEAN_ONLY else "history rebuild (API key unavailable)"
+        mode = "history cleanup" if CLEAN_ONLY else "history rebuild (API quota/key unavailable for full catalog)"
         print(f"Detailed sold collector running in {mode} mode.")
 
     new_rows = 0
