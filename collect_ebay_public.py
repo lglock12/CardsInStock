@@ -172,8 +172,8 @@ def api_money(value):
 
 
 def api_active(product):
-    from ebay_utils import quoted_query
-    query = quoted_query(product)
+    from ebay_utils import canonical_terms
+    query = " ".join(canonical_terms(product))
     params = {
         "keyword": query,
         "ebaySite": "ebay.com",
@@ -238,7 +238,8 @@ def api_active(product):
             "thumbnail_url": row.get("fullResThumbnailUrl") or row.get("thumbnailUrl"),
         })
     candidates.sort(key=lambda x: (x["comparison_price"], x["item_price"]))
-    print(f"ACTIVE {product['id']}: {len(raw or [])} raw / {exact_titles} exact titles / {len(candidates)} priced candidates")
+    sample_titles = [str(x.get("title") or "")[:120] for x in (raw or [])[:3]]
+    print(f"ACTIVE {product['id']}: {len(raw or [])} raw / {exact_titles} exact titles / {len(candidates)} priced candidates; sample={sample_titles}")
     return candidates, remaining
 
 
@@ -264,7 +265,10 @@ def main():
         cache = load_active_cache()
         cache.setdefault("products", {})
         slot = (checked.hour // 3) % 8
-        selected = products if FULL_REFRESH else [product for i, product in enumerate(products) if i % 8 == slot]
+        cached_ids = set((cache.get("products") or {}).keys())
+        catalog_ids = {p["id"] for p in products}
+        bootstrap = FULL_REFRESH or not catalog_ids.issubset(cached_ids)
+        selected = products if bootstrap else [product for i, product in enumerate(products) if i % 8 == slot]
         refreshed = 0
         matched_candidates = 0
         errors = 0
@@ -315,7 +319,9 @@ def main():
         text = json.dumps(data, indent=2) + "\n"
         MARKET.write_text(text)
         EBAY.write_text(text)
-        mode = "full bootstrap" if FULL_REFRESH else f"slot {slot}/8"
+        cache["catalog_size"] = len(products)
+        ACTIVE_CACHE.write_text(json.dumps(cache, indent=2) + "\n")
+        mode = "full bootstrap" if bootstrap else f"slot {slot}/8"
         print(f"Authenticated active eBay {mode}: {refreshed}/{len(selected)} queried, {matched_candidates} exact BIN candidates, {errors} errors, usage remaining={remaining}")
         return
 
