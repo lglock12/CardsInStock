@@ -126,9 +126,9 @@ def obvious_single_or_wrong_unit(title):
 
     # Reject multi-box/tin lots. We track the price of one sealed sale unit, not
     # cases, 2x/3x lots, or team spots from multi-box breaks. Explicit 1x is okay.
-    if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*x?\s*(?:sealed\s+|hobby\s+|mega\s+|value\s+)?(?:boxes?|tins?)\b", t):
+    if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*x?\s*(?:sealed\s+|hobby\s+|mega\s+|value\s+)?(?:box(?:es)?|tins?)\b", t):
         return True
-    if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*x\b.*\b(?:boxes?|tins?)\b", t):
+    if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*x\b.*\b(?:box(?:es)?|tins?)\b", t):
         return True
     if re.search(r"\b(?:box|tin)\s+lot\b|\blot\s+(?:of\s+)?(?:[2-9]|[1-9]\d+)\b|\bcase\b", t):
         return True
@@ -239,9 +239,9 @@ def format_conflicts(product, title):
     fmt = product.get("format")
     if re.search(r"\bbreak\b|\bbreak spot\b", t):
         return True
-    if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*x?\s*(?:sealed\s+|hobby\s+|mega\s+|value\s+)?(?:boxes?|tins?)\b", t):
+    if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*x?\s*(?:sealed\s+|hobby\s+|mega\s+|value\s+)?(?:box(?:es)?|tins?)\b", t):
         return True
-    if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*x\b.*\b(?:boxes?|tins?)\b", t):
+    if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*x\b.*\b(?:box(?:es)?|tins?)\b", t):
         return True
     if re.search(r"\b(?:box|tin)\s+lot\b|\blot\s+(?:of\s+)?(?:[2-9]|[1-9]\d+)\b", t):
         return True
