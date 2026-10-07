@@ -1,96 +1,5 @@
 [
   {
-    "id": "2023-24-merlin-uefa-hobby",
-    "season": "2023-24",
-    "product": "Topps Merlin UEFA",
-    "format": "Hobby",
-    "required_terms": [
-      "2023-24",
-      "merlin",
-      "uefa",
-      "hobby"
-    ],
-    "reject_terms": [
-      "delight",
-      "jumbo",
-      "mega",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ]
-  },
-  {
-    "id": "2023-24-chrome-uefa-value",
-    "season": "2023-24",
-    "product": "Topps Chrome UEFA Club Competitions",
-    "format": "Blaster / Value",
-    "required_terms": [
-      "2023-24",
-      "chrome",
-      "uefa",
-      "value"
-    ],
-    "reject_terms": [
-      "merlin",
-      "finest",
-      "hobby",
-      "jumbo",
-      "mega",
-      "pack",
-      "case",
-      "break"
-    ]
-  },
-  {
-    "id": "2023-24-chrome-uefa-hobby",
-    "season": "2023-24",
-    "product": "Topps Chrome UEFA Club Competitions",
-    "format": "Hobby",
-    "required_terms": [
-      "2023-24",
-      "chrome",
-      "uefa",
-      "hobby"
-    ],
-    "reject_terms": [
-      "merlin",
-      "finest",
-      "jumbo",
-      "mega",
-      "blaster",
-      "value",
-      "delight",
-      "pack",
-      "case",
-      "break"
-    ]
-  },
-  {
-    "id": "2023-24-chrome-uefa-jumbo",
-    "season": "2023-24",
-    "product": "Topps Chrome UEFA Club Competitions",
-    "format": "Hobby Jumbo",
-    "required_terms": [
-      "2023-24",
-      "chrome",
-      "uefa",
-      "jumbo"
-    ],
-    "reject_terms": [
-      "merlin",
-      "finest",
-      "mega",
-      "blaster",
-      "value",
-      "delight",
-      "pack",
-      "case",
-      "break"
-    ]
-  },
-  {
     "id": "2023-24-chrome-uefa-delight",
     "season": "2023-24",
     "product": "Topps Chrome UEFA Club Competitions",
@@ -108,7 +17,9 @@
       "value",
       "pack",
       "case"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Chrome UEFA"
   },
   {
     "id": "2023-24-chrome-uefa-sapphire",
@@ -131,30 +42,9 @@
       "pack",
       "case",
       "break"
-    ]
-  },
-  {
-    "id": "2023-24-stadium-club-chrome-uefa-hobby",
-    "season": "2023-24",
-    "product": "Topps Stadium Club Chrome UEFA",
-    "format": "Hobby",
-    "required_terms": [
-      "2023-24",
-      "stadium club",
-      "chrome",
-      "uefa",
-      "hobby"
     ],
-    "reject_terms": [
-      "delight",
-      "jumbo",
-      "mega",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ]
+    "league": "UEFA",
+    "type": "Chrome Sapphire UEFA"
   },
   {
     "id": "2023-24-finest-uefa-hobby",
@@ -177,7 +67,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Finest UEFA"
   },
   {
     "id": "2023-24-deco-uefa-box",
@@ -194,30 +86,9 @@
       "pack",
       "case",
       "break"
-    ]
-  },
-  {
-    "id": "2023-24-uefa-flagship-value",
-    "season": "2023-24",
-    "product": "Topps UEFA Flagship",
-    "format": "Blaster / Value",
-    "required_terms": [
-      "2023-24",
-      "topps",
-      "uefa",
-      "value"
     ],
-    "reject_terms": [
-      "chrome",
-      "merlin",
-      "finest",
-      "hobby",
-      "jumbo",
-      "mega",
-      "pack",
-      "case",
-      "break"
-    ]
+    "league": "UEFA",
+    "type": "Deco UEFA"
   },
   {
     "id": "2023-24-uefa-flagship-hobby",
@@ -241,30 +112,9 @@
       "pack",
       "case",
       "break"
-    ]
-  },
-  {
-    "id": "2024-chrome-uefa-euro-hobby",
-    "season": "2024",
-    "product": "Topps Chrome UEFA EURO",
-    "format": "Hobby",
-    "required_terms": [
-      "2024",
-      "topps",
-      "chrome",
-      "uefa euro",
-      "hobby"
     ],
-    "reject_terms": [
-      "sapphire",
-      "jumbo",
-      "mega",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ]
+    "league": "UEFA",
+    "type": "UEFA Flagship"
   },
   {
     "id": "2024-chrome-uefa-euro-sapphire",
@@ -286,7 +136,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Chrome UEFA EURO Sapphire"
   },
   {
     "id": "2024-25-merlin-uefa-value",
@@ -307,7 +159,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Merlin UEFA"
   },
   {
     "id": "2024-25-merlin-uefa-hobby",
@@ -329,27 +183,9 @@
       "pack",
       "case",
       "break"
-    ]
-  },
-  {
-    "id": "2024-25-merlin-uefa-delight",
-    "season": "2024-25",
-    "product": "Topps Merlin UEFA",
-    "format": "Delight",
-    "required_terms": [
-      "2024-25",
-      "merlin",
-      "uefa",
-      "delight"
     ],
-    "reject_terms": [
-      "jumbo",
-      "mega",
-      "blaster",
-      "value",
-      "pack",
-      "case"
-    ]
+    "league": "UEFA",
+    "type": "Merlin UEFA"
   },
   {
     "id": "2024-25-chrome-uefa-value",
@@ -371,7 +207,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Chrome UEFA"
   },
   {
     "id": "2024-25-chrome-uefa-hobby",
@@ -394,29 +232,9 @@
       "pack",
       "case",
       "break"
-    ]
-  },
-  {
-    "id": "2024-25-chrome-uefa-jumbo",
-    "season": "2024-25",
-    "product": "Topps Chrome UEFA Club Competitions",
-    "format": "Hobby Jumbo",
-    "required_terms": [
-      "2024-25",
-      "chrome",
-      "uefa",
-      "jumbo"
     ],
-    "reject_terms": [
-      "merlin",
-      "finest",
-      "mega",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ]
+    "league": "UEFA",
+    "type": "Chrome UEFA"
   },
   {
     "id": "2024-25-chrome-uefa-sapphire",
@@ -439,7 +257,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Chrome Sapphire UEFA"
   },
   {
     "id": "2024-25-finest-uefa-hobby",
@@ -462,7 +282,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Finest UEFA"
   },
   {
     "id": "2024-25-inception-uefa-hobby",
@@ -480,7 +302,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Inception UEFA"
   },
   {
     "id": "2024-25-museum-uefa-hobby",
@@ -498,7 +322,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Museum Collection UEFA"
   },
   {
     "id": "2024-25-uefa-flagship-value",
@@ -521,7 +347,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "UEFA Flagship"
   },
   {
     "id": "2024-25-uefa-flagship-hobby",
@@ -545,7 +373,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "UEFA Flagship"
   },
   {
     "id": "2025-26-merlin-premier-league-value",
@@ -566,7 +396,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "Premier League",
+    "type": "Merlin Premier League"
   },
   {
     "id": "2025-26-merlin-premier-league-hobby",
@@ -588,7 +420,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "Premier League",
+    "type": "Merlin Premier League"
   },
   {
     "id": "2025-26-chrome-uefa-value",
@@ -610,7 +444,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Chrome UEFA"
   },
   {
     "id": "2025-26-chrome-uefa-mega",
@@ -633,7 +469,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Chrome UEFA"
   },
   {
     "id": "2025-26-chrome-uefa-hobby",
@@ -656,29 +494,9 @@
       "pack",
       "case",
       "break"
-    ]
-  },
-  {
-    "id": "2025-26-chrome-uefa-jumbo",
-    "season": "2025-26",
-    "product": "Topps Chrome UEFA Club Competitions",
-    "format": "Hobby Jumbo",
-    "required_terms": [
-      "2025-26",
-      "chrome",
-      "uefa",
-      "jumbo"
     ],
-    "reject_terms": [
-      "merlin",
-      "finest",
-      "mega",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ]
+    "league": "UEFA",
+    "type": "Chrome UEFA"
   },
   {
     "id": "2025-26-chrome-uefa-sapphire",
@@ -701,7 +519,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Chrome Sapphire UEFA"
   },
   {
     "id": "2025-26-finest-uefa-hobby",
@@ -724,7 +544,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Finest UEFA"
   },
   {
     "id": "2025-26-inception-uefa-hobby",
@@ -742,7 +564,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Inception UEFA"
   },
   {
     "id": "2025-26-museum-uefa-hobby",
@@ -760,7 +584,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "Museum Collection UEFA"
   },
   {
     "id": "2025-26-uefa-flagship-value",
@@ -783,7 +609,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "UEFA",
+    "type": "UEFA Flagship"
   },
   {
     "id": "2025-26-uefa-flagship-hobby",
@@ -807,33 +635,9 @@
       "pack",
       "case",
       "break"
-    ]
-  },
-  {
-    "id": "2025-26-premier-league-flagship-full-box",
-    "season": "2025-26",
-    "product": "Topps Premier League Flagship",
-    "format": "Full Box",
-    "required_terms": [
-      "2025-26",
-      "topps",
-      "premier league",
-      "full box"
     ],
-    "reject_terms": [
-      "chrome",
-      "merlin",
-      "finest",
-      "hobby",
-      "jumbo",
-      "mega",
-      "tin",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ]
+    "league": "UEFA",
+    "type": "UEFA Flagship"
   },
   {
     "id": "2025-26-premier-league-flagship-mega",
@@ -857,31 +661,9 @@
       "pack",
       "case",
       "break"
-    ]
-  },
-  {
-    "id": "2025-26-premier-league-flagship-hobby",
-    "season": "2025-26",
-    "product": "Topps Premier League Flagship",
-    "format": "Hobby",
-    "required_terms": [
-      "2025-26",
-      "topps",
-      "premier league",
-      "hobby"
     ],
-    "reject_terms": [
-      "chrome",
-      "merlin",
-      "finest",
-      "jumbo",
-      "mega",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ]
+    "league": "Premier League",
+    "type": "Premier League Flagship"
   },
   {
     "id": "2025-26-chrome-premier-league-value",
@@ -904,32 +686,9 @@
       "pack",
       "case",
       "break"
-    ]
-  },
-  {
-    "id": "2025-26-chrome-premier-league-tin",
-    "season": "2025-26",
-    "product": "Topps Chrome Premier League",
-    "format": "Tin",
-    "required_terms": [
-      "2025-26",
-      "chrome",
-      "premier league",
-      "tin"
     ],
-    "reject_terms": [
-      "merlin",
-      "finest",
-      "hobby",
-      "jumbo",
-      "mega",
-      "blaster",
-      "value",
-      "hanger",
-      "pack",
-      "case",
-      "break"
-    ]
+    "league": "Premier League",
+    "type": "Chrome Premier League"
   },
   {
     "id": "2025-26-chrome-premier-league-hobby",
@@ -953,7 +712,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "Premier League",
+    "type": "Chrome Premier League"
   },
   {
     "id": "2025-26-chrome-premier-league-sapphire",
@@ -977,7 +738,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "Premier League",
+    "type": "Chrome Sapphire Premier League"
   },
   {
     "id": "2026-27-premier-league-flagship-value",
@@ -1000,31 +763,9 @@
       "pack",
       "case",
       "break"
-    ]
-  },
-  {
-    "id": "2026-27-premier-league-flagship-mega",
-    "season": "2026-27",
-    "product": "Topps Premier League Flagship",
-    "format": "Mega Tin",
-    "required_terms": [
-      "2026-27",
-      "topps",
-      "premier league",
-      "mega tin"
     ],
-    "reject_terms": [
-      "chrome",
-      "merlin",
-      "finest",
-      "hobby",
-      "jumbo",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ]
+    "league": "Premier League",
+    "type": "Premier League Flagship"
   },
   {
     "id": "2026-27-premier-league-flagship-hobby",
@@ -1048,7 +789,9 @@
       "pack",
       "case",
       "break"
-    ]
+    ],
+    "league": "Premier League",
+    "type": "Premier League Flagship"
   },
   {
     "id": "one-piece-op-01",
@@ -1071,7 +814,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-02",
@@ -1094,7 +839,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-03",
@@ -1117,7 +864,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-04",
@@ -1140,7 +889,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-05",
@@ -1163,7 +914,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-06",
@@ -1186,7 +939,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-07",
@@ -1209,7 +964,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-08",
@@ -1232,7 +989,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-09",
@@ -1255,7 +1014,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-10",
@@ -1278,7 +1039,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-11",
@@ -1301,7 +1064,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-12",
@@ -1324,7 +1089,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-13",
@@ -1347,7 +1114,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-14",
@@ -1370,7 +1139,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-15",
@@ -1393,7 +1164,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-16",
@@ -1416,7 +1189,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-op-17",
@@ -1439,7 +1214,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-eb-01",
@@ -1462,7 +1239,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-eb-02",
@@ -1485,7 +1264,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-eb-03",
@@ -1508,7 +1289,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-prb-01",
@@ -1531,7 +1314,9 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   },
   {
     "id": "one-piece-prb-02",
@@ -1554,6 +1339,8 @@
       "loose pack",
       "sleeved booster",
       "break"
-    ]
+    ],
+    "league": "One Piece",
+    "type": "Booster Boxes"
   }
 ]
