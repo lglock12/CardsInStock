@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T06:19:53.687680+00:00",
+  "generated_at": "2026-10-07T06:32:57.263827+00:00",
   "source": "ebaysoldlistingsapi.com",
   "products": {
     "2023-24-merlin-uefa-hobby": {
@@ -7356,10 +7356,10 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 39,
-        "priced_sales": 39,
+        "matched_sales": 32,
+        "priced_sales": 32,
         "best_offer_hidden_count": 5,
-        "auction_count": 13,
+        "auction_count": 6,
         "bin_count": 14,
         "latest_sale_at": "2026-10-04T00:00:00+00:00",
         "windows": {
@@ -7373,47 +7373,47 @@
             "p75": 959.9
           },
           "30": {
-            "count": 9,
-            "median": 899.99,
-            "median_delivered": 907.51,
+            "count": 8,
+            "median": 895.0,
+            "median_delivered": 906.68,
             "low": 790.0,
-            "high": 1575.0,
-            "p25": 889.95,
-            "p75": 1013.2
+            "high": 1199.99,
+            "p25": 867.46,
+            "p75": 992.05
           },
           "90": {
-            "count": 38,
-            "median": 771.49,
-            "median_delivered": 785.45,
+            "count": 31,
+            "median": 749.99,
+            "median_delivered": 759.99,
             "low": 650.0,
-            "high": 1575.0,
-            "p25": 726.24,
-            "p75": 963.75
+            "high": 1199.99,
+            "p25": 710.77,
+            "p75": 840.57
           },
           "180": {
-            "count": 39,
-            "median": 768.02,
-            "median_delivered": 795.95,
+            "count": 32,
+            "median": 749.97,
+            "median_delivered": 762.5,
             "low": 650.0,
-            "high": 1575.0,
-            "p25": 727.49,
-            "p75": 942.5
+            "high": 1199.99,
+            "p25": 711.16,
+            "p75": 839.2
           },
           "365": {
-            "count": 39,
-            "median": 768.02,
-            "median_delivered": 795.95,
+            "count": 32,
+            "median": 749.97,
+            "median_delivered": 762.5,
             "low": 650.0,
-            "high": 1575.0,
-            "p25": 727.49,
-            "p75": 942.5
+            "high": 1199.99,
+            "p25": 711.16,
+            "p75": 839.2
           }
         },
         "prior_31_90": {
-          "count": 29,
-          "median": 749.95,
+          "count": 23,
+          "median": 732.41,
           "low": 650.0,
-          "high": 1525.0
+          "high": 858.95
         },
         "recent_sales": [
           {
@@ -7569,44 +7569,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "178458641454",
-            "product_id": "2025-26-chrome-uefa-jumbo",
-            "title": "LOT x (2) 2025-26 TOPPS CHROME UEFA CLUB COMPETITIONS SEALED JUMBO HOBBY BOX UCC",
-            "sold_at": "2026-09-13T00:00:00+00:00",
-            "sold_price": 1575.0,
-            "shipping": 27.95,
-            "delivered_price": 1602.95,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 34,
-            "condition": "Brand New",
-            "seller": "mc_sportscards",
-            "url": "https://www.ebay.com/itm/178458641454?nordt=true",
-            "listing_id": "178458641454",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "178445743495",
-            "product_id": "2025-26-chrome-uefa-jumbo",
-            "title": "LOT x (2) 2025-26 TOPPS CHROME UEFA CLUB COMPETITIONS SEALED JUMBO HOBBY BOX UCC",
-            "sold_at": "2026-09-06T00:00:00+00:00",
-            "sold_price": 1525.0,
-            "shipping": 27.95,
-            "delivered_price": 1552.95,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 27,
-            "condition": "Brand New",
-            "seller": "mc_sportscards",
-            "url": "https://www.ebay.com/itm/178445743495?nordt=true",
-            "listing_id": "178445743495",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "366631164972",
             "product_id": "2025-26-chrome-uefa-jumbo",
             "title": "2025-26 Topps Chrome UEFA Club Competitions - Jumbo Hobby Box Sealed Black Lazer",
@@ -7661,25 +7623,6 @@
             "seller": "rfcc615",
             "url": "https://www.ebay.com/itm/257707050159?nordt=true",
             "listing_id": "257707050159",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "188818356325",
-            "product_id": "2025-26-chrome-uefa-jumbo",
-            "title": "LOT x (2) 2025-26 TOPPS CHROME UEFA CLUB COMPETITIONS SEALED JUMBO HOBBY BOX UCC",
-            "sold_at": "2026-08-27T00:00:00+00:00",
-            "sold_price": 1439.14,
-            "shipping": 27.95,
-            "delivered_price": 1467.09,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 20,
-            "condition": "Brand New",
-            "seller": "mc_sportscards",
-            "url": "https://www.ebay.com/itm/188818356325?nordt=true",
-            "listing_id": "188818356325",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -7740,25 +7683,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "178396588429",
-            "product_id": "2025-26-chrome-uefa-jumbo",
-            "title": "LOT x (2) 2025-26 TOPPS CHROME UEFA CLUB COMPETITIONS SEALED JUMBO HOBBY BOX UCC",
-            "sold_at": "2026-08-20T00:00:00+00:00",
-            "sold_price": 1440.0,
-            "shipping": 27.95,
-            "delivered_price": 1467.95,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 30,
-            "condition": "Brand New",
-            "seller": "mc_sportscards",
-            "url": "https://www.ebay.com/itm/178396588429?nordt=true",
-            "listing_id": "178396588429",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "336747741825",
             "product_id": "2025-26-chrome-uefa-jumbo",
             "title": "2025/26 TOPPS CHROME UEFA CLUB COMPETITIONS SOCCER HOBBY JUMBO BOX",
@@ -7794,6 +7718,82 @@
             "seller": "the_aus_collector",
             "url": "https://www.ebay.com/itm/398298513854?nordt=true",
             "listing_id": "398298513854",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "287317790563",
+            "product_id": "2025-26-chrome-uefa-jumbo",
+            "title": "2025-26 Topps Chrome UEFA Club Competitions Jumbo Hobby Box Sealed SAME DAY SHIP",
+            "sold_at": "2026-08-16T00:00:00+00:00",
+            "sold_price": 709.99,
+            "shipping": 0.0,
+            "delivered_price": 709.99,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "kkconceptstore",
+            "url": "https://www.ebay.com/itm/287317790563?nordt=true",
+            "listing_id": "287317790563",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "800320920488",
+            "product_id": "2025-26-chrome-uefa-jumbo",
+            "title": "2025-26 Topps Chrome UEFA Club Competitions Jumbo Box - FACTORY SEALED \u2705",
+            "sold_at": "2026-08-16T00:00:00+00:00",
+            "sold_price": 768.02,
+            "shipping": 27.93,
+            "delivered_price": 795.95,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "solesupplyau",
+            "url": "https://www.ebay.com/itm/800320920488?nordt=true",
+            "listing_id": "800320920488",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "227437101531",
+            "product_id": "2025-26-chrome-uefa-jumbo",
+            "title": "2025-26 Topps Chrome UEFA Competitions Club UCC Jumbo Hobby Box Sealed NEW",
+            "sold_at": "2026-08-15T00:00:00+00:00",
+            "sold_price": 729.99,
+            "shipping": 10.0,
+            "delivered_price": 739.99,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "altmediaprint",
+            "url": "https://www.ebay.com/itm/227437101531?nordt=true",
+            "listing_id": "227437101531",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "278119607214",
+            "product_id": "2025-26-chrome-uefa-jumbo",
+            "title": "2025-26 Topps Chrome UEFA Club Competitions Jumbo Hobby Box - 3 Autos",
+            "sold_at": "2026-08-15T00:00:00+00:00",
+            "sold_price": 749.95,
+            "shipping": 0.0,
+            "delivered_price": 749.95,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "busybeecollectibles",
+            "url": "https://www.ebay.com/itm/278119607214?nordt=true",
+            "listing_id": "278119607214",
             "source": "ebaysoldlistingsapi.com"
           }
         ]
