@@ -168,7 +168,7 @@ def one_piece_match(product, title):
         return False, "missing One Piece set code"
     if "one piece" not in t and "onepiece" not in t:
         return False, "missing One Piece product identity"
-    if any(x in t for x in ["japanese", "japan version", "japan box", " jp box", "starter deck", "double pack", "sleeved booster"]):
+    if any(x in t for x in ["japanese", "japan version", "japan box", " jp box", "starter deck", "double pack", "sleeved booster", "illustration box", "illustration booster", "ib-"]):
         return False, "matched wrong language or product type"
     if re.search(r"\bcase\b|\b12\s*(?:box|boxes)\b|\b24\s*(?:box|boxes)\b", t):
         return False, "matched a sealed case or multi-box lot"
