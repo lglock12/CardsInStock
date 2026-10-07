@@ -3,6 +3,8 @@ from urllib.parse import quote_plus
 
 def canonical_terms(product):
     """Build a tight, human-readable eBay query for one sealed product SKU."""
+    if product.get("category") == "one-piece":
+        return [product["season"], "One Piece", "English", "Booster Box"]
     terms = [product["season"], "Topps"]
     name = product["product"].lower()
 
@@ -51,6 +53,9 @@ def quoted_query(product, season_override=None):
     if season_override:
         terms[0] = season_override
     quoted = " ".join(f'"{term}"' for term in terms)
+    if product.get("category") == "one-piece":
+        quoted += " -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\""
+        return quoted
     quoted += " -women -womens -\"women's\""
 
     name = product["product"].lower()
