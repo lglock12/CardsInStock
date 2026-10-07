@@ -462,16 +462,22 @@ def main():
     family_html = []
     league_order = {"Premier League": 0, "UEFA": 1, "One Piece": 2}
     type_order = {
-        "Chrome Premier League": 0, "Merlin Premier League": 1, "Premier League Flagship": 2,
+        "Chrome Premier League": 0, "Chrome Sapphire Premier League": 1, "Merlin Premier League": 2, "Premier League Flagship": 3,
         "Chrome UEFA": 0, "Chrome Sapphire UEFA": 1, "Merlin UEFA": 2, "Finest UEFA": 3,
-        "UEFA Flagship": 4, "Inception UEFA": 5, "Museum Collection UEFA": 6,
+        "UEFA Flagship": 4, "Chrome UEFA EURO Sapphire": 5, "Deco UEFA": 6,
+        "Inception UEFA": 7, "Museum Collection UEFA": 8,
     }
-    one_piece_release = [
-        "OP-17", "OP-16", "OP-15", "EB-03", "OP-14", "OP-13", "PRB-02",
-        "OP-12", "OP-11", "EB-02", "OP-10", "OP-09", "PRB-01", "OP-08",
-        "OP-07", "EB-01", "OP-06", "OP-05", "OP-04", "OP-03", "OP-02", "OP-01",
-    ]
-    op_rank = {code: i for i, code in enumerate(one_piece_release)}
+    op_release = {
+        "OP-17": "2026-08-28", "OP-16": "2026-06-12", "OP-15": "2026-04-03",
+        "EB-03": "2026-02-20", "OP-14": "2026-01-16", "OP-13": "2025-11-07",
+        "PRB-02": "2025-10-03", "OP-12": "2025-08-22", "OP-11": "2025-06-06",
+        "EB-02": "2025-05-09", "OP-10": "2025-03-21", "OP-09": "2024-12-13",
+        "PRB-01": "2024-11-08", "OP-08": "2024-09-13", "OP-07": "2024-06-28",
+        "EB-01": "2024-05-03", "OP-06": "2024-03-15", "OP-05": "2023-12-08",
+        "OP-04": "2023-09-22", "OP-03": "2023-06-30", "OP-02": "2023-03-10", "OP-01": "2022-12-02",
+    }
+
+    current_league = None
     ordered_groups = sorted(
         groups.items(),
         key=lambda item: (
@@ -480,30 +486,31 @@ def main():
             item[0][1],
         ),
     )
-    current_league = None
     for (league, family), ps in ordered_groups:
         if league != current_league:
-            family_html.append(f'<div class="league-title"><h1>{esc(league)}</h1></div>')
+            family_html.append(
+                f'<div class="league-title"><h1>{esc(league)}</h1></div>'
+            )
             current_league = league
 
         if league == "One Piece":
-            ps = sorted(ps, key=lambda p: op_rank.get(p["season"], 999))
+            ps = sorted(ps, key=lambda p: op_release.get(p["season"], ""), reverse=True)
             family_html.append(
                 f'''<section class="family"><div class="family-title"><h2>Booster Boxes</h2><small>{len(ps)} releases · newest first</small></div><div class="card-grid">{''.join(cards_by_id[p['id']] for p in ps)}</div></section>'''
             )
             continue
 
-        by_year = {}
+        by_season = {}
         for p in ps:
-            by_year.setdefault(p["season"], []).append(p)
-        year_html = []
-        for year in sorted(by_year, reverse=True):
-            year_products = sorted(by_year[year], key=lambda p: format_order.get(p["format"], 99))
-            year_html.append(
+            by_season.setdefault(p["season"], []).append(p)
+        year_blocks = []
+        for year in sorted(by_season, reverse=True):
+            year_products = sorted(by_season[year], key=lambda p: format_order.get(p["format"], 99))
+            year_blocks.append(
                 f'''<div class="year-block"><div class="year-title">{esc(year)}</div><div class="card-grid">{''.join(cards_by_id[p['id']] for p in year_products)}</div></div>'''
             )
         family_html.append(
-            f'''<section class="family"><div class="family-title"><h2>{esc(family)}</h2><small>{len(ps)} tracked formats</small></div>{''.join(year_html)}</section>'''
+            f'''<section class="family"><div class="family-title"><h2>{esc(family)}</h2><small>{len(ps)} tracked formats</small></div>{''.join(year_blocks)}</section>'''
         )
 
     seasons = sorted({p["season"] for p in visible_products}, reverse=True)
@@ -512,7 +519,7 @@ def main():
 
     css = r'''
 :root{--bg:#0b0d12;--panel:#141821;--panel2:#10131a;--line:#2b3140;--text:#f7f4ee;--muted:#9da4b2;--green:#77d6b6;--blue:#8eb8ff;--amber:#f3c875;--red:#f28b82;--accent:#b69cff;--accent2:#6ed7e0}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -12%,#242033 0,#0b0d12 38rem);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}.shell{width:min(1500px,100%);margin:auto;padding:14px clamp(12px,2vw,26px) 64px}.mast{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:8px 0 14px}.brand{grid-column:2;display:flex;align-items:center;gap:10px}.logo{width:34px;height:40px;display:grid;place-items:center}.logo svg{width:100%;height:100%}.brand h1{margin:0;font-size:clamp(25px,3vw,38px);font-weight:950;letter-spacing:-1.6px}.statusbar{grid-column:3;justify-self:end;text-align:right;color:var(--muted);font-size:9px;line-height:1.5}.statusbar b{color:var(--green)}.market-tabs{display:flex;gap:7px;margin:2px 0 8px}.market-tab{border:1px solid var(--line);background:#151923;color:var(--muted);padding:7px 11px;border-radius:999px;font-size:8px;font-weight:900;letter-spacing:.08em;cursor:pointer}.market-tab.active{color:var(--text);border-color:var(--accent);background:#211b2e}.controls{position:sticky;top:0;z-index:20;display:grid;grid-template-columns:minmax(220px,1fr) 170px 190px;gap:8px;padding:9px 0 12px;background:linear-gradient(#0b0d12fa,#0b0d12ee 78%,transparent);backdrop-filter:blur(12px)}input,select{min-width:0;border:1px solid var(--line);background:#151923;color:var(--text);border-radius:12px;padding:11px 13px;font:inherit;font-size:12px}.league-title{margin:34px 0 8px;padding:0 2px 10px;border-bottom:2px solid var(--accent)}.league-title h1{margin:0;font-size:26px;letter-spacing:-.8px}.year-block{margin:10px 0 18px}.year-title{font-size:12px;font-weight:950;letter-spacing:.08em;color:var(--accent2);margin:0 2px 7px}.family{margin:18px 0 30px}.family-title{display:flex;align-items:end;justify-content:space-between;border-bottom:1px solid #1b293e;padding:0 2px 9px;margin-bottom:11px}.family-title h2{margin:0;font-size:20px;letter-spacing:-.5px}.family-title small{color:var(--muted);font-size:9px}.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:11px;align-items:start}.product-card{min-width:0;border:1px solid var(--line);border-radius:16px;background:linear-gradient(150deg,#181c26,#11141c);padding:12px;box-shadow:0 12px 30px rgba(0,0,0,.13)}.product-card:hover{border-color:#385070}.card-head{display:grid;grid-template-columns:84px minmax(0,1fr);gap:12px;align-items:center}.thumb{width:84px;height:82px;background:#f4f5f7;border-radius:11px;overflow:hidden;display:grid;place-items:center}.thumb img{width:100%;height:100%;object-fit:contain;padding:4px;image-orientation:from-image}.ph{text-align:center;color:#53627a}.box-glyph{font-size:24px;transform:rotate(-12deg);opacity:.7}.ph small{display:block;font-size:6px;font-weight:900;letter-spacing:.12em;line-height:1.25;margin-top:3px}.identity{min-width:0}.sku-title{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.sku-title strong{font-size:19px;letter-spacing:-.6px}.sku-title b{font-size:11px;letter-spacing:.06em;color:#dce5f3}.family-name{font-size:12px;color:#aebbd0;margin-top:2px;font-weight:700}.subline{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:8px;margin-top:7px;min-width:0}.subline>span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.state-pill{font-size:7px;font-weight:950;letter-spacing:.08em;padding:4px 6px;border-radius:999px;background:#132033}.state-pill.live{color:var(--green)}.state-pill.lead{color:var(--amber)}.state-pill.market{color:var(--blue)}.state-pill.soldout{color:var(--red)}.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(70px,1fr));gap:1px;margin-top:10px;border:1px solid #1c2b41;border-radius:10px;overflow:hidden;background:#1c2b41}.fact{background:#0a1320;padding:7px 8px;min-width:0}.fact b{display:block;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.fact span{display:block;color:var(--muted);font-size:6px;font-weight:900;letter-spacing:.08em;margin-top:2px}.price-area{margin-top:9px}.retail-primary{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);align-items:end;gap:12px;text-decoration:none;border:1px solid #315545;background:linear-gradient(135deg,#0c1b19,#0a141d);border-radius:12px;padding:9px 10px}.retail-primary.winner:after,.market-mini.winner:after{content:"BEST";position:absolute;right:7px;top:6px;font-size:6px;font-weight:950;letter-spacing:.08em;color:var(--green)}.eyebrow{display:block;color:#77c9aa;font-size:6px;font-weight:950;letter-spacing:.11em}.retail-price{display:block;font-size:23px;letter-spacing:-.8px;line-height:1.05;margin-top:2px}.retail-meta{min-width:0;padding-right:24px}.retail-meta strong,.retail-meta span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.retail-meta strong{font-size:9px}.retail-meta span{font-size:7px;color:var(--muted);margin-top:2px}.empty-price{border-color:#233149;background:#0a121e}.market-pair{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px}.market-mini{position:relative;display:flex;flex-direction:column;min-width:0;text-decoration:none;border:1px solid #263750;border-radius:10px;padding:7px 8px;background:#09111c}.market-mini>span{font-size:6px;font-weight:950;letter-spacing:.1em;color:#8394ad}.market-mini b{font-size:13px;line-height:1.2;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.market-mini small{font-size:7px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}.market-mini.fresh{border-color:#345e51}.market-mini.stale{border-color:#67542f}.market-mini.sold{border-color:#29463e}.empty-market b{font-size:9px;color:#a8b6ca;letter-spacing:.02em}.lead-line{display:grid;grid-template-columns:auto auto minmax(0,1fr);align-items:center;gap:7px;text-decoration:none;border-left:2px solid #765d2c;margin-top:7px;padding:5px 7px;background:#14130f;border-radius:4px}.lead-line span{font-size:6px;font-weight:950;letter-spacing:.08em;color:var(--amber)}.lead-line b{font-size:11px}.lead-line em{font-style:normal;font-size:7px;color:#a99a7b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.quick-links{display:flex;gap:10px;margin-top:7px}.quick-links a{font-size:7px;color:#86aaf4;text-decoration:none}.drawers{margin-top:8px;border-top:1px solid #1c2a3f}.drawers details{border-bottom:1px solid #18253a}.drawers summary{list-style:none;cursor:pointer;padding:8px 1px;font-size:9px;font-weight:850;display:flex;justify-content:space-between;gap:8px}.drawers summary::-webkit-details-marker{display:none}.drawers summary span{color:var(--muted);font-weight:500;font-size:8px}.source-list{padding:0 0 5px}.source-row{display:flex;justify-content:space-between;gap:10px;align-items:center;text-decoration:none;padding:6px 4px;border-radius:6px;font-size:8px;color:#bac5d5}.source-row:hover{background:#141f31}.source-row span{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.source-row i{font-style:normal;font-size:6px;font-weight:950;padding:3px 4px;border-radius:4px;margin-right:5px;background:#1b2738;color:#91a0b5}.source-row.verified i{color:#61deb0}.source-row.out_of_stock i{color:#eb8e92}.source-row.rejected i,.source-row.unknown i{color:#e5bd69}.hit-detail{padding:2px 4px 9px;color:#bac5d5;font-size:8px;line-height:1.45}.hit-detail>div{margin-bottom:7px}.hit-detail strong{color:#e5eaf2}.hit-detail ul{margin:4px 0 0;padding-left:16px}.detail-link{font-size:8px;color:#8eb1fa}.market-detail{padding:2px 4px 10px;color:#aebbd0;font-size:8px}.sold-list{margin-top:8px;border-top:1px solid #1d2a3f}.sold-row{display:block;padding:8px 2px;border-bottom:1px solid #172338;text-decoration:none}.sold-row-main{display:flex;justify-content:space-between;gap:10px;align-items:center}.sold-row span{display:flex;gap:7px;color:#8fa0b8}.sold-row span b{color:#cbd5e4}.sold-row strong{color:#f2f5f9;font-weight:750;white-space:nowrap}.sold-row-title{margin-top:4px;color:#c1ccda;font-size:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.sold-row small{display:block;margin-top:2px;color:#718099;font-size:7px}.empty{color:var(--muted);font-size:8px}.hidden{display:none!important}.footer{margin-top:30px;color:#6f7d92;font-size:8px;text-align:center}
-@media(max-width:760px){.shell{padding:8px 10px 54px}.league-title{margin:24px 0 7px}.league-title h1{font-size:22px}.year-title{font-size:11px}.mast{grid-template-columns:1fr auto 1fr;padding:7px 2px 10px}.brand{gap:7px}.logo{width:28px;height:32px}.brand h1{font-size:23px}.statusbar{font-size:7px}.controls{grid-template-columns:1fr 1fr;padding-top:7px}.controls input{grid-column:1/-1}.family{margin:18px 0 28px}.family-title{margin-bottom:9px}.family-title h2{font-size:20px}.card-grid{grid-template-columns:1fr;gap:10px}.product-card{padding:11px;border-radius:15px}.card-head{grid-template-columns:86px minmax(0,1fr)}.thumb{width:86px;height:84px}.sku-title strong{font-size:20px}.sku-title b{font-size:11px}.facts{margin-top:9px}.fact{padding:7px}.retail-primary{padding:9px}.retail-price{font-size:24px}.market-mini{padding:7px}.market-mini b{font-size:12px}}
+@media(max-width:760px){.shell{padding:8px 10px 54px}.league-title{margin:24px 0 7px}.league-title h1{font-size:22px}.year-title{font-size:11px}.league-title{margin:24px 0 7px}.league-title h1{font-size:22px}.year-title{font-size:11px}.mast{grid-template-columns:1fr auto 1fr;padding:7px 2px 10px}.brand{gap:7px}.logo{width:28px;height:32px}.brand h1{font-size:23px}.statusbar{font-size:7px}.controls{grid-template-columns:1fr 1fr;padding-top:7px}.controls input{grid-column:1/-1}.family{margin:18px 0 28px}.family-title{margin-bottom:9px}.family-title h2{font-size:20px}.card-grid{grid-template-columns:1fr;gap:10px}.product-card{padding:11px;border-radius:15px}.card-head{grid-template-columns:86px minmax(0,1fr)}.thumb{width:86px;height:84px}.sku-title strong{font-size:20px}.sku-title b{font-size:11px}.facts{margin-top:9px}.fact{padding:7px}.retail-primary{padding:9px}.retail-price{font-size:24px}.market-mini{padding:7px}.market-mini b{font-size:12px}}
 @media(max-width:420px){.statusbar{display:none}.mast{grid-template-columns:1fr}.brand{grid-column:1;justify-self:center}.controls{gap:6px}.market-pair{grid-template-columns:1fr 1fr}.retail-primary{grid-template-columns:1fr auto}.retail-meta{text-align:right}.fact:nth-child(4){display:none}}
 .compact-head{width:100%;border:0;background:transparent;color:inherit;padding:0;display:grid;grid-template-columns:54px minmax(0,1fr) auto 18px;gap:10px;align-items:center;text-align:left;cursor:pointer}
 .compact-thumb{width:54px;height:54px;border-radius:10px;overflow:hidden;background:#f3f1ec;display:grid;place-items:center}
