@@ -85,7 +85,7 @@ jobs:
 
           cp "$OUT/config/"* config/
           cp "$OUT/data/"* data/
-          cp "$OUT/docs/"* docs/
+          cp -R "$OUT/docs/"* docs/
           if [ -d "$OUT/docs/assets" ]; then rm -rf docs/assets && cp -R "$OUT/docs/assets" docs/assets; fi
 
           git add config/discovered_sources.json config/collectaio_map.json data/latest.json data/ebay_latest.json data/market_latest.json data/active_ebay_cache.json data/history.jsonl data/sold_latest.json data/sold_history.jsonl docs/index.html docs/latest.json docs/assets
