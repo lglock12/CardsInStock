@@ -11,6 +11,7 @@ DETAILS = ROOT / "config" / "product_details.json"
 DETAILS_EXTRA = ROOT / "config" / "product_details_extra.json"
 LATEST = ROOT / "data" / "latest.json"
 MARKET = ROOT / "data" / "market_latest.json"
+SOLD_DETAIL = ROOT / "data" / "sold_latest.json"
 INDEX = ROOT / "docs" / "index.html"
 
 
@@ -77,7 +78,25 @@ def lead_rows(product, rows):
     return out
 
 
-def sold_view(market):
+def sold_view(market, detailed=None):
+    detailed = detailed or {}
+    stats = detailed.get("stats") or {}
+    windows = stats.get("windows") or {}
+    d30 = windows.get("30") or {}
+    d90 = windows.get("90") or {}
+    if d30.get("count") and d30.get("median") is not None:
+        return d30.get("median"), "30D SOLD", f"{d30.get('count')} sales", {
+            "source": "detailed",
+            "stats": stats,
+            "window": d30,
+        }
+    if d90.get("count") and d90.get("median") is not None:
+        return d90.get("median"), "90D SOLD", f"{d90.get('count')} sales", {
+            "source": "detailed",
+            "stats": stats,
+            "window": d90,
+        }
+
     sold = market.get("sold_market") or {}
     c30 = sold.get("count_30d") or 0
     if c30 and sold.get("median_30d") is not None:
@@ -119,7 +138,7 @@ def facts_html(detail, cost_per_pack):
     )
 
 
-def product_card(product, rows, detail, market, image):
+def product_card(product, rows, detail, market, image, detailed_sold=None):
     verified = sorted([r for r in rows if r.get("status") == "VERIFIED"], key=retail_rank)
     best_retail = verified[0] if verified else None
     leads = lead_rows(product, rows)
@@ -129,7 +148,7 @@ def product_card(product, rows, detail, market, image):
     ebay_best = market.get("best") if market.get("status") == "VERIFIED" else None
     ebay_fresh = bool(ebay_best) and bool(active) and not active.get("stale")
     ebay_stale = bool(ebay_best) and bool(active) and bool(active.get("stale"))
-    sold_price, sold_label, sold_meta, sold = sold_view(market)
+    sold_price, sold_label, sold_meta, sold = sold_view(market, detailed_sold)
 
     statuses = [r.get("status") for r in rows]
     explicit_soldout = bool(statuses) and all(s == "OUT_OF_STOCK" for s in statuses)
@@ -201,8 +220,11 @@ def product_card(product, rows, detail, market, image):
           <span>EBAY BIN</span><b>SEARCH LIVE ↗</b><small>live price feed unavailable</small></a>'''
 
     if sold_price is not None:
-        sold_age = sold.get("freshness_days") if sold else None
-        sold_note = sold_meta + (f" · {sold_age}d old" if sold_age is not None else "")
+        if sold.get("source") == "detailed":
+            sold_note = sold_meta + " · individual eBay comps"
+        else:
+            sold_age = sold.get("freshness_days") if sold else None
+            sold_note = sold_meta + (f" · {sold_age}d old" if sold_age is not None else "")
         sold_html = f'''<div class="market-mini sold"><span>{esc(sold_label)}</span><b>{money(sold_price)}</b><small>{esc(sold_note)}</small></div>'''
     else:
         sold_html = '''<div class="market-mini empty-market"><span>SOLD HISTORY</span><b>NO DATA</b><small>validated sold comps unavailable</small></div>'''
@@ -244,7 +266,34 @@ def product_card(product, rows, detail, market, image):
           <span><i>{label}</i>{esc(row.get('seller'))}</span><b>{money(p)}</b></a>''')
 
     market_note = ""
-    if sold_price is not None:
+    sold_rows_html = ""
+    if sold_price is not None and sold.get("source") == "detailed":
+        stats = sold.get("stats") or {}
+        windows = stats.get("windows") or {}
+        w30 = windows.get("30") or {}
+        w90 = windows.get("90") or {}
+        bits = []
+        if w30.get("count"):
+            bits.append(f"30d {w30.get('count')} sales · median {money(w30.get('median'))} · range {money(w30.get('low'))}–{money(w30.get('high'))}")
+        if w90.get("count"):
+            bits.append(f"90d {w90.get('count')} sales · median {money(w90.get('median'))}")
+        if stats.get("best_offer_hidden_count"):
+            bits.append(f"{stats.get('best_offer_hidden_count')} Best Offer sales kept as events but excluded from medians")
+        market_note = " · ".join(bits)
+        recent = stats.get("recent_sales") or []
+        rows = []
+        for sale in recent[:8]:
+            when = str(sale.get("sold_at") or "")[:10]
+            base = money(sale.get("sold_price"))
+            ship = sale.get("shipping")
+            delivered = sale.get("delivered_price")
+            fmt = str(sale.get("buying_format") or "sale").replace("_", " ").upper()
+            note = "BEST OFFER · price hidden" if sale.get("best_offer_accepted") else fmt
+            total_text = f" · {money(delivered)} delivered" if delivered is not None else (f" + {money(ship)} ship" if ship is not None else "")
+            href = esc(sale.get("url") or "#")
+            rows.append(f'<a class="sold-row" href="{href}" target="_blank" rel="noopener"><span><b>{esc(when)}</b>{esc(note)}</span><strong>{base}{esc(total_text)}</strong></a>')
+        sold_rows_html = "".join(rows)
+    elif sold_price is not None:
         bits = []
         if sold.get("min_30d") is not None and sold.get("max_30d") is not None:
             bits.append(f"30d range {money(sold.get('min_30d'))}–{money(sold.get('max_30d'))}")
@@ -275,7 +324,7 @@ def product_card(product, rows, detail, market, image):
       <div class="drawers">
         <details><summary>Retailer sources <span>{len(verified)} live · {len(leads)} leads · {len(source_rows)} shown</span></summary><div class="source-list">{''.join(source_rows) if source_rows else '<p class="empty">No usable mapped sources yet.</p>'}</div></details>
         <details><summary>Box hits <span>{len(guarantees)} guaranteed · {len(chases)} chase</span></summary><div class="hit-detail"><div><strong>Guaranteed / box</strong><ul>{hits_items or '<li>Not yet sourced</li>'}</ul></div><div><strong>Chase content</strong><ul>{chase_items or '<li>Not yet sourced</li>'}</ul></div>{details_link}</div></details>
-        {f'<details><summary>Sold-market detail <span>{esc(sold_meta)}</span></summary><div class="market-detail">{esc(market_note or "No additional sold-market detail yet.")}</div></details>' if sold_price is not None else ''}
+        {f'<details><summary>Sold-market detail <span>{esc(sold_meta)}</span></summary><div class="market-detail">{esc(market_note or "No additional sold-market detail yet.")}{f"<div class=\'sold-list\'>{sold_rows_html}</div>" if sold_rows_html else ""}</div></details>' if sold_price is not None else ''}
       </div>
     </article>'''
 
@@ -287,6 +336,8 @@ def main():
     latest = load_json(LATEST, {"observations": []})
     market_data = load_json(MARKET, {"products": {}})
     markets = market_data.get("products") or {}
+    sold_detail_data = load_json(SOLD_DETAIL, {"products": {}})
+    sold_details = sold_detail_data.get("products") or {}
     images = latest.get("product_images") or {}
 
     by_product = {}
@@ -301,14 +352,14 @@ def main():
         rows = by_product.get(product["id"], [])
         market = markets.get(product["id"], {})
         cards_by_id[product["id"]] = product_card(
-            product, rows, details.get(product["id"], {}), market, images.get(product["id"])
+            product, rows, details.get(product["id"], {}), market, images.get(product["id"]), sold_details.get(product["id"], {})
         )
 
         verified = any(r.get("status") == "VERIFIED" for r in rows)
         leads = bool(lead_rows(product, rows))
         active = market.get("active_market") or {}
         fresh_ebay = bool(market.get("best")) and bool(active) and not active.get("stale")
-        sold_price = sold_view(market)[0]
+        sold_price = sold_view(market, sold_details.get(product["id"], {}))[0]
         statuses = [r.get("status") for r in rows]
         if verified or fresh_ebay:
             state = "live"
@@ -339,7 +390,7 @@ def main():
     generated = str(latest.get("generated_at") or "not collected")
 
     css = r'''
-:root{--bg:#070b12;--panel:#0c1523;--panel2:#0a111d;--line:#22314a;--text:#f7f9fc;--muted:#8e9bb0;--green:#57dfad;--blue:#7ca8ff;--amber:#e9bb63;--red:#ef8a91}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -12%,#12213b 0,#070b12 36rem);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}.shell{width:min(1500px,100%);margin:auto;padding:14px clamp(12px,2vw,26px) 64px}.mast{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:8px 0 14px}.brand{grid-column:2;display:flex;align-items:center;gap:10px}.logo{width:34px;height:40px;display:grid;place-items:center}.logo svg{width:100%;height:100%}.brand h1{margin:0;font-size:clamp(25px,3vw,38px);font-weight:950;letter-spacing:-1.6px}.statusbar{grid-column:3;justify-self:end;text-align:right;color:var(--muted);font-size:9px;line-height:1.5}.statusbar b{color:var(--green)}.controls{position:sticky;top:0;z-index:20;display:grid;grid-template-columns:minmax(220px,1fr) 170px 190px;gap:8px;padding:9px 0 12px;background:linear-gradient(#070b12fa,#070b12ee 78%,transparent);backdrop-filter:blur(12px)}input,select{min-width:0;border:1px solid var(--line);background:#0b1422;color:var(--text);border-radius:12px;padding:11px 13px;font:inherit;font-size:12px}.family{margin:24px 0 34px}.family-title{display:flex;align-items:end;justify-content:space-between;border-bottom:1px solid #1b293e;padding:0 2px 9px;margin-bottom:11px}.family-title h2{margin:0;font-size:20px;letter-spacing:-.5px}.family-title small{color:var(--muted);font-size:9px}.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:11px;align-items:start}.product-card{min-width:0;border:1px solid var(--line);border-radius:16px;background:linear-gradient(150deg,#0e1828,#09111d);padding:12px;box-shadow:0 12px 30px rgba(0,0,0,.13)}.product-card:hover{border-color:#385070}.card-head{display:grid;grid-template-columns:84px minmax(0,1fr);gap:12px;align-items:center}.thumb{width:84px;height:82px;background:#f4f5f7;border-radius:11px;overflow:hidden;display:grid;place-items:center}.thumb img{width:100%;height:100%;object-fit:contain;padding:4px;image-orientation:from-image}.ph{text-align:center;color:#53627a}.box-glyph{font-size:24px;transform:rotate(-12deg);opacity:.7}.ph small{display:block;font-size:6px;font-weight:900;letter-spacing:.12em;line-height:1.25;margin-top:3px}.identity{min-width:0}.sku-title{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.sku-title strong{font-size:19px;letter-spacing:-.6px}.sku-title b{font-size:11px;letter-spacing:.06em;color:#dce5f3}.family-name{font-size:12px;color:#aebbd0;margin-top:2px;font-weight:700}.subline{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:8px;margin-top:7px;min-width:0}.subline>span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.state-pill{font-size:7px;font-weight:950;letter-spacing:.08em;padding:4px 6px;border-radius:999px;background:#132033}.state-pill.live{color:var(--green)}.state-pill.lead{color:var(--amber)}.state-pill.market{color:var(--blue)}.state-pill.soldout{color:var(--red)}.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(70px,1fr));gap:1px;margin-top:10px;border:1px solid #1c2b41;border-radius:10px;overflow:hidden;background:#1c2b41}.fact{background:#0a1320;padding:7px 8px;min-width:0}.fact b{display:block;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.fact span{display:block;color:var(--muted);font-size:6px;font-weight:900;letter-spacing:.08em;margin-top:2px}.price-area{margin-top:9px}.retail-primary{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);align-items:end;gap:12px;text-decoration:none;border:1px solid #315545;background:linear-gradient(135deg,#0c1b19,#0a141d);border-radius:12px;padding:9px 10px}.retail-primary.winner:after,.market-mini.winner:after{content:"BEST";position:absolute;right:7px;top:6px;font-size:6px;font-weight:950;letter-spacing:.08em;color:var(--green)}.eyebrow{display:block;color:#77c9aa;font-size:6px;font-weight:950;letter-spacing:.11em}.retail-price{display:block;font-size:23px;letter-spacing:-.8px;line-height:1.05;margin-top:2px}.retail-meta{min-width:0;padding-right:24px}.retail-meta strong,.retail-meta span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.retail-meta strong{font-size:9px}.retail-meta span{font-size:7px;color:var(--muted);margin-top:2px}.empty-price{border-color:#233149;background:#0a121e}.market-pair{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px}.market-mini{position:relative;display:flex;flex-direction:column;min-width:0;text-decoration:none;border:1px solid #263750;border-radius:10px;padding:7px 8px;background:#09111c}.market-mini>span{font-size:6px;font-weight:950;letter-spacing:.1em;color:#8394ad}.market-mini b{font-size:13px;line-height:1.2;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.market-mini small{font-size:7px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}.market-mini.fresh{border-color:#345e51}.market-mini.stale{border-color:#67542f}.market-mini.sold{border-color:#29463e}.empty-market b{font-size:9px;color:#a8b6ca;letter-spacing:.02em}.lead-line{display:grid;grid-template-columns:auto auto minmax(0,1fr);align-items:center;gap:7px;text-decoration:none;border-left:2px solid #765d2c;margin-top:7px;padding:5px 7px;background:#14130f;border-radius:4px}.lead-line span{font-size:6px;font-weight:950;letter-spacing:.08em;color:var(--amber)}.lead-line b{font-size:11px}.lead-line em{font-style:normal;font-size:7px;color:#a99a7b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.quick-links{display:flex;gap:10px;margin-top:7px}.quick-links a{font-size:7px;color:#86aaf4;text-decoration:none}.drawers{margin-top:8px;border-top:1px solid #1c2a3f}.drawers details{border-bottom:1px solid #18253a}.drawers summary{list-style:none;cursor:pointer;padding:8px 1px;font-size:9px;font-weight:850;display:flex;justify-content:space-between;gap:8px}.drawers summary::-webkit-details-marker{display:none}.drawers summary span{color:var(--muted);font-weight:500;font-size:8px}.source-list{padding:0 0 5px}.source-row{display:flex;justify-content:space-between;gap:10px;align-items:center;text-decoration:none;padding:6px 4px;border-radius:6px;font-size:8px;color:#bac5d5}.source-row:hover{background:#141f31}.source-row span{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.source-row i{font-style:normal;font-size:6px;font-weight:950;padding:3px 4px;border-radius:4px;margin-right:5px;background:#1b2738;color:#91a0b5}.source-row.verified i{color:#61deb0}.source-row.out_of_stock i{color:#eb8e92}.source-row.rejected i,.source-row.unknown i{color:#e5bd69}.hit-detail{padding:2px 4px 9px;color:#bac5d5;font-size:8px;line-height:1.45}.hit-detail>div{margin-bottom:7px}.hit-detail strong{color:#e5eaf2}.hit-detail ul{margin:4px 0 0;padding-left:16px}.detail-link{font-size:8px;color:#8eb1fa}.market-detail{padding:2px 4px 10px;color:#aebbd0;font-size:8px}.empty{color:var(--muted);font-size:8px}.hidden{display:none!important}.footer{margin-top:30px;color:#6f7d92;font-size:8px;text-align:center}
+:root{--bg:#070b12;--panel:#0c1523;--panel2:#0a111d;--line:#22314a;--text:#f7f9fc;--muted:#8e9bb0;--green:#57dfad;--blue:#7ca8ff;--amber:#e9bb63;--red:#ef8a91}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -12%,#12213b 0,#070b12 36rem);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}.shell{width:min(1500px,100%);margin:auto;padding:14px clamp(12px,2vw,26px) 64px}.mast{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:8px 0 14px}.brand{grid-column:2;display:flex;align-items:center;gap:10px}.logo{width:34px;height:40px;display:grid;place-items:center}.logo svg{width:100%;height:100%}.brand h1{margin:0;font-size:clamp(25px,3vw,38px);font-weight:950;letter-spacing:-1.6px}.statusbar{grid-column:3;justify-self:end;text-align:right;color:var(--muted);font-size:9px;line-height:1.5}.statusbar b{color:var(--green)}.controls{position:sticky;top:0;z-index:20;display:grid;grid-template-columns:minmax(220px,1fr) 170px 190px;gap:8px;padding:9px 0 12px;background:linear-gradient(#070b12fa,#070b12ee 78%,transparent);backdrop-filter:blur(12px)}input,select{min-width:0;border:1px solid var(--line);background:#0b1422;color:var(--text);border-radius:12px;padding:11px 13px;font:inherit;font-size:12px}.family{margin:24px 0 34px}.family-title{display:flex;align-items:end;justify-content:space-between;border-bottom:1px solid #1b293e;padding:0 2px 9px;margin-bottom:11px}.family-title h2{margin:0;font-size:20px;letter-spacing:-.5px}.family-title small{color:var(--muted);font-size:9px}.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:11px;align-items:start}.product-card{min-width:0;border:1px solid var(--line);border-radius:16px;background:linear-gradient(150deg,#0e1828,#09111d);padding:12px;box-shadow:0 12px 30px rgba(0,0,0,.13)}.product-card:hover{border-color:#385070}.card-head{display:grid;grid-template-columns:84px minmax(0,1fr);gap:12px;align-items:center}.thumb{width:84px;height:82px;background:#f4f5f7;border-radius:11px;overflow:hidden;display:grid;place-items:center}.thumb img{width:100%;height:100%;object-fit:contain;padding:4px;image-orientation:from-image}.ph{text-align:center;color:#53627a}.box-glyph{font-size:24px;transform:rotate(-12deg);opacity:.7}.ph small{display:block;font-size:6px;font-weight:900;letter-spacing:.12em;line-height:1.25;margin-top:3px}.identity{min-width:0}.sku-title{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.sku-title strong{font-size:19px;letter-spacing:-.6px}.sku-title b{font-size:11px;letter-spacing:.06em;color:#dce5f3}.family-name{font-size:12px;color:#aebbd0;margin-top:2px;font-weight:700}.subline{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:8px;margin-top:7px;min-width:0}.subline>span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.state-pill{font-size:7px;font-weight:950;letter-spacing:.08em;padding:4px 6px;border-radius:999px;background:#132033}.state-pill.live{color:var(--green)}.state-pill.lead{color:var(--amber)}.state-pill.market{color:var(--blue)}.state-pill.soldout{color:var(--red)}.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(70px,1fr));gap:1px;margin-top:10px;border:1px solid #1c2b41;border-radius:10px;overflow:hidden;background:#1c2b41}.fact{background:#0a1320;padding:7px 8px;min-width:0}.fact b{display:block;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.fact span{display:block;color:var(--muted);font-size:6px;font-weight:900;letter-spacing:.08em;margin-top:2px}.price-area{margin-top:9px}.retail-primary{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);align-items:end;gap:12px;text-decoration:none;border:1px solid #315545;background:linear-gradient(135deg,#0c1b19,#0a141d);border-radius:12px;padding:9px 10px}.retail-primary.winner:after,.market-mini.winner:after{content:"BEST";position:absolute;right:7px;top:6px;font-size:6px;font-weight:950;letter-spacing:.08em;color:var(--green)}.eyebrow{display:block;color:#77c9aa;font-size:6px;font-weight:950;letter-spacing:.11em}.retail-price{display:block;font-size:23px;letter-spacing:-.8px;line-height:1.05;margin-top:2px}.retail-meta{min-width:0;padding-right:24px}.retail-meta strong,.retail-meta span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.retail-meta strong{font-size:9px}.retail-meta span{font-size:7px;color:var(--muted);margin-top:2px}.empty-price{border-color:#233149;background:#0a121e}.market-pair{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px}.market-mini{position:relative;display:flex;flex-direction:column;min-width:0;text-decoration:none;border:1px solid #263750;border-radius:10px;padding:7px 8px;background:#09111c}.market-mini>span{font-size:6px;font-weight:950;letter-spacing:.1em;color:#8394ad}.market-mini b{font-size:13px;line-height:1.2;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.market-mini small{font-size:7px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}.market-mini.fresh{border-color:#345e51}.market-mini.stale{border-color:#67542f}.market-mini.sold{border-color:#29463e}.empty-market b{font-size:9px;color:#a8b6ca;letter-spacing:.02em}.lead-line{display:grid;grid-template-columns:auto auto minmax(0,1fr);align-items:center;gap:7px;text-decoration:none;border-left:2px solid #765d2c;margin-top:7px;padding:5px 7px;background:#14130f;border-radius:4px}.lead-line span{font-size:6px;font-weight:950;letter-spacing:.08em;color:var(--amber)}.lead-line b{font-size:11px}.lead-line em{font-style:normal;font-size:7px;color:#a99a7b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.quick-links{display:flex;gap:10px;margin-top:7px}.quick-links a{font-size:7px;color:#86aaf4;text-decoration:none}.drawers{margin-top:8px;border-top:1px solid #1c2a3f}.drawers details{border-bottom:1px solid #18253a}.drawers summary{list-style:none;cursor:pointer;padding:8px 1px;font-size:9px;font-weight:850;display:flex;justify-content:space-between;gap:8px}.drawers summary::-webkit-details-marker{display:none}.drawers summary span{color:var(--muted);font-weight:500;font-size:8px}.source-list{padding:0 0 5px}.source-row{display:flex;justify-content:space-between;gap:10px;align-items:center;text-decoration:none;padding:6px 4px;border-radius:6px;font-size:8px;color:#bac5d5}.source-row:hover{background:#141f31}.source-row span{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.source-row i{font-style:normal;font-size:6px;font-weight:950;padding:3px 4px;border-radius:4px;margin-right:5px;background:#1b2738;color:#91a0b5}.source-row.verified i{color:#61deb0}.source-row.out_of_stock i{color:#eb8e92}.source-row.rejected i,.source-row.unknown i{color:#e5bd69}.hit-detail{padding:2px 4px 9px;color:#bac5d5;font-size:8px;line-height:1.45}.hit-detail>div{margin-bottom:7px}.hit-detail strong{color:#e5eaf2}.hit-detail ul{margin:4px 0 0;padding-left:16px}.detail-link{font-size:8px;color:#8eb1fa}.market-detail{padding:2px 4px 10px;color:#aebbd0;font-size:8px}.sold-list{margin-top:8px;border-top:1px solid #1d2a3f}.sold-row{display:flex;justify-content:space-between;gap:10px;padding:7px 2px;border-bottom:1px solid #172338;text-decoration:none}.sold-row span{display:flex;gap:7px;color:#8fa0b8}.sold-row span b{color:#cbd5e4}.sold-row strong{color:#f2f5f9;font-weight:750;white-space:nowrap}.empty{color:var(--muted);font-size:8px}.hidden{display:none!important}.footer{margin-top:30px;color:#6f7d92;font-size:8px;text-align:center}
 @media(max-width:760px){.shell{padding:8px 10px 54px}.mast{grid-template-columns:1fr auto 1fr;padding:7px 2px 10px}.brand{gap:7px}.logo{width:28px;height:32px}.brand h1{font-size:23px}.statusbar{font-size:7px}.controls{grid-template-columns:1fr 1fr;padding-top:7px}.controls input{grid-column:1/-1}.family{margin:18px 0 28px}.family-title{margin-bottom:9px}.family-title h2{font-size:20px}.card-grid{grid-template-columns:1fr;gap:10px}.product-card{padding:11px;border-radius:15px}.card-head{grid-template-columns:86px minmax(0,1fr)}.thumb{width:86px;height:84px}.sku-title strong{font-size:20px}.sku-title b{font-size:11px}.facts{margin-top:9px}.fact{padding:7px}.retail-primary{padding:9px}.retail-price{font-size:24px}.market-mini{padding:7px}.market-mini b{font-size:12px}}
 @media(max-width:420px){.statusbar{display:none}.mast{grid-template-columns:1fr}.brand{grid-column:1;justify-self:center}.controls{gap:6px}.market-pair{grid-template-columns:1fr 1fr}.retail-primary{grid-template-columns:1fr auto}.retail-meta{text-align:right}.fact:nth-child(4){display:none}}
 '''
