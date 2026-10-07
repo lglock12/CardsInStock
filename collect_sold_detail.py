@@ -18,6 +18,7 @@ API = "https://api.ebaysoldlistingsapi.com/scrape"
 USAGE_API = "https://api.ebaysoldlistingsapi.com/account/usage"
 KEY = os.getenv("EBAY_SOLD_API_KEY", "").strip()
 CLEAN_ONLY = os.getenv("SOLD_CLEAN_ONLY", "").strip().lower() in {"1", "true", "yes"}
+ONLY_CATEGORY = os.getenv("SOLD_ONLY_CATEGORY", "").strip()
 
 
 def now_utc():
@@ -270,7 +271,10 @@ def request_sales(product):
 
 def main():
     products = json.loads(PRODUCTS.read_text())
-    products_by_id = {p["id"]: p for p in products}
+    if ONLY_CATEGORY:
+        products = [p for p in products if p.get("category") == ONLY_CATEGORY]
+        print(f"Detailed sold collector limited to category: {ONLY_CATEGORY} ({len(products)} products)")
+    products_by_id = {p["id"]: p for p in json.loads(PRODUCTS.read_text())}
     history, dropped_history = load_history(products_by_id)
     checked = now_utc()
     latest = {
