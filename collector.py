@@ -192,7 +192,11 @@ def load_sources():
 def main():
     products=json.loads(PRODUCTS.read_text());sources=load_sources();retailers=json.loads(RETAILERS.read_text()) if RETAILERS.exists() else {};details=json.loads(DETAILS.read_text()) if DETAILS.exists() else {};product_by_id={p["id"]:p for p in products};checked=datetime.now(timezone.utc).isoformat();observations=[];discovered_entries=json.loads(DISCOVERED.read_text()) if DISCOVERED.exists() else []
     for source in sources:
-        product=product_by_id[source["product_id"]];obs={"checked_at":checked,"product_id":product["id"],"seller":source["seller"],"url":source["url"],"status":"UNKNOWN","price":None,"shipping":None,"delivered_price":None,"cost_per_pack":None,"currency":"USD","reason":"","source_kind":"discovered" if source in discovered_entries else "mapped"}
+        product=product_by_id.get(source.get("product_id"))
+        if not product:
+            print(f"SKIP stale source mapping: {source.get('product_id')} -> {source.get('url')}")
+            continue
+        obs={"checked_at":checked,"product_id":product["id"],"seller":source["seller"],"url":source["url"],"status":"UNKNOWN","price":None,"shipping":None,"delivered_price":None,"cost_per_pack":None,"currency":"USD","reason":"","source_kind":"discovered" if source in discovered_entries else "mapped"}
         try:
             page=parse_page(source["url"]);matched,reason=product_match(product,page["title"]);obs.update({"title":page["title"],"price":page["price"],"currency":page["currency"],"availability":page["availability"],"final_url":page["final_url"],"http_status":page["http_status"],"parser":page.get("parser")});shipping,ship_status=shipping_for(source["seller"],page["price"],retailers);obs["shipping"]=shipping;obs["shipping_status"]=ship_status
             if shipping is not None and page["price"] is not None:obs["delivered_price"]=round(page["price"]+shipping,2)
