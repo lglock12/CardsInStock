@@ -200,7 +200,7 @@ def api_active(product):
         if not product_match(product, title)[0]:
             continue
         exact_titles += 1
-        item_price = api_money(row.get("soldPrice") or row.get("price") or row.get("itemPrice"))
+        item_price = api_money(row.get("currentPrice") or row.get("soldPrice") or row.get("price") or row.get("itemPrice"))
         shipping = api_money(row.get("shippingPrice") or row.get("shipping"))
         total = api_money(row.get("totalPrice") or row.get("deliveredPrice"))
         if total is None and item_price is not None and shipping is not None:
@@ -226,7 +226,7 @@ def api_active(product):
             "source": "ebaysoldlistingsapi_active",
             "seller": row.get("sellerUsername"),
             "listing_id": row.get("itemId"),
-            "thumbnail_url": row.get("thumbnailUrl"),
+            "thumbnail_url": row.get("fullResThumbnailUrl") or row.get("thumbnailUrl"),
         })
     candidates.sort(key=lambda x: (x["comparison_price"], x["item_price"]))
     print(f"ACTIVE {product['id']}: {len(raw or [])} raw / {exact_titles} exact titles / {len(candidates)} priced candidates")
