@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - 'matching.py'
+      - 'collect_sold_detail.py'
       - 'collector_v2.py'
       - 'discover_sources.py'
       - 'discover_sources_v2.py'
