@@ -534,13 +534,6 @@
     "evidence": "auto-discovered from live retailer catalog; catalog price $700.00"
   },
   {
-    "product_id": "2025-26-premier-league-flagship-mega",
-    "seller": "SoccerCards.ca",
-    "url": "https://buysoccercardsonline.com/products/2025-26-topps-premier-league-debut-edition-cards-mega-tin",
-    "discovered": "2026-10-02",
-    "evidence": "exact Mega Tin product page; $28.46 USD sale price observed"
-  },
-  {
     "product_id": "2025-26-uefa-flagship-hobby",
     "seller": "Aloha Card Shop",
     "url": "https://www.alohacardshop.com/products/topps-uefa-club-competitions-2025-26-soccer-hanger-box",
