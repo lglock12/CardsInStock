@@ -1,5 +1,5 @@
 name: Bootstrap active eBay and images
-# parser-fix-rerun
+# rate-limit-rerun
 
 on:
   push:
