@@ -58,6 +58,7 @@ jobs:
         if: steps.central.outputs.run == 'true'
         env:
           EBAY_SOLD_API_KEY: ${{ secrets.EBAY_SOLD_API_KEY }}
+          SOLD_CLEAN_ONLY: ${{ github.event_name == 'push' && '1' || '0' }}
         run: python collect_sold_detail.py
       - name: Rebuild dashboard with sold comps
         if: steps.central.outputs.run == 'true'
