@@ -273,21 +273,21 @@
       "status": "VERIFIED",
       "query": "\"2023-24\" \"Topps\" \"Finest\" \"UEFA\" \"Hobby\" \"box\" -women -womens -\"women's\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222023-24%22+%22Topps%22+%22Finest%22+%22UEFA%22+%22Hobby%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 6,
+      "candidate_count": 3,
       "best": {
-        "title": "2023/24 TOPPS FINEST ROAD TO UEFA EURO SOCCER HOBBY BOX",
-        "url": "https://www.ebay.com/itm/377342733944?nordt=true",
-        "item_price": 319.95,
-        "shipping": 0.0,
-        "delivered_price": 319.95,
-        "comparison_price": 319.95,
+        "title": "2023-24 TOPPS FINEST UEFA Club Competitions HOBBY BOX (2 AUTOs) Yamal RC Chase",
+        "url": "https://www.ebay.com/itm/128118669878?nordt=true",
+        "item_price": 1062.08,
+        "shipping": 33.19,
+        "delivered_price": 1095.27,
+        "comparison_price": 1095.27,
         "shipping_known": true,
-        "shipping_text": "FREE",
+        "shipping_text": "$33.19",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "tlbase",
-        "listing_id": "377342733944",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/iEgAAeSwoi5qVoCo/s-l1600.webp"
+        "seller": "seemslikefun_card",
+        "listing_id": "128118669878",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/~F8AAeSwe1BqxPTA/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -324,12 +324,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 319.95,
+        "floor": 1095.27,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 6,
+        "listing_count": 3,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2023-24-deco-uefa-box": {
@@ -468,7 +468,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 3,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2024-chrome-uefa-euro-hobby": {
@@ -607,7 +607,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 16,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2024-25-merlin-uefa-hobby": {
@@ -670,7 +670,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 15,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2024-25-merlin-uefa-delight": {
@@ -771,7 +771,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 7,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2024-25-chrome-uefa-hobby": {
@@ -1216,7 +1216,7 @@
         "basis": "ebaysoldlistingsapi_active",
         "floor": 307.08,
         "snapshot_date": "2026-10-07",
-        "updated_at": "2026-10-07T17:42:06.864183+00:00",
+        "updated_at": "2026-10-07T17:54:21.185473+00:00",
         "listing_count": 11,
         "stale": false,
         "freshness_days": 0.0
@@ -1360,7 +1360,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 5,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2024-25-inception-uefa-hobby": {
@@ -1423,7 +1423,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 6,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2024-25-museum-uefa-hobby": {
@@ -1486,7 +1486,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 5,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2024-25-uefa-flagship-value": {
@@ -1531,21 +1531,21 @@
       "status": "VERIFIED",
       "query": "\"2024-25\" \"Topps\" \"UEFA\" \"Hobby\" \"box\" -women -womens -\"women's\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine -\"stadium club\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222024-25%22+%22Topps%22+%22UEFA%22+%22Hobby%22+%22box%22+-women+-womens+-%22women%27s%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine+-%22stadium+club%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 5,
+      "candidate_count": 4,
       "best": {
-        "title": "2024/25 Topps UEFA Club Competitions Hobby Box PACK",
-        "url": "https://www.ebay.com/itm/305988067916?nordt=true",
-        "item_price": 7.99,
-        "shipping": 5.72,
-        "delivered_price": 13.71,
-        "comparison_price": 13.71,
+        "title": "2024/25 Topps Gold UEFA Club Competitions Soccer Hobby Box",
+        "url": "https://www.ebay.com/itm/377545507101?nordt=true",
+        "item_price": 334.95,
+        "shipping": 0.0,
+        "delivered_price": 334.95,
+        "comparison_price": 334.95,
         "shipping_known": true,
-        "shipping_text": "$5.72",
+        "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "jnl_collectibles",
-        "listing_id": "305988067916",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/tuUAAOSwvjJnZgpX/s-l1600.webp"
+        "seller": "dacardworld",
+        "listing_id": "377545507101",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/6yMAAeSweUNqw5he/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -1582,12 +1582,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 13.71,
+        "floor": 334.95,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 5,
+        "listing_count": 4,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2025-26-merlin-premier-league-value": {
@@ -2634,7 +2634,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 2,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3769,7 +3769,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 9,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3831,7 +3831,7 @@
         "basis": "ebaysoldlistingsapi_active",
         "floor": 39.99,
         "snapshot_date": "2026-10-07",
-        "updated_at": "2026-10-07T17:42:06.864183+00:00",
+        "updated_at": "2026-10-07T17:54:21.185473+00:00",
         "listing_count": 20,
         "stale": false,
         "freshness_days": 0.0
@@ -3897,7 +3897,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 23,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2025-26-chrome-uefa-hobby": {
@@ -3960,7 +3960,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2025-26-chrome-uefa-jumbo": {
@@ -4005,21 +4005,21 @@
       "status": "VERIFIED",
       "query": "\"2025-26\" \"Topps\" \"Chrome\" \"UEFA\" \"Sapphire\" \"box\" -women -womens -\"women's\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22UEFA%22+%22Sapphire%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 5,
+      "candidate_count": 4,
       "best": {
-        "title": "Topps 2025/26 Chrome Sapphire UEFA WCL Hobby Box 32 Cards 1 Sapphire Autograph",
-        "url": "https://www.ebay.com/itm/117443863248?nordt=true",
-        "item_price": 175.0,
-        "shipping": 6.36,
-        "delivered_price": 181.36,
-        "comparison_price": 181.36,
+        "title": "2025-26 Topps Chrome UEFA Club Competitions Sapphire Hobby Box FACTORY SEALED \u2705",
+        "url": "https://www.ebay.com/itm/800338870226?nordt=true",
+        "item_price": 907.66,
+        "shipping": 27.93,
+        "delivered_price": 935.59,
+        "comparison_price": 935.59,
         "shipping_known": true,
-        "shipping_text": "$6.36",
+        "shipping_text": "$27.93",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "copescards",
-        "listing_id": "117443863248",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/06UAAeSwjvhqwCWe/s-l1600.webp"
+        "seller": "solesupplyau",
+        "listing_id": "800338870226",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/aWQAAeSwan9qVgeG/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -4700,12 +4700,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 181.36,
+        "floor": 935.59,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 5,
+        "listing_count": 4,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2025-26-finest-uefa-hobby": {
@@ -5589,7 +5589,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 20,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -5725,7 +5725,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 13,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2025-26-museum-uefa-hobby": {
@@ -6705,7 +6705,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -6770,7 +6770,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 25,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2025-26-uefa-flagship-hobby": {
@@ -7461,7 +7461,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 6,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -7564,7 +7564,7 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 23,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2026-27-premier-league-flagship-mega": {
@@ -7665,28 +7665,28 @@
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-01": {
       "status": "VERIFIED",
       "query": "\"OP-01\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-01%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 4,
       "best": {
-        "title": "ONE PIECE *Chinese* ROMANCE DAWN Booster Box Sealed OP-01 NEXT DAY SHIP READ DES",
-        "url": "https://www.ebay.com/itm/800418551299?nordt=true",
-        "item_price": 60.0,
-        "shipping": 11.0,
-        "delivered_price": 71.0,
-        "comparison_price": 71.0,
+        "title": "One Piece! Romance Dawn Booster Box OP-01 - White Bottom - Sealed - Mint",
+        "url": "https://www.ebay.com/itm/136950517498?nordt=true",
+        "item_price": 2699.99,
+        "shipping": 15.85,
+        "delivered_price": 2715.84,
+        "comparison_price": 2715.84,
         "shipping_known": true,
-        "shipping_text": "$11.00",
+        "shipping_text": "$15.85",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "lavont37",
-        "listing_id": "800418551299",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/P-MAAeSwtcBqZ9Zx/s-l1600.webp"
+        "seller": "energybreathingtcg",
+        "listing_id": "136950517498",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/rAwAAOSwHexlIGff/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -7723,33 +7723,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 71.0,
+        "floor": 2715.84,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 4,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-02": {
       "status": "VERIFIED",
       "query": "\"OP-02\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-02%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 28,
       "best": {
-        "title": "BANDAI ONE PIECE Card Game Paramount War OP-02 Booster BOX TCG",
-        "url": "https://www.ebay.com/itm/206516209939?nordt=true",
-        "item_price": 145.0,
+        "title": "One Piece Paramount War Booster Box One Piece OP02 SEALED ENGLISH MINT CONDITION",
+        "url": "https://www.ebay.com/itm/287619410575?nordt=true",
+        "item_price": 520.0,
         "shipping": 0.0,
-        "delivered_price": 145.0,
-        "comparison_price": 145.0,
+        "delivered_price": 520.0,
+        "comparison_price": 520.0,
         "shipping_known": true,
         "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "fede-3489",
-        "listing_id": "206516209939",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/HXQAAeSwALdqjoVy/s-l1600.webp"
+        "seller": "chonky_trainer",
+        "listing_id": "287619410575",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/0UcAAeSwRblqvdwn/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -7786,33 +7786,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 145.0,
+        "floor": 520.0,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 28,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-03": {
       "status": "VERIFIED",
       "query": "\"OP-03\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-03%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 20,
+      "candidate_count": 19,
       "best": {
-        "title": "S-Chinese OP-03 One Piece TCG Pillars of Strength Booster Box (OPC-03)",
-        "url": "https://www.ebay.com/itm/178193278340?nordt=true",
-        "item_price": 74.99,
+        "title": "Sealed & Dinged Pillars of Strength Booster Box OP-03 One Piece -Kid Icarus-",
+        "url": "https://www.ebay.com/itm/800739426808?nordt=true",
+        "item_price": 489.99,
         "shipping": 0.0,
-        "delivered_price": 74.99,
-        "comparison_price": 74.99,
+        "delivered_price": 489.99,
+        "comparison_price": 489.99,
         "shipping_known": true,
         "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
         "seller": null,
-        "listing_id": "178193278340",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/GNUAAeSwQ61qO~Gi/s-l1600.webp"
+        "listing_id": "800739426808",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/ccgAAeSw-bxqvU~6/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -7849,10 +7849,10 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 74.99,
+        "floor": 489.99,
         "snapshot_date": "2026-10-07",
-        "updated_at": "2026-10-07T17:42:06.864183+00:00",
-        "listing_count": 20,
+        "updated_at": "2026-10-07T17:54:21.185473+00:00",
+        "listing_count": 19,
         "stale": false,
         "freshness_days": 0.0
       }
@@ -7861,21 +7861,21 @@
       "status": "VERIFIED",
       "query": "\"OP-04\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-04%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 23,
       "best": {
-        "title": "One Piece Kingdoms of Intrigue - Booster Box - Kingdoms of Intrigue (OP04)",
-        "url": "https://www.ebay.com/itm/257072643823?nordt=true",
-        "item_price": 7.75,
-        "shipping": 6.35,
-        "delivered_price": 14.1,
-        "comparison_price": 14.1,
+        "title": "One Piece Card Game Kingdoms of Intrigue Booster Box (OP-04) *New/Sealed",
+        "url": "https://www.ebay.com/itm/128002593397?nordt=true",
+        "item_price": 499.0,
+        "shipping": 0.0,
+        "delivered_price": 499.0,
+        "comparison_price": 499.0,
         "shipping_known": true,
-        "shipping_text": "$6.35",
+        "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "tnc869",
-        "listing_id": "257072643823",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/hLQAAeSwxN1opM~O/s-l1600.webp"
+        "seller": "thegamerslair8",
+        "listing_id": "128002593397",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/HkQAAeSw5eRqa8Lk/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -7912,33 +7912,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 14.1,
+        "floor": 499.0,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 23,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-05": {
       "status": "VERIFIED",
       "query": "\"OP-05\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-05%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 25,
       "best": {
-        "title": "One Piece Card Game - Awakening of the New Era (OP-05) Booster Box",
-        "url": "https://www.ebay.com/itm/800491637471?nordt=true",
-        "item_price": 212.42,
-        "shipping": 27.85,
-        "delivered_price": 240.27,
-        "comparison_price": 240.27,
+        "title": "Bandai One Piece Card Game OP-05 Awakening of the New Era Booster Box preorder",
+        "url": "https://www.ebay.com/itm/137781705642?nordt=true",
+        "item_price": 802.93,
+        "shipping": 50.06,
+        "delivered_price": 852.99,
+        "comparison_price": 852.99,
         "shipping_known": true,
-        "shipping_text": "$27.85",
+        "shipping_text": "$50.06",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "oxoncards",
-        "listing_id": "800491637471",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/G6wAAeSwfoNqeyFa/s-l1600.webp"
+        "seller": "hadi2190",
+        "listing_id": "137781705642",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/H~8AAeSwJBJqt7UA/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -7975,33 +7975,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 240.27,
+        "floor": 852.99,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 25,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-06": {
       "status": "VERIFIED",
       "query": "\"OP-06\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-06%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 28,
+      "candidate_count": 26,
       "best": {
-        "title": "SEALED OP-06 Booster Box: Your Chance to Own a Piece of ONE PIECE History!",
-        "url": "https://www.ebay.com/itm/135829012694?nordt=true",
-        "item_price": 92.77,
-        "shipping": 0.0,
-        "delivered_price": 92.77,
-        "comparison_price": 92.77,
+        "title": "One Piece OP06 Wings Of The Captain Booster Box Sealed English",
+        "url": "https://www.ebay.com/itm/267514378902?nordt=true",
+        "item_price": 289.42,
+        "shipping": 21.23,
+        "delivered_price": 310.65,
+        "comparison_price": 310.65,
         "shipping_known": true,
-        "shipping_text": "FREE",
+        "shipping_text": "$21.23",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "werknor",
-        "listing_id": "135829012694",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/txIAAOSwU1RmHOHr/s-l1600.webp"
+        "seller": "ttiq2744",
+        "listing_id": "267514378902",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/yQkAAeSw4VRpQhMd/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8038,33 +8038,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 92.77,
+        "floor": 310.65,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 28,
+        "listing_count": 26,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-07": {
       "status": "VERIFIED",
       "query": "\"OP-07\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-07%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 27,
       "best": {
-        "title": "\u2705UNSEALED\u2705One Piece TCG OP-07 500 Years In The Future Booster Box - Brand New",
-        "url": "https://www.ebay.com/itm/227487028162?nordt=true",
-        "item_price": 223.04,
-        "shipping": 31.34,
-        "delivered_price": 254.38,
-        "comparison_price": 254.38,
+        "title": "OP-07 500 Years in the Future - One Piece Card Game Booster Box Display (24",
+        "url": "https://www.ebay.com/itm/257323007323?nordt=true",
+        "item_price": 160.99,
+        "shipping": 112.58,
+        "delivered_price": 273.57,
+        "comparison_price": 273.57,
         "shipping_known": true,
-        "shipping_text": "$31.34",
+        "shipping_text": "$112.58",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": null,
-        "listing_id": "227487028162",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/rgQAAeSwrIhp23L2/s-l1600.webp"
+        "seller": "heartforcards",
+        "listing_id": "257323007323",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/nlUAAeSwtkto-Pio/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8101,33 +8101,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 254.38,
+        "floor": 273.57,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 27,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-08": {
       "status": "VERIFIED",
       "query": "\"OP-08\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-08%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 19,
       "best": {
-        "title": "Bandai One Piece Card Game OP08 Two Legends Booster Box Eng",
-        "url": "https://www.ebay.com/itm/318206419306?nordt=true",
-        "item_price": 27.58,
-        "shipping": 16.31,
-        "delivered_price": 43.89,
-        "comparison_price": 43.89,
+        "title": "One Piece Card Game Booster Box OP08 Two Legends - ENG Sealed",
+        "url": "https://www.ebay.com/itm/128086141341?nordt=true",
+        "item_price": 202.66,
+        "shipping": 39.41,
+        "delivered_price": 242.07,
+        "comparison_price": 242.07,
         "shipping_known": true,
-        "shipping_text": "$16.31",
+        "shipping_text": "$39.41",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "nikitosterr",
-        "listing_id": "318206419306",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/J34AAeSw8Ghp7b4T/s-l1600.webp"
+        "seller": "valerensi92",
+        "listing_id": "128086141341",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/ECwAAeSw-1lqoV3Z/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8164,33 +8164,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 43.89,
+        "floor": 242.07,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 19,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-09": {
       "status": "VERIFIED",
       "query": "\"OP-09\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-09%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 25,
       "best": {
-        "title": "ONE PIECE Card Game The Four Emperors OP-09 booster box Bandai",
-        "url": "https://www.ebay.com/itm/406874554967?nordt=true",
-        "item_price": 70.0,
-        "shipping": 25.0,
-        "delivered_price": 95.0,
-        "comparison_price": 95.0,
+        "title": "Bandai One Piece Card Game Booster Box Emperors in the New World OP-09 ENG",
+        "url": "https://www.ebay.com/itm/267798976066?nordt=true",
+        "item_price": 534.8,
+        "shipping": 27.02,
+        "delivered_price": 561.82,
+        "comparison_price": 561.82,
         "shipping_known": true,
-        "shipping_text": "$25.00",
+        "shipping_text": "$27.02",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "asian.snap",
-        "listing_id": "406874554967",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/tU8AAeSwETJp5yCa/s-l1600.webp"
+        "seller": "losciamanga",
+        "listing_id": "267798976066",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/T2cAAeSwPodqu-sS/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8227,33 +8227,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 95.0,
+        "floor": 561.82,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 25,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-10": {
       "status": "VERIFIED",
       "query": "\"OP-10\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-10%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 28,
       "best": {
-        "title": "BANDAI One Piece Card Game OP-10 Royal Blood Booster Box 24 Packs",
-        "url": "https://www.ebay.com/itm/206518265194?nordt=true",
-        "item_price": 161.69,
-        "shipping": 0.0,
-        "delivered_price": 161.69,
-        "comparison_price": 161.69,
+        "title": "One Piece - OP10 Royal Blood Booster Box - English Sealed, Read Description.",
+        "url": "https://www.ebay.com/itm/407268851387?nordt=true",
+        "item_price": 235.0,
+        "shipping": 10.15,
+        "delivered_price": 245.15,
+        "comparison_price": 245.15,
         "shipping_known": true,
-        "shipping_text": "FREE",
+        "shipping_text": "$10.15",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "amped_97",
-        "listing_id": "206518265194",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/~tIAAeSw72hqj7zX/s-l1600.webp"
+        "seller": "marklove1987",
+        "listing_id": "407268851387",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/da8AAeSw~6pqxCS~/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8290,33 +8290,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 161.69,
+        "floor": 245.15,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 28,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-11": {
       "status": "VERIFIED",
       "query": "\"OP-11\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-11%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 27,
       "best": {
-        "title": "S-Chinese OP-11 Booster Box One Piece TCG A Fist of Divine Speed (OPC-11)",
-        "url": "https://www.ebay.com/itm/177840930348?nordt=true",
-        "item_price": 94.99,
-        "shipping": 0.0,
-        "delivered_price": 94.99,
-        "comparison_price": 94.99,
+        "title": "Bandai One Piece Card Game OP-11 A Fist of Divine Speed English Booster Box",
+        "url": "https://www.ebay.com/itm/820193363255?nordt=true",
+        "item_price": 500.0,
+        "shipping": 7.09,
+        "delivered_price": 507.09,
+        "comparison_price": 507.09,
         "shipping_known": true,
-        "shipping_text": "FREE",
+        "shipping_text": "$7.09",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
         "seller": null,
-        "listing_id": "177840930348",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/XMYAAeSwAdhqO~Gt/s-l1600.webp"
+        "listing_id": "820193363255",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/FH4AAeSwjdRqvoeu/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8353,10 +8353,10 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 94.99,
+        "floor": 507.09,
         "snapshot_date": "2026-10-07",
-        "updated_at": "2026-10-07T17:42:06.864183+00:00",
-        "listing_count": 30,
+        "updated_at": "2026-10-07T17:54:21.185473+00:00",
+        "listing_count": 27,
         "stale": false,
         "freshness_days": 0.0
       }
@@ -8365,21 +8365,21 @@
       "status": "VERIFIED",
       "query": "\"OP-12\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-12%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 29,
       "best": {
-        "title": "Open Live One Piece TCG Legacy of the Master OP-12 Booster Box English Sealed",
-        "url": "https://www.ebay.com/itm/397021672540?nordt=true",
-        "item_price": 279.35,
-        "shipping": 0.0,
-        "delivered_price": 279.35,
-        "comparison_price": 279.35,
+        "title": "One Piece TCG Legacy of the Master OP-12 Booster Box Sealed English",
+        "url": "https://www.ebay.com/itm/178526680476?nordt=true",
+        "item_price": 275.0,
+        "shipping": 4.99,
+        "delivered_price": 279.99,
+        "comparison_price": 279.99,
         "shipping_known": true,
-        "shipping_text": "FREE",
+        "shipping_text": "$4.99",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "calipokehouseofficial",
-        "listing_id": "397021672540",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/TmUAAeSwvw5ouKKy/s-l1600.webp"
+        "seller": "0xbriann",
+        "listing_id": "178526680476",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/fxQAAeSwrWJqtf4n/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8416,33 +8416,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 279.35,
+        "floor": 279.99,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 29,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-13": {
       "status": "VERIFIED",
       "query": "\"OP-13\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-13%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 25,
       "best": {
-        "title": "One Piece Card Game Carrying On His Will OP-13 Booster Box 24 Packs Sealed",
-        "url": "https://www.ebay.com/itm/298538072633?nordt=true",
-        "item_price": 79.99,
-        "shipping": 8.0,
-        "delivered_price": 87.99,
-        "comparison_price": 87.99,
+        "title": "One Piece Card Game Inherited Will OP-13 Booster Box 24 Packs Anime Trading",
+        "url": "https://www.ebay.com/itm/318639919589?nordt=true",
+        "item_price": 428.99,
+        "shipping": 0.0,
+        "delivered_price": 428.99,
+        "comparison_price": 428.99,
         "shipping_known": true,
-        "shipping_text": "$8.00",
+        "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "coolcollectionllc",
-        "listing_id": "298538072633",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/blcAAeSwmkxqZ~3y/s-l1600.webp"
+        "seller": "nexsupply",
+        "listing_id": "318639919589",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/FgsAAeSwrLtqTPKr/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8479,33 +8479,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 87.99,
+        "floor": 428.99,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 25,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-14": {
       "status": "VERIFIED",
       "query": "\"OP-14\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-14%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 25,
       "best": {
-        "title": "EMPTY - One Piece TCG The Azure Sea's Seven Op-14 English Booster Box",
-        "url": "https://www.ebay.com/itm/407100127205?nordt=true",
-        "item_price": 15.0,
-        "shipping": 7.0,
-        "delivered_price": 22.0,
-        "comparison_price": 22.0,
+        "title": "One Piece The Azure Sea's Seven Booster Box OP14 English New Sealed!",
+        "url": "https://www.ebay.com/itm/800709733409?nordt=true",
+        "item_price": 270.0,
+        "shipping": 10.99,
+        "delivered_price": 280.99,
+        "comparison_price": 280.99,
         "shipping_known": true,
-        "shipping_text": "$7.00",
+        "shipping_text": "$10.99",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "nearmintpackfresh",
-        "listing_id": "407100127205",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/h0YAAeSwapBqZmsK/s-l1600.webp"
+        "seller": "makinc15",
+        "listing_id": "800709733409",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/KlQAAeSwLAJqtTbV/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8542,33 +8542,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 22.0,
+        "floor": 280.99,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 25,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-15": {
       "status": "VERIFIED",
       "query": "\"OP-15\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-15%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 16,
       "best": {
-        "title": "EMPTY - One Piece TCG Adventure On Kami's Island Op-15 English Booster Box",
-        "url": "https://www.ebay.com/itm/407100127805?nordt=true",
-        "item_price": 15.0,
-        "shipping": 7.0,
-        "delivered_price": 22.0,
-        "comparison_price": 22.0,
+        "title": "Adventure on Kami's Island Booster Box OP-15 (24 Packs) - One Piece Card Game -",
+        "url": "https://www.ebay.com/itm/366437399656?nordt=true",
+        "item_price": 168.21,
+        "shipping": 70.94,
+        "delivered_price": 239.15,
+        "comparison_price": 239.15,
         "shipping_known": true,
-        "shipping_text": "$7.00",
+        "shipping_text": "$70.94",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "nearmintpackfresh",
-        "listing_id": "407100127805",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/uXMAAeSwoi5qZmtC/s-l1600.webp"
+        "seller": "tiji-kun",
+        "listing_id": "366437399656",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/UVwAAeSwEAdqFtx3/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8605,33 +8605,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 22.0,
+        "floor": 239.15,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 16,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-16": {
       "status": "VERIFIED",
       "query": "\"OP-16\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-16%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 24,
       "best": {
-        "title": "OP16 The Time Of Battle OPEN Booster Box Bulk One Piece Card Game English",
-        "url": "https://www.ebay.com/itm/168451803134?nordt=true",
-        "item_price": 60.0,
-        "shipping": 7.09,
-        "delivered_price": 67.09,
-        "comparison_price": 67.09,
+        "title": "One Piece The Time of Battle Booster Box (OP-16) Sealed Presale",
+        "url": "https://www.ebay.com/itm/800755072673?nordt=true",
+        "item_price": 219.99,
+        "shipping": 0.0,
+        "delivered_price": 219.99,
+        "comparison_price": 219.99,
         "shipping_known": true,
-        "shipping_text": "$7.09",
+        "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "jdcollectibless",
-        "listing_id": "168451803134",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/8nUAAeSw269qK5x7/s-l1600.webp"
+        "seller": "ehokthe173",
+        "listing_id": "800755072673",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/MtMAAeSw4mRqwc27/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8668,33 +8668,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 67.09,
+        "floor": 219.99,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 24,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-op-17": {
       "status": "VERIFIED",
       "query": "\"OP-17\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-17%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 25,
       "best": {
-        "title": "US Seller: Chinese One Piece Card World's Strongest Warriors (OP-17) Booster Box",
-        "url": "https://www.ebay.com/itm/800740391614?nordt=true",
-        "item_price": 94.5,
-        "shipping": 13.2,
-        "delivered_price": 107.7,
-        "comparison_price": 107.7,
+        "title": "One Piece TCG OP17 World's Strongest Warriors BOOSTER BOX Sealed English",
+        "url": "https://www.ebay.com/itm/147618776005?nordt=true",
+        "item_price": 314.94,
+        "shipping": 0.0,
+        "delivered_price": 314.94,
+        "comparison_price": 314.94,
         "shipping_known": true,
-        "shipping_text": "$13.20",
+        "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "escollectible",
-        "listing_id": "800740391614",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/uh4AAeSw2t1qv8sN/s-l1600.webp"
+        "seller": "rvreflipz",
+        "listing_id": "147618776005",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/IVUAAeSwGgtqwtI2/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8731,33 +8731,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 107.7,
+        "floor": 314.94,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 25,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-eb-01": {
       "status": "VERIFIED",
       "query": "\"EB-01\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22EB-01%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 21,
       "best": {
-        "title": "ONE PIECE Card Game: EB-01 Memorial Booster Box \u2013 SEALED & READY TO SHIP!",
-        "url": "https://www.ebay.com/itm/377058990758?nordt=true",
-        "item_price": 109.99,
-        "shipping": 0.0,
-        "delivered_price": 109.99,
-        "comparison_price": 109.99,
+        "title": "One Piece EB-01 Memorial Collection Booster Box English Sealed",
+        "url": "https://www.ebay.com/itm/389715061755?nordt=true",
+        "item_price": 787.0,
+        "shipping": 45.02,
+        "delivered_price": 832.02,
+        "comparison_price": 832.02,
         "shipping_known": true,
-        "shipping_text": "FREE",
+        "shipping_text": "$45.02",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "vdcontion",
-        "listing_id": "377058990758",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/CSQAAOSwaLdn4kuT/s-l1600.webp"
+        "seller": "mg_c4rds",
+        "listing_id": "389715061755",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/NesAAeSwjoNqKaQ9/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8794,33 +8794,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 109.99,
+        "floor": 832.02,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 21,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-eb-02": {
       "status": "VERIFIED",
       "query": "\"EB-02\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22EB-02%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 28,
+      "candidate_count": 24,
       "best": {
-        "title": "S-Chinese EB-02 One Piece TCG Anime 25th Collection Extra Booster Box (EBC-02)",
-        "url": "https://www.ebay.com/itm/188032940086?nordt=true",
-        "item_price": 94.99,
-        "shipping": 0.0,
-        "delivered_price": 94.99,
-        "comparison_price": 94.99,
+        "title": "One Piece CCG Anime 25th Collection Extra Booster Box EB-02 English, Sealed",
+        "url": "https://www.ebay.com/itm/920017900751?nordt=true",
+        "item_price": 720.0,
+        "shipping": 13.0,
+        "delivered_price": 733.0,
+        "comparison_price": 733.0,
         "shipping_known": true,
-        "shipping_text": "FREE",
+        "shipping_text": "$13.00",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
         "seller": null,
-        "listing_id": "188032940086",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/MicAAeSwBrJqO~F0/s-l1600.webp"
+        "listing_id": "920017900751",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/at0AAeSwcPhqxmw7/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8857,10 +8857,10 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 94.99,
+        "floor": 733.0,
         "snapshot_date": "2026-10-07",
-        "updated_at": "2026-10-07T17:42:06.864183+00:00",
-        "listing_count": 28,
+        "updated_at": "2026-10-07T17:54:21.185473+00:00",
+        "listing_count": 24,
         "stale": false,
         "freshness_days": 0.0
       }
@@ -8869,21 +8869,21 @@
       "status": "VERIFIED",
       "query": "\"EB-03\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22EB-03%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 25,
       "best": {
-        "title": "One Piece Extra Booster EB-03 Heroines Edition Booster Box Anime 25th Collection",
-        "url": "https://www.ebay.com/itm/407239558418?nordt=true",
-        "item_price": 95.9,
-        "shipping": 0.0,
-        "delivered_price": 95.9,
-        "comparison_price": 95.9,
+        "title": "ONE PIECE Card Game Booster Box EB-03 Heroines Edition Factory Sealed",
+        "url": "https://www.ebay.com/itm/357837687033?nordt=true",
+        "item_price": 264.99,
+        "shipping": 14.0,
+        "delivered_price": 278.99,
+        "comparison_price": 278.99,
         "shipping_known": true,
-        "shipping_text": "FREE",
+        "shipping_text": "$14.00",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "pengsupply",
-        "listing_id": "407239558418",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/-pcAAeSwG3xqEc8H/s-l1600.webp"
+        "seller": "nippon_japan",
+        "listing_id": "357837687033",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/~NEAAeSwJJZpI~wv/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8920,33 +8920,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 95.9,
+        "floor": 278.99,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 25,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-prb-01": {
       "status": "VERIFIED",
       "query": "\"PRB-01\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22PRB-01%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 27,
       "best": {
-        "title": "ONE PIECE Card Game PRB-01 \"THE BEST\" Premium Booster Box Factory Sealed Bandai",
-        "url": "https://www.ebay.com/itm/318689185299?nordt=true",
-        "item_price": 158.99,
-        "shipping": 10.93,
-        "delivered_price": 169.92,
-        "comparison_price": 169.92,
+        "title": "One Piece PRB01 The Best Booster Box ENG - Factory Sealed ENGLISH",
+        "url": "https://www.ebay.com/itm/237055505483?nordt=true",
+        "item_price": 788.12,
+        "shipping": 78.8,
+        "delivered_price": 866.92,
+        "comparison_price": 866.92,
         "shipping_known": true,
-        "shipping_text": "$10.93",
+        "shipping_text": "$78.80",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "tcgsultanbazaar",
-        "listing_id": "318689185299",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/rB0AAeSwtqtqdRJ3/s-l1600.webp"
+        "seller": "carlochia61",
+        "listing_id": "237055505483",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/kIAAAeSwr4VqnrTj/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8983,33 +8983,33 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 169.92,
+        "floor": 866.92,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 27,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "one-piece-prb-02": {
       "status": "VERIFIED",
       "query": "\"PRB-02\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22PRB-02%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 14,
       "best": {
-        "title": "One Piece Card Premium Game Booster The Best Vol.2 PRB-02 Booster Box Vol.2",
-        "url": "https://www.ebay.com/itm/137430549463?nordt=true",
-        "item_price": 67.99,
+        "title": "ONE PIECE TCG: (PRB-02) PREMIUM BOOSTER BOX",
+        "url": "https://www.ebay.com/itm/137759566668?nordt=true",
+        "item_price": 350.0,
         "shipping": 0.0,
-        "delivered_price": 67.99,
-        "comparison_price": 67.99,
+        "delivered_price": 350.0,
+        "comparison_price": 350.0,
         "shipping_known": true,
         "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "sunnystore24",
-        "listing_id": "137430549463",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/AH8AAeSwFatqNF7m/s-l1600.webp"
+        "seller": "p_aint",
+        "listing_id": "137759566668",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/GKkAAeSwyD9qsArY/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -9046,12 +9046,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 67.99,
+        "floor": 350.0,
         "snapshot_date": "2026-10-07",
         "updated_at": "2026-10-07T17:31:26.176085+00:00",
-        "listing_count": 30,
+        "listing_count": 14,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     }
   }

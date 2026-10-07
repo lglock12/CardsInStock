@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T17:42:27.135292+00:00",
+  "generated_at": "2026-10-07T17:54:28.093292+00:00",
   "source": "ebaysoldlistingsapi.com",
   "products": {
     "2023-24-finest-uefa-hobby": {
@@ -8938,64 +8938,64 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 116,
-        "priced_sales": 116,
-        "best_offer_hidden_count": 25,
-        "auction_count": 72,
+        "matched_sales": 92,
+        "priced_sales": 92,
+        "best_offer_hidden_count": 24,
+        "auction_count": 50,
         "bin_count": 11,
         "latest_sale_at": "2026-10-06T00:00:00+00:00",
         "windows": {
           "7": {
-            "count": 5,
+            "count": 3,
             "median": 4200.0,
-            "median_delivered": 4208.27,
+            "median_delivered": 4200.0,
             "low": 1399.0,
-            "high": 4457.0,
-            "p25": 4200.0,
-            "p75": 4307.0
+            "high": 4200.0,
+            "p25": 2799.5,
+            "p75": 4200.0
           },
           "30": {
-            "count": 31,
-            "median": 4150.0,
-            "median_delivered": 4170.0,
+            "count": 19,
+            "median": 1580.0,
+            "median_delivered": 1589.35,
             "low": 1150.0,
-            "high": 4700.0,
-            "p25": 1514.5,
-            "p75": 4328.5
+            "high": 4500.0,
+            "p25": 1388.5,
+            "p75": 4200.0
           },
           "90": {
-            "count": 116,
-            "median": 1675.0,
-            "median_delivered": 1685.0,
+            "count": 92,
+            "median": 1550.0,
+            "median_delivered": 1560.97,
             "low": 1150.0,
-            "high": 5734.0,
-            "p25": 1399.0,
-            "p75": 4563.25
+            "high": 5500.0,
+            "p25": 1375.38,
+            "p75": 4462.5
           },
           "180": {
-            "count": 116,
-            "median": 1675.0,
-            "median_delivered": 1685.0,
+            "count": 92,
+            "median": 1550.0,
+            "median_delivered": 1560.97,
             "low": 1150.0,
-            "high": 5734.0,
-            "p25": 1399.0,
-            "p75": 4563.25
+            "high": 5500.0,
+            "p25": 1375.38,
+            "p75": 4462.5
           },
           "365": {
-            "count": 116,
-            "median": 1675.0,
-            "median_delivered": 1685.0,
+            "count": 92,
+            "median": 1550.0,
+            "median_delivered": 1560.97,
             "low": 1150.0,
-            "high": 5734.0,
-            "p25": 1399.0,
-            "p75": 4563.25
+            "high": 5500.0,
+            "p25": 1375.38,
+            "p75": 4462.5
           }
         },
         "prior_31_90": {
-          "count": 85,
-          "median": 1600.0,
+          "count": 73,
+          "median": 1525.0,
           "low": 1150.0,
-          "high": 5734.0
+          "high": 5500.0
         },
         "recent_sales": [
           {
@@ -9016,46 +9016,6 @@
             "item_location": "United States",
             "url": "https://www.ebay.com/itm/267803831379?nordt=true",
             "listing_id": "267803831379",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "377531952525",
-            "product_id": "one-piece-op-01",
-            "title": "One Piece TCG OP-01 Romance Dawn Blue Bottom Booster Box SEALED WITH ACRYLIC",
-            "sold_at": "2026-10-06T00:00:00+00:00",
-            "sold_price": 4457.0,
-            "shipping": 20.0,
-            "delivered_price": 4477.0,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 47,
-            "condition": "Brand New",
-            "seller": "probstein123",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/377531952525?nordt=true",
-            "listing_id": "377531952525",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "366697646588",
-            "product_id": "one-piece-op-01",
-            "title": "One Piece TCG OP-01 Romance Dawn Booster Box SEALED BLUE BOTTOM WITH ACRYLIC",
-            "sold_at": "2026-10-05T00:00:00+00:00",
-            "sold_price": 4307.0,
-            "shipping": 25.0,
-            "delivered_price": 4332.0,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 56,
-            "condition": "Brand New",
-            "seller": "probstein123",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/366697646588?nordt=true",
-            "listing_id": "366697646588",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -9179,66 +9139,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "188957124180",
-            "product_id": "one-piece-op-01",
-            "title": "One Piece OP-01 Romance Dawn Blue Bottom English Sealed Booster Box + Acrylic",
-            "sold_at": "2026-09-27T00:00:00+00:00",
-            "sold_price": 4150.0,
-            "shipping": 0.0,
-            "delivered_price": 4150.0,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 8,
-            "condition": "Brand New",
-            "seller": "mototsugu2012",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/188957124180?nordt=true",
-            "listing_id": "188957124180",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "366680858521",
-            "product_id": "one-piece-op-01",
-            "title": "One Piece TCG OP-01 Romance Dawn Blue Bottom Booster Box SEALED WITH ACRYLIC",
-            "sold_at": "2026-09-27T00:00:00+00:00",
-            "sold_price": 4550.0,
-            "shipping": 20.0,
-            "delivered_price": 4570.0,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 40,
-            "condition": "Brand New",
-            "seller": "probstein123",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/366680858521?nordt=true",
-            "listing_id": "366680858521",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "287483766848",
-            "product_id": "one-piece-op-01",
-            "title": "One Piece TCG OP-01 2022 Romance Dawn Blue Bottom Booster Box English w/Acrylic",
-            "sold_at": "2026-09-26T00:00:00+00:00",
-            "sold_price": 4700.0,
-            "shipping": 19.63,
-            "delivered_price": 4719.63,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": true,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "billysbasement",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/287483766848?nordt=true",
-            "listing_id": "287483766848",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "168714024715",
             "product_id": "one-piece-op-01",
             "title": "One Piece Romance Dawn Booster Box English Sealed White Bottom New OP-01",
@@ -9339,26 +9239,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "366669138760",
-            "product_id": "one-piece-op-01",
-            "title": "One Piece TCG OP-01 Romance Dawn Blue Bottom Booster Box SEALED WITH ACRYLIC",
-            "sold_at": "2026-09-21T00:00:00+00:00",
-            "sold_price": 4300.0,
-            "shipping": 20.0,
-            "delivered_price": 4320.0,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 64,
-            "condition": "Brand New",
-            "seller": "probstein123",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/366669138760?nordt=true",
-            "listing_id": "366669138760",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "377498024124",
             "product_id": "one-piece-op-01",
             "title": "2022 One Piece TCG OP-01 English Romance Dawn Blue Bottom Booster Box Sealed",
@@ -9379,23 +9259,143 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "377500021604",
+            "dedupe_key": "178493460180",
             "product_id": "one-piece-op-01",
-            "title": "One Piece OP01 Romance Dawn Blue Bottom Booster Box SEALED W/ ACRYLIC 1st Print",
-            "sold_at": "2026-09-17T00:00:00+00:00",
-            "sold_price": 3000.0,
-            "shipping": 25.0,
-            "delivered_price": 3025.0,
+            "title": "One Piece OP-01 Romance Dawn (Blue Bottom)  Factory Sealed Booster box",
+            "sold_at": "2026-09-16T00:00:00+00:00",
+            "sold_price": 4500.0,
+            "shipping": 0.0,
+            "delivered_price": 4500.0,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": true,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "deadce11",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/178493460180?nordt=true",
+            "listing_id": "178493460180",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "287586268262",
+            "product_id": "one-piece-op-01",
+            "title": "Bandai One Piece Card Game Romance Dawn OP-01 English Booster Box (White Bottom)",
+            "sold_at": "2026-09-15T00:00:00+00:00",
+            "sold_price": 1450.0,
+            "shipping": 14.46,
+            "delivered_price": 1464.46,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": true,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "holosandco",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/287586268262?nordt=true",
+            "listing_id": "287586268262",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "168672304489",
+            "product_id": "one-piece-op-01",
+            "title": "One Piece Romance Dawn Booster Box English Sealed White Bottom New OP-01",
+            "sold_at": "2026-09-14T00:00:00+00:00",
+            "sold_price": 1580.0,
+            "shipping": 9.35,
+            "delivered_price": 1589.35,
             "currency": "USD",
             "buying_format": "auction",
             "best_offer_accepted": false,
             "price_usable": true,
             "bid_count": 1,
             "condition": "Brand New",
+            "seller": "harolhane",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/168672304489?nordt=true",
+            "listing_id": "168672304489",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "128064735487",
+            "product_id": "one-piece-op-01",
+            "title": "2022 One Piece TCG OP-01 English Romance Dawn White Bottom Booster Box Sealed",
+            "sold_at": "2026-09-10T00:00:00+00:00",
+            "sold_price": 1400.0,
+            "shipping": 0.0,
+            "delivered_price": 1400.0,
+            "currency": "USD",
+            "buying_format": "auction",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": 1,
+            "condition": "Brand New",
+            "seller": "l1ttle_t",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/128064735487?nordt=true",
+            "listing_id": "128064735487",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "307170649055",
+            "product_id": "one-piece-op-01",
+            "title": "NEW One Piece Romance Dawn Booster Box English SEALED White Bottom New OP-01",
+            "sold_at": "2026-09-10T00:00:00+00:00",
+            "sold_price": 1375.5,
+            "shipping": 6.33,
+            "delivered_price": 1381.83,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": true,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "ramzi0000",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/307170649055?nordt=true",
+            "listing_id": "307170649055",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "377465438664",
+            "product_id": "one-piece-op-01",
+            "title": "One Piece TCG OP-01 Romance Dawn Booster Box SEALED WHITE BOTTOM",
+            "sold_at": "2026-09-09T00:00:00+00:00",
+            "sold_price": 1378.0,
+            "shipping": 20.0,
+            "delivered_price": 1398.0,
+            "currency": "USD",
+            "buying_format": "auction",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": 25,
+            "condition": "Brand New",
             "seller": "probstein123",
             "item_location": "United States",
-            "url": "https://www.ebay.com/itm/377500021604?nordt=true",
-            "listing_id": "377500021604",
+            "url": "https://www.ebay.com/itm/377465438664?nordt=true",
+            "listing_id": "377465438664",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "820070941827",
+            "product_id": "one-piece-op-01",
+            "title": "One Piece Romance Dawn Booster Box English Sealed White Bottom New OP-01",
+            "sold_at": "2026-09-07T00:00:00+00:00",
+            "sold_price": 1376.0,
+            "shipping": 15.0,
+            "delivered_price": 1391.0,
+            "currency": "USD",
+            "buying_format": "auction",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": 51,
+            "condition": "Brand New",
+            "seller": "brawo73",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/820070941827?nordt=true",
+            "listing_id": "820070941827",
             "source": "ebaysoldlistingsapi.com"
           }
         ]
@@ -9407,86 +9407,66 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 53,
-        "priced_sales": 53,
-        "best_offer_hidden_count": 15,
-        "auction_count": 17,
-        "bin_count": 16,
-        "latest_sale_at": "2026-10-05T00:00:00+00:00",
+        "matched_sales": 43,
+        "priced_sales": 43,
+        "best_offer_hidden_count": 12,
+        "auction_count": 13,
+        "bin_count": 12,
+        "latest_sale_at": "2026-09-30T00:00:00+00:00",
         "windows": {
           "7": {
-            "count": 1,
-            "median": 500.0,
-            "median_delivered": 525.0,
-            "low": 500.0,
-            "high": 500.0,
-            "p25": 500.0,
-            "p75": 500.0
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
           },
           "30": {
-            "count": 11,
-            "median": 500.0,
-            "median_delivered": 525.0,
+            "count": 8,
+            "median": 493.5,
+            "median_delivered": 497.63,
             "low": 385.0,
             "high": 650.0,
-            "p25": 469.0,
-            "p75": 557.5
+            "p25": 444.73,
+            "p75": 552.5
           },
           "90": {
-            "count": 53,
-            "median": 555.0,
-            "median_delivered": 562.66,
+            "count": 43,
+            "median": 558.56,
+            "median_delivered": 567.09,
             "low": 122.0,
             "high": 899.99,
-            "p25": 510.0,
-            "p75": 592.0
+            "p25": 510.96,
+            "p75": 586.78
           },
           "180": {
-            "count": 53,
-            "median": 555.0,
-            "median_delivered": 562.66,
+            "count": 43,
+            "median": 558.56,
+            "median_delivered": 567.09,
             "low": 122.0,
             "high": 899.99,
-            "p25": 510.0,
-            "p75": 592.0
+            "p25": 510.96,
+            "p75": 586.78
           },
           "365": {
-            "count": 53,
-            "median": 555.0,
-            "median_delivered": 562.66,
+            "count": 43,
+            "median": 558.56,
+            "median_delivered": 567.09,
             "low": 122.0,
             "high": 899.99,
-            "p25": 510.0,
-            "p75": 592.0
+            "p25": 510.96,
+            "p75": 586.78
           }
         },
         "prior_31_90": {
-          "count": 42,
+          "count": 35,
           "median": 558.56,
           "low": 122.0,
           "high": 899.99
         },
         "recent_sales": [
-          {
-            "dedupe_key": "366697716118",
-            "product_id": "one-piece-op-02",
-            "title": "One Piece TCG OP-02 Paramount War Booster Box SEALED WITH ACRYLIC",
-            "sold_at": "2026-10-05T00:00:00+00:00",
-            "sold_price": 500.0,
-            "shipping": 25.0,
-            "delivered_price": 525.0,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 44,
-            "condition": "Brand New",
-            "seller": "probstein123",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/366697716118?nordt=true",
-            "listing_id": "366697716118",
-            "source": "ebaysoldlistingsapi.com"
-          },
           {
             "dedupe_key": "318909022872",
             "product_id": "one-piece-op-02",
@@ -9528,26 +9508,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "287572046964",
-            "product_id": "one-piece-op-02",
-            "title": "One Piece Paramount War Booster Box Sealed OP02 English With Acrylic",
-            "sold_at": "2026-09-22T00:00:00+00:00",
-            "sold_price": 555.0,
-            "shipping": 0.0,
-            "delivered_price": 555.0,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "co_collects",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/287572046964?nordt=true",
-            "listing_id": "287572046964",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "318870940259",
             "product_id": "one-piece-op-02",
             "title": "One Piece Paramount War Booster Box One Piece OP02 SEALED ENGLISH",
@@ -9565,26 +9525,6 @@
             "item_location": "United States",
             "url": "https://www.ebay.com/itm/318870940259?nordt=true",
             "listing_id": "318870940259",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "298247079384",
-            "product_id": "one-piece-op-02",
-            "title": "Paramount War Booster Box One Piece OP02 New Sealed English Clean Wrap w Acrylic",
-            "sold_at": "2026-09-20T00:00:00+00:00",
-            "sold_price": 592.88,
-            "shipping": 0.0,
-            "delivered_price": 592.88,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "arcanearchive",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/298247079384?nordt=true",
-            "listing_id": "298247079384",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -9866,6 +9806,66 @@
             "url": "https://www.ebay.com/itm/800513475679?nordt=true",
             "listing_id": "800513475679",
             "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "377430071146",
+            "product_id": "one-piece-op-02",
+            "title": "2022 One Piece English Version Paramount War OP-02 Factory Sealed Booster Box",
+            "sold_at": "2026-08-25T00:00:00+00:00",
+            "sold_price": 446.0,
+            "shipping": 14.95,
+            "delivered_price": 460.95,
+            "currency": "USD",
+            "buying_format": "auction",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": 30,
+            "condition": "Brand New",
+            "seller": "dcsports87",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/377430071146?nordt=true",
+            "listing_id": "377430071146",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "128012683604",
+            "product_id": "one-piece-op-02",
+            "title": "One Piece Card Game Paramount War Booster Box (OP-02) *New/Sealed",
+            "sold_at": "2026-08-19T00:00:00+00:00",
+            "sold_price": 549.99,
+            "shipping": 0.0,
+            "delivered_price": 549.99,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "thegamerslair8",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/128012683604?nordt=true",
+            "listing_id": "128012683604",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "188661507398",
+            "product_id": "one-piece-op-02",
+            "title": "One Piece Card Game Paramount War Booster Box (OP-02) *New/Sealed",
+            "sold_at": "2026-08-18T00:00:00+00:00",
+            "sold_price": 540.0,
+            "shipping": 0.0,
+            "delivered_price": 540.0,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "thunderwave_cave",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/188661507398?nordt=true",
+            "listing_id": "188661507398",
+            "source": "ebaysoldlistingsapi.com"
           }
         ]
       }
@@ -9876,11 +9876,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 39,
-        "priced_sales": 39,
-        "best_offer_hidden_count": 7,
+        "matched_sales": 35,
+        "priced_sales": 35,
+        "best_offer_hidden_count": 6,
         "auction_count": 15,
-        "bin_count": 15,
+        "bin_count": 12,
         "latest_sale_at": "2026-09-30T00:00:00+00:00",
         "windows": {
           "7": {
@@ -9902,37 +9902,37 @@
             "p75": 530.0
           },
           "90": {
-            "count": 39,
+            "count": 35,
             "median": 510.0,
-            "median_delivered": 521.3,
-            "low": 415.0,
+            "median_delivered": 517.31,
+            "low": 430.0,
             "high": 720.58,
             "p25": 475.5,
-            "p75": 552.5
+            "p75": 549.44
           },
           "180": {
-            "count": 39,
+            "count": 35,
             "median": 510.0,
-            "median_delivered": 521.3,
-            "low": 415.0,
+            "median_delivered": 517.31,
+            "low": 430.0,
             "high": 720.58,
             "p25": 475.5,
-            "p75": 552.5
+            "p75": 549.44
           },
           "365": {
-            "count": 39,
+            "count": 35,
             "median": 510.0,
-            "median_delivered": 521.3,
-            "low": 415.0,
+            "median_delivered": 517.31,
+            "low": 430.0,
             "high": 720.58,
             "p25": 475.5,
-            "p75": 552.5
+            "p75": 549.44
           }
         },
         "prior_31_90": {
-          "count": 31,
-          "median": 510.0,
-          "low": 415.0,
+          "count": 27,
+          "median": 500.0,
+          "low": 446.5,
           "high": 720.58
         },
         "recent_sales": [
@@ -10114,26 +10114,6 @@
             "item_location": "United States",
             "url": "https://www.ebay.com/itm/317893272764?nordt=true",
             "listing_id": "317893272764",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "297972225053",
-            "product_id": "one-piece-op-03",
-            "title": "Pillars of Strength Booster Box One Piece OP03 Factory Sealed English w/ Acrylic",
-            "sold_at": "2026-08-31T00:00:00+00:00",
-            "sold_price": 599.88,
-            "shipping": 0.0,
-            "delivered_price": 599.88,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "arcanearchive",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/297972225053?nordt=true",
-            "listing_id": "297972225053",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -10335,6 +10315,26 @@
             "url": "https://www.ebay.com/itm/297994924216?nordt=true",
             "listing_id": "297994924216",
             "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "327315495935",
+            "product_id": "one-piece-op-03",
+            "title": "\ud83e\uddedOne Piece OP-03 Pillars of Strength Booster Box Unmapped Unweighed\ud83c\udff4\u200d\u2620\ufe0f",
+            "sold_at": "2026-08-18T00:00:00+00:00",
+            "sold_price": 548.88,
+            "shipping": 6.85,
+            "delivered_price": 555.73,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "thegrand1ine",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/327315495935?nordt=true",
+            "listing_id": "327315495935",
+            "source": "ebaysoldlistingsapi.com"
           }
         ]
       }
@@ -10345,11 +10345,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 45,
-        "priced_sales": 45,
+        "matched_sales": 42,
+        "priced_sales": 42,
         "best_offer_hidden_count": 4,
         "auction_count": 15,
-        "bin_count": 19,
+        "bin_count": 16,
         "latest_sale_at": "2026-10-04T00:00:00+00:00",
         "windows": {
           "7": {
@@ -10371,38 +10371,38 @@
             "p75": 495.5
           },
           "90": {
-            "count": 43,
-            "median": 460.0,
-            "median_delivered": 478.87,
+            "count": 40,
+            "median": 457.75,
+            "median_delivered": 474.65,
             "low": 60.0,
-            "high": 527.84,
-            "p25": 398.44,
-            "p75": 498.48
+            "high": 513.99,
+            "p25": 386.41,
+            "p75": 495.5
           },
           "180": {
-            "count": 43,
+            "count": 40,
+            "median": 457.75,
+            "median_delivered": 474.65,
+            "low": 60.0,
+            "high": 513.99,
+            "p25": 386.41,
+            "p75": 495.5
+          },
+          "365": {
+            "count": 41,
             "median": 460.0,
             "median_delivered": 478.87,
             "low": 60.0,
-            "high": 527.84,
-            "p25": 398.44,
-            "p75": 498.48
-          },
-          "365": {
-            "count": 44,
-            "median": 460.75,
-            "median_delivered": 481.94,
-            "low": 60.0,
-            "high": 527.84,
-            "p25": 404.21,
-            "p75": 499.24
+            "high": 513.99,
+            "p25": 386.88,
+            "p75": 497.0
           }
         },
         "prior_31_90": {
-          "count": 35,
-          "median": 460.0,
+          "count": 32,
+          "median": 457.75,
           "low": 60.0,
-          "high": 527.84
+          "high": 513.99
         },
         "recent_sales": [
           {
@@ -10686,26 +10686,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "298251310008",
-            "product_id": "one-piece-op-04",
-            "title": "One Piece Kingdoms Of Intrigue Booster Box OP-04 Sealed English Mint w/ Acrylic",
-            "sold_at": "2026-08-29T00:00:00+00:00",
-            "sold_price": 525.19,
-            "shipping": 0.0,
-            "delivered_price": 525.19,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "arcanearchive",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/298251310008?nordt=true",
-            "listing_id": "298251310008",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "147504714521",
             "product_id": "one-piece-op-04",
             "title": "Bandai One Piece TCG: Kingdoms of Intrigue Booster Box (OP-04)",
@@ -10804,6 +10784,26 @@
             "url": "https://www.ebay.com/itm/178390099943?nordt=true",
             "listing_id": "178390099943",
             "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "398292271566",
+            "product_id": "one-piece-op-04",
+            "title": "One Piece TCG OP-04 - Kingdoms Of Intrigue English Booster Box | Factory Sealed",
+            "sold_at": "2026-08-16T00:00:00+00:00",
+            "sold_price": 462.91,
+            "shipping": 60.15,
+            "delivered_price": 523.06,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "luvin-lyfe",
+            "item_location": "Australia",
+            "url": "https://www.ebay.com/itm/398292271566?nordt=true",
+            "listing_id": "398292271566",
+            "source": "ebaysoldlistingsapi.com"
           }
         ]
       }
@@ -10814,61 +10814,61 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 137,
-        "priced_sales": 137,
-        "best_offer_hidden_count": 25,
-        "auction_count": 40,
-        "bin_count": 36,
+        "matched_sales": 127,
+        "priced_sales": 127,
+        "best_offer_hidden_count": 21,
+        "auction_count": 37,
+        "bin_count": 35,
         "latest_sale_at": "2026-10-07T00:00:00+00:00",
         "windows": {
           "7": {
-            "count": 10,
-            "median": 975.0,
-            "median_delivered": 981.5,
+            "count": 9,
+            "median": 950.0,
+            "median_delivered": 957.09,
             "low": 770.0,
             "high": 1150.0,
-            "p25": 902.5,
-            "p75": 1124.99
+            "p25": 900.0,
+            "p75": 1149.99
           },
           "30": {
-            "count": 40,
-            "median": 1000.0,
-            "median_delivered": 1008.08,
+            "count": 35,
+            "median": 999.99,
+            "median_delivered": 1007.99,
             "low": 402.95,
             "high": 1250.0,
-            "p25": 909.25,
-            "p75": 1097.5
+            "p25": 903.5,
+            "p75": 1098.5
           },
           "90": {
-            "count": 136,
-            "median": 1025.5,
-            "median_delivered": 1047.08,
+            "count": 126,
+            "median": 1017.5,
+            "median_delivered": 1037.19,
             "low": 70.0,
             "high": 1600.0,
             "p25": 900.0,
-            "p75": 1136.25
+            "p75": 1138.75
           },
           "180": {
-            "count": 137,
-            "median": 1026.0,
+            "count": 127,
+            "median": 1025.0,
             "median_delivered": 1048.15,
             "low": 70.0,
             "high": 1600.0,
             "p25": 900.0,
-            "p75": 1140.0
+            "p75": 1144.99
           },
           "365": {
-            "count": 137,
-            "median": 1026.0,
+            "count": 127,
+            "median": 1025.0,
             "median_delivered": 1048.15,
             "low": 70.0,
             "high": 1600.0,
             "p25": 900.0,
-            "p75": 1140.0
+            "p75": 1144.99
           }
         },
         "prior_31_90": {
-          "count": 96,
+          "count": 91,
           "median": 1050.0,
           "low": 70.0,
           "high": 1600.0
@@ -10995,26 +10995,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "147616344630",
-            "product_id": "one-piece-op-05",
-            "title": "One Piece OP-05 Awakening Of The New Era Booster Box SEALED ENGLISH + Acrylic",
-            "sold_at": "2026-10-03T00:00:00+00:00",
-            "sold_price": 1050.0,
-            "shipping": 10.15,
-            "delivered_price": 1060.15,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": true,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "goldendragon-888",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/147616344630?nordt=true",
-            "listing_id": "147616344630",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "287603897161",
             "product_id": "one-piece-op-05",
             "title": "ONE PIECE  OP-05 AWAKENING OF THE NEW ERA FACTORY SEALED BOOSTER BOX SHIPS DEC",
@@ -11092,26 +11072,6 @@
             "item_location": "United States",
             "url": "https://www.ebay.com/itm/318908982370?nordt=true",
             "listing_id": "318908982370",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "137768033283",
-            "product_id": "one-piece-op-05",
-            "title": "One Piece TCG OP-05 Awakening Of The New Era Booster Box SEALED WITH ACRYLIC",
-            "sold_at": "2026-09-29T00:00:00+00:00",
-            "sold_price": 920.0,
-            "shipping": 19.8,
-            "delivered_price": 939.8,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 43,
-            "condition": "Brand New",
-            "seller": "melgimpson25",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/137768033283?nordt=true",
-            "listing_id": "137768033283",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -11255,23 +11215,63 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "188948306676",
+            "dedupe_key": "800667779247",
             "product_id": "one-piece-op-05",
-            "title": "One Piece OP-05 Awakening Of The New Era Booster Box Sealed English w/ Acrylic",
+            "title": "One Piece TCG OP-05 Awakening Of The New Era Booster Box SEALED ENGLISH",
             "sold_at": "2026-09-24T00:00:00+00:00",
-            "sold_price": 1099.0,
-            "shipping": 15.0,
-            "delivered_price": 1114.0,
+            "sold_price": 1149.99,
+            "shipping": 25.0,
+            "delivered_price": 1174.99,
             "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": true,
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
             "price_usable": true,
             "bid_count": null,
             "condition": "Brand New",
-            "seller": "gumgumnoodles",
+            "seller": "probstein123",
             "item_location": "United States",
-            "url": "https://www.ebay.com/itm/188948306676?nordt=true",
-            "listing_id": "188948306676",
+            "url": "https://www.ebay.com/itm/800667779247?nordt=true",
+            "listing_id": "800667779247",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "206568177816",
+            "product_id": "one-piece-op-05",
+            "title": "One Piece TCG OP-05 Awakening of the New Era Booster Box English SEALED",
+            "sold_at": "2026-09-23T00:00:00+00:00",
+            "sold_price": 1025.0,
+            "shipping": 23.15,
+            "delivered_price": 1048.15,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "ctwidodo",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/206568177816?nordt=true",
+            "listing_id": "206568177816",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "318910246830",
+            "product_id": "one-piece-op-05",
+            "title": "Bandai One Piece OP-05 : Awakening of the New Era Booster Box - SEALED",
+            "sold_at": "2026-09-23T00:00:00+00:00",
+            "sold_price": 965.0,
+            "shipping": 7.87,
+            "delivered_price": 972.87,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "cougcardsco",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/318910246830?nordt=true",
+            "listing_id": "318910246830",
             "source": "ebaysoldlistingsapi.com"
           }
         ]
@@ -11283,11 +11283,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 59,
-        "priced_sales": 59,
+        "matched_sales": 58,
+        "priced_sales": 58,
         "best_offer_hidden_count": 8,
         "auction_count": 12,
-        "bin_count": 19,
+        "bin_count": 18,
         "latest_sale_at": "2026-10-06T00:00:00+00:00",
         "windows": {
           "7": {
@@ -11309,35 +11309,35 @@
             "p75": 400.0
           },
           "90": {
-            "count": 58,
+            "count": 57,
             "median": 385.0,
-            "median_delivered": 394.13,
+            "median_delivered": 395.0,
             "low": 279.99,
             "high": 429.0,
-            "p25": 365.19,
+            "p25": 365.75,
             "p75": 400.0
           },
           "180": {
-            "count": 59,
-            "median": 385.0,
-            "median_delivered": 395.0,
+            "count": 58,
+            "median": 387.5,
+            "median_delivered": 395.5,
             "low": 279.99,
             "high": 429.0,
-            "p25": 365.38,
+            "p25": 368.06,
             "p75": 400.0
           },
           "365": {
-            "count": 59,
-            "median": 385.0,
-            "median_delivered": 395.0,
+            "count": 58,
+            "median": 387.5,
+            "median_delivered": 395.5,
             "low": 279.99,
             "high": 429.0,
-            "p25": 365.38,
+            "p25": 368.06,
             "p75": 400.0
           }
         },
         "prior_31_90": {
-          "count": 36,
+          "count": 35,
           "median": 385.0,
           "low": 279.99,
           "high": 427.0
@@ -11752,11 +11752,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 53,
-        "priced_sales": 53,
+        "matched_sales": 52,
+        "priced_sales": 52,
         "best_offer_hidden_count": 6,
         "auction_count": 17,
-        "bin_count": 20,
+        "bin_count": 19,
         "latest_sale_at": "2026-10-04T00:00:00+00:00",
         "windows": {
           "7": {
@@ -11778,37 +11778,37 @@
             "p75": 343.74
           },
           "90": {
-            "count": 52,
-            "median": 338.5,
-            "median_delivered": 345.0,
-            "low": 76.0,
-            "high": 400.0,
-            "p25": 318.75,
-            "p75": 355.25
-          },
-          "180": {
-            "count": 52,
-            "median": 338.5,
-            "median_delivered": 345.0,
-            "low": 76.0,
-            "high": 400.0,
-            "p25": 318.75,
-            "p75": 355.25
-          },
-          "365": {
-            "count": 53,
-            "median": 337.0,
+            "count": 51,
+            "median": 339.99,
             "median_delivered": 345.0,
             "low": 76.0,
             "high": 400.0,
             "p25": 320.0,
-            "p75": 355.0
+            "p75": 355.5
+          },
+          "180": {
+            "count": 51,
+            "median": 339.99,
+            "median_delivered": 345.0,
+            "low": 76.0,
+            "high": 400.0,
+            "p25": 320.0,
+            "p75": 355.5
+          },
+          "365": {
+            "count": 52,
+            "median": 338.5,
+            "median_delivered": 345.0,
+            "low": 76.0,
+            "high": 400.0,
+            "p25": 320.0,
+            "p75": 355.25
           }
         },
         "prior_31_90": {
-          "count": 36,
+          "count": 35,
           "median": 345.0,
-          "low": 275.0,
+          "low": 299.99,
           "high": 400.0
         },
         "recent_sales": [
@@ -12221,62 +12221,62 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 86,
-        "priced_sales": 86,
-        "best_offer_hidden_count": 12,
-        "auction_count": 28,
-        "bin_count": 31,
+        "matched_sales": 80,
+        "priced_sales": 80,
+        "best_offer_hidden_count": 11,
+        "auction_count": 27,
+        "bin_count": 28,
         "latest_sale_at": "2026-10-06T00:00:00+00:00",
         "windows": {
           "7": {
-            "count": 7,
-            "median": 254.13,
-            "median_delivered": 260.15,
+            "count": 6,
+            "median": 255.0,
+            "median_delivered": 263.08,
             "low": 221.0,
             "high": 260.0,
-            "p25": 245.0,
+            "p25": 242.5,
             "p75": 260.0
           },
           "30": {
-            "count": 27,
-            "median": 249.99,
-            "median_delivered": 253.99,
+            "count": 26,
+            "median": 247.5,
+            "median_delivered": 251.99,
             "low": 205.01,
             "high": 305.0,
-            "p25": 231.25,
+            "p25": 230.62,
             "p75": 259.99
           },
           "90": {
-            "count": 84,
-            "median": 250.0,
-            "median_delivered": 255.25,
+            "count": 78,
+            "median": 249.99,
+            "median_delivered": 254.9,
             "low": 85.0,
             "high": 305.0,
             "p25": 235.0,
             "p75": 260.0
           },
           "180": {
-            "count": 84,
-            "median": 250.0,
-            "median_delivered": 255.25,
+            "count": 78,
+            "median": 249.99,
+            "median_delivered": 254.9,
             "low": 85.0,
             "high": 305.0,
             "p25": 235.0,
             "p75": 260.0
           },
           "365": {
-            "count": 86,
+            "count": 80,
             "median": 249.99,
-            "median_delivered": 255.0,
+            "median_delivered": 254.79,
             "low": 85.0,
             "high": 305.0,
-            "p25": 235.0,
+            "p25": 234.62,
             "p75": 260.0
           }
         },
         "prior_31_90": {
-          "count": 57,
-          "median": 250.0,
+          "count": 52,
+          "median": 249.99,
           "low": 85.0,
           "high": 300.0
         },
@@ -12359,26 +12359,6 @@
             "item_location": "United States",
             "url": "https://www.ebay.com/itm/257761983645?nordt=true",
             "listing_id": "257761983645",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "397546349062",
-            "product_id": "one-piece-op-08",
-            "title": "Open Live One Piece TCG Two Legends OP-08 Booster Box English Sealed",
-            "sold_at": "2026-10-03T00:00:00+00:00",
-            "sold_price": 254.13,
-            "shipping": 0.0,
-            "delivered_price": 254.13,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "calipokehouseofficial",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/397546349062?nordt=true",
-            "listing_id": "397546349062",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -12680,6 +12660,26 @@
             "url": "https://www.ebay.com/itm/257446387645?nordt=true",
             "listing_id": "257446387645",
             "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "206556661428",
+            "product_id": "one-piece-op-08",
+            "title": "One Piece TCG - Two Legends Booster Box -  OP-08 - ENG - Brand New",
+            "sold_at": "2026-09-15T00:00:00+00:00",
+            "sold_price": 205.01,
+            "shipping": 5.0,
+            "delivered_price": 210.01,
+            "currency": "USD",
+            "buying_format": "auction",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": 3,
+            "condition": "Brand New",
+            "seller": "jackpot-sports",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/206556661428?nordt=true",
+            "listing_id": "206556661428",
+            "source": "ebaysoldlistingsapi.com"
           }
         ]
       }
@@ -12690,11 +12690,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 74,
-        "priced_sales": 74,
-        "best_offer_hidden_count": 12,
-        "auction_count": 16,
-        "bin_count": 23,
+        "matched_sales": 61,
+        "priced_sales": 61,
+        "best_offer_hidden_count": 11,
+        "auction_count": 13,
+        "bin_count": 17,
         "latest_sale_at": "2026-10-05T00:00:00+00:00",
         "windows": {
           "7": {
@@ -12707,45 +12707,45 @@
             "p75": 612.49
           },
           "30": {
-            "count": 23,
-            "median": 619.0,
-            "median_delivered": 623.17,
+            "count": 20,
+            "median": 607.5,
+            "median_delivered": 615.08,
             "low": 515.0,
-            "high": 738.0,
-            "p25": 577.5,
-            "p75": 650.0
+            "high": 674.99,
+            "p25": 559.0,
+            "p75": 631.25
           },
           "90": {
-            "count": 73,
-            "median": 640.0,
-            "median_delivered": 649.99,
+            "count": 60,
+            "median": 637.98,
+            "median_delivered": 645.85,
             "low": 500.0,
             "high": 900.0,
-            "p25": 601.67,
-            "p75": 660.0
+            "p25": 600.0,
+            "p75": 656.25
           },
           "180": {
-            "count": 73,
-            "median": 640.0,
-            "median_delivered": 649.99,
+            "count": 60,
+            "median": 637.98,
+            "median_delivered": 645.85,
             "low": 500.0,
             "high": 900.0,
-            "p25": 601.67,
-            "p75": 660.0
+            "p25": 600.0,
+            "p75": 656.25
           },
           "365": {
-            "count": 74,
-            "median": 640.0,
-            "median_delivered": 650.0,
+            "count": 61,
+            "median": 639.95,
+            "median_delivered": 646.03,
             "low": 500.0,
             "high": 900.0,
-            "p25": 603.75,
-            "p75": 660.0
+            "p25": 600.0,
+            "p75": 659.99
           }
         },
         "prior_31_90": {
-          "count": 50,
-          "median": 649.99,
+          "count": 40,
+          "median": 645.0,
           "low": 500.0,
           "high": 900.0
         },
@@ -13071,26 +13071,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "397238787331",
-            "product_id": "one-piece-op-09",
-            "title": "Open Live One Piece TCG OP-09 Emperors in the New World Booster Box English",
-            "sold_at": "2026-09-15T00:00:00+00:00",
-            "sold_price": 738.0,
-            "shipping": 0.0,
-            "delivered_price": 738.0,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "calipokehouseofficial",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/397238787331?nordt=true",
-            "listing_id": "397238787331",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "158284349248",
             "product_id": "one-piece-op-09",
             "title": "Bandai One Piece Card Game OP-09 Emperors in the New World English Booster Box",
@@ -13108,26 +13088,6 @@
             "item_location": "United States",
             "url": "https://www.ebay.com/itm/158284349248?nordt=true",
             "listing_id": "158284349248",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "227450739440",
-            "product_id": "one-piece-op-09",
-            "title": "Emperors in the New World Booster Box One Piece OP-09 English Sealed in Acrylic",
-            "sold_at": "2026-09-13T00:00:00+00:00",
-            "sold_price": 650.0,
-            "shipping": 14.99,
-            "delivered_price": 664.99,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "west_coast_collectibles",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/227450739440?nordt=true",
-            "listing_id": "227450739440",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -13149,6 +13109,46 @@
             "url": "https://www.ebay.com/itm/336763290475?nordt=true",
             "listing_id": "336763290475",
             "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "147557030050",
+            "product_id": "one-piece-op-09",
+            "title": "Emperors in the New World Booster Box OP-09 One Piece Card Game English - SEALED",
+            "sold_at": "2026-09-11T00:00:00+00:00",
+            "sold_price": 674.99,
+            "shipping": 13.35,
+            "delivered_price": 688.34,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "murphtheman10",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/147557030050?nordt=true",
+            "listing_id": "147557030050",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "307170635628",
+            "product_id": "one-piece-op-09",
+            "title": "Emperors in the New World Booster Box OP-09 One Piece Card Game English - SEALED",
+            "sold_at": "2026-09-10T00:00:00+00:00",
+            "sold_price": 615.0,
+            "shipping": 8.17,
+            "delivered_price": 623.17,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "ramzi0000",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/307170635628?nordt=true",
+            "listing_id": "307170635628",
+            "source": "ebaysoldlistingsapi.com"
           }
         ]
       }
@@ -13159,8 +13159,8 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 64,
-        "priced_sales": 64,
+        "matched_sales": 63,
+        "priced_sales": 63,
         "best_offer_hidden_count": 7,
         "auction_count": 16,
         "bin_count": 29,
@@ -13185,36 +13185,36 @@
             "p75": 253.5
           },
           "90": {
+            "count": 62,
+            "median": 245.0,
+            "median_delivered": 250.15,
+            "low": 210.0,
+            "high": 293.95,
+            "p25": 230.62,
+            "p75": 259.99
+          },
+          "180": {
             "count": 63,
             "median": 245.0,
             "median_delivered": 250.15,
             "low": 210.0,
             "high": 293.95,
-            "p25": 230.0,
-            "p75": 259.99
-          },
-          "180": {
-            "count": 64,
-            "median": 245.0,
-            "median_delivered": 250.15,
-            "low": 210.0,
-            "high": 293.95,
-            "p25": 230.0,
+            "p25": 231.25,
             "p75": 259.99
           },
           "365": {
-            "count": 64,
+            "count": 63,
             "median": 245.0,
             "median_delivered": 250.15,
             "low": 210.0,
             "high": 293.95,
-            "p25": 230.0,
+            "p25": 231.25,
             "p75": 259.99
           }
         },
         "prior_31_90": {
-          "count": 44,
-          "median": 242.5,
+          "count": 43,
+          "median": 244.99,
           "low": 210.0,
           "high": 285.0
         },
@@ -13628,11 +13628,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 86,
-        "priced_sales": 86,
+        "matched_sales": 81,
+        "priced_sales": 81,
         "best_offer_hidden_count": 17,
-        "auction_count": 23,
-        "bin_count": 31,
+        "auction_count": 21,
+        "bin_count": 28,
         "latest_sale_at": "2026-09-30T00:00:00+00:00",
         "windows": {
           "7": {
@@ -13645,44 +13645,44 @@
             "p75": null
           },
           "30": {
-            "count": 23,
-            "median": 597.0,
-            "median_delivered": 600.0,
+            "count": 20,
+            "median": 591.94,
+            "median_delivered": 596.45,
             "low": 500.0,
             "high": 699.99,
-            "p25": 555.5,
+            "p25": 557.75,
             "p75": 600.0
           },
           "90": {
-            "count": 84,
+            "count": 79,
             "median": 600.0,
-            "median_delivered": 606.56,
+            "median_delivered": 607.15,
             "low": 455.0,
             "high": 1025.0,
             "p25": 560.0,
-            "p75": 641.99
+            "p75": 649.0
           },
           "180": {
-            "count": 84,
+            "count": 79,
             "median": 600.0,
-            "median_delivered": 606.56,
+            "median_delivered": 607.15,
             "low": 455.0,
             "high": 1025.0,
             "p25": 560.0,
-            "p75": 641.99
+            "p75": 649.0
           },
           "365": {
-            "count": 86,
+            "count": 81,
             "median": 599.99,
-            "median_delivered": 605.96,
+            "median_delivered": 607.09,
             "low": 455.0,
             "high": 1025.0,
             "p25": 560.0,
-            "p75": 638.74
+            "p75": 648.0
           }
         },
         "prior_31_90": {
-          "count": 61,
+          "count": 59,
           "median": 600.0,
           "low": 455.0,
           "high": 1025.0
@@ -13726,26 +13726,6 @@
             "item_location": "United States",
             "url": "https://www.ebay.com/itm/198667834253?nordt=true",
             "listing_id": "198667834253",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "206568334899",
-            "product_id": "one-piece-op-11",
-            "title": "ONE PIECE - A Fist of Divine Speed [OP-11] Booster Box English SEALED + Acrylic",
-            "sold_at": "2026-09-26T00:00:00+00:00",
-            "sold_price": 615.0,
-            "shipping": 6.03,
-            "delivered_price": 621.03,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 38,
-            "condition": "Brand New",
-            "seller": "viciouscards",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/206568334899?nordt=true",
-            "listing_id": "206568334899",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -13969,26 +13949,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "800632758493",
-            "product_id": "one-piece-op-11",
-            "title": "One Piece TCG OP-11 A Fist Of Divine Speed Booster Box SEALED WITH ACRYLIC",
-            "sold_at": "2026-09-15T00:00:00+00:00",
-            "sold_price": 522.0,
-            "shipping": 20.0,
-            "delivered_price": 542.0,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 64,
-            "condition": "Brand New",
-            "seller": "probstein123",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/800632758493?nordt=true",
-            "listing_id": "800632758493",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "398364698982",
             "product_id": "one-piece-op-11",
             "title": "ONE PIECE Card Game - A Fist of Divine Speed [OP-11] Booster Box English SEALED",
@@ -14049,26 +14009,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "287572061860",
-            "product_id": "one-piece-op-11",
-            "title": "ONE PIECE A Fist of Divine Speed OP-11 Booster Box English SEALED With Acrylic",
-            "sold_at": "2026-09-13T00:00:00+00:00",
-            "sold_price": 600.0,
-            "shipping": 0.0,
-            "delivered_price": 600.0,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "co_collects",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/287572061860?nordt=true",
-            "listing_id": "287572061860",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "307170654138",
             "product_id": "one-piece-op-11",
             "title": "A Fist of Divine Speed Booster Box One Piece OP-11 English New Sealed Clean Wrap",
@@ -14087,6 +14027,66 @@
             "url": "https://www.ebay.com/itm/307170654138?nordt=true",
             "listing_id": "307170654138",
             "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "327345744278",
+            "product_id": "one-piece-op-11",
+            "title": "One Piece TCG OP-11 A Fist of Divine Speed Booster Box (English) NEW/SEALED!",
+            "sold_at": "2026-09-13T00:00:00+00:00",
+            "sold_price": 565.0,
+            "shipping": 10.0,
+            "delivered_price": 575.0,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "millionairefamous",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/327345744278?nordt=true",
+            "listing_id": "327345744278",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "298661611350",
+            "product_id": "one-piece-op-11",
+            "title": "One Piece Card Game OP-11 A Fist of Divine Speed English Booster Box Sealed",
+            "sold_at": "2026-09-12T00:00:00+00:00",
+            "sold_price": 500.0,
+            "shipping": 6.03,
+            "delivered_price": 506.03,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "connodunha_5",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/298661611350?nordt=true",
+            "listing_id": "298661611350",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "366638468031",
+            "product_id": "one-piece-op-11",
+            "title": "One Piece TCG A Fist Of Divine Speed OP-11 Booster Box SEALED ENGLISH",
+            "sold_at": "2026-09-12T00:00:00+00:00",
+            "sold_price": 550.99,
+            "shipping": 10.15,
+            "delivered_price": 561.14,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": true,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "chimescollectables",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/366638468031?nordt=true",
+            "listing_id": "366638468031",
+            "source": "ebaysoldlistingsapi.com"
           }
         ]
       }
@@ -14097,11 +14097,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 104,
-        "priced_sales": 104,
+        "matched_sales": 102,
+        "priced_sales": 102,
         "best_offer_hidden_count": 7,
         "auction_count": 30,
-        "bin_count": 48,
+        "bin_count": 47,
         "latest_sale_at": "2026-10-05T00:00:00+00:00",
         "windows": {
           "7": {
@@ -14114,16 +14114,16 @@
             "p75": 278.75
           },
           "30": {
-            "count": 31,
-            "median": 264.5,
+            "count": 30,
+            "median": 262.25,
             "median_delivered": 275.0,
             "low": 180.0,
             "high": 1325.0,
             "p25": 250.0,
-            "p75": 274.49
+            "p75": 272.99
           },
           "90": {
-            "count": 99,
+            "count": 97,
             "median": 264.99,
             "median_delivered": 275.0,
             "low": 180.0,
@@ -14132,7 +14132,7 @@
             "p75": 275.0
           },
           "180": {
-            "count": 100,
+            "count": 98,
             "median": 264.75,
             "median_delivered": 275.0,
             "low": 180.0,
@@ -14141,7 +14141,7 @@
             "p75": 275.0
           },
           "365": {
-            "count": 104,
+            "count": 102,
             "median": 262.5,
             "median_delivered": 274.89,
             "low": 180.0,
@@ -14151,7 +14151,7 @@
           }
         },
         "prior_31_90": {
-          "count": 68,
+          "count": 67,
           "median": 265.0,
           "low": 212.5,
           "high": 539.99
@@ -14566,53 +14566,53 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 205,
-        "priced_sales": 205,
-        "best_offer_hidden_count": 37,
+        "matched_sales": 200,
+        "priced_sales": 200,
+        "best_offer_hidden_count": 36,
         "auction_count": 37,
-        "bin_count": 81,
+        "bin_count": 78,
         "latest_sale_at": "2026-10-06T00:00:00+00:00",
         "windows": {
           "7": {
-            "count": 10,
-            "median": 457.5,
-            "median_delivered": 466.14,
-            "low": 430.0,
+            "count": 8,
+            "median": 464.99,
+            "median_delivered": 467.57,
+            "low": 450.0,
             "high": 514.95,
-            "p25": 450.0,
-            "p75": 473.75
+            "p25": 453.75,
+            "p75": 476.25
           },
           "30": {
-            "count": 79,
-            "median": 474.99,
+            "count": 75,
+            "median": 475.0,
             "median_delivered": 479.0,
             "low": 399.95,
             "high": 975.0,
-            "p25": 451.0,
+            "p25": 453.5,
             "p75": 485.0
           },
           "90": {
-            "count": 205,
+            "count": 200,
             "median": 480.0,
-            "median_delivered": 493.27,
+            "median_delivered": 493.37,
             "low": 250.0,
             "high": 1100.0,
             "p25": 469.99,
             "p75": 500.0
           },
           "180": {
-            "count": 205,
+            "count": 200,
             "median": 480.0,
-            "median_delivered": 493.27,
+            "median_delivered": 493.37,
             "low": 250.0,
             "high": 1100.0,
             "p25": 469.99,
             "p75": 500.0
           },
           "365": {
-            "count": 205,
+            "count": 200,
             "median": 480.0,
-            "median_delivered": 493.27,
+            "median_delivered": 493.37,
             "low": 250.0,
             "high": 1100.0,
             "p25": 469.99,
@@ -14620,7 +14620,7 @@
           }
         },
         "prior_31_90": {
-          "count": 126,
+          "count": 125,
           "median": 490.0,
           "low": 250.0,
           "high": 1100.0
@@ -14684,26 +14684,6 @@
             "item_location": "United States",
             "url": "https://www.ebay.com/itm/366709061312?nordt=true",
             "listing_id": "366709061312",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "407262215514",
-            "product_id": "one-piece-op-13",
-            "title": "One Piece CCG Carrying On His Will OP-13 Booster Box English Sealed W/ Acrylic",
-            "sold_at": "2026-10-04T00:00:00+00:00",
-            "sold_price": 430.0,
-            "shipping": 5.93,
-            "delivered_price": 435.93,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "lousa_31",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/407262215514?nordt=true",
-            "listing_id": "407262215514",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -14804,26 +14784,6 @@
             "item_location": "United States",
             "url": "https://www.ebay.com/itm/206576204907?nordt=true",
             "listing_id": "206576204907",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "188996147595",
-            "product_id": "one-piece-op-13",
-            "title": "One Piece CCG Carrying On His Will OP-13 Booster Box English Sealed W/ Acrylic",
-            "sold_at": "2026-10-01T00:00:00+00:00",
-            "sold_price": 449.69,
-            "shipping": 17.44,
-            "delivered_price": 467.13,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "dashiz61",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/188996147595?nordt=true",
-            "listing_id": "188996147595",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -14947,26 +14907,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "307204361181",
-            "product_id": "one-piece-op-13",
-            "title": "Bandai One Piece Carrying on His Will OP-13 Booster Box English Sealed w/acrylic",
-            "sold_at": "2026-09-29T00:00:00+00:00",
-            "sold_price": 470.0,
-            "shipping": 8.27,
-            "delivered_price": 478.27,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": true,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "samza50",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/307204361181?nordt=true",
-            "listing_id": "307204361181",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "318934985133",
             "product_id": "one-piece-op-13",
             "title": "One Piece OP-13 Carrying On His Will Booster Box Slightly Ripped Seal Authentic",
@@ -15025,6 +14965,66 @@
             "url": "https://www.ebay.com/itm/137787353864?nordt=true",
             "listing_id": "137787353864",
             "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "178496187835",
+            "product_id": "one-piece-op-13",
+            "title": "One Piece Carrying On His Will OP13 Booster Box Factory Sealed English G1N",
+            "sold_at": "2026-09-28T00:00:00+00:00",
+            "sold_price": 420.0,
+            "shipping": 0.0,
+            "delivered_price": 420.0,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "shipcycle",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/178496187835?nordt=true",
+            "listing_id": "178496187835",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "178496718518",
+            "product_id": "one-piece-op-13",
+            "title": "U84974 One Piece Carrying On His Will OP13 Booster Box Factory Sealed En G1N",
+            "sold_at": "2026-09-28T00:00:00+00:00",
+            "sold_price": 435.99,
+            "shipping": 0.0,
+            "delivered_price": 435.99,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "shipcycle",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/178496718518?nordt=true",
+            "listing_id": "178496718518",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "198673850669",
+            "product_id": "one-piece-op-13",
+            "title": "Bandai Namco One Piece Card Game OP-13 English Booster Box",
+            "sold_at": "2026-09-28T00:00:00+00:00",
+            "sold_price": 450.0,
+            "shipping": 10.15,
+            "delivered_price": 460.15,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "jmbri18",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/198673850669?nordt=true",
+            "listing_id": "198673850669",
+            "source": "ebaysoldlistingsapi.com"
           }
         ]
       }
@@ -15035,9 +15035,9 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 105,
-        "priced_sales": 105,
-        "best_offer_hidden_count": 14,
+        "matched_sales": 103,
+        "priced_sales": 103,
+        "best_offer_hidden_count": 12,
         "auction_count": 15,
         "bin_count": 39,
         "latest_sale_at": "2026-10-02T00:00:00+00:00",
@@ -15061,7 +15061,7 @@
             "p75": 271.25
           },
           "90": {
-            "count": 101,
+            "count": 99,
             "median": 259.99,
             "median_delivered": 269.5,
             "low": 220.0,
@@ -15070,16 +15070,16 @@
             "p75": 274.99
           },
           "180": {
-            "count": 102,
+            "count": 100,
             "median": 260.0,
             "median_delivered": 268.88,
             "low": 220.0,
             "high": 380.0,
             "p25": 250.0,
-            "p75": 273.74
+            "p75": 274.99
           },
           "365": {
-            "count": 105,
+            "count": 103,
             "median": 259.99,
             "median_delivered": 268.26,
             "low": 88.42,
@@ -15089,7 +15089,7 @@
           }
         },
         "prior_31_90": {
-          "count": 77,
+          "count": 75,
           "median": 260.0,
           "low": 229.0,
           "high": 380.0
@@ -15504,11 +15504,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 119,
-        "priced_sales": 119,
+        "matched_sales": 116,
+        "priced_sales": 116,
         "best_offer_hidden_count": 12,
         "auction_count": 17,
-        "bin_count": 62,
+        "bin_count": 60,
         "latest_sale_at": "2026-10-05T00:00:00+00:00",
         "windows": {
           "7": {
@@ -15530,37 +15530,37 @@
             "p75": 270.0
           },
           "90": {
+            "count": 112,
+            "median": 250.0,
+            "median_delivered": 260.15,
+            "low": 40.0,
+            "high": 369.69,
+            "p25": 247.62,
+            "p75": 269.99
+          },
+          "180": {
             "count": 115,
             "median": 250.0,
             "median_delivered": 260.15,
             "low": 40.0,
             "high": 369.69,
-            "p25": 245.0,
-            "p75": 269.99
-          },
-          "180": {
-            "count": 118,
-            "median": 250.0,
-            "median_delivered": 260.07,
-            "low": 40.0,
-            "high": 369.69,
-            "p25": 245.0,
+            "p25": 248.74,
             "p75": 269.99
           },
           "365": {
-            "count": 119,
+            "count": 116,
             "median": 250.0,
-            "median_delivered": 260.0,
+            "median_delivered": 260.15,
             "low": 40.0,
             "high": 369.69,
-            "p25": 245.0,
+            "p25": 248.86,
             "p75": 269.99
           }
         },
         "prior_31_90": {
-          "count": 78,
+          "count": 75,
           "median": 250.0,
-          "low": 74.99,
+          "low": 219.99,
           "high": 369.69
         },
         "recent_sales": [
@@ -16442,63 +16442,63 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 221,
-        "priced_sales": 221,
-        "best_offer_hidden_count": 38,
+        "matched_sales": 214,
+        "priced_sales": 214,
+        "best_offer_hidden_count": 36,
         "auction_count": 32,
-        "bin_count": 83,
+        "bin_count": 81,
         "latest_sale_at": "2026-10-07T00:00:00+00:00",
         "windows": {
           "7": {
-            "count": 41,
+            "count": 40,
             "median": 310.0,
-            "median_delivered": 319.0,
+            "median_delivered": 317.63,
             "low": 281.6,
             "high": 394.95,
             "p25": 305.0,
-            "p75": 325.0
+            "p75": 324.84
           },
           "30": {
-            "count": 178,
-            "median": 339.95,
-            "median_delivered": 344.39,
+            "count": 175,
+            "median": 339.99,
+            "median_delivered": 344.9,
             "low": 238.5,
             "high": 1000.0,
             "p25": 314.94,
-            "p75": 360.0
+            "p75": 362.25
           },
           "90": {
-            "count": 221,
-            "median": 344.0,
-            "median_delivered": 349.97,
+            "count": 214,
+            "median": 345.0,
+            "median_delivered": 350.0,
             "low": 238.5,
             "high": 1000.0,
-            "p25": 315.0,
-            "p75": 368.25
+            "p25": 315.67,
+            "p75": 369.95
           },
           "180": {
-            "count": 221,
-            "median": 344.0,
-            "median_delivered": 349.97,
+            "count": 214,
+            "median": 345.0,
+            "median_delivered": 350.0,
             "low": 238.5,
             "high": 1000.0,
-            "p25": 315.0,
-            "p75": 368.25
+            "p25": 315.67,
+            "p75": 369.95
           },
           "365": {
-            "count": 221,
-            "median": 344.0,
-            "median_delivered": 349.97,
+            "count": 214,
+            "median": 345.0,
+            "median_delivered": 350.0,
             "low": 238.5,
             "high": 1000.0,
-            "p25": 315.0,
-            "p75": 368.25
+            "p25": 315.67,
+            "p75": 369.95
           }
         },
         "prior_31_90": {
-          "count": 43,
+          "count": 39,
           "median": 359.99,
-          "low": 310.0,
+          "low": 315.0,
           "high": 475.0
         },
         "recent_sales": [
@@ -17380,11 +17380,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 47,
-        "priced_sales": 47,
-        "best_offer_hidden_count": 8,
-        "auction_count": 19,
-        "bin_count": 14,
+        "matched_sales": 42,
+        "priced_sales": 42,
+        "best_offer_hidden_count": 7,
+        "auction_count": 17,
+        "bin_count": 12,
         "latest_sale_at": "2026-10-05T00:00:00+00:00",
         "windows": {
           "7": {
@@ -17397,47 +17397,47 @@
             "p75": 749.99
           },
           "30": {
-            "count": 17,
-            "median": 775.0,
-            "median_delivered": 794.63,
+            "count": 15,
+            "median": 770.0,
+            "median_delivered": 788.0,
             "low": 690.0,
             "high": 950.0,
             "p25": 730.0,
-            "p75": 800.0
+            "p75": 799.5
           },
           "90": {
-            "count": 47,
-            "median": 786.0,
-            "median_delivered": 794.63,
+            "count": 42,
+            "median": 780.5,
+            "median_delivered": 794.45,
             "low": 87.99,
-            "high": 1049.99,
-            "p25": 730.0,
-            "p75": 832.5
+            "high": 1000.0,
+            "p25": 722.49,
+            "p75": 828.74
           },
           "180": {
-            "count": 47,
-            "median": 786.0,
-            "median_delivered": 794.63,
+            "count": 42,
+            "median": 780.5,
+            "median_delivered": 794.45,
             "low": 87.99,
-            "high": 1049.99,
-            "p25": 730.0,
-            "p75": 832.5
+            "high": 1000.0,
+            "p25": 722.49,
+            "p75": 828.74
           },
           "365": {
-            "count": 47,
-            "median": 786.0,
-            "median_delivered": 794.63,
+            "count": 42,
+            "median": 780.5,
+            "median_delivered": 794.45,
             "low": 87.99,
-            "high": 1049.99,
-            "p25": 730.0,
-            "p75": 832.5
+            "high": 1000.0,
+            "p25": 722.49,
+            "p75": 828.74
           }
         },
         "prior_31_90": {
-          "count": 30,
-          "median": 788.0,
+          "count": 27,
+          "median": 790.0,
           "low": 87.99,
-          "high": 1049.99
+          "high": 1000.0
         },
         "recent_sales": [
           {
@@ -17561,26 +17561,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "287592824517",
-            "product_id": "one-piece-eb-02",
-            "title": "One Piece TCG EB-02 Anime 25th Collection Booster Box SEALED ENGLISH Acrylic",
-            "sold_at": "2026-09-24T00:00:00+00:00",
-            "sold_price": 795.0,
-            "shipping": 0.0,
-            "delivered_price": 795.0,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "co_collects",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/287592824517?nordt=true",
-            "listing_id": "287592824517",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "366670965253",
             "product_id": "one-piece-eb-02",
             "title": "One Piece TCG EB-02 Anime 25th Collection Booster Box SEALED ENGLISH",
@@ -17698,26 +17678,6 @@
             "item_location": "United States",
             "url": "https://www.ebay.com/itm/178490773957?nordt=true",
             "listing_id": "178490773957",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "287571730256",
-            "product_id": "one-piece-eb-02",
-            "title": "One Piece TCG EB-02 Anime 25th Collection Booster Box SEALED ENGLISH Acrylic",
-            "sold_at": "2026-09-11T00:00:00+00:00",
-            "sold_price": 835.0,
-            "shipping": 0.0,
-            "delivered_price": 835.0,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "co_collects",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/287571730256?nordt=true",
-            "listing_id": "287571730256",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -17839,6 +17799,46 @@
             "url": "https://www.ebay.com/itm/820058696165?nordt=true",
             "listing_id": "820058696165",
             "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "398312395207",
+            "product_id": "one-piece-eb-02",
+            "title": "Bandai One Piece Card Game Anime 25th Collection EB-02 Extra Booster Box EN 2024",
+            "sold_at": "2026-08-28T00:00:00+00:00",
+            "sold_price": 750.0,
+            "shipping": 6.03,
+            "delivered_price": 756.03,
+            "currency": "USD",
+            "buying_format": "auction",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": 32,
+            "condition": "Brand New",
+            "seller": "mesup_23",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/398312395207?nordt=true",
+            "listing_id": "398312395207",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "318767183420",
+            "product_id": "one-piece-eb-02",
+            "title": "One Piece TCG EB-02 Anime 25th Collection Booster Box SEALED ENGLISH",
+            "sold_at": "2026-08-25T00:00:00+00:00",
+            "sold_price": 799.0,
+            "shipping": 7.09,
+            "delivered_price": 806.09,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "cougcardsco",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/318767183420?nordt=true",
+            "listing_id": "318767183420",
+            "source": "ebaysoldlistingsapi.com"
           }
         ]
       }
@@ -17849,11 +17849,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 165,
-        "priced_sales": 165,
+        "matched_sales": 162,
+        "priced_sales": 162,
         "best_offer_hidden_count": 29,
-        "auction_count": 38,
-        "bin_count": 67,
+        "auction_count": 37,
+        "bin_count": 65,
         "latest_sale_at": "2026-10-06T00:00:00+00:00",
         "windows": {
           "7": {
@@ -17866,44 +17866,44 @@
             "p75": 349.94
           },
           "30": {
-            "count": 39,
+            "count": 38,
             "median": 325.0,
             "median_delivered": 332.0,
             "low": 120.0,
             "high": 365.0,
-            "p25": 318.5,
-            "p75": 339.98
+            "p25": 318.25,
+            "p75": 338.71
           },
           "90": {
-            "count": 160,
+            "count": 157,
             "median": 320.0,
             "median_delivered": 328.27,
             "low": 120.0,
             "high": 920.0,
-            "p25": 307.75,
+            "p25": 309.69,
             "p75": 330.0
           },
           "180": {
-            "count": 164,
+            "count": 161,
             "median": 320.0,
             "median_delivered": 328.27,
             "low": 120.0,
             "high": 920.0,
-            "p25": 306.5,
+            "p25": 308.0,
             "p75": 330.0
           },
           "365": {
-            "count": 165,
+            "count": 162,
             "median": 320.0,
             "median_delivered": 328.27,
             "low": 120.0,
             "high": 920.0,
-            "p25": 307.0,
+            "p25": 308.42,
             "p75": 330.0
           }
         },
         "prior_31_90": {
-          "count": 121,
+          "count": 119,
           "median": 319.99,
           "low": 200.0,
           "high": 920.0
@@ -18210,26 +18210,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "178526505956",
-            "product_id": "one-piece-eb-03",
-            "title": "One Piece EB-03 Heroines Edition BOOSTER BOX Factory Sealed English + Acrylic",
-            "sold_at": "2026-09-24T00:00:00+00:00",
-            "sold_price": 350.0,
-            "shipping": 5.99,
-            "delivered_price": 355.99,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "0xbriann",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/178526505956?nordt=true",
-            "listing_id": "178526505956",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "407129772831",
             "product_id": "one-piece-eb-03",
             "title": "Bandai One Piece EB03 - Heroines - Sealed Booster Box",
@@ -18308,6 +18288,26 @@
             "url": "https://www.ebay.com/itm/398418660843?nordt=true",
             "listing_id": "398418660843",
             "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "158292988834",
+            "product_id": "one-piece-eb-03",
+            "title": "One Piece EB-03 Extra Booster: Heroines Edition Booster Box English Sealed",
+            "sold_at": "2026-09-21T00:00:00+00:00",
+            "sold_price": 321.0,
+            "shipping": 12.0,
+            "delivered_price": 333.0,
+            "currency": "USD",
+            "buying_format": "auction",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": 23,
+            "condition": "Brand New",
+            "seller": "es_cardboard_emporium",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/158292988834?nordt=true",
+            "listing_id": "158292988834",
+            "source": "ebaysoldlistingsapi.com"
           }
         ]
       }
@@ -18318,11 +18318,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 50,
-        "priced_sales": 50,
-        "best_offer_hidden_count": 11,
-        "auction_count": 19,
-        "bin_count": 9,
+        "matched_sales": 43,
+        "priced_sales": 43,
+        "best_offer_hidden_count": 9,
+        "auction_count": 16,
+        "bin_count": 7,
         "latest_sale_at": "2026-10-03T00:00:00+00:00",
         "windows": {
           "7": {
@@ -18335,47 +18335,47 @@
             "p75": 875.0
           },
           "30": {
-            "count": 15,
+            "count": 13,
             "median": 865.0,
             "median_delivered": 879.85,
             "low": 690.0,
             "high": 1000.0,
-            "p25": 815.0,
+            "p25": 810.0,
             "p75": 900.0
           },
           "90": {
-            "count": 49,
-            "median": 899.0,
-            "median_delivered": 910.0,
+            "count": 42,
+            "median": 887.5,
+            "median_delivered": 903.59,
             "low": 149.0,
-            "high": 1049.99,
-            "p25": 820.0,
-            "p75": 949.99
+            "high": 1000.0,
+            "p25": 802.49,
+            "p75": 922.49
           },
           "180": {
-            "count": 50,
-            "median": 899.0,
-            "median_delivered": 911.0,
+            "count": 43,
+            "median": 890.0,
+            "median_delivered": 908.17,
             "low": 149.0,
-            "high": 1049.99,
-            "p25": 825.0,
-            "p75": 950.0
+            "high": 1025.0,
+            "p25": 805.0,
+            "p75": 937.49
           },
           "365": {
-            "count": 50,
-            "median": 899.0,
-            "median_delivered": 911.0,
+            "count": 43,
+            "median": 890.0,
+            "median_delivered": 908.17,
             "low": 149.0,
-            "high": 1049.99,
-            "p25": 825.0,
-            "p75": 950.0
+            "high": 1025.0,
+            "p25": 805.0,
+            "p75": 937.49
           }
         },
         "prior_31_90": {
-          "count": 34,
-          "median": 904.5,
+          "count": 29,
+          "median": 890.0,
           "low": 149.0,
-          "high": 1049.99
+          "high": 1000.0
         },
         "recent_sales": [
           {
@@ -18519,26 +18519,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "366681003925",
-            "product_id": "one-piece-prb-01",
-            "title": "One Piece Premium Booster Box The Best PRB-01 Factory Sealed English w/ Acrylic",
-            "sold_at": "2026-09-21T00:00:00+00:00",
-            "sold_price": 849.99,
-            "shipping": 25.0,
-            "delivered_price": 874.99,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "bla_5851",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/366681003925?nordt=true",
-            "listing_id": "366681003925",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "377504361527",
             "product_id": "one-piece-prb-01",
             "title": "One Piece The Best Booster Box PRB-01 [ENGLISH FACTORY SEALED]",
@@ -18596,26 +18576,6 @@
             "item_location": "United States",
             "url": "https://www.ebay.com/itm/178347167903?nordt=true",
             "listing_id": "178347167903",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "178493611055",
-            "product_id": "one-piece-prb-01",
-            "title": "One Piece Premium Booster Box The Best PRB-01 Factory Sealed English w/ Acrylic",
-            "sold_at": "2026-09-15T00:00:00+00:00",
-            "sold_price": 900.0,
-            "shipping": 26.23,
-            "delivered_price": 926.23,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": true,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "deadce11",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/178493611055?nordt=true",
-            "listing_id": "178493611055",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -18699,26 +18659,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "377460347853",
-            "product_id": "one-piece-prb-01",
-            "title": "One Piece TCG PRB-01 The Best Booster Box SEALED ENGLISH WITH ACRYLIC",
-            "sold_at": "2026-09-07T00:00:00+00:00",
-            "sold_price": 920.0,
-            "shipping": 25.0,
-            "delivered_price": 945.0,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 19,
-            "condition": "Brand New",
-            "seller": "probstein123",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/377460347853?nordt=true",
-            "listing_id": "377460347853",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "198548332513",
             "product_id": "one-piece-prb-01",
             "title": "One Piece TCG PRB-01 The Best Premium Booster - Booster Box - Sealed",
@@ -18777,6 +18717,66 @@
             "url": "https://www.ebay.com/itm/128045797412?nordt=true",
             "listing_id": "128045797412",
             "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "398328835250",
+            "product_id": "one-piece-prb-01",
+            "title": "ONE PIECE Card Game PRB-01 \"THE BEST\" Premium Booster Box Factory Sealed Bandai",
+            "sold_at": "2026-08-27T00:00:00+00:00",
+            "sold_price": 149.0,
+            "shipping": 6.57,
+            "delivered_price": 155.57,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "zicycards",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/398328835250?nordt=true",
+            "listing_id": "398328835250",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "398292626099",
+            "product_id": "one-piece-prb-01",
+            "title": "One Piece Card Game: The Best Premium PRB-01 Booster Box Factory Sealed",
+            "sold_at": "2026-08-26T00:00:00+00:00",
+            "sold_price": 159.99,
+            "shipping": 0.0,
+            "delivered_price": 159.99,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "dandyscollection",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/398292626099?nordt=true",
+            "listing_id": "398292626099",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "117372121723",
+            "product_id": "one-piece-prb-01",
+            "title": "One Piece TCG PRB-01 The Best Premium Booster - Booster Box - Sealed",
+            "sold_at": "2026-08-21T00:00:00+00:00",
+            "sold_price": 899.0,
+            "shipping": 9.95,
+            "delivered_price": 908.95,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "mustang_602_ig",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/117372121723?nordt=true",
+            "listing_id": "117372121723",
+            "source": "ebaysoldlistingsapi.com"
           }
         ]
       }
@@ -18787,53 +18787,53 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 74,
-        "priced_sales": 74,
+        "matched_sales": 71,
+        "priced_sales": 71,
         "best_offer_hidden_count": 9,
         "auction_count": 15,
-        "bin_count": 35,
+        "bin_count": 34,
         "latest_sale_at": "2026-10-06T00:00:00+00:00",
         "windows": {
           "7": {
-            "count": 6,
-            "median": 384.5,
-            "median_delivered": 389.57,
+            "count": 5,
+            "median": 389.0,
+            "median_delivered": 390.15,
             "low": 350.0,
             "high": 399.99,
-            "p25": 379.99,
-            "p75": 392.75
+            "p25": 380.0,
+            "p75": 394.0
           },
           "30": {
-            "count": 23,
+            "count": 22,
             "median": 379.99,
-            "median_delivered": 384.99,
+            "median_delivered": 382.49,
             "low": 340.0,
             "high": 400.0,
-            "p25": 357.99,
-            "p75": 387.0
+            "p25": 356.49,
+            "p75": 388.0
           },
           "90": {
-            "count": 73,
-            "median": 384.0,
-            "median_delivered": 390.15,
+            "count": 70,
+            "median": 384.5,
+            "median_delivered": 391.56,
             "low": 66.99,
             "high": 532.98,
             "p25": 369.99,
             "p75": 399.99
           },
           "180": {
-            "count": 74,
-            "median": 384.5,
-            "median_delivered": 391.56,
+            "count": 71,
+            "median": 384.99,
+            "median_delivered": 392.98,
             "low": 66.99,
             "high": 532.98,
             "p25": 369.99,
             "p75": 399.99
           },
           "365": {
-            "count": 74,
-            "median": 384.5,
-            "median_delivered": 391.56,
+            "count": 71,
+            "median": 384.99,
+            "median_delivered": 392.98,
             "low": 66.99,
             "high": 532.98,
             "p25": 369.99,
@@ -18841,8 +18841,8 @@
           }
         },
         "prior_31_90": {
-          "count": 50,
-          "median": 390.0,
+          "count": 48,
+          "median": 392.5,
           "low": 66.99,
           "high": 532.98
         },
@@ -18925,26 +18925,6 @@
             "item_location": "United States",
             "url": "https://www.ebay.com/itm/158353858965?nordt=true",
             "listing_id": "158353858965",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "307205905905",
-            "product_id": "one-piece-prb-02",
-            "title": "One Piece TCG The Best Vol 2 Premium Booster Box PRB-02 English Sealed w/acrylic",
-            "sold_at": "2026-10-02T00:00:00+00:00",
-            "sold_price": 379.99,
-            "shipping": 8.27,
-            "delivered_price": 388.26,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "samza50",
-            "item_location": "United States",
-            "url": "https://www.ebay.com/itm/307205905905?nordt=true",
-            "listing_id": "307205905905",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -19245,6 +19225,26 @@
             "item_location": "United States",
             "url": "https://www.ebay.com/itm/198601987197?nordt=true",
             "listing_id": "198601987197",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "287567653091",
+            "product_id": "one-piece-prb-02",
+            "title": "Bandai One Piece TCG The Best Vol. 2 PRB-02 Premium Booster Box Sealed English",
+            "sold_at": "2026-09-10T00:00:00+00:00",
+            "sold_price": 379.95,
+            "shipping": 9.95,
+            "delivered_price": 389.9,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "clutchcollections",
+            "item_location": "United States",
+            "url": "https://www.ebay.com/itm/287567653091?nordt=true",
+            "listing_id": "287567653091",
             "source": "ebaysoldlistingsapi.com"
           }
         ]
