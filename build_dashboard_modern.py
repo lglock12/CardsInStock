@@ -304,6 +304,13 @@ def product_card(product, rows, detail, market, image, detailed_sold=None):
     facts = facts_html(detail, cost_per_pack)
     config = config_text(detail)
     ebay_search = search_url(product)
+    sold_detail_html = ""
+    if sold_price is not None:
+        sales_block = f'<div class="sold-list">{sold_rows_html}</div>' if sold_rows_html else ""
+        sold_detail_html = (
+            f'<details><summary>Sold-market detail <span>{esc(sold_meta)}</span></summary>'
+            f'<div class="market-detail">{esc(market_note or "No additional sold-market detail yet.")}{sales_block}</div></details>'
+        )
 
     return f'''<article class="product-card state-{state}" data-state="{state}" data-season="{esc(product['season'])}" data-search="{esc((product['product']+' '+product['season']+' '+product['format']).lower())}">
       <div class="card-head">
@@ -324,7 +331,7 @@ def product_card(product, rows, detail, market, image, detailed_sold=None):
       <div class="drawers">
         <details><summary>Retailer sources <span>{len(verified)} live · {len(leads)} leads · {len(source_rows)} shown</span></summary><div class="source-list">{''.join(source_rows) if source_rows else '<p class="empty">No usable mapped sources yet.</p>'}</div></details>
         <details><summary>Box hits <span>{len(guarantees)} guaranteed · {len(chases)} chase</span></summary><div class="hit-detail"><div><strong>Guaranteed / box</strong><ul>{hits_items or '<li>Not yet sourced</li>'}</ul></div><div><strong>Chase content</strong><ul>{chase_items or '<li>Not yet sourced</li>'}</ul></div>{details_link}</div></details>
-        {f'<details><summary>Sold-market detail <span>{esc(sold_meta)}</span></summary><div class="market-detail">{esc(market_note or "No additional sold-market detail yet.")}{f"<div class=\'sold-list\'>{sold_rows_html}</div>" if sold_rows_html else ""}</div></details>' if sold_price is not None else ''}
+        {sold_detail_html}
       </div>
     </article>'''
 
