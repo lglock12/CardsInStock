@@ -16,6 +16,7 @@ LATEST = ROOT / "data" / "sold_latest.json"
 HISTORY = ROOT / "data" / "sold_history.jsonl"
 API = "https://api.ebaysoldlistingsapi.com/scrape"
 KEY = os.getenv("EBAY_SOLD_API_KEY", "").strip()
+CLEAN_ONLY = os.getenv("SOLD_CLEAN_ONLY", "").strip().lower() in {"1", "true", "yes"}
 
 
 def now_utc():
@@ -172,20 +173,29 @@ def summarize(rows, checked):
     }
 
 
-def load_history():
+def load_history(products_by_id):
+    """Load and revalidate stored sales against the current matcher."""
     rows = {}
+    dropped = 0
     if not HISTORY.exists():
-        return rows
+        return rows, dropped
     for line in HISTORY.read_text().splitlines():
         try:
             row = json.loads(line)
         except Exception:
+            dropped += 1
             continue
+        product = products_by_id.get(row.get("product_id"))
         key = (row.get("product_id"), row.get("dedupe_key"))
-        if all(key):
-            rows[key] = row
-    return rows
-
+        if not product or not all(key):
+            dropped += 1
+            continue
+        title = row.get("title") or ""
+        if not (product_match(product, title)[0] or is_plausible_sealed_listing(product, title)):
+            dropped += 1
+            continue
+        rows[key] = row
+    return rows, dropped
 
 def request_sales(product):
     # This independent API accepts the same kind of keyword string a user would
