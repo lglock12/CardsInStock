@@ -3,7 +3,11 @@ name: Collect detailed sold comps
 on:
   workflow_dispatch:
   schedule:
-    - cron: '41 5 * * *'
+    # 12:15 AM Central year-round. GitHub cron is UTC, so run both possible
+    # UTC offsets and let the first step keep only the invocation that lands at
+    # 00:15 in America/Chicago (CDT=05:15 UTC, CST=06:15 UTC).
+    - cron: '15 5 * * *'
+    - cron: '15 6 * * *'
 
 permissions:
   contents: write
@@ -16,21 +20,43 @@ jobs:
   sold:
     runs-on: ubuntu-latest
     steps:
+      - name: Check Central Time schedule
+        id: central
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          LOCAL_TIME="$(TZ=America/Chicago date +'%H:%M')"
+          echo "Central time is $LOCAL_TIME"
+          if [ "$LOCAL_TIME" = "00:15" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.central.outputs.run == 'true'
         with:
           fetch-depth: 0
       - uses: actions/setup-python@v5
+        if: steps.central.outputs.run == 'true'
         with:
           python-version: '3.12'
           cache: 'pip'
       - run: pip install -r requirements.txt
+        if: steps.central.outputs.run == 'true'
       - name: Collect detailed eBay sold transactions
+        if: steps.central.outputs.run == 'true'
         env:
           EBAY_SOLD_API_KEY: ${{ secrets.EBAY_SOLD_API_KEY }}
         run: python collect_sold_detail.py
       - name: Rebuild dashboard with sold comps
+        if: steps.central.outputs.run == 'true'
         run: python build_dashboard_modern.py
       - name: Commit sold history and dashboard
+        if: steps.central.outputs.run == 'true'
         run: |
           git config user.name "cardsinstock-bot"
           git config user.email "actions@users.noreply.github.com"
