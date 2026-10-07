@@ -119,7 +119,16 @@ def obvious_single_or_wrong_unit(title):
     if re.search(r"(?:#\s*)?\d{1,3}\s*/\s*\d{1,3}\b|#/\s*\d{1,3}\b", serial_text):
         return True
 
-    if re.search(r"\b(?:group|team|player|random)\s+break\b|\bbreak spot\b", t):
+    # Any explicit break sale is not a sealed-box transaction. "Breaker's
+    # Delight" is safe because it does not contain the standalone word "break".
+    if re.search(r"\bbreak\b|\bbreak spot\b", t):
+        return True
+
+    # Reject multi-box/tin lots. We track the price of one sealed sale unit, not
+    # cases, 2x/3x lots, or team spots from multi-box breaks. Explicit 1x is okay.
+    if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*x?\s*(?:sealed\s+|hobby\s+|mega\s+|value\s+)?(?:boxes?|tins?)\b", t):
+        return True
+    if re.search(r"\b(?:box|tin)\s+lot\b|\blot\s+(?:of\s+)?(?:[2-9]|[1-9]\d+)\b|\bcase\b", t):
         return True
 
     # Card-level language is safe only when the title also clearly describes the
@@ -226,7 +235,11 @@ def family_matches(product, title):
 def format_conflicts(product, title):
     t = normalize(title)
     fmt = product.get("format")
-    if re.search(r"\b(?:group|team|player|random)\s+break\b|\bbreak spot\b", t):
+    if re.search(r"\bbreak\b|\bbreak spot\b", t):
+        return True
+    if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*x?\s*(?:sealed\s+|hobby\s+|mega\s+|value\s+)?(?:boxes?|tins?)\b", t):
+        return True
+    if re.search(r"\b(?:box|tin)\s+lot\b|\blot\s+(?:of\s+)?(?:[2-9]|[1-9]\d+)\b", t):
         return True
     if "case" in t:
         return True
