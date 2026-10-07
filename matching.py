@@ -132,6 +132,11 @@ def obvious_single_or_wrong_unit(title):
         return True
     if re.search(r"\b(?:box|tin)\s+lot\b|\blot\s+(?:of\s+)?(?:[2-9]|[1-9]\d+)\b|\bcase\b", t):
         return True
+    # Common eBay lot syntax: "LOT x (2) ... HOBBY BOX", "lot x2", "2-box lot".
+    if re.search(r"\blot\s*x\s*(?:\(\s*)?(?:[2-9]|[1-9]\d+)(?:\s*\))?\b", t):
+        return True
+    if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*[- ]?box(?:es)?\s+lot\b", t):
+        return True
 
     # Card-level language is safe only when the title also clearly describes the
     # sealed container (e.g. "Hobby Box - 1 Autograph").
@@ -244,6 +249,10 @@ def format_conflicts(product, title):
     if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*x\b.*\b(?:box(?:es)?|tins?)\b", t):
         return True
     if re.search(r"\b(?:box|tin)\s+lot\b|\blot\s+(?:of\s+)?(?:[2-9]|[1-9]\d+)\b", t):
+        return True
+    if re.search(r"\blot\s*x\s*(?:\(\s*)?(?:[2-9]|[1-9]\d+)(?:\s*\))?\b", t):
+        return True
+    if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*[- ]?box(?:es)?\s+lot\b", t):
         return True
     if "case" in t:
         return True
