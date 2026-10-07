@@ -25,32 +25,6 @@
     "type": "Finest UEFA"
   },
   {
-    "id": "2023-24-uefa-flagship-hobby",
-    "season": "2023-24",
-    "product": "Topps UEFA Flagship",
-    "format": "Hobby",
-    "required_terms": [
-      "2023-24",
-      "topps",
-      "uefa",
-      "hobby"
-    ],
-    "reject_terms": [
-      "chrome",
-      "merlin",
-      "finest",
-      "jumbo",
-      "mega",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ],
-    "league": "UEFA",
-    "type": "UEFA Flagship"
-  },
-  {
     "id": "2024-25-merlin-uefa-value",
     "season": "2024-25",
     "product": "Topps Merlin UEFA",
@@ -147,31 +121,6 @@
     "type": "Chrome UEFA"
   },
   {
-    "id": "2024-25-chrome-uefa-sapphire",
-    "season": "2024-25",
-    "product": "Topps Chrome Sapphire UEFA Club Competitions",
-    "format": "Sapphire",
-    "required_terms": [
-      "2024-25",
-      "chrome",
-      "sapphire",
-      "uefa"
-    ],
-    "reject_terms": [
-      "merlin",
-      "finest",
-      "jumbo",
-      "mega",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ],
-    "league": "UEFA",
-    "type": "Chrome Sapphire UEFA"
-  },
-  {
     "id": "2024-25-finest-uefa-hobby",
     "season": "2024-25",
     "product": "Topps Finest UEFA",
@@ -195,46 +144,6 @@
     ],
     "league": "UEFA",
     "type": "Finest UEFA"
-  },
-  {
-    "id": "2024-25-inception-uefa-hobby",
-    "season": "2024-25",
-    "product": "Topps Inception UEFA Club Competitions",
-    "format": "Hobby",
-    "required_terms": [
-      "2024-25",
-      "topps",
-      "inception",
-      "uefa",
-      "hobby"
-    ],
-    "reject_terms": [
-      "pack",
-      "case",
-      "break"
-    ],
-    "league": "UEFA",
-    "type": "Inception UEFA"
-  },
-  {
-    "id": "2024-25-museum-uefa-hobby",
-    "season": "2024-25",
-    "product": "Topps Museum Collection UEFA Club Competitions",
-    "format": "Hobby",
-    "required_terms": [
-      "2024-25",
-      "topps",
-      "museum",
-      "uefa",
-      "hobby"
-    ],
-    "reject_terms": [
-      "pack",
-      "case",
-      "break"
-    ],
-    "league": "UEFA",
-    "type": "Museum Collection UEFA"
   },
   {
     "id": "2024-25-uefa-flagship-hobby",
@@ -384,31 +293,6 @@
     "type": "Chrome UEFA"
   },
   {
-    "id": "2025-26-chrome-uefa-sapphire",
-    "season": "2025-26",
-    "product": "Topps Chrome Sapphire UEFA Club Competitions",
-    "format": "Sapphire",
-    "required_terms": [
-      "2025-26",
-      "chrome",
-      "sapphire",
-      "uefa"
-    ],
-    "reject_terms": [
-      "merlin",
-      "finest",
-      "jumbo",
-      "mega",
-      "blaster",
-      "value",
-      "pack",
-      "case",
-      "break"
-    ],
-    "league": "UEFA",
-    "type": "Chrome Sapphire UEFA"
-  },
-  {
     "id": "2025-26-finest-uefa-hobby",
     "season": "2025-26",
     "product": "Topps Finest UEFA",
@@ -432,46 +316,6 @@
     ],
     "league": "UEFA",
     "type": "Finest UEFA"
-  },
-  {
-    "id": "2025-26-inception-uefa-hobby",
-    "season": "2025-26",
-    "product": "Topps Inception UEFA Club Competitions",
-    "format": "Hobby",
-    "required_terms": [
-      "2025-26",
-      "topps",
-      "inception",
-      "uefa",
-      "hobby"
-    ],
-    "reject_terms": [
-      "pack",
-      "case",
-      "break"
-    ],
-    "league": "UEFA",
-    "type": "Inception UEFA"
-  },
-  {
-    "id": "2025-26-museum-uefa-hobby",
-    "season": "2025-26",
-    "product": "Topps Museum Collection UEFA Club Competitions",
-    "format": "Hobby",
-    "required_terms": [
-      "2025-26",
-      "topps",
-      "museum",
-      "uefa",
-      "hobby"
-    ],
-    "reject_terms": [
-      "pack",
-      "case",
-      "break"
-    ],
-    "league": "UEFA",
-    "type": "Museum Collection UEFA"
   },
   {
     "id": "2025-26-uefa-flagship-value",
