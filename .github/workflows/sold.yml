@@ -8,15 +8,6 @@ on:
     # 00:15 in America/Chicago (CDT=05:15 UTC, CST=06:15 UTC).
     - cron: '15 5 * * *'
     - cron: '15 6 * * *'
-  push:
-    branches:
-      - main
-    paths:
-      - 'matching.py'
-      - 'collect_sold_detail.py'
-      - 'build_dashboard_modern.py'
-      - '.github/workflows/sold.yml'
-
 permissions:
   contents: write
 
@@ -32,7 +23,7 @@ jobs:
         id: central
         shell: bash
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "${{ github.event_name }}" = "push" ]; then
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
@@ -59,7 +50,7 @@ jobs:
         if: steps.central.outputs.run == 'true'
         env:
           EBAY_SOLD_API_KEY: ${{ secrets.EBAY_SOLD_API_KEY }}
-          SOLD_CLEAN_ONLY: ${{ github.event_name == 'push' && '1' || '0' }}
+          SOLD_CLEAN_ONLY: "0"
         run: python collect_sold_detail.py
       - name: Rebuild dashboard with sold comps
         if: steps.central.outputs.run == 'true'
