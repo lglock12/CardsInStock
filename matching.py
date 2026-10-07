@@ -153,6 +153,13 @@ def product_match(product, title):
     if any(reject_term_matches(term, t) for term in product["reject_terms"]):
         return False, "matched rejected format term"
 
+    if not family_matches(product, title):
+        return False, "matched a different product family"
+    if not competition_matches(product, title):
+        return False, "matched a different competition"
+    if format_conflicts(product, title):
+        return False, "matched a different box format"
+
     # Premium/retail formats whose name can also appear on individual cards must
     # explicitly look like sealed packaging before becoming VERIFIED.
     if product.get("format") in {"Sapphire", "Delight", "Box", "Full Box", "Tin", "Mega Tin"}:
@@ -184,14 +191,36 @@ def competition_matches(product, title):
 
 
 def family_matches(product, title):
+    """Require the intended product line and block adjacent sealed product lines.
+
+    Some brands legitimately include "Chrome" in their names (Merlin Chrome,
+    Stadium Club Chrome), so generic Chrome must be the fallback family rather
+    than winning merely because the word Chrome appears in the title.
+    """
     family = expected_family(product)
     t = normalize(title)
+
+    adjacent = {
+        "stadium club": ["merlin", "finest", "inception", "museum", "deco"],
+        "merlin": ["stadium club", "finest", "inception", "museum", "deco"],
+        "finest": ["stadium club", "merlin", "inception", "museum", "deco", "chrome"],
+        "inception": ["stadium club", "merlin", "finest", "museum", "deco", "chrome"],
+        "museum": ["stadium club", "merlin", "finest", "inception", "deco", "chrome"],
+        "deco": ["stadium club", "merlin", "finest", "inception", "museum", "chrome"],
+        # Chrome is intentionally strict: titles such as "Chrome Merlin" are
+        # Merlin products, not generic Topps Chrome.
+        "chrome": ["stadium club", "merlin", "finest", "inception", "museum", "deco"],
+    }
+
     if family == "flagship":
         return not any(x in t for x in [
             "stadium club", "chrome", "merlin", "finest", "sapphire",
             "pristine", "inception", "museum", "deco", "reverence", "definitive",
         ])
-    return family in t
+
+    if family not in t:
+        return False
+    return not any(marker in t for marker in adjacent.get(family, []))
 
 
 def format_conflicts(product, title):
