@@ -238,15 +238,15 @@ def product_card(product, rows, detail, market, image, detailed_sold=None):
 
     ebay_compare = None
     if ebay_best:
-        ebay_price = ebay_best.get("delivered_price")
+        ebay_price = ebay_best.get("delivered_price") if ebay_best.get("delivered_price") is not None else ebay_best.get("item_price")
         age = active.get("freshness_days")
         if ebay_fresh:
             ebay_compare = ebay_price
             ebay_title = "EBAY BIN"
-            ebay_note = "fresh delivered snapshot"
+            ebay_note = "fresh delivered snapshot" if ebay_best.get("delivered_price") is not None else "fresh BIN · shipping TBD"
         else:
             ebay_title = "LAST EBAY SNAPSHOT"
-            ebay_note = f"{age}d old · verify first" if age is not None else "stale · verify first"
+            ebay_note = (f"{age}d old · verify first" if age is not None else "stale · verify first") + (" · shipping TBD" if ebay_best.get("delivered_price") is None else "")
         ebay_html = f'''<a class="market-mini {'fresh' if ebay_fresh else 'stale'}" href="{esc(ebay_best.get('url') or search_url(product))}" target="_blank" rel="noopener">
           <span>{esc(ebay_title)}</span><b>{money(ebay_price)}</b><small>{esc(ebay_note)} ↗</small></a>'''
     else:
