@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T06:12:08.642744+00:00",
+  "generated_at": "2026-10-07T06:19:53.687680+00:00",
   "source": "ebaysoldlistingsapi.com",
   "products": {
     "2023-24-merlin-uefa-hobby": {
@@ -1547,12 +1547,12 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 1,
-        "priced_sales": 1,
-        "best_offer_hidden_count": 1,
+        "matched_sales": 0,
+        "priced_sales": 0,
+        "best_offer_hidden_count": 0,
         "auction_count": 0,
         "bin_count": 0,
-        "latest_sale_at": "2026-07-23T00:00:00+00:00",
+        "latest_sale_at": null,
         "windows": {
           "7": {
             "count": 0,
@@ -1573,60 +1573,40 @@
             "p75": null
           },
           "90": {
-            "count": 1,
-            "median": 730.18,
-            "median_delivered": 779.02,
-            "low": 730.18,
-            "high": 730.18,
-            "p25": 730.18,
-            "p75": 730.18
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
           },
           "180": {
-            "count": 1,
-            "median": 730.18,
-            "median_delivered": 779.02,
-            "low": 730.18,
-            "high": 730.18,
-            "p25": 730.18,
-            "p75": 730.18
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
           },
           "365": {
-            "count": 1,
-            "median": 730.18,
-            "median_delivered": 779.02,
-            "low": 730.18,
-            "high": 730.18,
-            "p25": 730.18,
-            "p75": 730.18
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
           }
         },
         "prior_31_90": {
-          "count": 1,
-          "median": 730.18,
-          "low": 730.18,
-          "high": 730.18
+          "count": 0,
+          "median": null,
+          "low": null,
+          "high": null
         },
-        "recent_sales": [
-          {
-            "dedupe_key": "397991769283",
-            "product_id": "2023-24-deco-uefa-box",
-            "title": "2x Topps UEFA Club Competitions Deco 2023/24 Hobby Box SEALED/IN HAND \u2705 \u26bd\ufe0f",
-            "sold_at": "2026-07-23T00:00:00+00:00",
-            "sold_price": 730.18,
-            "shipping": 48.84,
-            "delivered_price": 779.02,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": true,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/397991769283?nordt=true",
-            "listing_id": "397991769283",
-            "source": "ebaysoldlistingsapi.com"
-          }
-        ]
+        "recent_sales": []
       }
     },
     "2023-24-uefa-flagship-value": {
@@ -4387,11 +4367,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 11,
-        "priced_sales": 11,
+        "matched_sales": 10,
+        "priced_sales": 10,
         "best_offer_hidden_count": 2,
         "auction_count": 0,
-        "bin_count": 7,
+        "bin_count": 6,
         "latest_sale_at": "2026-10-05T00:00:00+00:00",
         "windows": {
           "7": {
@@ -4404,40 +4384,40 @@
             "p75": 350.0
           },
           "30": {
-            "count": 2,
-            "median": 399.37,
-            "median_delivered": 419.38,
+            "count": 1,
+            "median": 350.0,
+            "median_delivered": 363.5,
             "low": 350.0,
-            "high": 448.73,
-            "p25": 374.68,
-            "p75": 424.05
+            "high": 350.0,
+            "p25": 350.0,
+            "p75": 350.0
           },
           "90": {
-            "count": 11,
-            "median": 334.99,
-            "median_delivered": 346.31,
+            "count": 10,
+            "median": 332.48,
+            "median_delivered": 340.65,
             "low": 309.99,
-            "high": 448.73,
+            "high": 362.93,
             "p25": 324.99,
-            "p75": 349.98
+            "p75": 347.45
           },
           "180": {
-            "count": 11,
-            "median": 334.99,
-            "median_delivered": 346.31,
+            "count": 10,
+            "median": 332.48,
+            "median_delivered": 340.65,
             "low": 309.99,
-            "high": 448.73,
+            "high": 362.93,
             "p25": 324.99,
-            "p75": 349.98
+            "p75": 347.45
           },
           "365": {
-            "count": 11,
-            "median": 334.99,
-            "median_delivered": 346.31,
+            "count": 10,
+            "median": 332.48,
+            "median_delivered": 340.65,
             "low": 309.99,
-            "high": 448.73,
+            "high": 362.93,
             "p25": 324.99,
-            "p75": 349.98
+            "p75": 347.45
           }
         },
         "prior_31_90": {
@@ -4464,25 +4444,6 @@
             "seller": "rainbowcomicsandcards",
             "url": "https://www.ebay.com/itm/206349953583?nordt=true",
             "listing_id": "206349953583",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "128089602989",
-            "product_id": "2024-25-finest-uefa-hobby",
-            "title": "Topps Finest UEFA Club Competitions Soccer 2024/25 Hobby Box",
-            "sold_at": "2026-09-25T00:00:00+00:00",
-            "sold_price": 448.73,
-            "shipping": 26.54,
-            "delivered_price": 475.27,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "sportscards-worldwide",
-            "url": "https://www.ebay.com/itm/128089602989?nordt=true",
-            "listing_id": "128089602989",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -4665,9 +4626,9 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 7,
-        "priced_sales": 7,
-        "best_offer_hidden_count": 3,
+        "matched_sales": 6,
+        "priced_sales": 6,
+        "best_offer_hidden_count": 2,
         "auction_count": 0,
         "bin_count": 1,
         "latest_sale_at": "2026-10-01T00:00:00+00:00",
@@ -4691,36 +4652,36 @@
             "p75": 529.16
           },
           "90": {
-            "count": 6,
-            "median": 489.08,
-            "median_delivered": 529.08,
-            "low": 461.61,
-            "high": 529.16,
-            "p25": 468.32,
-            "p75": 521.59
-          },
-          "180": {
-            "count": 7,
+            "count": 5,
             "median": 498.87,
             "median_delivered": 538.68,
             "low": 461.61,
+            "high": 529.16,
+            "p25": 479.29,
+            "p75": 529.16
+          },
+          "180": {
+            "count": 6,
+            "median": 514.01,
+            "median_delivered": 560.32,
+            "low": 461.61,
             "high": 581.95,
-            "p25": 471.98,
+            "p25": 484.19,
             "p75": 529.16
           },
           "365": {
-            "count": 7,
-            "median": 498.87,
-            "median_delivered": 538.68,
+            "count": 6,
+            "median": 514.01,
+            "median_delivered": 560.32,
             "low": 461.61,
             "high": 581.95,
-            "p25": 471.98,
+            "p25": 484.19,
             "p75": 529.16
           }
         },
         "prior_31_90": {
-          "count": 3,
-          "median": 464.66,
+          "count": 2,
+          "median": 480.24,
           "low": 461.61,
           "high": 498.87
         },
@@ -4818,25 +4779,6 @@
             "seller": "sabutaj",
             "url": "https://www.ebay.com/itm/377219957477?nordt=true",
             "listing_id": "377219957477",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "158077531604",
-            "product_id": "2024-25-inception-uefa-hobby",
-            "title": "Topps Inception UEFA Club Competitions 2024/25 Hobby Box | New & Sealed | \u2728",
-            "sold_at": "2026-07-14T00:00:00+00:00",
-            "sold_price": 464.66,
-            "shipping": 26.55,
-            "delivered_price": 491.21,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": true,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "jaymecollectscards",
-            "url": "https://www.ebay.com/itm/158077531604?nordt=true",
-            "listing_id": "158077531604",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -5618,11 +5560,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 27,
-        "priced_sales": 27,
+        "matched_sales": 25,
+        "priced_sales": 25,
         "best_offer_hidden_count": 2,
         "auction_count": 12,
-        "bin_count": 11,
+        "bin_count": 10,
         "latest_sale_at": "2026-10-05T00:00:00+00:00",
         "windows": {
           "7": {
@@ -5635,40 +5577,40 @@
             "p75": 279.99
           },
           "30": {
-            "count": 15,
-            "median": 237.5,
-            "median_delivered": 254.45,
+            "count": 13,
+            "median": 235.5,
+            "median_delivered": 252.45,
             "low": 215.5,
             "high": 332.55,
-            "p25": 230.25,
-            "p75": 279.37
+            "p25": 228.0,
+            "p75": 275.95
           },
           "90": {
-            "count": 27,
-            "median": 235.5,
-            "median_delivered": 249.45,
+            "count": 25,
+            "median": 232.5,
+            "median_delivered": 247.99,
             "low": 207.5,
             "high": 364.78,
-            "p25": 223.5,
-            "p75": 277.38
+            "p25": 223.49,
+            "p75": 269.99
           },
           "180": {
-            "count": 27,
-            "median": 235.5,
-            "median_delivered": 249.45,
+            "count": 25,
+            "median": 232.5,
+            "median_delivered": 247.99,
             "low": 207.5,
             "high": 364.78,
-            "p25": 223.5,
-            "p75": 277.38
+            "p25": 223.49,
+            "p75": 269.99
           },
           "365": {
-            "count": 27,
-            "median": 235.5,
-            "median_delivered": 249.45,
+            "count": 25,
+            "median": 232.5,
+            "median_delivered": 247.99,
             "low": 207.5,
             "high": 364.78,
-            "p25": 223.5,
-            "p75": 277.38
+            "p25": 223.49,
+            "p75": 269.99
           }
         },
         "prior_31_90": {
@@ -5907,44 +5849,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "178272379384",
-            "product_id": "2025-26-merlin-premier-league-hobby",
-            "title": "2025-26 Topps Merlin Premier League 2026 Hobby Box - Trusted Seller \u2728 \u2705",
-            "sold_at": "2026-09-13T00:00:00+00:00",
-            "sold_price": 279.94,
-            "shipping": 33.3,
-            "delivered_price": 313.24,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/178272379384?nordt=true",
-            "listing_id": "178272379384",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "336661405212",
-            "product_id": "2025-26-merlin-premier-league-hobby",
-            "title": "Topps Merlin Premier League 2025-26 Hobby Box - New And Sealed",
-            "sold_at": "2026-09-10T00:00:00+00:00",
-            "sold_price": 278.8,
-            "shipping": 33.26,
-            "delivered_price": 312.06,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/336661405212?nordt=true",
-            "listing_id": "336661405212",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "257632713638",
             "product_id": "2025-26-merlin-premier-league-hobby",
             "title": "2025-26 Topps Merlin Premier League EPL Soccer Hobby Box",
@@ -6056,6 +5960,44 @@
             "seller": "elljbo0",
             "url": "https://www.ebay.com/itm/298564775366?nordt=true",
             "listing_id": "298564775366",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "158050280012",
+            "product_id": "2025-26-merlin-premier-league-hobby",
+            "title": "2025-26 Topps Merlin Premier League Chrome Hobby Box",
+            "sold_at": "2026-08-19T00:00:00+00:00",
+            "sold_price": 364.78,
+            "shipping": 56.28,
+            "delivered_price": 421.06,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "derkiosk_original",
+            "url": "https://www.ebay.com/itm/158050280012?nordt=true",
+            "listing_id": "158050280012",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "198533607330",
+            "product_id": "2025-26-merlin-premier-league-hobby",
+            "title": "2025/26 Topps Merlin English Premier League Soccer Hobby Box #JDF",
+            "sold_at": "2026-08-18T00:00:00+00:00",
+            "sold_price": 223.5,
+            "shipping": 9.99,
+            "delivered_price": 233.49,
+            "currency": "USD",
+            "buying_format": "auction",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": 67,
+            "condition": "Brand New",
+            "seller": "greatbuys-usa",
+            "url": "https://www.ebay.com/itm/198533607330?nordt=true",
+            "listing_id": "198533607330",
             "source": "ebaysoldlistingsapi.com"
           }
         ]
@@ -6516,11 +6458,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 82,
-        "priced_sales": 82,
-        "best_offer_hidden_count": 10,
-        "auction_count": 15,
-        "bin_count": 41,
+        "matched_sales": 76,
+        "priced_sales": 76,
+        "best_offer_hidden_count": 9,
+        "auction_count": 14,
+        "bin_count": 38,
         "latest_sale_at": "2026-10-06T00:00:00+00:00",
         "windows": {
           "7": {
@@ -6533,45 +6475,45 @@
             "p75": 128.71
           },
           "30": {
-            "count": 19,
+            "count": 17,
             "median": 95.0,
             "median_delivered": 99.99,
-            "low": 59.99,
-            "high": 169.0,
-            "p25": 88.49,
-            "p75": 103.75
+            "low": 84.0,
+            "high": 139.99,
+            "p25": 89.99,
+            "p75": 99.99
           },
           "90": {
-            "count": 81,
-            "median": 81.99,
-            "median_delivered": 91.47,
+            "count": 75,
+            "median": 81.62,
+            "median_delivered": 89.52,
             "low": 51.01,
             "high": 190.0,
-            "p25": 70.99,
-            "p75": 90.76
+            "p25": 70.5,
+            "p75": 91.38
           },
           "180": {
-            "count": 82,
-            "median": 81.81,
-            "median_delivered": 90.73,
+            "count": 76,
+            "median": 81.31,
+            "median_delivered": 89.5,
             "low": 51.01,
             "high": 190.0,
-            "p25": 70.25,
-            "p75": 90.63
+            "p25": 70.0,
+            "p75": 91.07
           },
           "365": {
-            "count": 82,
-            "median": 81.81,
-            "median_delivered": 90.73,
+            "count": 76,
+            "median": 81.31,
+            "median_delivered": 89.5,
             "low": 51.01,
             "high": 190.0,
-            "p25": 70.25,
-            "p75": 90.63
+            "p25": 70.0,
+            "p75": 91.07
           }
         },
         "prior_31_90": {
-          "count": 62,
-          "median": 78.0,
+          "count": 58,
+          "median": 77.0,
           "low": 51.01,
           "high": 190.0
         },
@@ -6688,25 +6630,6 @@
             "seller": "toyzzzseller",
             "url": "https://www.ebay.com/itm/128096933785?nordt=true",
             "listing_id": "128096933785",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "128082976260",
-            "product_id": "2025-26-chrome-uefa-mega",
-            "title": "(Lot 2X) 2025-26 Topps Chrome UEFA Champions League (UCL) Soccer Mega Box Sealed",
-            "sold_at": "2026-09-30T00:00:00+00:00",
-            "sold_price": 169.0,
-            "shipping": 9.5,
-            "delivered_price": 178.5,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "toyzzzseller",
-            "url": "https://www.ebay.com/itm/128082976260?nordt=true",
-            "listing_id": "128082976260",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -6900,25 +6823,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "377486821116",
-            "product_id": "2025-26-chrome-uefa-mega",
-            "title": "Topps Chrome UEFA Club Competitions 2025-26 Mega Box",
-            "sold_at": "2026-09-13T00:00:00+00:00",
-            "sold_price": 59.99,
-            "shipping": 9.8,
-            "delivered_price": 69.79,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 1,
-            "condition": "Brand New",
-            "seller": "frazz2024",
-            "url": "https://www.ebay.com/itm/377486821116?nordt=true",
-            "listing_id": "377486821116",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "377471104924",
             "product_id": "2025-26-chrome-uefa-mega",
             "title": "2025-26 Topps Chrome UEFA Soccer Factory Sealed Mega Box",
@@ -6955,6 +6859,44 @@
             "url": "https://www.ebay.com/itm/820021110644?nordt=true",
             "listing_id": "820021110644",
             "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "366582443769",
+            "product_id": "2025-26-chrome-uefa-mega",
+            "title": "2025-26 TOPPS CHROME UEFA Club Competitions MEGA BOX (42 Cards) UCC Soccer New",
+            "sold_at": "2026-09-06T00:00:00+00:00",
+            "sold_price": 92.99,
+            "shipping": 7.99,
+            "delivered_price": 100.98,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "brpo_494089",
+            "url": "https://www.ebay.com/itm/366582443769?nordt=true",
+            "listing_id": "366582443769",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "188858382038",
+            "product_id": "2025-26-chrome-uefa-mega",
+            "title": "2025/26 TOPPS CHROME UEFA CLUB COMPETITIONS SOCCER *MEGA BOX* SEALED",
+            "sold_at": "2026-09-05T00:00:00+00:00",
+            "sold_price": 81.99,
+            "shipping": 6.68,
+            "delivered_price": 88.67,
+            "currency": "USD",
+            "buying_format": "auction",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": 1,
+            "condition": "Brand New",
+            "seller": "j_j_sports",
+            "url": "https://www.ebay.com/itm/188858382038?nordt=true",
+            "listing_id": "188858382038",
+            "source": "ebaysoldlistingsapi.com"
           }
         ]
       }
@@ -6965,11 +6907,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 141,
-        "priced_sales": 141,
+        "matched_sales": 121,
+        "priced_sales": 121,
         "best_offer_hidden_count": 24,
-        "auction_count": 30,
-        "bin_count": 50,
+        "auction_count": 20,
+        "bin_count": 44,
         "latest_sale_at": "2026-10-05T00:00:00+00:00",
         "windows": {
           "7": {
@@ -6982,36 +6924,36 @@
             "p75": 352.31
           },
           "30": {
-            "count": 47,
-            "median": 299.95,
-            "median_delivered": 306.5,
+            "count": 46,
+            "median": 299.47,
+            "median_delivered": 306.29,
             "low": 250.0,
             "high": 450.25,
-            "p25": 289.5,
+            "p25": 289.25,
             "p75": 309.99
           },
           "90": {
-            "count": 140,
-            "median": 285.0,
-            "median_delivered": 289.7,
+            "count": 121,
+            "median": 288.88,
+            "median_delivered": 294.78,
             "low": 243.0,
             "high": 565.0,
             "p25": 275.0,
             "p75": 299.99
           },
           "180": {
-            "count": 141,
-            "median": 285.0,
-            "median_delivered": 289.41,
+            "count": 121,
+            "median": 288.88,
+            "median_delivered": 294.78,
             "low": 243.0,
             "high": 565.0,
             "p25": 275.0,
             "p75": 299.99
           },
           "365": {
-            "count": 141,
-            "median": 285.0,
-            "median_delivered": 289.41,
+            "count": 121,
+            "median": 288.88,
+            "median_delivered": 294.78,
             "low": 243.0,
             "high": 565.0,
             "p25": 275.0,
@@ -7019,7 +6961,7 @@
           }
         },
         "prior_31_90": {
-          "count": 93,
+          "count": 75,
           "median": 279.99,
           "low": 243.0,
           "high": 565.0
@@ -7863,12 +7805,12 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 17,
-        "priced_sales": 17,
+        "matched_sales": 10,
+        "priced_sales": 10,
         "best_offer_hidden_count": 2,
-        "auction_count": 1,
-        "bin_count": 6,
-        "latest_sale_at": "2026-09-14T00:00:00+00:00",
+        "auction_count": 0,
+        "bin_count": 5,
+        "latest_sale_at": "2026-09-13T00:00:00+00:00",
         "windows": {
           "7": {
             "count": 0,
@@ -7880,68 +7822,49 @@
             "p75": null
           },
           "30": {
-            "count": 2,
-            "median": 931.74,
-            "median_delivered": 945.82,
-            "low": 675.53,
+            "count": 1,
+            "median": 1187.95,
+            "median_delivered": 1187.95,
+            "low": 1187.95,
             "high": 1187.95,
-            "p25": 803.63,
-            "p75": 1059.85
+            "p25": 1187.95,
+            "p75": 1187.95
           },
           "90": {
-            "count": 16,
-            "median": 882.61,
-            "median_delivered": 911.4,
-            "low": 675.53,
+            "count": 10,
+            "median": 899.99,
+            "median_delivered": 915.79,
+            "low": 775.0,
             "high": 1187.95,
-            "p25": 812.49,
-            "p75": 903.7
+            "p25": 878.8,
+            "p75": 913.46
           },
           "180": {
-            "count": 17,
-            "median": 890.21,
-            "median_delivered": 916.35,
-            "low": 675.53,
+            "count": 10,
+            "median": 899.99,
+            "median_delivered": 915.79,
+            "low": 775.0,
             "high": 1187.95,
-            "p25": 824.99,
-            "p75": 902.38
+            "p25": 878.8,
+            "p75": 913.46
           },
           "365": {
-            "count": 17,
-            "median": 890.21,
-            "median_delivered": 916.35,
-            "low": 675.53,
+            "count": 10,
+            "median": 899.99,
+            "median_delivered": 915.79,
+            "low": 775.0,
             "high": 1187.95,
-            "p25": 824.99,
-            "p75": 902.38
+            "p25": 878.8,
+            "p75": 913.46
           }
         },
         "prior_31_90": {
-          "count": 14,
-          "median": 882.61,
-          "low": 731.84,
+          "count": 9,
+          "median": 899.99,
+          "low": 775.0,
           "high": 1049.95
         },
         "recent_sales": [
-          {
-            "dedupe_key": "128072515833",
-            "product_id": "2025-26-chrome-uefa-sapphire",
-            "title": "Topps Chrome Sapphire UEFA Club Competitions 2025/26 Hobby Box \u2705 New & Sealed",
-            "sold_at": "2026-09-14T00:00:00+00:00",
-            "sold_price": 675.53,
-            "shipping": 28.15,
-            "delivered_price": 703.68,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "anaig-35",
-            "url": "https://www.ebay.com/itm/128072515833?nordt=true",
-            "listing_id": "128072515833",
-            "source": "ebaysoldlistingsapi.com"
-          },
           {
             "dedupe_key": "377481368087",
             "product_id": "2025-26-chrome-uefa-sapphire",
@@ -7959,25 +7882,6 @@
             "seller": "dacardworld",
             "url": "https://www.ebay.com/itm/377481368087?nordt=true",
             "listing_id": "377481368087",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "137485795315",
-            "product_id": "2025-26-chrome-uefa-sapphire",
-            "title": "Topps Chrome\u00ae Sapphire UEFA Club Competitions 2025/26 Hobby Box",
-            "sold_at": "2026-09-06T00:00:00+00:00",
-            "sold_price": 862.94,
-            "shipping": 53.41,
-            "delivered_price": 916.35,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/137485795315?nordt=true",
-            "listing_id": "137485795315",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -8016,25 +7920,6 @@
             "seller": "jwojnilower",
             "url": "https://www.ebay.com/itm/327310589490?nordt=true",
             "listing_id": "327310589490",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "137479465442",
-            "product_id": "2025-26-chrome-uefa-sapphire",
-            "title": "Topps Chrome\u00ae Sapphire UEFA Club Competitions 2025/26 Hobby Box \u2705 BRAND NEW \u2705",
-            "sold_at": "2026-08-07T00:00:00+00:00",
-            "sold_price": 759.19,
-            "shipping": 49.84,
-            "delivered_price": 809.03,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/137479465442?nordt=true",
-            "listing_id": "137479465442",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -8152,25 +8037,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "206396328401",
-            "product_id": "2025-26-chrome-uefa-sapphire",
-            "title": "Topps Chrome\u00ae Sapphire UEFA Club Competitions 2025/26 Hobby Box FACTORY SEALED \u2705",
-            "sold_at": "2026-07-14T00:00:00+00:00",
-            "sold_price": 902.38,
-            "shipping": 54.78,
-            "delivered_price": 957.16,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/206396328401?nordt=true",
-            "listing_id": "206396328401",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "377339854719",
             "product_id": "2025-26-chrome-uefa-sapphire",
             "title": "2025/26 Topps Chrome Sapphire UEFA Club Competitions Factory Sealed Hobby Box",
@@ -8187,63 +8053,6 @@
             "seller": "wdeflips",
             "url": "https://www.ebay.com/itm/377339854719?nordt=true",
             "listing_id": "377339854719",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "318568235700",
-            "product_id": "2025-26-chrome-uefa-sapphire",
-            "title": "Topps Chrome\u00ae Sapphire UEFA Club Competitions 2025/26 Hobby Box",
-            "sold_at": "2026-07-11T00:00:00+00:00",
-            "sold_price": 862.94,
-            "shipping": 53.41,
-            "delivered_price": 916.35,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/318568235700?nordt=true",
-            "listing_id": "318568235700",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "227417445861",
-            "product_id": "2025-26-chrome-uefa-sapphire",
-            "title": "Topps Chrome Sapphire UEFA Club Competitions 2025/26 Hobby Box | OVP \u2705",
-            "sold_at": "2026-07-10T00:00:00+00:00",
-            "sold_price": 731.84,
-            "shipping": 22.52,
-            "delivered_price": 754.36,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 1,
-            "condition": "Brand New",
-            "seller": "jonij37",
-            "url": "https://www.ebay.com/itm/227417445861?nordt=true",
-            "listing_id": "227417445861",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "236927290913",
-            "product_id": "2025-26-chrome-uefa-sapphire",
-            "title": "Topps Chrome\u00ae Sapphire UEFA Club Competitions 2025/26 Hobby Box FACTORY SEALED \u2705",
-            "sold_at": "2026-07-09T00:00:00+00:00",
-            "sold_price": 902.38,
-            "shipping": 54.78,
-            "delivered_price": 957.16,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/236927290913?nordt=true",
-            "listing_id": "236927290913",
             "source": "ebaysoldlistingsapi.com"
           }
         ]
@@ -8704,104 +8513,66 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 158,
-        "priced_sales": 158,
-        "best_offer_hidden_count": 43,
+        "matched_sales": 59,
+        "priced_sales": 59,
+        "best_offer_hidden_count": 13,
         "auction_count": 5,
-        "bin_count": 62,
-        "latest_sale_at": "2026-10-06T00:00:00+00:00",
+        "bin_count": 25,
+        "latest_sale_at": "2026-10-01T00:00:00+00:00",
         "windows": {
           "7": {
-            "count": 3,
-            "median": 492.37,
-            "median_delivered": 533.01,
-            "low": 459.84,
+            "count": 1,
+            "median": 601.95,
+            "median_delivered": 601.95,
+            "low": 601.95,
             "high": 601.95,
-            "p25": 476.11,
-            "p75": 547.16
+            "p25": 601.95,
+            "p75": 601.95
           },
           "30": {
-            "count": 12,
-            "median": 511.91,
+            "count": 6,
+            "median": 516.46,
             "median_delivered": 546.47,
-            "low": 439.1,
+            "low": 489.77,
             "high": 601.95,
-            "p25": 491.72,
-            "p75": 531.03
+            "p25": 502.13,
+            "p75": 551.62
           },
           "90": {
-            "count": 156,
-            "median": 455.31,
-            "median_delivered": 495.91,
-            "low": 325.26,
+            "count": 59,
+            "median": 485.81,
+            "median_delivered": 518.07,
+            "low": 343.77,
             "high": 1359.46,
-            "p25": 385.89,
-            "p75": 495.16
+            "p25": 451.48,
+            "p75": 521.0
           },
           "180": {
-            "count": 158,
-            "median": 451.48,
-            "median_delivered": 492.86,
-            "low": 325.26,
+            "count": 59,
+            "median": 485.81,
+            "median_delivered": 518.07,
+            "low": 343.77,
             "high": 1359.46,
-            "p25": 382.7,
-            "p75": 493.8
+            "p25": 451.48,
+            "p75": 521.0
           },
           "365": {
-            "count": 158,
-            "median": 451.48,
-            "median_delivered": 492.86,
-            "low": 325.26,
+            "count": 59,
+            "median": 485.81,
+            "median_delivered": 518.07,
+            "low": 343.77,
             "high": 1359.46,
-            "p25": 382.7,
-            "p75": 493.8
+            "p25": 451.48,
+            "p75": 521.0
           }
         },
         "prior_31_90": {
-          "count": 144,
-          "median": 446.83,
-          "low": 325.26,
+          "count": 53,
+          "median": 477.94,
+          "low": 343.77,
           "high": 1359.46
         },
         "recent_sales": [
-          {
-            "dedupe_key": "128084884046",
-            "product_id": "2025-26-inception-uefa-hobby",
-            "title": "Topps Inception UEFA Club Competitions UCC 2025/26 Hobby Box - SEALED",
-            "sold_at": "2026-10-06T00:00:00+00:00",
-            "sold_price": 459.84,
-            "shipping": 51.06,
-            "delivered_price": 510.9,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/128084884046?nordt=true",
-            "listing_id": "128084884046",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "398295768353",
-            "product_id": "2025-26-inception-uefa-hobby",
-            "title": "Topps Inception UEFA Club Competitions 2025/26 Hobby Box Factory Sealed New",
-            "sold_at": "2026-10-03T00:00:00+00:00",
-            "sold_price": 492.37,
-            "shipping": 40.64,
-            "delivered_price": 533.01,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/398295768353?nordt=true",
-            "listing_id": "398295768353",
-            "source": "ebaysoldlistingsapi.com"
-          },
           {
             "dedupe_key": "398248856875",
             "product_id": "2025-26-inception-uefa-hobby",
@@ -8819,25 +8590,6 @@
             "seller": "dacardworld",
             "url": "https://www.ebay.com/itm/398248856875?nordt=true",
             "listing_id": "398248856875",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "227535720505",
-            "product_id": "2025-26-inception-uefa-hobby",
-            "title": "Topps Inception UEFA Club Competitions UCC 2025/26 Hobby Box - SEALED",
-            "sold_at": "2026-09-27T00:00:00+00:00",
-            "sold_price": 531.03,
-            "shipping": 40.69,
-            "delivered_price": 571.72,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "kaikicksuk",
-            "url": "https://www.ebay.com/itm/227535720505?nordt=true",
-            "listing_id": "227535720505",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -8876,25 +8628,6 @@
             "seller": null,
             "url": "https://www.ebay.com/itm/377491064425?nordt=true",
             "listing_id": "377491064425",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "128072214028",
-            "product_id": "2025-26-inception-uefa-hobby",
-            "title": "Topps Inception UEFA Club Competitions UCC 2025/26 Hobby Box - SEALED",
-            "sold_at": "2026-09-17T00:00:00+00:00",
-            "sold_price": 511.91,
-            "shipping": 52.85,
-            "delivered_price": 564.76,
-            "currency": "USD",
-            "buying_format": "sold",
-            "best_offer_accepted": true,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/128072214028?nordt=true",
-            "listing_id": "128072214028",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -8955,44 +8688,6 @@
             "source": "ebaysoldlistingsapi.com"
           },
           {
-            "dedupe_key": "227516986330",
-            "product_id": "2025-26-inception-uefa-hobby",
-            "title": "Topps Inception UEFA Club Competitions UCC 2025/26 Hobby Box - SEALED",
-            "sold_at": "2026-09-13T00:00:00+00:00",
-            "sold_price": 531.03,
-            "shipping": 37.4,
-            "delivered_price": 568.43,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/227516986330?nordt=true",
-            "listing_id": "227516986330",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "178478085002",
-            "product_id": "2025-26-inception-uefa-hobby",
-            "title": "Topps Inception UEFA Club Competitions 2025/26 Hobby Box - SEALED IN HAND NEW",
-            "sold_at": "2026-09-08T00:00:00+00:00",
-            "sold_price": 439.1,
-            "shipping": 39.41,
-            "delivered_price": 478.51,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "ghrenasss",
-            "url": "https://www.ebay.com/itm/178478085002?nordt=true",
-            "listing_id": "178478085002",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
             "dedupe_key": "820066489670",
             "product_id": "2025-26-inception-uefa-hobby",
             "title": "2025/26 Topps Inception UEFA Club Competitions Soccer Hobby Box",
@@ -9009,25 +8704,6 @@
             "seller": "jess.s-81",
             "url": "https://www.ebay.com/itm/820066489670?nordt=true",
             "listing_id": "820066489670",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "178452762208",
-            "product_id": "2025-26-inception-uefa-hobby",
-            "title": "Topps Inception UEFA Club Competitions 2025/26 Hobby Box - SEALED IN HAND NEW",
-            "sold_at": "2026-09-06T00:00:00+00:00",
-            "sold_price": 439.1,
-            "shipping": 39.41,
-            "delivered_price": 478.51,
-            "currency": "USD",
-            "buying_format": "buyitnow",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": null,
-            "condition": "Brand New",
-            "seller": "ghrenasss",
-            "url": "https://www.ebay.com/itm/178452762208?nordt=true",
-            "listing_id": "178452762208",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -9143,6 +8819,139 @@
             "url": "https://www.ebay.com/itm/820037635443?nordt=true",
             "listing_id": "820037635443",
             "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "188836078439",
+            "product_id": "2025-26-inception-uefa-hobby",
+            "title": "2025-26 TOPPS INCEPTION UEFA CLUB COMPETITIONS UCC SOCCER SEALED HOBBY BOX",
+            "sold_at": "2026-09-01T00:00:00+00:00",
+            "sold_price": 485.0,
+            "shipping": 16.95,
+            "delivered_price": 501.95,
+            "currency": "USD",
+            "buying_format": "auction",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": 43,
+            "condition": "Brand New",
+            "seller": "mc_sportscards",
+            "url": "https://www.ebay.com/itm/188836078439?nordt=true",
+            "listing_id": "188836078439",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "188836078496",
+            "product_id": "2025-26-inception-uefa-hobby",
+            "title": "2025-26 TOPPS INCEPTION UEFA CLUB COMPETITIONS UCC SOCCER SEALED HOBBY BOX",
+            "sold_at": "2026-09-01T00:00:00+00:00",
+            "sold_price": 521.0,
+            "shipping": 16.95,
+            "delivered_price": 537.95,
+            "currency": "USD",
+            "buying_format": "auction",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": 22,
+            "condition": "Brand New",
+            "seller": "mc_sportscards",
+            "url": "https://www.ebay.com/itm/188836078496?nordt=true",
+            "listing_id": "188836078496",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "188836078543",
+            "product_id": "2025-26-inception-uefa-hobby",
+            "title": "2025-26 TOPPS INCEPTION UEFA CLUB COMPETITIONS UCC SOCCER SEALED HOBBY BOX",
+            "sold_at": "2026-09-01T00:00:00+00:00",
+            "sold_price": 510.0,
+            "shipping": 16.95,
+            "delivered_price": 526.95,
+            "currency": "USD",
+            "buying_format": "auction",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": 32,
+            "condition": "Brand New",
+            "seller": "mc_sportscards",
+            "url": "https://www.ebay.com/itm/188836078543?nordt=true",
+            "listing_id": "188836078543",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "336757656723",
+            "product_id": "2025-26-inception-uefa-hobby",
+            "title": "Topps Inception UEFA Club Competitions (UCC) Hobby Box 2025-26 - New And Sealed",
+            "sold_at": "2026-08-31T00:00:00+00:00",
+            "sold_price": 492.38,
+            "shipping": 40.64,
+            "delivered_price": 533.02,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": null,
+            "url": "https://www.ebay.com/itm/336757656723?nordt=true",
+            "listing_id": "336757656723",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "366589648516",
+            "product_id": "2025-26-inception-uefa-hobby",
+            "title": "2025/26 Topps Inception UEFA Hobby Box",
+            "sold_at": "2026-08-30T00:00:00+00:00",
+            "sold_price": 599.0,
+            "shipping": 0.0,
+            "delivered_price": 599.0,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": "tombstonecollectibles",
+            "url": "https://www.ebay.com/itm/366589648516?nordt=true",
+            "listing_id": "366589648516",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "377451664892",
+            "product_id": "2025-26-inception-uefa-hobby",
+            "title": "Topps Inception UEFA Club Competitions 2025/26 Brand New Sealed Hobby Box",
+            "sold_at": "2026-08-28T00:00:00+00:00",
+            "sold_price": 492.38,
+            "shipping": 40.64,
+            "delivered_price": 533.02,
+            "currency": "USD",
+            "buying_format": "buyitnow",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": null,
+            "url": "https://www.ebay.com/itm/377451664892?nordt=true",
+            "listing_id": "377451664892",
+            "source": "ebaysoldlistingsapi.com"
+          },
+          {
+            "dedupe_key": "137668781216",
+            "product_id": "2025-26-inception-uefa-hobby",
+            "title": "2025-26 Topps Inception UEFA Club Competitions Brand New Sealed Hobby Box",
+            "sold_at": "2026-08-27T00:00:00+00:00",
+            "sold_price": 477.94,
+            "shipping": 40.13,
+            "delivered_price": 518.07,
+            "currency": "USD",
+            "buying_format": "sold",
+            "best_offer_accepted": false,
+            "price_usable": true,
+            "bid_count": null,
+            "condition": "Brand New",
+            "seller": null,
+            "url": "https://www.ebay.com/itm/137668781216?nordt=true",
+            "listing_id": "137668781216",
+            "source": "ebaysoldlistingsapi.com"
           }
         ]
       }
@@ -9153,11 +8962,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 52,
-        "priced_sales": 52,
+        "matched_sales": 51,
+        "priced_sales": 51,
         "best_offer_hidden_count": 14,
         "auction_count": 7,
-        "bin_count": 17,
+        "bin_count": 16,
         "latest_sale_at": "2026-10-06T00:00:00+00:00",
         "windows": {
           "7": {
@@ -9179,36 +8988,36 @@
             "p75": 599.99
           },
           "90": {
-            "count": 52,
-            "median": 555.0,
-            "median_delivered": 566.65,
+            "count": 51,
+            "median": 560.0,
+            "median_delivered": 572.2,
             "low": 427.84,
             "high": 799.99,
-            "p25": 539.6,
+            "p25": 539.4,
             "p75": 599.99
           },
           "180": {
-            "count": 52,
-            "median": 555.0,
-            "median_delivered": 566.65,
+            "count": 51,
+            "median": 560.0,
+            "median_delivered": 572.2,
             "low": 427.84,
             "high": 799.99,
-            "p25": 539.6,
+            "p25": 539.4,
             "p75": 599.99
           },
           "365": {
-            "count": 52,
-            "median": 555.0,
-            "median_delivered": 566.65,
+            "count": 51,
+            "median": 560.0,
+            "median_delivered": 572.2,
             "low": 427.84,
             "high": 799.99,
-            "p25": 539.6,
+            "p25": 539.4,
             "p75": 599.99
           }
         },
         "prior_31_90": {
-          "count": 5,
-          "median": 539.99,
+          "count": 4,
+          "median": 520.0,
           "low": 475.0,
           "high": 799.99
         },
@@ -10051,9 +9860,9 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 41,
-        "priced_sales": 41,
-        "best_offer_hidden_count": 6,
+        "matched_sales": 40,
+        "priced_sales": 40,
+        "best_offer_hidden_count": 5,
         "auction_count": 17,
         "bin_count": 7,
         "latest_sale_at": "2026-10-05T00:00:00+00:00",
@@ -10077,38 +9886,38 @@
             "p75": 199.0
           },
           "90": {
-            "count": 41,
-            "median": 185.0,
+            "count": 40,
+            "median": 183.53,
             "median_delivered": 195.0,
             "low": 142.0,
-            "high": 800.0,
+            "high": 255.0,
             "p25": 175.0,
-            "p75": 199.95
+            "p75": 199.24
           },
           "180": {
-            "count": 41,
-            "median": 185.0,
+            "count": 40,
+            "median": 183.53,
             "median_delivered": 195.0,
             "low": 142.0,
-            "high": 800.0,
+            "high": 255.0,
             "p25": 175.0,
-            "p75": 199.95
+            "p75": 199.24
           },
           "365": {
-            "count": 41,
-            "median": 185.0,
+            "count": 40,
+            "median": 183.53,
             "median_delivered": 195.0,
             "low": 142.0,
-            "high": 800.0,
+            "high": 255.0,
             "p25": 175.0,
-            "p75": 199.95
+            "p75": 199.24
           }
         },
         "prior_31_90": {
-          "count": 28,
-          "median": 187.5,
+          "count": 27,
+          "median": 185.0,
           "low": 142.0,
-          "high": 800.0
+          "high": 255.0
         },
         "recent_sales": [
           {
@@ -11053,10 +10862,10 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 11,
-        "priced_sales": 11,
+        "matched_sales": 9,
+        "priced_sales": 9,
         "best_offer_hidden_count": 1,
-        "auction_count": 5,
+        "auction_count": 3,
         "bin_count": 4,
         "latest_sale_at": "2026-10-03T00:00:00+00:00",
         "windows": {
@@ -11079,36 +10888,36 @@
             "p75": 315.0
           },
           "90": {
-            "count": 10,
-            "median": 282.24,
-            "median_delivered": 292.98,
+            "count": 8,
+            "median": 291.25,
+            "median_delivered": 299.25,
             "low": 245.5,
             "high": 375.95,
-            "p25": 264.34,
-            "p75": 299.99
+            "p25": 280.21,
+            "p75": 307.49
           },
           "180": {
-            "count": 10,
-            "median": 282.24,
-            "median_delivered": 292.98,
+            "count": 8,
+            "median": 291.25,
+            "median_delivered": 299.25,
             "low": 245.5,
             "high": 375.95,
-            "p25": 264.34,
-            "p75": 299.99
+            "p25": 280.21,
+            "p75": 307.49
           },
           "365": {
-            "count": 11,
-            "median": 282.52,
-            "median_delivered": 293.44,
+            "count": 9,
+            "median": 299.99,
+            "median_delivered": 305.99,
             "low": 245.5,
             "high": 375.95,
-            "p25": 267.89,
-            "p75": 315.0
+            "p25": 281.95,
+            "p75": 330.0
           }
         },
         "prior_31_90": {
-          "count": 7,
-          "median": 275.0,
+          "count": 5,
+          "median": 281.95,
           "low": 245.5,
           "high": 375.95
         },
@@ -11263,44 +11072,6 @@
             "seller": "dacardworld",
             "url": "https://www.ebay.com/itm/376935003796?nordt=true",
             "listing_id": "376935003796",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "358846874438",
-            "product_id": "2025-26-chrome-premier-league-hobby",
-            "title": "Topps Chrome Premier League 2025-26 Hobby Box Sealed Unopened",
-            "sold_at": "2026-08-02T00:00:00+00:00",
-            "sold_price": 253.13,
-            "shipping": 32.38,
-            "delivered_price": 285.51,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 1,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/358846874438?nordt=true",
-            "listing_id": "358846874438",
-            "source": "ebaysoldlistingsapi.com"
-          },
-          {
-            "dedupe_key": "358816995789",
-            "product_id": "2025-26-chrome-premier-league-hobby",
-            "title": "Topps Chrome Premier League 2025-26 Hobby Box Sealed Unopened",
-            "sold_at": "2026-07-26T00:00:00+00:00",
-            "sold_price": 260.79,
-            "shipping": 32.65,
-            "delivered_price": 293.44,
-            "currency": "USD",
-            "buying_format": "auction",
-            "best_offer_accepted": false,
-            "price_usable": true,
-            "bid_count": 3,
-            "condition": "Brand New",
-            "seller": null,
-            "url": "https://www.ebay.com/itm/358816995789?nordt=true",
-            "listing_id": "358816995789",
             "source": "ebaysoldlistingsapi.com"
           },
           {
@@ -12089,11 +11860,11 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 120,
-        "priced_sales": 120,
-        "best_offer_hidden_count": 27,
-        "auction_count": 8,
-        "bin_count": 56,
+        "matched_sales": 106,
+        "priced_sales": 106,
+        "best_offer_hidden_count": 26,
+        "auction_count": 7,
+        "bin_count": 45,
         "latest_sale_at": "2026-10-06T00:00:00+00:00",
         "windows": {
           "7": {
@@ -12106,45 +11877,45 @@
             "p75": 289.95
           },
           "30": {
-            "count": 99,
+            "count": 88,
             "median": 279.99,
             "median_delivered": 289.95,
-            "low": 3.0,
-            "high": 500.0,
+            "low": 253.33,
+            "high": 439.99,
             "p25": 275.0,
-            "p75": 289.99
+            "p75": 289.96
           },
           "90": {
-            "count": 120,
+            "count": 106,
             "median": 279.99,
-            "median_delivered": 289.56,
-            "low": 3.0,
+            "median_delivered": 289.84,
+            "low": 237.5,
             "high": 1899.99,
-            "p25": 270.0,
-            "p75": 289.96
+            "p25": 274.99,
+            "p75": 289.95
           },
           "180": {
-            "count": 120,
+            "count": 106,
             "median": 279.99,
-            "median_delivered": 289.56,
-            "low": 3.0,
+            "median_delivered": 289.84,
+            "low": 237.5,
             "high": 1899.99,
-            "p25": 270.0,
-            "p75": 289.96
+            "p25": 274.99,
+            "p75": 289.95
           },
           "365": {
-            "count": 120,
+            "count": 106,
             "median": 279.99,
-            "median_delivered": 289.56,
-            "low": 3.0,
+            "median_delivered": 289.84,
+            "low": 237.5,
             "high": 1899.99,
-            "p25": 270.0,
-            "p75": 289.96
+            "p25": 274.99,
+            "p75": 289.95
           }
         },
         "prior_31_90": {
-          "count": 21,
-          "median": 265.0,
+          "count": 18,
+          "median": 262.5,
           "low": 237.5,
           "high": 1899.99
         },
