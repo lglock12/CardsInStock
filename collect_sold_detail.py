@@ -94,10 +94,10 @@ def normalize_sale(product, row):
     if isinstance(seller, dict):
         seller = seller.get("username") or seller.get("name")
 
-    # Accepted Best Offer sales are still useful evidence that a sale occurred,
-    # but eBay often does not reveal the actual negotiated amount. Keep them in
-    # history while excluding them from price medians.
-    price_usable = price is not None and not best_offer
+    # This provider reports soldPrice as the completed sale price, including
+    # accepted Best Offers. Keep the Best Offer flag for transparency, but the
+    # completed price remains valid market evidence.
+    price_usable = price is not None
 
     dedupe = listing_id or url or f"{dt.date().isoformat()}|{title}|{price}|{shipping}"
     return {
@@ -115,6 +115,7 @@ def normalize_sale(product, row):
         "bid_count": pick(row, "bidCount", "bids"),
         "condition": pick(row, "condition", "conditionName"),
         "seller": seller,
+        "item_location": pick(row, "itemLocation", "location"),
         "url": url,
         "listing_id": listing_id,
         "source": "ebaysoldlistingsapi.com",
@@ -194,6 +195,9 @@ def load_history(products_by_id):
         if not (product_match(product, title)[0] or is_plausible_sealed_listing(product, title)):
             dropped += 1
             continue
+        # Migrate older rows that excluded accepted Best Offers before the
+        # provider documentation confirmed soldPrice is the completed price.
+        row["price_usable"] = row.get("sold_price") is not None
         rows[key] = row
     return rows, dropped
 
@@ -210,6 +214,7 @@ def request_sales(product):
             "count": 240,
             "itemCondition": "new",
             "sortOrder": "endedRecently",
+            "itemLocation": "domestic",
         },
         timeout=100,
     )
