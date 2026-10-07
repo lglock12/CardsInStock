@@ -1,0 +1,47 @@
+name: Debug active eBay shape
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/debug_active.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: Inspect one active result shape
+        env:
+          EBAY_SOLD_API_KEY: ${{ secrets.EBAY_SOLD_API_KEY }}
+        run: |
+          python - <<'PY'
+          import json, os, requests
+          r=requests.get(
+              "https://api.ebaysoldlistingsapi.com/scrape",
+              headers={"Authorization":f"Bearer {os.environ['EBAY_SOLD_API_KEY']}","Accept":"application/json"},
+              params={
+                  "keyword": '"OP-16" "One Piece" "Booster Box" -Japanese -Japan -JP -case',
+                  "ebaySite":"ebay.com","count":5,"sold":"false",
+                  "itemCondition":"new","buyingFormat":"buyItNow",
+                  "sortOrder":"pricePlusPostageLowest","itemLocation":"domestic"
+              },
+              timeout=100,
+          )
+          print("status",r.status_code,"remaining",r.headers.get("X-Usage-Remaining"))
+          r.raise_for_status()
+          data=r.json()
+          rows=data.get("results") or []
+          print("rows",len(rows))
+          if rows:
+              row=rows[0]
+              print("keys",sorted(row.keys()))
+              allowed={k:row.get(k) for k in row.keys() if any(x in k.lower() for x in ["price","shipping","total","currency","url","title","itemid","format","thumbnail"])}
+              print("sample",json.dumps(allowed,indent=2,default=str))
+          PY
