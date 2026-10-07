@@ -41,8 +41,9 @@ def official_one_piece_pages():
             for a in soup.find_all("a", href=True):
                 key = code_key(a.get_text(" ", strip=True))
                 href = a.get("href")
-                if key and href and "/products/" in href:
-                    pages[key] = urljoin(r.url, href)
+                resolved = urljoin(r.url, href) if href else None
+                if key and resolved and "/products/" in resolved:
+                    pages[key] = resolved
         except Exception as exc:
             print(f"Official One Piece catalog page {page} failed: {type(exc).__name__}: {exc}")
     return pages
