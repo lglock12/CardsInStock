@@ -1219,7 +1219,7 @@
         "updated_at": "2026-10-07T17:54:21.185473+00:00",
         "listing_count": 11,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3834,7 +3834,7 @@
         "updated_at": "2026-10-07T17:54:21.185473+00:00",
         "listing_count": 20,
         "stale": false,
-        "freshness_days": 0.01
+        "freshness_days": 0.02
       }
     },
     "2025-26-chrome-uefa-mega": {
@@ -7851,7 +7851,7 @@
         "basis": "ebaysoldlistingsapi_active",
         "floor": 489.99,
         "snapshot_date": "2026-10-07",
-        "updated_at": "2026-10-07T18:13:40.357246+00:00",
+        "updated_at": "2026-10-07T18:19:33.171389+00:00",
         "listing_count": 19,
         "stale": false,
         "freshness_days": 0.0
@@ -8355,7 +8355,7 @@
         "basis": "ebaysoldlistingsapi_active",
         "floor": 507.09,
         "snapshot_date": "2026-10-07",
-        "updated_at": "2026-10-07T18:13:40.357246+00:00",
+        "updated_at": "2026-10-07T18:19:33.171389+00:00",
         "listing_count": 27,
         "stale": false,
         "freshness_days": 0.0
@@ -8859,7 +8859,7 @@
         "basis": "ebaysoldlistingsapi_active",
         "floor": 733.0,
         "snapshot_date": "2026-10-07",
-        "updated_at": "2026-10-07T18:13:40.357246+00:00",
+        "updated_at": "2026-10-07T18:19:33.171389+00:00",
         "listing_count": 24,
         "stale": false,
         "freshness_days": 0.0
