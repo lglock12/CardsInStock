@@ -130,6 +130,10 @@ def obvious_single_or_wrong_unit(title):
         return True
     if re.search(r"\b(?:[2-9]|[1-9]\d+)\s*x\b.*\b(?:box(?:es)?|tins?)\b", t):
         return True
+    if re.search(r"\b(?:box(?:es)?|tins?)\s*x\s*(?:\(\s*)?(?:[2-9]|[1-9]\d+)(?:\s*\))?\b", t):
+        return True
+    if re.search(r"\b(?:box(?:es)?|tins?)\s*x\s*(?:\(\s*)?(?:[2-9]|[1-9]\d+)(?:\s*\))?\b", t):
+        return True
     if re.search(r"\b(?:box|tin)\s+lot\b|\blot\s+(?:of\s+)?(?:[2-9]|[1-9]\d+)\b|\bcase\b", t):
         return True
     # Common eBay lot syntax: "LOT x (2) ... HOBBY BOX", "lot x2", "2-box lot".
