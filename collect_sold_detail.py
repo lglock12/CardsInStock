@@ -158,6 +158,21 @@ def summarize(rows, checked):
             "p75": percentile(prices, .75),
         }
 
+    prior_start = checked - timedelta(days=90)
+    prior_end = checked - timedelta(days=30)
+    prior_rows = [
+        r for r in usable
+        if parse_date(r.get("sold_at"))
+        and prior_start <= parse_date(r["sold_at"]) < prior_end
+    ]
+    prior_prices = [r["sold_price"] for r in prior_rows]
+    prior_31_90 = {
+        "count": len(prior_rows),
+        "median": median(prior_prices),
+        "low": min(prior_prices) if prior_prices else None,
+        "high": max(prior_prices) if prior_prices else None,
+    }
+
     auction_count = sum(1 for r in usable if "auction" in str(r.get("buying_format", "")).lower())
     bin_count = sum(1 for r in usable if any(x in str(r.get("buying_format", "")).lower() for x in ["buy", "fixed"]))
     best_offer_count = sum(1 for r in rows if r.get("best_offer_accepted"))
@@ -170,6 +185,7 @@ def summarize(rows, checked):
         "bin_count": bin_count,
         "latest_sale_at": rows[0]["sold_at"] if rows else None,
         "windows": windows,
+        "prior_31_90": prior_31_90,
         "recent_sales": rows[:20],
     }
 
