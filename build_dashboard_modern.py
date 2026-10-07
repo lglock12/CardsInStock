@@ -322,7 +322,7 @@ def product_card(product, rows, detail, market, image, detailed_sold=None):
             bits.append(f"{stats.get('best_offer_hidden_count')} accepted Best Offer sales included at reported sold price")
         market_note = " · ".join(bits)
         recent = stats.get("recent_sales") or []
-        rows = []
+        sold_rows = []
         for sale in recent[:10]:
             when = str(sale.get("sold_at") or "")[:10]
             base = money(sale.get("sold_price"))
@@ -337,8 +337,8 @@ def product_card(product, rows, detail, market, image, detailed_sold=None):
             title = esc(sale.get("title") or "eBay sold listing")
             seller = esc(sale.get("seller") or "seller unavailable")
             hidden = " · accepted Best Offer" if sale.get("best_offer_accepted") else ""
-            rows.append(f'<a class="sold-row" href="{href}" target="_blank" rel="noopener"><div class="sold-row-main"><span><b>{esc(when)}</b>{esc(note)}</span><strong>{esc(total_text)}</strong></div><div class="sold-row-title">{title}</div><small>{seller}{esc(hidden)}</small></a>')
-        sold_rows_html = "".join(rows)
+            sold_rows.append(f'<a class="sold-row" href="{href}" target="_blank" rel="noopener"><div class="sold-row-main"><span><b>{esc(when)}</b>{esc(note)}</span><strong>{esc(total_text)}</strong></div><div class="sold-row-title">{title}</div><small>{seller}{esc(hidden)}</small></a>')
+        sold_rows_html = "".join(sold_rows)
     elif sold_price is not None:
         bits = []
         if sold.get("min_30d") is not None and sold.get("max_30d") is not None:
