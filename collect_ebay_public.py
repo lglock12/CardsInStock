@@ -16,6 +16,7 @@ ROOT = Path(__file__).parent
 PRODUCTS = ROOT / "config" / "products.json"
 MARKET = ROOT / "data" / "market_latest.json"
 EBAY = ROOT / "data" / "ebay_latest.json"
+SOLD = ROOT / "data" / "sold_latest.json"
 ACTIVE_CACHE = ROOT / "data" / "active_ebay_cache.json"
 API = "https://api.ebaysoldlistingsapi.com/scrape"
 KEY = os.getenv("EBAY_SOLD_API_KEY", "").strip()
@@ -110,7 +111,7 @@ def parse_search(product, page_html):
         if key in seen:
             continue
         seen.add(key)
-        candidates.append({
+        candidate = {
             "title": title,
             "url": href,
             "item_price": item_price,
@@ -162,6 +163,34 @@ def collect_product(product):
     return product["id"], [], last_error, False
 
 
+
+def sold_floor(product_id, sold_data):
+    """Reject implausible active-listing lows using this SKU's own sold market."""
+    stats = ((sold_data.get("products") or {}).get(product_id) or {}).get("stats") or {}
+    w30 = (stats.get("windows") or {}).get("30") or {}
+    w90 = (stats.get("windows") or {}).get("90") or {}
+    basis = w30 if (w30.get("count") or 0) >= 5 else w90
+    if (basis.get("count") or 0) < 5 or basis.get("median") is None:
+        return None
+    median = float(basis["median"])
+    p25 = basis.get("p25")
+    floors = [median * 0.65]
+    if p25 is not None:
+        floors.append(float(p25) * 0.70)
+    return round(max(floors), 2)
+
+
+def keep_active_candidate(product, row, sold_data):
+    if not product_match(product, row.get("title") or "")[0]:
+        return False
+    price = row.get("comparison_price")
+    if price is None:
+        price = row.get("delivered_price")
+    if price is None:
+        price = row.get("item_price")
+    floor = sold_floor(product["id"], sold_data)
+    return price is not None and (floor is None or float(price) >= floor)
+
 def api_money(value):
     try:
         if value is None or value == "":
@@ -171,7 +200,7 @@ def api_money(value):
         return None
 
 
-def api_active(product):
+def api_active(product, sold_data):
     from ebay_utils import canonical_terms
     query = " ".join(canonical_terms(product))
     params = {
@@ -236,7 +265,9 @@ def api_active(product):
             "seller": row.get("sellerUsername"),
             "listing_id": row.get("itemId"),
             "thumbnail_url": row.get("fullResThumbnailUrl") or row.get("thumbnailUrl"),
-        })
+        }
+        if keep_active_candidate(product, candidate, sold_data):
+            candidates.append(candidate)
     candidates.sort(key=lambda x: (x["comparison_price"], x["item_price"]))
     sample_titles = [str(x.get("title") or "")[:120] for x in (raw or [])[:3]]
     print(f"ACTIVE {product['id']}: {len(raw or [])} raw / {exact_titles} exact titles / {len(candidates)} priced candidates; sample={sample_titles}")
@@ -255,6 +286,7 @@ def load_active_cache():
 def main():
     products = json.loads(PRODUCTS.read_text())
     data = json.loads(MARKET.read_text()) if MARKET.exists() else {"generated_at": None, "products": {}}
+    sold_data = json.loads(SOLD.read_text()) if SOLD.exists() else {"products": {}}
     checked = datetime.now(timezone.utc)
 
     if KEY:
@@ -272,7 +304,7 @@ def main():
 
         for product in selected:
             try:
-                candidates, remaining = api_active(product)
+                candidates, remaining = api_active(product, sold_data)
                 pid = product["id"]
                 cache["products"][pid] = {"checked_at": checked.isoformat(), "candidates": candidates[:30]}
                 refreshed += 1
@@ -286,7 +318,7 @@ def main():
             pid = product["id"]
             snap = (cache.get("products") or {}).get(pid) or {}
             ts = snap.get("checked_at")
-            candidates = snap.get("candidates") or []
+            candidates = [row for row in (snap.get("candidates") or []) if keep_active_candidate(product, row, sold_data)]
             try:
                 age_days = (checked - datetime.fromisoformat(str(ts).replace("Z","+00:00"))).total_seconds()/86400 if ts else 999
             except Exception:
