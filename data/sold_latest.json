@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T06:32:57.263827+00:00",
+  "generated_at": "2026-10-07T06:39:40.204968+00:00",
   "source": "ebaysoldlistingsapi.com",
   "products": {
     "2023-24-merlin-uefa-hobby": {
@@ -11860,8 +11860,8 @@
       "matched_this_run": null,
       "history_revalidated": true,
       "stats": {
-        "matched_sales": 106,
-        "priced_sales": 106,
+        "matched_sales": 105,
+        "priced_sales": 105,
         "best_offer_hidden_count": 26,
         "auction_count": 7,
         "bin_count": 45,
@@ -11886,38 +11886,38 @@
             "p75": 289.96
           },
           "90": {
-            "count": 106,
+            "count": 105,
             "median": 279.99,
-            "median_delivered": 289.84,
+            "median_delivered": 289.79,
             "low": 237.5,
-            "high": 1899.99,
+            "high": 439.99,
             "p25": 274.99,
             "p75": 289.95
           },
           "180": {
-            "count": 106,
+            "count": 105,
             "median": 279.99,
-            "median_delivered": 289.84,
+            "median_delivered": 289.79,
             "low": 237.5,
-            "high": 1899.99,
+            "high": 439.99,
             "p25": 274.99,
             "p75": 289.95
           },
           "365": {
-            "count": 106,
+            "count": 105,
             "median": 279.99,
-            "median_delivered": 289.84,
+            "median_delivered": 289.79,
             "low": 237.5,
-            "high": 1899.99,
+            "high": 439.99,
             "p25": 274.99,
             "p75": 289.95
           }
         },
         "prior_31_90": {
-          "count": 18,
-          "median": 262.5,
+          "count": 17,
+          "median": 260.0,
           "low": 237.5,
-          "high": 1899.99
+          "high": 290.0
         },
         "recent_sales": [
           {
