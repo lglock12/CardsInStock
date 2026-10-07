@@ -188,9 +188,18 @@
     "product_id": "2025-26-chrome-premier-league-hobby",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-premier-league-cards-hanger-box",
-    "title": "2025-26 TOPPS CHROME PREMIER LEAGUE CARDS – HANGER BOX (15 CARDS)",
+    "title": "2025-26 TOPPS CHROME PREMIER LEAGUE CARDS \u2013 HANGER BOX (15 CARDS)",
     "discovered": "2026-10-07",
     "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $29.95",
+    "lead_only": true
+  },
+  {
+    "product_id": "2025-26-chrome-premier-league-hobby",
+    "seller": "SoccerCards.ca",
+    "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-premier-league-cards-tin",
+    "title": "2025-26 TOPPS CHROME PREMIER LEAGUE CARDS - TIN",
+    "discovered": "2026-10-07",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $47.95",
     "lead_only": true
   },
   {
@@ -237,9 +246,18 @@
     "product_id": "2025-26-chrome-premier-league-value",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-premier-league-cards-hanger-box",
-    "title": "2025-26 TOPPS CHROME PREMIER LEAGUE CARDS – HANGER BOX (15 CARDS)",
+    "title": "2025-26 TOPPS CHROME PREMIER LEAGUE CARDS \u2013 HANGER BOX (15 CARDS)",
     "discovered": "2026-10-07",
     "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $29.95",
+    "lead_only": true
+  },
+  {
+    "product_id": "2025-26-chrome-premier-league-value",
+    "seller": "SoccerCards.ca",
+    "url": "https://buysoccercardsonline.com/products/2025-26-topps-chrome-premier-league-cards-tin",
+    "title": "2025-26 TOPPS CHROME PREMIER LEAGUE CARDS - TIN",
+    "discovered": "2026-10-07",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $47.95",
     "lead_only": true
   },
   {
@@ -504,7 +522,7 @@
     "product_id": "2025-26-merlin-premier-league-value",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2026-topps-merlin-premier-league-cards-value-blaster-box",
-    "title": "2026 TOPPS MERLIN PREMIER LEAGUE CARDS – VALUE BLASTER BOX (28 CARDS)",
+    "title": "2026 TOPPS MERLIN PREMIER LEAGUE CARDS \u2013 VALUE BLASTER BOX (28 CARDS)",
     "discovered": "2026-10-07",
     "evidence": "auto-discovered from live retailer catalog; catalog price $54.95"
   },
@@ -719,7 +737,7 @@
     "product_id": "2026-27-premier-league-flagship-hobby",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-hobby-box",
-    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS – HOBBY BOX (203 CARDS + 3 BLACK EDGE & 1 AUTO) **LIMIT OF 3 PER CUSTOMER**",
+    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 HOBBY BOX (203 CARDS + 3 BLACK EDGE & 1 AUTO) **LIMIT OF 3 PER CUSTOMER**",
     "discovered": "2026-10-07",
     "evidence": "auto-discovered from live retailer catalog; catalog price $329.95"
   },
@@ -727,7 +745,7 @@
     "product_id": "2026-27-premier-league-flagship-hobby",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-super-tin",
-    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS – SUPER TIN (50 CARDS + 5 EXCLUSIVES)",
+    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 SUPER TIN (50 CARDS + 5 EXCLUSIVES)",
     "discovered": "2026-10-07",
     "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $49.95",
     "lead_only": true
@@ -768,7 +786,7 @@
     "product_id": "2026-27-premier-league-flagship-value",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-super-tin",
-    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS – SUPER TIN (50 CARDS + 5 EXCLUSIVES)",
+    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 SUPER TIN (50 CARDS + 5 EXCLUSIVES)",
     "discovered": "2026-10-07",
     "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $49.95",
     "lead_only": true
@@ -777,7 +795,7 @@
     "product_id": "2026-27-premier-league-flagship-value",
     "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-value-blaster",
-    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS – VALUE BLASTER (60 CARDS + 6 EXCLUSIVES)",
+    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 VALUE BLASTER (60 CARDS + 6 EXCLUSIVES)",
     "discovered": "2026-10-07",
     "evidence": "auto-discovered from live retailer catalog; catalog price $54.95"
   },
