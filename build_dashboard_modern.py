@@ -295,7 +295,7 @@ def product_card(product, rows, detail, market, image, detailed_sold=None):
         if trend is not None:
             bits.append(f"30d vs 90d median: {trend:+.1f}%")
         if stats.get("best_offer_hidden_count"):
-            bits.append(f"{stats.get('best_offer_hidden_count')} accepted Best Offer sales excluded from price medians")
+            bits.append(f"{stats.get('best_offer_hidden_count')} accepted Best Offer sales included at reported sold price")
         market_note = " · ".join(bits)
         recent = stats.get("recent_sales") or []
         rows = []
@@ -312,7 +312,7 @@ def product_card(product, rows, detail, market, image, detailed_sold=None):
             href = esc(sale.get("url") or "#")
             title = esc(sale.get("title") or "eBay sold listing")
             seller = esc(sale.get("seller") or "seller unavailable")
-            hidden = " · accepted offer price may be hidden" if sale.get("best_offer_accepted") else ""
+            hidden = " · accepted Best Offer" if sale.get("best_offer_accepted") else ""
             rows.append(f'<a class="sold-row" href="{href}" target="_blank" rel="noopener"><div class="sold-row-main"><span><b>{esc(when)}</b>{esc(note)}</span><strong>{esc(total_text)}</strong></div><div class="sold-row-title">{title}</div><small>{seller}{esc(hidden)}</small></a>')
         sold_rows_html = "".join(rows)
     elif sold_price is not None:
