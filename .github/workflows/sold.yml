@@ -61,12 +61,23 @@ jobs:
         run: |
           git config user.name "cardsinstock-bot"
           git config user.email "actions@users.noreply.github.com"
+
+          OUT=/tmp/cardsinstock-sold-output
+          rm -rf "$OUT"
+          mkdir -p "$OUT/data" "$OUT/docs"
+          cp data/sold_latest.json data/sold_history.jsonl "$OUT/data/"
+          cp docs/index.html "$OUT/docs/"
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          cp "$OUT/data/"* data/
+          cp "$OUT/docs/"* docs/
+
           git add data/sold_latest.json data/sold_history.jsonl docs/index.html
           if git diff --cached --quiet; then
             echo "No sold-data changes"
           else
             git commit -m "Update detailed eBay sold comps"
-            git fetch origin main
-            git rebase origin/main
             git push origin HEAD:main
           fi
