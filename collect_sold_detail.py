@@ -280,6 +280,10 @@ def main():
             except Exception as exc:
                 error = f"{type(exc).__name__}: {exc}"
                 print(f"SOLD {product['id']}: ERROR {error}")
+                error_l = error.lower()
+                if any(token in error_l for token in ["429", "quota", "allowance", "payment required", "402"]):
+                    print("Sold API quota appears unavailable; rebuilding the remaining catalog from stored history.")
+                    use_api = False
 
         all_rows = [r for (pid, _), r in history.items() if pid == product["id"]]
         all_rows.sort(key=lambda r: r.get("sold_at") or "", reverse=True)
