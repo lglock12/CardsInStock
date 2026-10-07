@@ -56,13 +56,17 @@ jobs:
         run: python collect_ebay_public.py
       - name: Enrich product images
         run: python enrich_images.py
+      - name: Revalidate stored detailed sold comps
+        env:
+          SOLD_CLEAN_ONLY: "1"
+        run: python collect_sold_detail.py
       - name: Build compact responsive dashboard
         run: python build_dashboard_modern.py
       - name: Commit observations and dashboard
         run: |
           git config user.name "cardsinstock-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add config/discovered_sources.json config/collectaio_map.json data/latest.json data/ebay_latest.json data/market_latest.json data/history.jsonl docs/index.html docs/latest.json
+          git add config/discovered_sources.json config/collectaio_map.json data/latest.json data/ebay_latest.json data/market_latest.json data/history.jsonl data/sold_latest.json data/sold_history.jsonl docs/index.html docs/latest.json
           if git diff --cached --quiet; then
             echo "No data changes"
           else
