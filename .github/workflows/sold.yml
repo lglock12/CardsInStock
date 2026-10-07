@@ -51,6 +51,7 @@ jobs:
         env:
           EBAY_SOLD_API_KEY: ${{ secrets.EBAY_SOLD_API_KEY }}
           SOLD_CLEAN_ONLY: "0"
+          SOLD_ROTATE_PARTS: "3"
         run: python collect_sold_detail.py
       - name: Rebuild dashboard with sold comps
         if: steps.central.outputs.run == 'true'
