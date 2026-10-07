@@ -123,6 +123,7 @@ def normalize_sale(product, row):
         "item_location": pick(row, "itemLocation", "location"),
         "url": url,
         "listing_id": listing_id,
+        "thumbnail_url": pick(row, "thumbnailUrl", "imageUrl", "galleryURL"),
         "source": "ebaysoldlistingsapi.com",
     }
 
