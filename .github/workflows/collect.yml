@@ -49,10 +49,6 @@ jobs:
         run: python discover_sources_v2.py
       - name: Collect current prices
         run: python collector_v2.py
-      - name: Collect eBay market via CollectAIO
-        run: python collect_market.py
-      - name: Extract sold market and freshness
-        run: python enrich_market.py
       - name: Refresh live eBay BIN market
         env:
           EBAY_SOLD_API_KEY: ${{ secrets.EBAY_SOLD_API_KEY }}
