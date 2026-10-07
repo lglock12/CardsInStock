@@ -66,12 +66,25 @@ jobs:
         run: |
           git config user.name "cardsinstock-bot"
           git config user.email "actions@users.noreply.github.com"
+
+          OUT=/tmp/cardsinstock-output
+          rm -rf "$OUT"
+          mkdir -p "$OUT/config" "$OUT/data" "$OUT/docs"
+          cp config/discovered_sources.json config/collectaio_map.json "$OUT/config/"
+          cp data/latest.json data/ebay_latest.json data/market_latest.json data/history.jsonl data/sold_latest.json data/sold_history.jsonl "$OUT/data/"
+          cp docs/index.html docs/latest.json "$OUT/docs/"
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          cp "$OUT/config/"* config/
+          cp "$OUT/data/"* data/
+          cp "$OUT/docs/"* docs/
+
           git add config/discovered_sources.json config/collectaio_map.json data/latest.json data/ebay_latest.json data/market_latest.json data/history.jsonl data/sold_latest.json data/sold_history.jsonl docs/index.html docs/latest.json
           if git diff --cached --quiet; then
             echo "No data changes"
           else
             git commit -m "Update price observations and dashboard"
-            git fetch origin main
-            git rebase origin/main
             git push origin HEAD:main
           fi
