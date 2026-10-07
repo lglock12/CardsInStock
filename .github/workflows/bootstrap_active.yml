@@ -1,0 +1,67 @@
+name: Bootstrap active eBay and images
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/bootstrap_active.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cardsinstock-data
+  cancel-in-progress: false
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: Full authenticated active eBay refresh
+        env:
+          EBAY_SOLD_API_KEY: ${{ secrets.EBAY_SOLD_API_KEY }}
+          EBAY_ACTIVE_FULL_REFRESH: "1"
+        run: python collect_ebay_public.py
+
+      - name: Cache product images locally
+        run: python enrich_images.py
+
+      - name: Rebuild dashboard
+        run: python build_dashboard_modern.py
+
+      - name: Commit bootstrap data and assets
+        run: |
+          git config user.name "cardsinstock-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          OUT=/tmp/cardsinstock-active-bootstrap
+          rm -rf "$OUT"
+          mkdir -p "$OUT/data" "$OUT/docs"
+          cp data/active_ebay_cache.json data/market_latest.json data/ebay_latest.json data/latest.json "$OUT/data/"
+          cp docs/index.html "$OUT/docs/"
+          if [ -d docs/assets ]; then cp -R docs/assets "$OUT/docs/"; fi
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          cp "$OUT/data/"* data/
+          cp "$OUT/docs/index.html" docs/index.html
+          if [ -d "$OUT/docs/assets" ]; then rm -rf docs/assets && cp -R "$OUT/docs/assets" docs/assets; fi
+
+          git add data/active_ebay_cache.json data/market_latest.json data/ebay_latest.json data/latest.json docs/index.html docs/assets
+          if git diff --cached --quiet; then
+            echo "No bootstrap changes"
+          else
+            git commit -m "Bootstrap active eBay listings and product images"
+            git push origin HEAD:main
+          fi
