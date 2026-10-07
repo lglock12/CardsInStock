@@ -494,7 +494,7 @@ def main():
 const q=document.getElementById('search'),season=document.getElementById('season'),mode=document.getElementById('mode');
 function apply(){{const needle=q.value.trim().toLowerCase(),s=season.value,m=mode.value;document.querySelectorAll('.product-card').forEach(card=>{{const state=card.dataset.state;let ok=(!needle||card.dataset.search.includes(needle))&&(!s||card.dataset.season===s);if(m==='live')ok=ok&&state==='live';else if(m==='priced')ok=ok&&['live','lead','market'].includes(state);else if(m==='gaps')ok=ok&&['unknown','soldout'].includes(state);card.classList.toggle('hidden',!ok)}});document.querySelectorAll('.family').forEach(f=>{{f.classList.toggle('hidden',![...f.querySelectorAll('.product-card')].some(c=>!c.classList.contains('hidden')))}})}}
 [q,season,mode].forEach(el=>el.addEventListener(el===q?'input':'change',apply));
-document.querySelectorAll('.expand-toggle').forEach(btn=>btn.addEventListener('click',()=>{const card=btn.closest('.product-card');const expanded=card.classList.toggle('expanded');btn.setAttribute('aria-expanded',expanded?'true':'false')}));
+document.querySelectorAll('.expand-toggle').forEach(btn=>btn.addEventListener('click',()=>{{const card=btn.closest('.product-card');const expanded=card.classList.toggle('expanded');btn.setAttribute('aria-expanded',expanded?'true':'false')}}));
 apply();
 </script></body></html>'''
 
