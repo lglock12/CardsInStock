@@ -29,7 +29,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: collect-prices
+  group: cardsinstock-data
   cancel-in-progress: false
 
 jobs:
