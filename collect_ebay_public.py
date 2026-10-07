@@ -1,3 +1,4 @@
+import os
 import json
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -14,6 +15,9 @@ ROOT = Path(__file__).parent
 PRODUCTS = ROOT / "config" / "products.json"
 MARKET = ROOT / "data" / "market_latest.json"
 EBAY = ROOT / "data" / "ebay_latest.json"
+ACTIVE_CACHE = ROOT / "data" / "active_ebay_cache.json"
+API = "https://api.ebaysoldlistingsapi.com/scrape"
+KEY = os.getenv("EBAY_SOLD_API_KEY", "").strip()
 
 HEADERS = {
     "User-Agent": (
@@ -156,6 +160,80 @@ def collect_product(product):
     return product["id"], [], last_error, False
 
 
+def api_money(value):
+    try:
+        if value is None or value == "":
+            return None
+        return round(float(str(value).replace("$","").replace(",","")), 2)
+    except Exception:
+        return None
+
+
+def api_active(product):
+    from ebay_utils import canonical_terms
+    query = " ".join(canonical_terms(product))
+    r = requests.get(
+        API,
+        headers={"Authorization": f"Bearer {KEY}", "Accept": "application/json"},
+        params={
+            "keyword": query,
+            "ebaySite": "ebay.com",
+            "count": 120,
+            "sold": "false",
+            "itemCondition": "new",
+            "buyingFormat": "buyItNow",
+            "sortOrder": "pricePlusPostageLowest",
+            "itemLocation": "domestic",
+        },
+        timeout=100,
+    )
+    remaining = r.headers.get("X-Usage-Remaining")
+    r.raise_for_status()
+    payload = r.json()
+    raw = payload.get("results") if isinstance(payload, dict) else payload
+    candidates = []
+    seen = set()
+    for row in raw or []:
+        title = str(row.get("title") or "")
+        if not product_match(product, title)[0]:
+            continue
+        item_price = api_money(row.get("soldPrice") or row.get("price") or row.get("itemPrice"))
+        shipping = api_money(row.get("shippingPrice") or row.get("shipping"))
+        total = api_money(row.get("totalPrice") or row.get("deliveredPrice"))
+        if total is None and item_price is not None and shipping is not None:
+            total = round(item_price + shipping, 2)
+        if item_price is None or total is None:
+            continue
+        url = row.get("url") or row.get("itemUrl") or row.get("listingUrl")
+        key = (row.get("itemId") or url, item_price, shipping, total)
+        if key in seen:
+            continue
+        seen.add(key)
+        candidates.append({
+            "title": title,
+            "url": url,
+            "item_price": item_price,
+            "shipping": shipping,
+            "delivered_price": total,
+            "shipping_text": "FREE" if shipping == 0 else (f"${shipping:.2f}" if shipping is not None else "included in total"),
+            "market_state": "ACTIVE_BIN_API",
+            "source": "ebaysoldlistingsapi_active",
+            "seller": row.get("sellerUsername"),
+            "listing_id": row.get("itemId"),
+        })
+    candidates.sort(key=lambda x: (x["delivered_price"], x["item_price"]))
+    return candidates, remaining
+
+
+def load_active_cache():
+    if not ACTIVE_CACHE.exists():
+        return {"products": {}}
+    try:
+        data = json.loads(ACTIVE_CACHE.read_text())
+        return data if isinstance(data, dict) else {"products": {}}
+    except Exception:
+        return {"products": {}}
+
 def main():
     if not MARKET.exists():
         print("No market_latest.json; skipping public eBay fallback")
@@ -163,11 +241,67 @@ def main():
 
     products = json.loads(PRODUCTS.read_text())
     data = json.loads(MARKET.read_text())
-    by_id = {p["id"]: p for p in products}
     checked = datetime.now(timezone.utc)
 
-    # Probe eBay once before launching the pool. If Actions is blocked, stop cleanly
-    # rather than wasting dozens of requests or attempting any bypass.
+    if KEY:
+        cache = load_active_cache()
+        cache.setdefault("products", {})
+        slot = (checked.hour // 3) % 8
+        selected = [product for i, product in enumerate(products) if i % 8 == slot]
+        refreshed = 0
+        matched_candidates = 0
+        errors = 0
+        remaining = None
+
+        for product in selected:
+            try:
+                candidates, remaining = api_active(product)
+                pid = product["id"]
+                cache["products"][pid] = {"checked_at": checked.isoformat(), "candidates": candidates[:30]}
+                refreshed += 1
+                matched_candidates += len(candidates)
+            except Exception as exc:
+                errors += 1
+                print(f"ACTIVE {product['id']}: ERROR {type(exc).__name__}: {exc}")
+
+        for product in products:
+            pid = product["id"]
+            snap = (cache.get("products") or {}).get(pid) or {}
+            ts = snap.get("checked_at")
+            candidates = snap.get("candidates") or []
+            try:
+                age_days = (checked - datetime.fromisoformat(str(ts).replace("Z","+00:00"))).total_seconds()/86400 if ts else 999
+            except Exception:
+                age_days = 999
+            if not candidates or age_days > 2.0:
+                continue
+            best = candidates[0]
+            market = (data.get("products") or {}).setdefault(pid, {})
+            market["status"] = "VERIFIED"
+            market["best"] = best
+            market["candidate_count"] = len(candidates)
+            market["reason"] = "lowest exact-match active eBay BIN from authenticated active-listings API"
+            market["active_source"] = "ebaysoldlistingsapi_active"
+            market["public_ebay_reason"] = "authenticated active API snapshot"
+            market["active_market"] = {
+                "basis": "ebaysoldlistingsapi_active",
+                "floor": best["delivered_price"],
+                "snapshot_date": str(ts)[:10],
+                "updated_at": ts,
+                "listing_count": len(candidates),
+                "stale": age_days > 1.25,
+                "freshness_days": round(age_days, 2),
+            }
+
+        ACTIVE_CACHE.write_text(json.dumps(cache, indent=2) + "\n")
+        text = json.dumps(data, indent=2) + "\n"
+        MARKET.write_text(text)
+        EBAY.write_text(text)
+        print(f"Authenticated active eBay rotation: slot {slot}/8, {refreshed}/{len(selected)} queried, {matched_candidates} exact BIN candidates, {errors} errors, usage remaining={remaining}")
+        return
+
+    by_id = {p["id"]: p for p in products}
+
     if products:
         _, probe_error, probe_blocked = fetch_once(products[0])
         if probe_blocked:
@@ -194,7 +328,6 @@ def main():
                     errors += 1
                     market["public_ebay_reason"] = error
                 continue
-
             best = candidates[0]
             parsed_candidates += len(candidates)
             refreshed += 1
@@ -204,24 +337,12 @@ def main():
             market["reason"] = "lowest exact-match active eBay BIN parsed from live public search with known shipping"
             market["active_source"] = "ebay_public_search"
             market["public_ebay_reason"] = "live exact BIN parsed"
-            market["active_market"] = {
-                "basis": "ebay_public_search",
-                "floor": best["delivered_price"],
-                "snapshot_date": checked.date().isoformat(),
-                "updated_at": checked.isoformat(),
-                "listing_count": len(candidates),
-                "stale": False,
-                "freshness_days": 0,
-            }
+            market["active_market"] = {"basis":"ebay_public_search","floor":best["delivered_price"],"snapshot_date":checked.date().isoformat(),"updated_at":checked.isoformat(),"listing_count":len(candidates),"stale":False,"freshness_days":0}
 
     text = json.dumps(data, indent=2) + "\n"
     MARKET.write_text(text)
     EBAY.write_text(text)
-    print(
-        f"Public eBay BIN fallback: {refreshed}/{len(by_id)} products refreshed, "
-        f"{parsed_candidates} exact active candidates, {blocked_count} blocked, {errors} without parseable exact BIN"
-    )
-
+    print(f"Public eBay BIN fallback: {refreshed}/{len(by_id)} products refreshed, {parsed_candidates} exact active candidates, {blocked_count} blocked, {errors} without parseable exact BIN")
 
 if __name__ == "__main__":
     main()
