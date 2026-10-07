@@ -141,12 +141,16 @@ def facts_html(detail, cost_per_pack):
 def sold_trend(stats):
     windows = (stats or {}).get("windows") or {}
     w30 = windows.get("30") or {}
-    w90 = windows.get("90") or {}
+    prior = (stats or {}).get("prior_31_90") or {}
     m30 = w30.get("median")
-    m90 = w90.get("median")
-    if m30 is None or m90 in (None, 0) or (w30.get("count") or 0) < 2:
+    mprior = prior.get("median")
+    if (
+        m30 is None or mprior in (None, 0)
+        or (w30.get("count") or 0) < 2
+        or (prior.get("count") or 0) < 2
+    ):
         return None
-    return round((float(m30) / float(m90) - 1) * 100, 1)
+    return round((float(m30) / float(mprior) - 1) * 100, 1)
 
 def product_card(product, rows, detail, market, image, detailed_sold=None):
     verified = sorted([r for r in rows if r.get("status") == "VERIFIED"], key=retail_rank)
@@ -235,7 +239,7 @@ def product_card(product, rows, detail, market, image, detailed_sold=None):
             trend = sold_trend(detail_stats)
             sold_note = sold_meta + " · individual eBay comps"
             if trend is not None:
-                sold_note += f" · {trend:+.1f}% vs 90d"
+                sold_note += f" · {trend:+.1f}% vs prior"
         else:
             sold_age = sold.get("freshness_days") if sold else None
             sold_note = sold_meta + (f" · {sold_age}d old" if sold_age is not None else "")
@@ -293,7 +297,7 @@ def product_card(product, rows, detail, market, image, detailed_sold=None):
         if w90.get("count"):
             bits.append(f"90d: {w90.get('count')} sales · median {money(w90.get('median'))}")
         if trend is not None:
-            bits.append(f"30d vs 90d median: {trend:+.1f}%")
+            bits.append(f"30d vs prior 31–90d: {trend:+.1f}%")
         if stats.get("best_offer_hidden_count"):
             bits.append(f"{stats.get('best_offer_hidden_count')} accepted Best Offer sales included at reported sold price")
         market_note = " · ".join(bits)
