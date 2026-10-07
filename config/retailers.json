@@ -82,5 +82,9 @@
   "Double Infinity Gaming": {
     "free_shipping_threshold": null,
     "shipping_note": "Shipping TBD until a reliable public rule is validated."
+  },
+  "GameNerdz": {
+    "free_shipping_threshold": null,
+    "shipping_note": "Shipping calculated at checkout; exact amount TBD."
   }
 }
