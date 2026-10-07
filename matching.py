@@ -156,7 +156,31 @@ def obvious_single_or_wrong_unit(title):
     return False
 
 
+def one_piece_match(product, title):
+    t = normalize(title)
+    code = normalize(product.get("season"))
+    name = normalize(product.get("product"))
+    if obvious_single_or_wrong_unit(title):
+        return False, "matched a single card, break, or non-box sale unit"
+    if not sealed_unit_signal(title):
+        return False, "sealed booster box packaging was not explicit"
+    if code not in t and code.replace("-", "") not in t.replace("-", ""):
+        return False, "missing One Piece set code"
+    if "one piece" not in t and "onepiece" not in t:
+        return False, "missing One Piece product identity"
+    if any(x in t for x in ["japanese", "japan version", "japan box", " jp box", "starter deck", "double pack", "sleeved booster"]):
+        return False, "matched wrong language or product type"
+    if re.search(r"\bcase\b|\b12\s*(?:box|boxes)\b|\b24\s*(?:box|boxes)\b", t):
+        return False, "matched a sealed case or multi-box lot"
+    if "booster" not in t and "display" not in t and "box" not in t:
+        return False, "missing booster box signal"
+    return True, "canonical English One Piece booster box matched"
+
+
 def product_match(product, title):
+    if product.get("category") == "one-piece":
+        return one_piece_match(product, title)
+
     t = normalize(title)
     expected = expected_text(product)
 
@@ -283,6 +307,8 @@ def format_conflicts(product, title):
 
 def is_plausible_sealed_listing(product, title):
     """True for exact or near-exact sealed product listings suitable for CHECK."""
+    if product.get("category") == "one-piece":
+        return one_piece_match(product, title)[0]
     if not title or obvious_single_or_wrong_unit(title) or not sealed_unit_signal(title):
         return False
 
