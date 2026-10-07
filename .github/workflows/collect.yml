@@ -31,7 +31,7 @@ permissions:
 
 concurrency:
   group: cardsinstock-data
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   collect:
