@@ -329,7 +329,7 @@
         "updated_at": "2026-10-10T00:54:08.205694+00:00",
         "listing_count": 3,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.37
       }
     },
     "2023-24-deco-uefa-box": {
@@ -767,11 +767,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 54.9,
-        "snapshot_date": "2026-10-09",
-        "updated_at": "2026-10-09T10:35:08.702757+00:00",
+        "snapshot_date": "2026-10-10",
+        "updated_at": "2026-10-10T09:52:17.008500+00:00",
         "listing_count": 7,
         "stale": false,
-        "freshness_days": 0.6
+        "freshness_days": 0.0
       }
     },
     "2024-25-chrome-uefa-hobby": {
@@ -1219,7 +1219,7 @@
         "updated_at": "2026-10-08T13:31:06.753737+00:00",
         "listing_count": 11,
         "stale": true,
-        "freshness_days": 1.47
+        "freshness_days": 1.85
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3769,7 +3769,7 @@
         "updated_at": "2026-10-10T00:54:08.205694+00:00",
         "listing_count": 14,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.37
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3956,11 +3956,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 305.89,
-        "snapshot_date": "2026-10-09",
-        "updated_at": "2026-10-09T10:35:08.702757+00:00",
+        "snapshot_date": "2026-10-10",
+        "updated_at": "2026-10-10T09:52:17.008500+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.6
+        "freshness_days": 0.0
       }
     },
     "2025-26-chrome-uefa-jumbo": {
@@ -5589,7 +5589,7 @@
         "updated_at": "2026-10-08T13:31:06.753737+00:00",
         "listing_count": 21,
         "stale": true,
-        "freshness_days": 1.47
+        "freshness_days": 1.85
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -6833,7 +6833,7 @@
         "updated_at": "2026-10-09T18:24:15.010342+00:00",
         "listing_count": 17,
         "stale": false,
-        "freshness_days": 0.27
+        "freshness_days": 0.64
       }
     },
     "2025-26-premier-league-flagship-full-box": {
@@ -7486,7 +7486,7 @@
         "updated_at": "2026-10-10T00:54:08.205694+00:00",
         "listing_count": 15,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.37
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -7686,32 +7686,32 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 279.85,
-        "snapshot_date": "2026-10-09",
-        "updated_at": "2026-10-09T10:35:08.702757+00:00",
+        "snapshot_date": "2026-10-10",
+        "updated_at": "2026-10-10T09:52:17.008500+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.6
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-01": {
       "status": "VERIFIED",
       "query": "\"OP-01\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-01%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 30,
+      "candidate_count": 22,
       "best": {
-        "title": "One Piece Booster Box Romance Dawn OP-01 English White Bottom Wave 2 Sealed",
-        "url": "https://www.ebay.com/itm/377546720674?nordt=true",
-        "item_price": 1250.0,
-        "shipping": 10.15,
-        "delivered_price": 1260.15,
-        "comparison_price": 1260.15,
+        "title": "Sealed Romance Dawn Booster Box OP-01 Wave 2 White Bottom One Piece",
+        "url": "https://www.ebay.com/itm/377224414589?nordt=true",
+        "item_price": 1840.0,
+        "shipping": 9.54,
+        "delivered_price": 1849.54,
+        "comparison_price": 1849.54,
         "shipping_known": true,
-        "shipping_text": "$10.15",
+        "shipping_text": "$9.54",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
         "seller": null,
-        "listing_id": "377546720674",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/wwAAAeSwy6RqxB30/s-l1600.webp"
+        "listing_id": "377224414589",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/uI0AAeSwNKxpqQKG/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -7748,12 +7748,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 1260.15,
+        "floor": 1849.54,
         "snapshot_date": "2026-10-08",
         "updated_at": "2026-10-08T13:31:06.753737+00:00",
-        "listing_count": 30,
+        "listing_count": 22,
         "stale": true,
-        "freshness_days": 1.47
+        "freshness_days": 1.85
       }
     },
     "one-piece-op-02": {
@@ -7879,7 +7879,7 @@
         "updated_at": "2026-10-09T18:24:15.010342+00:00",
         "listing_count": 19,
         "stale": false,
-        "freshness_days": 0.27
+        "freshness_days": 0.64
       }
     },
     "one-piece-op-04": {
@@ -8005,7 +8005,7 @@
         "updated_at": "2026-10-10T00:54:08.205694+00:00",
         "listing_count": 26,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.37
       }
     },
     "one-piece-op-06": {
@@ -8190,11 +8190,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 257.39,
-        "snapshot_date": "2026-10-09",
-        "updated_at": "2026-10-09T10:35:08.702757+00:00",
+        "snapshot_date": "2026-10-10",
+        "updated_at": "2026-10-10T09:52:17.008500+00:00",
         "listing_count": 16,
         "stale": false,
-        "freshness_days": 0.6
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-09": {
@@ -8257,7 +8257,7 @@
         "updated_at": "2026-10-08T13:31:06.753737+00:00",
         "listing_count": 30,
         "stale": true,
-        "freshness_days": 1.47
+        "freshness_days": 1.85
       }
     },
     "one-piece-op-10": {
@@ -8383,7 +8383,7 @@
         "updated_at": "2026-10-09T18:24:15.010342+00:00",
         "listing_count": 26,
         "stale": false,
-        "freshness_days": 0.27
+        "freshness_days": 0.64
       }
     },
     "one-piece-op-12": {
@@ -8509,7 +8509,7 @@
         "updated_at": "2026-10-10T00:54:08.205694+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.37
       }
     },
     "one-piece-op-14": {
@@ -8761,7 +8761,7 @@
         "updated_at": "2026-10-08T13:31:06.753737+00:00",
         "listing_count": 30,
         "stale": true,
-        "freshness_days": 1.47
+        "freshness_days": 1.85
       }
     },
     "one-piece-eb-01": {
@@ -8887,7 +8887,7 @@
         "updated_at": "2026-10-09T18:24:15.010342+00:00",
         "listing_count": 25,
         "stale": false,
-        "freshness_days": 0.27
+        "freshness_days": 0.64
       }
     },
     "one-piece-eb-03": {
@@ -9013,7 +9013,7 @@
         "updated_at": "2026-10-10T00:54:08.205694+00:00",
         "listing_count": 18,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.37
       }
     },
     "one-piece-prb-02": {
