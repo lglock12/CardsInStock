@@ -661,6 +661,14 @@
     "lead_only": true
   },
   {
+    "product_id": "2025-26-uefa-flagship-value",
+    "seller": "VSM Sports Card Outlet",
+    "url": "https://www.vsmsportscardoutlet.com/products/topps-2025-26-topps-uefa-club-competitions-soccer-value-blaster-box",
+    "title": "Topps 2025-26 Topps UEFA Club Competitions Soccer Value Blaster Box",
+    "discovered": "2026-10-20",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $29.00"
+  },
+  {
     "product_id": "2026-27-premier-league-flagship-hobby",
     "seller": "Aloha Card Shop",
     "url": "https://www.alohacardshop.com/products/acs-sealed-5055307085220",
@@ -754,6 +762,14 @@
     "product_id": "2026-27-premier-league-flagship-value",
     "seller": "VSM Sports Card Outlet",
     "url": "https://www.vsmsportscardoutlet.com/products/2026-27-topps-english-premier-league-soccer-value-box",
+    "title": "2026-27 Topps English Premier League Soccer Value Box",
+    "discovered": "2026-10-20",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $29.00"
+  },
+  {
+    "product_id": "2026-27-premier-league-flagship-value",
+    "seller": "VSM Sports Card Outlet",
+    "url": "https://www.vsmsportscardoutlet.com/products/2026-27-topps-english-premier-league-soccer-value-box-1",
     "title": "2026-27 Topps English Premier League Soccer Value Box",
     "discovered": "2026-10-20",
     "evidence": "auto-discovered from live retailer catalog; catalog price $29.00"
