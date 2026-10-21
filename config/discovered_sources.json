@@ -695,6 +695,15 @@
   {
     "product_id": "2026-27-premier-league-flagship-hobby",
     "seller": "SoccerCards.ca",
+    "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-golden-boot-tin",
+    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 GOLDEN BOOT TIN (59 CARDS) (PREORDER - IN STOCK NOV 16)",
+    "discovered": "2026-10-21",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $54.95",
+    "lead_only": true
+  },
+  {
+    "product_id": "2026-27-premier-league-flagship-hobby",
+    "seller": "SoccerCards.ca",
     "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-hobby-box",
     "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 HOBBY BOX (203 CARDS + 3 BLACK EDGE & 1 AUTO) **LIMIT OF 3 PER CUSTOMER**",
     "discovered": "2026-10-21",
@@ -740,6 +749,15 @@
     "title": "2026/27 Topps EPL Soccer Blaster Box (SALE)",
     "discovered": "2026-10-16",
     "evidence": "auto-discovered from live retailer catalog; catalog price $25.00"
+  },
+  {
+    "product_id": "2026-27-premier-league-flagship-value",
+    "seller": "SoccerCards.ca",
+    "url": "https://buysoccercardsonline.com/products/2026-27-topps-premier-league-flagship-cards-golden-boot-tin",
+    "title": "2026-27 TOPPS PREMIER LEAGUE FLAGSHIP CARDS \u2013 GOLDEN BOOT TIN (59 CARDS) (PREORDER - IN STOCK NOV 16)",
+    "discovered": "2026-10-21",
+    "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $54.95",
+    "lead_only": true
   },
   {
     "product_id": "2026-27-premier-league-flagship-value",
