@@ -607,7 +607,7 @@
         "updated_at": "2026-10-22T04:45:33.219155+00:00",
         "listing_count": 20,
         "stale": false,
-        "freshness_days": 0.3
+        "freshness_days": 0.52
       }
     },
     "2024-25-merlin-uefa-hobby": {
@@ -771,7 +771,7 @@
         "updated_at": "2026-10-22T11:53:51.763774+00:00",
         "listing_count": 6,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.22
       }
     },
     "2024-25-chrome-uefa-hobby": {
@@ -1356,11 +1356,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 387.42,
-        "snapshot_date": "2026-10-21",
-        "updated_at": "2026-10-21T17:14:38.642221+00:00",
+        "snapshot_date": "2026-10-22",
+        "updated_at": "2026-10-22T17:12:40.592984+00:00",
         "listing_count": 5,
         "stale": false,
-        "freshness_days": 0.78
+        "freshness_days": 0.0
       }
     },
     "2024-25-inception-uefa-hobby": {
@@ -2634,7 +2634,7 @@
         "updated_at": "2026-10-21T21:45:06.178340+00:00",
         "listing_count": 11,
         "stale": false,
-        "freshness_days": 0.59
+        "freshness_days": 0.81
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3834,7 +3834,7 @@
         "updated_at": "2026-10-22T04:45:33.219155+00:00",
         "listing_count": 15,
         "stale": false,
-        "freshness_days": 0.3
+        "freshness_days": 0.52
       }
     },
     "2025-26-chrome-uefa-mega": {
@@ -3960,7 +3960,7 @@
         "updated_at": "2026-10-22T11:53:51.763774+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.22
       }
     },
     "2025-26-chrome-uefa-jumbo": {
@@ -6766,11 +6766,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 30.0,
-        "snapshot_date": "2026-10-21",
-        "updated_at": "2026-10-21T17:14:38.642221+00:00",
+        "snapshot_date": "2026-10-22",
+        "updated_at": "2026-10-22T17:12:40.592984+00:00",
         "listing_count": 28,
         "stale": false,
-        "freshness_days": 0.78
+        "freshness_days": 0.0
       }
     },
     "2025-26-uefa-flagship-hobby": {
@@ -6833,7 +6833,7 @@
         "updated_at": "2026-10-20T19:19:08.875352+00:00",
         "listing_count": 14,
         "stale": true,
-        "freshness_days": 1.69
+        "freshness_days": 1.91
       }
     },
     "2025-26-premier-league-flagship-full-box": {
@@ -7010,7 +7010,7 @@
         "updated_at": "2026-10-21T21:45:06.178340+00:00",
         "listing_count": 24,
         "stale": false,
-        "freshness_days": 0.59
+        "freshness_days": 0.81
       }
     },
     "2025-26-chrome-premier-league-tin": {
@@ -7551,7 +7551,7 @@
         "updated_at": "2026-10-22T04:45:33.219155+00:00",
         "listing_count": 4,
         "stale": false,
-        "freshness_days": 0.3
+        "freshness_days": 0.52
       }
     },
     "2026-27-premier-league-flagship-value": {
@@ -7715,7 +7715,7 @@
         "updated_at": "2026-10-22T11:53:51.763774+00:00",
         "listing_count": 28,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.22
       }
     },
     "one-piece-op-01": {
@@ -7837,11 +7837,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 507.17,
-        "snapshot_date": "2026-10-21",
-        "updated_at": "2026-10-21T17:14:38.642221+00:00",
+        "snapshot_date": "2026-10-22",
+        "updated_at": "2026-10-22T17:12:40.592984+00:00",
         "listing_count": 23,
         "stale": false,
-        "freshness_days": 0.78
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-03": {
@@ -7904,7 +7904,7 @@
         "updated_at": "2026-10-20T19:19:08.875352+00:00",
         "listing_count": 21,
         "stale": true,
-        "freshness_days": 1.69
+        "freshness_days": 1.91
       }
     },
     "one-piece-op-04": {
@@ -7967,7 +7967,7 @@
         "updated_at": "2026-10-21T21:45:06.178340+00:00",
         "listing_count": 22,
         "stale": false,
-        "freshness_days": 0.59
+        "freshness_days": 0.81
       }
     },
     "one-piece-op-05": {
@@ -8093,7 +8093,7 @@
         "updated_at": "2026-10-22T04:45:33.219155+00:00",
         "listing_count": 16,
         "stale": false,
-        "freshness_days": 0.3
+        "freshness_days": 0.52
       }
     },
     "one-piece-op-07": {
@@ -8219,7 +8219,7 @@
         "updated_at": "2026-10-22T11:53:51.763774+00:00",
         "listing_count": 17,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.22
       }
     },
     "one-piece-op-09": {
@@ -8341,11 +8341,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 178.87,
-        "snapshot_date": "2026-10-21",
-        "updated_at": "2026-10-21T17:14:38.642221+00:00",
+        "snapshot_date": "2026-10-22",
+        "updated_at": "2026-10-22T17:12:40.592984+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.78
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-11": {
@@ -8408,7 +8408,7 @@
         "updated_at": "2026-10-20T19:19:08.875352+00:00",
         "listing_count": 27,
         "stale": true,
-        "freshness_days": 1.69
+        "freshness_days": 1.91
       }
     },
     "one-piece-op-12": {
@@ -8471,7 +8471,7 @@
         "updated_at": "2026-10-21T21:45:06.178340+00:00",
         "listing_count": 27,
         "stale": false,
-        "freshness_days": 0.59
+        "freshness_days": 0.81
       }
     },
     "one-piece-op-13": {
@@ -8597,7 +8597,7 @@
         "updated_at": "2026-10-22T04:45:33.219155+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.3
+        "freshness_days": 0.52
       }
     },
     "one-piece-op-15": {
@@ -8845,11 +8845,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 762.88,
-        "snapshot_date": "2026-10-21",
-        "updated_at": "2026-10-21T17:14:38.642221+00:00",
+        "snapshot_date": "2026-10-22",
+        "updated_at": "2026-10-22T17:12:40.592984+00:00",
         "listing_count": 24,
         "stale": false,
-        "freshness_days": 0.78
+        "freshness_days": 0.0
       }
     },
     "one-piece-eb-02": {
@@ -8912,7 +8912,7 @@
         "updated_at": "2026-10-20T19:19:08.875352+00:00",
         "listing_count": 30,
         "stale": true,
-        "freshness_days": 1.69
+        "freshness_days": 1.91
       }
     },
     "one-piece-eb-03": {
@@ -8975,7 +8975,7 @@
         "updated_at": "2026-10-21T21:45:06.178340+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.59
+        "freshness_days": 0.81
       }
     },
     "one-piece-prb-01": {
@@ -9101,7 +9101,7 @@
         "updated_at": "2026-10-22T04:45:33.219155+00:00",
         "listing_count": 29,
         "stale": false,
-        "freshness_days": 0.3
+        "freshness_days": 0.52
       }
     }
   }
