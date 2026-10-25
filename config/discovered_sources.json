@@ -183,7 +183,7 @@
     "seller": "Monmouth Sports Cards",
     "url": "https://monmouthcards.com/products/2026-topps-chrome-premier-league-soccer-sapphire-edition-box",
     "title": "2026 Topps Chrome Premier League Soccer Sapphire Edition Box",
-    "discovered": "2026-10-22",
+    "discovered": "2026-10-25",
     "evidence": "auto-discovered from live retailer catalog; catalog price $999.99"
   },
   {
@@ -606,6 +606,14 @@
     "discovered": "2026-10-25",
     "evidence": "potential sealed-product lead; strict validation not satisfied; catalog price $14.99",
     "lead_only": true
+  },
+  {
+    "product_id": "2025-26-uefa-flagship-value",
+    "seller": "LA Sports Cards",
+    "url": "https://lasportscards.com/products/2025-26-topps-uefa-club-competitions-soccer-blaster-box",
+    "title": "2025-26 Topps UEFA Club Competitions Soccer Blaster Box",
+    "discovered": "2026-10-25",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $30.00"
   },
   {
     "product_id": "2025-26-uefa-flagship-value",
