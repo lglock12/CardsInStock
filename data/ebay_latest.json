@@ -329,7 +329,7 @@
         "updated_at": "2026-10-30T01:01:43.104570+00:00",
         "listing_count": 4,
         "stale": false,
-        "freshness_days": 0.71
+        "freshness_days": 0.89
       }
     },
     "2023-24-deco-uefa-box": {
@@ -771,7 +771,7 @@
         "updated_at": "2026-10-30T10:02:31.605492+00:00",
         "listing_count": 8,
         "stale": false,
-        "freshness_days": 0.33
+        "freshness_days": 0.51
       }
     },
     "2024-25-chrome-uefa-hobby": {
@@ -1594,7 +1594,7 @@
       "status": "VERIFIED",
       "query": "\"2025-26\" \"Topps\" \"Merlin\" \"Premier League\" \"Blaster\" \"box\" -women -womens -\"women's\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Merlin%22+%22Premier+League%22+%22Blaster%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 12,
+      "candidate_count": 10,
       "best": {
         "title": "2026 Topps Merlin Premier League Soccer Blaster Box New Factory Sealed",
         "url": "https://www.ebay.com/itm/147461009712?nordt=true",
@@ -2630,11 +2630,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 39.99,
-        "snapshot_date": "2026-10-27",
-        "updated_at": "2026-10-27T22:16:04.213265+00:00",
-        "listing_count": 12,
-        "stale": true,
-        "freshness_days": 1.84
+        "snapshot_date": "2026-10-30",
+        "updated_at": "2026-10-30T22:20:35.041314+00:00",
+        "listing_count": 10,
+        "stale": false,
+        "freshness_days": 0.0
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3769,7 +3769,7 @@
         "updated_at": "2026-10-30T01:01:43.104570+00:00",
         "listing_count": 20,
         "stale": false,
-        "freshness_days": 0.71
+        "freshness_days": 0.89
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3960,7 +3960,7 @@
         "updated_at": "2026-10-30T10:02:31.605492+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.33
+        "freshness_days": 0.51
       }
     },
     "2025-26-chrome-uefa-jumbo": {
@@ -6833,7 +6833,7 @@
         "updated_at": "2026-10-30T18:03:13.230320+00:00",
         "listing_count": 12,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.18
       }
     },
     "2025-26-premier-league-flagship-full-box": {
@@ -6954,21 +6954,21 @@
       "status": "VERIFIED",
       "query": "\"2025-26\" \"Topps\" \"Chrome\" \"Premier League\" \"Blaster\" \"box\" -women -womens -\"women's\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22Premier+League%22+%22Blaster%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 13,
+      "candidate_count": 15,
       "best": {
-        "title": "2026 TOPPS CHROME PREMIER LEAGUE EPL SOCCER BLASTER BOX NEW FACTORY SEALED QTY",
-        "url": "https://www.ebay.com/itm/800845303428?nordt=true",
-        "item_price": 29.99,
-        "shipping": 5.0,
-        "delivered_price": 34.99,
-        "comparison_price": 34.99,
+        "title": "2026 Topps Chrome Premier League Soccer Value Blaster Box Factory Sealed",
+        "url": "https://www.ebay.com/itm/128162869096?nordt=true",
+        "item_price": 34.89,
+        "shipping": 0.0,
+        "delivered_price": 34.89,
+        "comparison_price": 34.89,
         "shipping_known": true,
-        "shipping_text": "$5.00",
+        "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
-        "seller": "lafavhypeandcards",
-        "listing_id": "800845303428",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/cKYAAeSwSMRq4PMo/s-l1600.webp"
+        "seller": "bcw_lex",
+        "listing_id": "128162869096",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/BqsAAeSwaclqgxW9/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -7005,12 +7005,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 34.99,
-        "snapshot_date": "2026-10-27",
-        "updated_at": "2026-10-27T22:16:04.213265+00:00",
-        "listing_count": 13,
-        "stale": true,
-        "freshness_days": 1.84
+        "floor": 34.89,
+        "snapshot_date": "2026-10-30",
+        "updated_at": "2026-10-30T22:20:35.041314+00:00",
+        "listing_count": 15,
+        "stale": false,
+        "freshness_days": 0.0
       }
     },
     "2025-26-chrome-premier-league-tin": {
@@ -7486,7 +7486,7 @@
         "updated_at": "2026-10-30T01:01:43.104570+00:00",
         "listing_count": 9,
         "stale": false,
-        "freshness_days": 0.71
+        "freshness_days": 0.89
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -7715,7 +7715,7 @@
         "updated_at": "2026-10-30T10:02:31.605492+00:00",
         "listing_count": 20,
         "stale": false,
-        "freshness_days": 0.33
+        "freshness_days": 0.51
       }
     },
     "one-piece-op-01": {
@@ -7904,28 +7904,28 @@
         "updated_at": "2026-10-30T18:03:13.230320+00:00",
         "listing_count": 22,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.18
       }
     },
     "one-piece-op-04": {
       "status": "VERIFIED",
       "query": "\"OP-04\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-04%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 23,
+      "candidate_count": 24,
       "best": {
-        "title": "Bandai One Piece SEALED Booster Boxes OP-03, OP-04, OP-06",
-        "url": "https://www.ebay.com/itm/398242328476?nordt=true",
-        "item_price": 350.0,
-        "shipping": 14.71,
-        "delivered_price": 364.71,
-        "comparison_price": 364.71,
+        "title": "Sealed Kingdoms of Intrigue Booster Box OP-04 One Piece Kid Icarus",
+        "url": "https://www.ebay.com/itm/366225649996?nordt=true",
+        "item_price": 484.99,
+        "shipping": 0.0,
+        "delivered_price": 484.99,
+        "comparison_price": 484.99,
         "shipping_known": true,
-        "shipping_text": "$14.71",
+        "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
         "seller": null,
-        "listing_id": "398242328476",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/zeEAAeSw5oRqb4AA/s-l1600.webp"
+        "listing_id": "366225649996",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/jPgAAeSwwwNpngOk/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -7962,12 +7962,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 364.71,
-        "snapshot_date": "2026-10-27",
-        "updated_at": "2026-10-27T22:16:04.213265+00:00",
-        "listing_count": 23,
-        "stale": true,
-        "freshness_days": 1.84
+        "floor": 484.99,
+        "snapshot_date": "2026-10-30",
+        "updated_at": "2026-10-30T22:20:35.041314+00:00",
+        "listing_count": 24,
+        "stale": false,
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-05": {
@@ -8030,7 +8030,7 @@
         "updated_at": "2026-10-30T01:01:43.104570+00:00",
         "listing_count": 28,
         "stale": false,
-        "freshness_days": 0.71
+        "freshness_days": 0.89
       }
     },
     "one-piece-op-06": {
@@ -8219,7 +8219,7 @@
         "updated_at": "2026-10-30T10:02:31.605492+00:00",
         "listing_count": 15,
         "stale": false,
-        "freshness_days": 0.33
+        "freshness_days": 0.51
       }
     },
     "one-piece-op-09": {
@@ -8408,7 +8408,7 @@
         "updated_at": "2026-10-30T18:03:13.230320+00:00",
         "listing_count": 25,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.18
       }
     },
     "one-piece-op-12": {
@@ -8417,19 +8417,19 @@
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-12%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
       "candidate_count": 27,
       "best": {
-        "title": "One Piece TCG OP12 Legacy Of The Master Booster Box Sealed",
-        "url": "https://www.ebay.com/itm/860027058617?nordt=true",
-        "item_price": 270.0,
-        "shipping": 5.78,
-        "delivered_price": 275.78,
-        "comparison_price": 275.78,
+        "title": "One Piece Legacy Of The Master Booster Box New Sealed OP12",
+        "url": "https://www.ebay.com/itm/860095120338?nordt=true",
+        "item_price": 259.0,
+        "shipping": 14.21,
+        "delivered_price": 273.21,
+        "comparison_price": 273.21,
         "shipping_known": true,
-        "shipping_text": "$5.78",
+        "shipping_text": "$14.21",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
         "seller": null,
-        "listing_id": "860027058617",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/Dm4AAeSwozhqyS93/s-l1600.webp"
+        "listing_id": "860095120338",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/8McAAeSwJOtqvy8r/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8466,12 +8466,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 275.78,
-        "snapshot_date": "2026-10-27",
-        "updated_at": "2026-10-27T22:16:04.213265+00:00",
+        "floor": 273.21,
+        "snapshot_date": "2026-10-30",
+        "updated_at": "2026-10-30T22:20:35.041314+00:00",
         "listing_count": 27,
-        "stale": true,
-        "freshness_days": 1.84
+        "stale": false,
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-13": {
@@ -8534,7 +8534,7 @@
         "updated_at": "2026-10-30T01:01:43.104570+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.71
+        "freshness_days": 0.89
       }
     },
     "one-piece-op-14": {
@@ -8912,7 +8912,7 @@
         "updated_at": "2026-10-30T18:03:13.230320+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.18
       }
     },
     "one-piece-eb-03": {
@@ -8921,19 +8921,19 @@
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22EB-03%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
       "candidate_count": 30,
       "best": {
-        "title": "Bandai One Piece Card Game Heroines Edition EB-03 English Booster Box",
-        "url": "https://www.ebay.com/itm/860086999272?nordt=true",
-        "item_price": 299.99,
-        "shipping": 8.27,
-        "delivered_price": 308.26,
-        "comparison_price": 308.26,
+        "title": "One Piece Heroines Edition Vol. 1 EB-03 English Booster Box Sealed ding dent B64",
+        "url": "https://www.ebay.com/itm/287692333009?nordt=true",
+        "item_price": 284.99,
+        "shipping": 0.0,
+        "delivered_price": 284.99,
+        "comparison_price": 284.99,
         "shipping_known": true,
-        "shipping_text": "$8.27",
+        "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
         "seller": null,
-        "listing_id": "860086999272",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/nmYAAeSwA21q3-wJ/s-l1600.webp"
+        "listing_id": "287692333009",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/-IEAAeSw4Qlq5Lb-/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8970,12 +8970,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 308.26,
-        "snapshot_date": "2026-10-27",
-        "updated_at": "2026-10-27T22:16:04.213265+00:00",
+        "floor": 284.99,
+        "snapshot_date": "2026-10-30",
+        "updated_at": "2026-10-30T22:20:35.041314+00:00",
         "listing_count": 30,
-        "stale": true,
-        "freshness_days": 1.84
+        "stale": false,
+        "freshness_days": 0.0
       }
     },
     "one-piece-prb-01": {
@@ -9038,7 +9038,7 @@
         "updated_at": "2026-10-30T01:01:43.104570+00:00",
         "listing_count": 21,
         "stale": false,
-        "freshness_days": 0.71
+        "freshness_days": 0.89
       }
     },
     "one-piece-prb-02": {
