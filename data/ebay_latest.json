@@ -328,8 +328,8 @@
         "snapshot_date": "2026-10-30",
         "updated_at": "2026-10-30T01:01:43.104570+00:00",
         "listing_count": 4,
-        "stale": false,
-        "freshness_days": 1.19
+        "stale": true,
+        "freshness_days": 1.48
       }
     },
     "2023-24-deco-uefa-box": {
@@ -607,7 +607,7 @@
         "updated_at": "2026-10-31T05:41:44.572128+00:00",
         "listing_count": 17,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.28
       }
     },
     "2024-25-merlin-uefa-hobby": {
@@ -771,7 +771,7 @@
         "updated_at": "2026-10-30T10:02:31.605492+00:00",
         "listing_count": 8,
         "stale": false,
-        "freshness_days": 0.82
+        "freshness_days": 1.1
       }
     },
     "2024-25-chrome-uefa-hobby": {
@@ -1215,11 +1215,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 306.18,
-        "snapshot_date": "2026-10-28",
-        "updated_at": "2026-10-28T12:55:51.896302+00:00",
+        "snapshot_date": "2026-10-31",
+        "updated_at": "2026-10-31T12:29:21.561698+00:00",
         "listing_count": 11,
-        "stale": true,
-        "freshness_days": 1.88
+        "stale": false,
+        "freshness_days": 0.0
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -2634,7 +2634,7 @@
         "updated_at": "2026-10-30T22:20:35.041314+00:00",
         "listing_count": 10,
         "stale": false,
-        "freshness_days": 0.31
+        "freshness_days": 0.59
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3768,8 +3768,8 @@
         "snapshot_date": "2026-10-30",
         "updated_at": "2026-10-30T01:01:43.104570+00:00",
         "listing_count": 20,
-        "stale": false,
-        "freshness_days": 1.19
+        "stale": true,
+        "freshness_days": 1.48
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3834,7 +3834,7 @@
         "updated_at": "2026-10-31T05:41:44.572128+00:00",
         "listing_count": 13,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.28
       }
     },
     "2025-26-chrome-uefa-mega": {
@@ -3960,7 +3960,7 @@
         "updated_at": "2026-10-30T10:02:31.605492+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.82
+        "freshness_days": 1.1
       }
     },
     "2025-26-chrome-uefa-jumbo": {
@@ -4712,16 +4712,16 @@
       "status": "VERIFIED",
       "query": "\"2025-26\" \"Topps\" \"Finest\" \"UEFA\" \"Hobby\" \"box\" -women -womens -\"women's\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Finest%22+%22UEFA%22+%22Hobby%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 24,
+      "candidate_count": 26,
       "best": {
         "title": "2025-26 TOPPS FINEST UEFA Club Competitions HOBBY BOX (2 AUTOs) UCC Soccer New",
         "url": "https://www.ebay.com/itm/178282333851?nordt=true",
         "item_price": 399.95,
-        "shipping": 6.6,
-        "delivered_price": 406.55,
-        "comparison_price": 406.55,
+        "shipping": 7.68,
+        "delivered_price": 407.63,
+        "comparison_price": 407.63,
         "shipping_known": true,
-        "shipping_text": "$6.60",
+        "shipping_text": "$7.68",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
         "seller": "the_case_hit_cards",
@@ -5584,12 +5584,12 @@
       },
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 406.55,
-        "snapshot_date": "2026-10-28",
-        "updated_at": "2026-10-28T12:55:51.896302+00:00",
-        "listing_count": 24,
-        "stale": true,
-        "freshness_days": 1.88
+        "floor": 407.63,
+        "snapshot_date": "2026-10-31",
+        "updated_at": "2026-10-31T12:29:21.561698+00:00",
+        "listing_count": 26,
+        "stale": false,
+        "freshness_days": 0.0
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -6833,7 +6833,7 @@
         "updated_at": "2026-10-30T18:03:13.230320+00:00",
         "listing_count": 12,
         "stale": false,
-        "freshness_days": 0.49
+        "freshness_days": 0.77
       }
     },
     "2025-26-premier-league-flagship-full-box": {
@@ -7010,7 +7010,7 @@
         "updated_at": "2026-10-30T22:20:35.041314+00:00",
         "listing_count": 15,
         "stale": false,
-        "freshness_days": 0.31
+        "freshness_days": 0.59
       }
     },
     "2025-26-chrome-premier-league-tin": {
@@ -7485,8 +7485,8 @@
         "snapshot_date": "2026-10-30",
         "updated_at": "2026-10-30T01:01:43.104570+00:00",
         "listing_count": 9,
-        "stale": false,
-        "freshness_days": 1.19
+        "stale": true,
+        "freshness_days": 1.48
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -7551,7 +7551,7 @@
         "updated_at": "2026-10-31T05:41:44.572128+00:00",
         "listing_count": 5,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.28
       }
     },
     "2026-27-premier-league-flagship-value": {
@@ -7715,7 +7715,7 @@
         "updated_at": "2026-10-30T10:02:31.605492+00:00",
         "listing_count": 20,
         "stale": false,
-        "freshness_days": 0.82
+        "freshness_days": 1.1
       }
     },
     "one-piece-op-01": {
@@ -7724,19 +7724,19 @@
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-01%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
       "candidate_count": 30,
       "best": {
-        "title": "ONE PIECE Card Game - Romance Dawn [OP-01] Booster Box - White Bottom (English)",
-        "url": "https://www.ebay.com/itm/800476333875?nordt=true",
-        "item_price": 2880.0,
-        "shipping": 7.99,
-        "delivered_price": 2887.99,
-        "comparison_price": 2887.99,
+        "title": "One Piece Romance Dawn Booster Box English Sealed White Bottom New OP-01",
+        "url": "https://www.ebay.com/itm/298170897469?nordt=true",
+        "item_price": 1334.38,
+        "shipping": 0.0,
+        "delivered_price": 1334.38,
+        "comparison_price": 1334.38,
         "shipping_known": true,
-        "shipping_text": "$7.99",
+        "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
         "seller": null,
-        "listing_id": "800476333875",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/XooAAeSwbjtqdji9/s-l1600.webp"
+        "listing_id": "298170897469",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/8IIAAeSw10tqPGS3/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -7773,12 +7773,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 2887.99,
-        "snapshot_date": "2026-10-28",
-        "updated_at": "2026-10-28T12:55:51.896302+00:00",
+        "floor": 1334.38,
+        "snapshot_date": "2026-10-31",
+        "updated_at": "2026-10-31T12:29:21.561698+00:00",
         "listing_count": 30,
-        "stale": true,
-        "freshness_days": 1.88
+        "stale": false,
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-02": {
@@ -7904,7 +7904,7 @@
         "updated_at": "2026-10-30T18:03:13.230320+00:00",
         "listing_count": 22,
         "stale": false,
-        "freshness_days": 0.49
+        "freshness_days": 0.77
       }
     },
     "one-piece-op-04": {
@@ -7967,7 +7967,7 @@
         "updated_at": "2026-10-30T22:20:35.041314+00:00",
         "listing_count": 24,
         "stale": false,
-        "freshness_days": 0.31
+        "freshness_days": 0.59
       }
     },
     "one-piece-op-05": {
@@ -8029,8 +8029,8 @@
         "snapshot_date": "2026-10-30",
         "updated_at": "2026-10-30T01:01:43.104570+00:00",
         "listing_count": 28,
-        "stale": false,
-        "freshness_days": 1.19
+        "stale": true,
+        "freshness_days": 1.48
       }
     },
     "one-piece-op-06": {
@@ -8093,7 +8093,7 @@
         "updated_at": "2026-10-31T05:41:44.572128+00:00",
         "listing_count": 17,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.28
       }
     },
     "one-piece-op-07": {
@@ -8219,7 +8219,7 @@
         "updated_at": "2026-10-30T10:02:31.605492+00:00",
         "listing_count": 15,
         "stale": false,
-        "freshness_days": 0.82
+        "freshness_days": 1.1
       }
     },
     "one-piece-op-09": {
@@ -8228,19 +8228,19 @@
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-09%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
       "candidate_count": 30,
       "best": {
-        "title": "One Piece Card Game OP-09 Emperors in the New World Booster Box English New",
-        "url": "https://www.ebay.com/itm/377593738458?nordt=true",
-        "item_price": 599.0,
+        "title": "One Piece Card Game OP-09 Emperors in the New World Booster Box English Sealed",
+        "url": "https://www.ebay.com/itm/198711014300?nordt=true",
+        "item_price": 599.99,
         "shipping": 0.0,
-        "delivered_price": 599.0,
-        "comparison_price": 599.0,
+        "delivered_price": 599.99,
+        "comparison_price": 599.99,
         "shipping_known": true,
         "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
         "seller": null,
-        "listing_id": "377593738458",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/fugAAeSwZypq3DP2/s-l1600.webp"
+        "listing_id": "198711014300",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/gMsAAeSwfvhqzZ04/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8277,12 +8277,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 599.0,
-        "snapshot_date": "2026-10-28",
-        "updated_at": "2026-10-28T12:55:51.896302+00:00",
+        "floor": 599.99,
+        "snapshot_date": "2026-10-31",
+        "updated_at": "2026-10-31T12:29:21.561698+00:00",
         "listing_count": 30,
-        "stale": true,
-        "freshness_days": 1.88
+        "stale": false,
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-10": {
@@ -8408,7 +8408,7 @@
         "updated_at": "2026-10-30T18:03:13.230320+00:00",
         "listing_count": 25,
         "stale": false,
-        "freshness_days": 0.49
+        "freshness_days": 0.77
       }
     },
     "one-piece-op-12": {
@@ -8471,7 +8471,7 @@
         "updated_at": "2026-10-30T22:20:35.041314+00:00",
         "listing_count": 27,
         "stale": false,
-        "freshness_days": 0.31
+        "freshness_days": 0.59
       }
     },
     "one-piece-op-13": {
@@ -8533,8 +8533,8 @@
         "snapshot_date": "2026-10-30",
         "updated_at": "2026-10-30T01:01:43.104570+00:00",
         "listing_count": 30,
-        "stale": false,
-        "freshness_days": 1.19
+        "stale": true,
+        "freshness_days": 1.48
       }
     },
     "one-piece-op-14": {
@@ -8597,7 +8597,7 @@
         "updated_at": "2026-10-31T05:41:44.572128+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.28
       }
     },
     "one-piece-op-15": {
@@ -8732,19 +8732,19 @@
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-17%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
       "candidate_count": 30,
       "best": {
-        "title": "One Piece: OP17 Booster Box - World's Strongest Warriors English Sealed",
-        "url": "https://www.ebay.com/itm/377599204168?nordt=true",
-        "item_price": 324.99,
-        "shipping": 0.0,
-        "delivered_price": 324.99,
-        "comparison_price": 324.99,
+        "title": "The World's Strongest Warriors Booster Box - (OP17) One Piece TCG",
+        "url": "https://www.ebay.com/itm/840077459636?nordt=true",
+        "item_price": 260.0,
+        "shipping": 14.98,
+        "delivered_price": 274.98,
+        "comparison_price": 274.98,
         "shipping_known": true,
-        "shipping_text": "FREE",
+        "shipping_text": "$14.98",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
         "seller": null,
-        "listing_id": "377599204168",
-        "thumbnail_url": "https://i.ebayimg.com/images/g/h3MAAeSwP1pq347x/s-l1600.webp"
+        "listing_id": "840077459636",
+        "thumbnail_url": "https://i.ebayimg.com/images/g/argAAeSwbNhq5YH1/s-l1600.webp"
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
       "source": "collectaio_public_api",
@@ -8781,12 +8781,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 324.99,
-        "snapshot_date": "2026-10-28",
-        "updated_at": "2026-10-28T12:55:51.896302+00:00",
+        "floor": 274.98,
+        "snapshot_date": "2026-10-31",
+        "updated_at": "2026-10-31T12:29:21.561698+00:00",
         "listing_count": 30,
-        "stale": true,
-        "freshness_days": 1.88
+        "stale": false,
+        "freshness_days": 0.0
       }
     },
     "one-piece-eb-01": {
@@ -8912,7 +8912,7 @@
         "updated_at": "2026-10-30T18:03:13.230320+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.49
+        "freshness_days": 0.77
       }
     },
     "one-piece-eb-03": {
@@ -8975,7 +8975,7 @@
         "updated_at": "2026-10-30T22:20:35.041314+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.31
+        "freshness_days": 0.59
       }
     },
     "one-piece-prb-01": {
@@ -9037,8 +9037,8 @@
         "snapshot_date": "2026-10-30",
         "updated_at": "2026-10-30T01:01:43.104570+00:00",
         "listing_count": 21,
-        "stale": false,
-        "freshness_days": 1.19
+        "stale": true,
+        "freshness_days": 1.48
       }
     },
     "one-piece-prb-02": {
@@ -9101,7 +9101,7 @@
         "updated_at": "2026-10-31T05:41:44.572128+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.28
       }
     }
   }
