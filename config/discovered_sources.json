@@ -138,6 +138,14 @@
   },
   {
     "product_id": "2025-26-chrome-premier-league-hobby",
+    "seller": "Giant Sports Cards",
+    "url": "https://giantsportscards.com/products/2026-topps-chrome-premier-league-epl-soccer-hobby-box",
+    "title": "2026 Topps Chrome Premier League EPL Soccer Hobby Box",
+    "discovered": "2026-11-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $324.95"
+  },
+  {
+    "product_id": "2025-26-chrome-premier-league-hobby",
     "seller": "Hobby Card Shop",
     "url": "https://www.hobbycardshop.com/products/2026-topps-chrome-english-premier-league-soccer-hobby-box",
     "title": "2026 Topps Chrome English Premier League Soccer Hobby Box",
@@ -436,6 +444,14 @@
   },
   {
     "product_id": "2025-26-merlin-premier-league-hobby",
+    "seller": "Giant Sports Cards",
+    "url": "https://giantsportscards.com/products/2025-26-topps-merlin-english-premier-league-soccer-hobby-box",
+    "title": "2025/26 Topps Merlin English Premier League Soccer Hobby Box",
+    "discovered": "2026-11-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $309.95"
+  },
+  {
+    "product_id": "2025-26-merlin-premier-league-hobby",
     "seller": "LA Sports Cards",
     "url": "https://lasportscards.com/products/2025-26-topps-merlin-premier-league-epl-soccer-hobby-box",
     "title": "2025/26 Topps Merlin Premier League EPL Soccer Hobby Box",
@@ -698,8 +714,8 @@
     "seller": "Giant Sports Cards",
     "url": "https://giantsportscards.com/products/2026-27-topps-premier-league-soccer-hobby-box",
     "title": "2026/27 Topps Premier League Soccer Hobby Box",
-    "discovered": "2026-10-06",
-    "evidence": "auto-discovered from live retailer catalog; catalog price $299.95"
+    "discovered": "2026-11-03",
+    "evidence": "auto-discovered from live retailer catalog; catalog price $314.95"
   },
   {
     "product_id": "2026-27-premier-league-flagship-hobby",
