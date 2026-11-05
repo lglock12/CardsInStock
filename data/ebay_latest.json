@@ -670,7 +670,7 @@
         "updated_at": "2026-11-05T06:47:14.119644+00:00",
         "listing_count": 15,
         "stale": false,
-        "freshness_days": 0.44
+        "freshness_days": 0.7
       }
     },
     "2024-25-merlin-uefa-delight": {
@@ -1360,7 +1360,7 @@
         "updated_at": "2026-11-05T17:26:46.853348+00:00",
         "listing_count": 5,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.26
       }
     },
     "2024-25-inception-uefa-hobby": {
@@ -2630,11 +2630,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 39.99,
-        "snapshot_date": "2026-11-04",
-        "updated_at": "2026-11-04T23:42:42.662233+00:00",
+        "snapshot_date": "2026-11-05",
+        "updated_at": "2026-11-05T23:41:22.671022+00:00",
         "listing_count": 12,
         "stale": false,
-        "freshness_days": 0.74
+        "freshness_days": 0.0
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3897,7 +3897,7 @@
         "updated_at": "2026-11-05T06:47:14.119644+00:00",
         "listing_count": 17,
         "stale": false,
-        "freshness_days": 0.44
+        "freshness_days": 0.7
       }
     },
     "2025-26-chrome-uefa-hobby": {
@@ -6770,7 +6770,7 @@
         "updated_at": "2026-11-05T17:26:46.853348+00:00",
         "listing_count": 27,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.26
       }
     },
     "2025-26-uefa-flagship-hobby": {
@@ -7006,11 +7006,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 34.89,
-        "snapshot_date": "2026-11-04",
-        "updated_at": "2026-11-04T23:42:42.662233+00:00",
+        "snapshot_date": "2026-11-05",
+        "updated_at": "2026-11-05T23:41:22.671022+00:00",
         "listing_count": 17,
         "stale": false,
-        "freshness_days": 0.74
+        "freshness_days": 0.0
       }
     },
     "2025-26-chrome-premier-league-tin": {
@@ -7614,7 +7614,7 @@
         "updated_at": "2026-11-05T06:47:14.119644+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.44
+        "freshness_days": 0.7
       }
     },
     "2026-27-premier-league-flagship-mega": {
@@ -7841,7 +7841,7 @@
         "updated_at": "2026-11-05T17:26:46.853348+00:00",
         "listing_count": 23,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.26
       }
     },
     "one-piece-op-03": {
@@ -7963,11 +7963,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 479.95,
-        "snapshot_date": "2026-11-04",
-        "updated_at": "2026-11-04T23:42:42.662233+00:00",
+        "snapshot_date": "2026-11-05",
+        "updated_at": "2026-11-05T23:41:22.671022+00:00",
         "listing_count": 24,
         "stale": false,
-        "freshness_days": 0.74
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-05": {
@@ -8156,7 +8156,7 @@
         "updated_at": "2026-11-05T06:47:14.119644+00:00",
         "listing_count": 14,
         "stale": false,
-        "freshness_days": 0.44
+        "freshness_days": 0.7
       }
     },
     "one-piece-op-08": {
@@ -8345,7 +8345,7 @@
         "updated_at": "2026-11-05T17:26:46.853348+00:00",
         "listing_count": 29,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.26
       }
     },
     "one-piece-op-11": {
@@ -8467,11 +8467,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 257.67,
-        "snapshot_date": "2026-11-04",
-        "updated_at": "2026-11-04T23:42:42.662233+00:00",
+        "snapshot_date": "2026-11-05",
+        "updated_at": "2026-11-05T23:41:22.671022+00:00",
         "listing_count": 26,
         "stale": false,
-        "freshness_days": 0.74
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-13": {
@@ -8849,7 +8849,7 @@
         "updated_at": "2026-11-05T17:26:46.853348+00:00",
         "listing_count": 26,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.26
       }
     },
     "one-piece-eb-02": {
@@ -8971,11 +8971,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 306.19,
-        "snapshot_date": "2026-11-04",
-        "updated_at": "2026-11-04T23:42:42.662233+00:00",
+        "snapshot_date": "2026-11-05",
+        "updated_at": "2026-11-05T23:41:22.671022+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.74
+        "freshness_days": 0.0
       }
     },
     "one-piece-prb-01": {
