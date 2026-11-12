@@ -823,7 +823,7 @@
       "candidates": []
     },
     "one-piece-op-07": {
-      "checked_at": "2026-11-11T06:17:54.212735+00:00",
+      "checked_at": "2026-11-12T07:11:20.043468+00:00",
       "candidates": [
         {
           "title": "Bandai One Piece Card Game OP-07 500 Years in the Future Booster Box English",
@@ -853,21 +853,6 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "800883577663",
-          "thumbnail_url": null
-        },
-        {
-          "title": "One Piece TCG OP-07 500 Years In The Future Booster Box English",
-          "url": "https://www.ebay.com/itm/307239668121",
-          "item_price": 324.99,
-          "shipping": 0.0,
-          "delivered_price": 324.99,
-          "comparison_price": 324.99,
-          "shipping_known": true,
-          "shipping_text": "FREE",
-          "market_state": "ACTIVE_BIN_API",
-          "source": "ebaysoldlistingsapi_active",
-          "seller": null,
-          "listing_id": "307239668121",
           "thumbnail_url": null
         },
         {
@@ -916,6 +901,21 @@
           "thumbnail_url": null
         },
         {
+          "title": "One Piece TCG OP-07 500 Years In The Future Booster Box English",
+          "url": "https://www.ebay.com/itm/307239668121",
+          "item_price": 345.0,
+          "shipping": 0.0,
+          "delivered_price": 345.0,
+          "comparison_price": 345.0,
+          "shipping_known": true,
+          "shipping_text": "FREE",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "307239668121",
+          "thumbnail_url": null
+        },
+        {
           "title": "One Piece TCG: 500 Years in the Future (OP-07) Booster Box",
           "url": "https://www.ebay.com/itm/920097772059",
           "item_price": 380.95,
@@ -928,6 +928,21 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "920097772059",
+          "thumbnail_url": null
+        },
+        {
+          "title": "One Piece OP-07 500 Years in the Future English Factory Sealed Booster Box",
+          "url": "https://www.ebay.com/itm/960184048698",
+          "item_price": 390.0,
+          "shipping": 0.0,
+          "delivered_price": 390.0,
+          "comparison_price": 390.0,
+          "shipping_known": true,
+          "shipping_text": "FREE",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "960184048698",
           "thumbnail_url": null
         },
         {
@@ -1053,7 +1068,7 @@
       ]
     },
     "one-piece-op-15": {
-      "checked_at": "2026-11-11T06:17:54.212735+00:00",
+      "checked_at": "2026-11-12T07:11:20.043468+00:00",
       "candidates": []
     },
     "2023-24-finest-uefa-hobby": {
@@ -1776,7 +1791,7 @@
       ]
     },
     "2026-27-premier-league-flagship-value": {
-      "checked_at": "2026-11-11T06:17:54.212735+00:00",
+      "checked_at": "2026-11-12T07:11:20.043468+00:00",
       "candidates": [
         {
           "title": "2026-27 Topps English Premier League Soccer Blaster Box",
@@ -1821,6 +1836,21 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "327441493722",
+          "thumbnail_url": null
+        },
+        {
+          "title": "2026/27 Topps English Premier League Flagship Edition Blaster Box",
+          "url": "https://www.ebay.com/itm/147675872846",
+          "item_price": 25.0,
+          "shipping": 4.99,
+          "delivered_price": 29.99,
+          "comparison_price": 29.99,
+          "shipping_known": true,
+          "shipping_text": "$4.99",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "147675872846",
           "thumbnail_url": null
         },
         {
@@ -2080,7 +2110,7 @@
         },
         {
           "title": "2026-27 Topps Flagship Premier League Soccer Value Blaster Box",
-          "url": "https://www.ebay.com/itm/880103174788",
+          "url": "https://www.ebay.com/itm/880102693475",
           "item_price": 40.99,
           "shipping": 0.0,
           "delivered_price": 40.99,
@@ -2090,7 +2120,22 @@
           "market_state": "ACTIVE_BIN_API",
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
-          "listing_id": "880103174788",
+          "listing_id": "880102693475",
+          "thumbnail_url": null
+        },
+        {
+          "title": "2026-27 Topps Flagship Premier League Soccer Value Blaster Box",
+          "url": "https://www.ebay.com/itm/880106435960",
+          "item_price": 40.99,
+          "shipping": 0.0,
+          "delivered_price": 40.99,
+          "comparison_price": 40.99,
+          "shipping_known": true,
+          "shipping_text": "FREE",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "880106435960",
           "thumbnail_url": null
         },
         {
@@ -3665,7 +3710,7 @@
       ]
     },
     "2024-25-merlin-uefa-hobby": {
-      "checked_at": "2026-11-11T06:17:54.212735+00:00",
+      "checked_at": "2026-11-12T07:11:20.043468+00:00",
       "candidates": [
         {
           "title": "2024-25 Topps Merlin UCC - Hobby Box UEFA Club Competitions - SEALED SHIPS FAST",
@@ -3698,23 +3743,8 @@
           "thumbnail_url": null
         },
         {
-          "title": "2024/25 TOPPS CHROME MERLIN UEFA CLUB COMPETITIONS SOCCER HOBBY BOX",
-          "url": "https://www.ebay.com/itm/377601819566",
-          "item_price": 303.95,
-          "shipping": 0.0,
-          "delivered_price": 303.95,
-          "comparison_price": 303.95,
-          "shipping_known": true,
-          "shipping_text": "FREE",
-          "market_state": "ACTIVE_BIN_API",
-          "source": "ebaysoldlistingsapi_active",
-          "seller": null,
-          "listing_id": "377601819566",
-          "thumbnail_url": null
-        },
-        {
-          "title": "2024-25 Topps Merlin UEFA Club Competitions Soccer Hobby Box 18 Packs",
-          "url": "https://www.ebay.com/itm/880103150712",
+          "title": "2024-25 Topps Merlin UEFA Club Competitions Soccer Hobby Box",
+          "url": "https://www.ebay.com/itm/880106445387",
           "item_price": 310.99,
           "shipping": 0.0,
           "delivered_price": 310.99,
@@ -3724,7 +3754,7 @@
           "market_state": "ACTIVE_BIN_API",
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
-          "listing_id": "880103150712",
+          "listing_id": "880106445387",
           "thumbnail_url": null
         },
         {
@@ -4770,7 +4800,7 @@
       ]
     },
     "2025-26-chrome-uefa-mega": {
-      "checked_at": "2026-11-11T06:17:54.212735+00:00",
+      "checked_at": "2026-11-12T07:11:20.043468+00:00",
       "candidates": [
         {
           "title": "2025-26 Topps Chrome UEFA Club Competitions Soccer UCC Mega Box SEALED QTY",
@@ -4953,21 +4983,6 @@
           "thumbnail_url": null
         },
         {
-          "title": "2025/26 TOPPS CHROME UEFA CLUB COMPETITIONS SOCCER MEGA BOX",
-          "url": "https://www.ebay.com/itm/920127643487",
-          "item_price": 149.95,
-          "shipping": 0.0,
-          "delivered_price": 149.95,
-          "comparison_price": 149.95,
-          "shipping_known": true,
-          "shipping_text": "FREE",
-          "market_state": "ACTIVE_BIN_API",
-          "source": "ebaysoldlistingsapi_active",
-          "seller": null,
-          "listing_id": "920127643487",
-          "thumbnail_url": null
-        },
-        {
           "title": "2025/26 TOPPS CHROME UEFA CLUB COMPETITIONS SOCCER MEGA BOX: BRAND NEW SEALED",
           "url": "https://www.ebay.com/itm/407118614374",
           "item_price": 149.99,
@@ -4980,6 +4995,21 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "407118614374",
+          "thumbnail_url": null
+        },
+        {
+          "title": "2025/26 TOPPS CHROME UEFA CLUB COMPETITIONS SOCCER MEGA BOX",
+          "url": "https://www.ebay.com/itm/377638174400",
+          "item_price": 159.95,
+          "shipping": 0.0,
+          "delivered_price": 159.95,
+          "comparison_price": 159.95,
+          "shipping_known": true,
+          "shipping_text": "FREE",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "377638174400",
           "thumbnail_url": null
         },
         {
