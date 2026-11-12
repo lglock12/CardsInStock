@@ -3930,11 +3930,11 @@
       ]
     },
     "2025-26-merlin-premier-league-value": {
-      "checked_at": "2026-11-11T21:59:29.836582+00:00",
+      "checked_at": "2026-11-12T23:41:00.156890+00:00",
       "candidates": [
         {
           "title": "2026 Topps Merlin Premier League Soccer Blaster Box New Factory Sealed",
-          "url": "https://www.ebay.com/itm/147461009712",
+          "url": "https://www.ebay.com/itm/117516867286",
           "item_price": 39.99,
           "shipping": 0.0,
           "delivered_price": 39.99,
@@ -3944,7 +3944,7 @@
           "market_state": "ACTIVE_BIN_API",
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
-          "listing_id": "147461009712",
+          "listing_id": "117516867286",
           "thumbnail_url": null
         },
         {
@@ -3975,21 +3975,6 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "168527791474",
-          "thumbnail_url": null
-        },
-        {
-          "title": "2025-26 Topps Merlin Premier League Soccer Blaster Box",
-          "url": "https://www.ebay.com/itm/880106434383",
-          "item_price": 57.99,
-          "shipping": 0.0,
-          "delivered_price": 57.99,
-          "comparison_price": 57.99,
-          "shipping_known": true,
-          "shipping_text": "FREE",
-          "market_state": "ACTIVE_BIN_API",
-          "source": "ebaysoldlistingsapi_active",
-          "seller": null,
-          "listing_id": "880106434383",
           "thumbnail_url": null
         }
       ]
@@ -5845,7 +5830,7 @@
       ]
     },
     "2025-26-chrome-premier-league-value": {
-      "checked_at": "2026-11-11T21:59:29.836582+00:00",
+      "checked_at": "2026-11-12T23:41:00.156890+00:00",
       "candidates": []
     },
     "2025-26-chrome-premier-league-hobby": {
@@ -7179,8 +7164,23 @@
       ]
     },
     "one-piece-op-04": {
-      "checked_at": "2026-11-11T21:59:29.836582+00:00",
+      "checked_at": "2026-11-12T23:41:00.156890+00:00",
       "candidates": [
+        {
+          "title": "Bandai Namco One Piece Card Game OP-04 Kingdoms of Intrigue English Booster Box",
+          "url": "https://www.ebay.com/itm/137925630661",
+          "item_price": 399.99,
+          "shipping": 0.0,
+          "delivered_price": 399.99,
+          "comparison_price": 399.99,
+          "shipping_known": true,
+          "shipping_text": "FREE",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "137925630661",
+          "thumbnail_url": null
+        },
         {
           "title": "One Piece Card Game Kingdoms of Intrigue Booster Box (OP-04) Sealed",
           "url": "https://www.ebay.com/itm/960124900692",
@@ -9139,7 +9139,7 @@
       ]
     },
     "one-piece-op-12": {
-      "checked_at": "2026-11-11T21:59:29.836582+00:00",
+      "checked_at": "2026-11-12T23:41:00.156890+00:00",
       "candidates": [
         {
           "title": "One Piece Legacy Of The Master Booster Box New Sealed OP12",
@@ -11129,21 +11129,36 @@
       ]
     },
     "one-piece-eb-03": {
-      "checked_at": "2026-11-11T21:59:29.836582+00:00",
+      "checked_at": "2026-11-12T23:41:00.156890+00:00",
       "candidates": [
         {
           "title": "Extra Booster One Piece Heroines Edition Vol.2 Booster Box EB-03 Sealed English",
           "url": "https://www.ebay.com/itm/900079313053",
-          "item_price": 256.88,
+          "item_price": 249.88,
           "shipping": 0.0,
-          "delivered_price": 256.88,
-          "comparison_price": 256.88,
+          "delivered_price": 249.88,
+          "comparison_price": 249.88,
           "shipping_known": true,
           "shipping_text": "FREE",
           "market_state": "ACTIVE_BIN_API",
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "900079313053",
+          "thumbnail_url": null
+        },
+        {
+          "title": "One Piece TCG EB-03 Heroines Edition Booster Box Factory Sealed English",
+          "url": "https://www.ebay.com/itm/227604858889",
+          "item_price": 289.99,
+          "shipping": 0.0,
+          "delivered_price": 289.99,
+          "comparison_price": 289.99,
+          "shipping_known": true,
+          "shipping_text": "FREE",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "227604858889",
           "thumbnail_url": null
         },
         {
@@ -11177,18 +11192,18 @@
           "thumbnail_url": null
         },
         {
-          "title": "One Piece TCG EB-03 Heroines Edition Booster Box Factory Sealed English",
-          "url": "https://www.ebay.com/itm/227604858889",
-          "item_price": 310.0,
+          "title": "One Piece Heroines Edition Booster Box Extra Booster EB03 New Clean Wrap English",
+          "url": "https://www.ebay.com/itm/298270666421",
+          "item_price": 309.88,
           "shipping": 0.0,
-          "delivered_price": 310.0,
-          "comparison_price": 310.0,
+          "delivered_price": 309.88,
+          "comparison_price": 309.88,
           "shipping_known": true,
           "shipping_text": "FREE",
           "market_state": "ACTIVE_BIN_API",
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
-          "listing_id": "227604858889",
+          "listing_id": "298270666421",
           "thumbnail_url": null
         },
         {
@@ -11339,21 +11354,6 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "198733613968",
-          "thumbnail_url": null
-        },
-        {
-          "title": "One Piece Heroines Edition Booster Box Extra Booster EB03 New Clean Wrap English",
-          "url": "https://www.ebay.com/itm/298270666421",
-          "item_price": 349.88,
-          "shipping": 0.0,
-          "delivered_price": 349.88,
-          "comparison_price": 349.88,
-          "shipping_known": true,
-          "shipping_text": "FREE",
-          "market_state": "ACTIVE_BIN_API",
-          "source": "ebaysoldlistingsapi_active",
-          "seller": null,
-          "listing_id": "298270666421",
           "thumbnail_url": null
         },
         {
