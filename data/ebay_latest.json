@@ -666,11 +666,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 298.0,
-        "snapshot_date": "2026-11-12",
-        "updated_at": "2026-11-12T07:11:20.043468+00:00",
+        "snapshot_date": "2026-11-13",
+        "updated_at": "2026-11-13T06:45:50.539991+00:00",
         "listing_count": 9,
         "stale": false,
-        "freshness_days": 0.69
+        "freshness_days": 0.0
       }
     },
     "2024-25-merlin-uefa-delight": {
@@ -1219,7 +1219,7 @@
         "updated_at": "2026-11-11T14:29:51.930495+00:00",
         "listing_count": 8,
         "stale": true,
-        "freshness_days": 1.38
+        "freshness_days": 1.68
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -1360,7 +1360,7 @@
         "updated_at": "2026-11-12T17:38:32.815588+00:00",
         "listing_count": 3,
         "stale": false,
-        "freshness_days": 0.25
+        "freshness_days": 0.55
       }
     },
     "2024-25-inception-uefa-hobby": {
@@ -2634,7 +2634,7 @@
         "updated_at": "2026-11-12T23:41:00.156890+00:00",
         "listing_count": 3,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.3
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3893,11 +3893,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 95.0,
-        "snapshot_date": "2026-11-12",
-        "updated_at": "2026-11-12T07:11:20.043468+00:00",
+        "snapshot_date": "2026-11-13",
+        "updated_at": "2026-11-13T06:45:50.539991+00:00",
         "listing_count": 15,
         "stale": false,
-        "freshness_days": 0.69
+        "freshness_days": 0.0
       }
     },
     "2025-26-chrome-uefa-hobby": {
@@ -5589,7 +5589,7 @@
         "updated_at": "2026-11-11T14:29:51.930495+00:00",
         "listing_count": 27,
         "stale": true,
-        "freshness_days": 1.38
+        "freshness_days": 1.68
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -6770,7 +6770,7 @@
         "updated_at": "2026-11-12T17:38:32.815588+00:00",
         "listing_count": 25,
         "stale": false,
-        "freshness_days": 0.25
+        "freshness_days": 0.55
       }
     },
     "2025-26-uefa-flagship-hobby": {
@@ -7560,18 +7560,18 @@
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222026-27%22+%22Topps%22+%22Premier+League%22+%22Blaster%22+%22box%22+-women+-womens+-%22women%27s%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine+-%22stadium+club%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
       "candidate_count": 26,
       "best": {
-        "title": "2026-27 Topps English Premier League Soccer Blaster Box",
-        "url": "https://www.ebay.com/itm/820221622633",
-        "item_price": 26.72,
+        "title": "2026-27 Topps English Premier League Flagship Edition Soccer  Value Blaster Box",
+        "url": "https://www.ebay.com/itm/327441493722",
+        "item_price": 24.99,
         "shipping": 0.0,
-        "delivered_price": 26.72,
-        "comparison_price": 26.72,
+        "delivered_price": 24.99,
+        "comparison_price": 24.99,
         "shipping_known": true,
         "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
         "seller": null,
-        "listing_id": "820221622633",
+        "listing_id": "327441493722",
         "thumbnail_url": null
       },
       "reason": "lowest exact-match active eBay BIN from authenticated active-listings API",
@@ -7609,12 +7609,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 26.72,
-        "snapshot_date": "2026-11-12",
-        "updated_at": "2026-11-12T07:11:20.043468+00:00",
+        "floor": 24.99,
+        "snapshot_date": "2026-11-13",
+        "updated_at": "2026-11-13T06:45:50.539991+00:00",
         "listing_count": 26,
         "stale": false,
-        "freshness_days": 0.69
+        "freshness_days": 0.0
       }
     },
     "2026-27-premier-league-flagship-mega": {
@@ -7778,7 +7778,7 @@
         "updated_at": "2026-11-11T14:29:51.930495+00:00",
         "listing_count": 30,
         "stale": true,
-        "freshness_days": 1.38
+        "freshness_days": 1.68
       }
     },
     "one-piece-op-02": {
@@ -7841,7 +7841,7 @@
         "updated_at": "2026-11-12T17:38:32.815588+00:00",
         "listing_count": 9,
         "stale": false,
-        "freshness_days": 0.25
+        "freshness_days": 0.55
       }
     },
     "one-piece-op-03": {
@@ -7967,7 +7967,7 @@
         "updated_at": "2026-11-12T23:41:00.156890+00:00",
         "listing_count": 24,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.3
       }
     },
     "one-piece-op-05": {
@@ -8100,7 +8100,7 @@
       "status": "VERIFIED",
       "query": "\"OP-07\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-07%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 16,
+      "candidate_count": 17,
       "best": {
         "title": "Bandai One Piece Card Game OP-07 500 Years in the Future Booster Box English",
         "url": "https://www.ebay.com/itm/257846437341",
@@ -8152,11 +8152,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 290.0,
-        "snapshot_date": "2026-11-12",
-        "updated_at": "2026-11-12T07:11:20.043468+00:00",
-        "listing_count": 16,
+        "snapshot_date": "2026-11-13",
+        "updated_at": "2026-11-13T06:45:50.539991+00:00",
+        "listing_count": 17,
         "stale": false,
-        "freshness_days": 0.69
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-08": {
@@ -8282,7 +8282,7 @@
         "updated_at": "2026-11-11T14:29:51.930495+00:00",
         "listing_count": 30,
         "stale": true,
-        "freshness_days": 1.38
+        "freshness_days": 1.68
       }
     },
     "one-piece-op-10": {
@@ -8345,7 +8345,7 @@
         "updated_at": "2026-11-12T17:38:32.815588+00:00",
         "listing_count": 28,
         "stale": false,
-        "freshness_days": 0.25
+        "freshness_days": 0.55
       }
     },
     "one-piece-op-11": {
@@ -8471,7 +8471,7 @@
         "updated_at": "2026-11-12T23:41:00.156890+00:00",
         "listing_count": 26,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.3
       }
     },
     "one-piece-op-13": {
@@ -8786,7 +8786,7 @@
         "updated_at": "2026-11-11T14:29:51.930495+00:00",
         "listing_count": 30,
         "stale": true,
-        "freshness_days": 1.38
+        "freshness_days": 1.68
       }
     },
     "one-piece-eb-01": {
@@ -8849,7 +8849,7 @@
         "updated_at": "2026-11-12T17:38:32.815588+00:00",
         "listing_count": 15,
         "stale": false,
-        "freshness_days": 0.25
+        "freshness_days": 0.55
       }
     },
     "one-piece-eb-02": {
@@ -8975,7 +8975,7 @@
         "updated_at": "2026-11-12T23:41:00.156890+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.3
       }
     },
     "one-piece-prb-01": {

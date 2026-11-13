@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T23:42:26.907509+00:00",
+  "generated_at": "2026-11-13T06:45:56.598730+00:00",
   "source": "ebaysoldlistingsapi.com",
   "products": {
     "2023-24-finest-uefa-hobby": {
@@ -34,13 +34,13 @@
             "p75": null
           },
           "90": {
-            "count": 1,
-            "median": 1499.99,
-            "median_delivered": 1499.99,
-            "low": 1499.99,
-            "high": 1499.99,
-            "p25": 1499.99,
-            "p75": 1499.99
+            "count": 0,
+            "median": null,
+            "median_delivered": null,
+            "low": null,
+            "high": null,
+            "p25": null,
+            "p75": null
           },
           "180": {
             "count": 7,
@@ -62,10 +62,10 @@
           }
         },
         "prior_31_90": {
-          "count": 1,
-          "median": 1499.99,
-          "low": 1499.99,
-          "high": 1499.99
+          "count": 0,
+          "median": null,
+          "low": null,
+          "high": null
         },
         "recent_sales": [
           {
@@ -3574,12 +3574,12 @@
             "p75": null
           },
           "90": {
-            "count": 34,
-            "median": 91.38,
-            "median_delivered": 99.88,
+            "count": 33,
+            "median": 90.76,
+            "median_delivered": 99.99,
             "low": 77.99,
             "high": 190.0,
-            "p25": 85.42,
+            "p25": 85.0,
             "p75": 99.99
           },
           "180": {
@@ -3602,8 +3602,8 @@
           }
         },
         "prior_31_90": {
-          "count": 34,
-          "median": 91.38,
+          "count": 33,
+          "median": 90.76,
           "low": 77.99,
           "high": 190.0
         },
@@ -4023,13 +4023,13 @@
             "p75": null
           },
           "90": {
-            "count": 88,
+            "count": 87,
             "median": 290.0,
-            "median_delivered": 299.55,
+            "median_delivered": 299.7,
             "low": 243.5,
             "high": 565.0,
             "p25": 279.89,
-            "p75": 302.49
+            "p75": 304.98
           },
           "180": {
             "count": 121,
@@ -4051,7 +4051,7 @@
           }
         },
         "prior_31_90": {
-          "count": 88,
+          "count": 87,
           "median": 290.0,
           "low": 243.5,
           "high": 565.0
@@ -4472,13 +4472,13 @@
             "p75": null
           },
           "90": {
-            "count": 88,
+            "count": 87,
             "median": 350.0,
-            "median_delivered": 360.23,
+            "median_delivered": 360.48,
             "low": 269.0,
             "high": 514.99,
             "p25": 310.0,
-            "p75": 377.0
+            "p75": 378.0
           },
           "180": {
             "count": 173,
@@ -4500,7 +4500,7 @@
           }
         },
         "prior_31_90": {
-          "count": 88,
+          "count": 87,
           "median": 350.0,
           "low": 269.0,
           "high": 514.99
@@ -5370,13 +5370,13 @@
             "p75": null
           },
           "90": {
-            "count": 21,
-            "median": 189.99,
-            "median_delivered": 198.06,
+            "count": 20,
+            "median": 192.47,
+            "median_delivered": 199.03,
             "low": 165.5,
             "high": 239.99,
             "p25": 180.0,
-            "p75": 199.95
+            "p75": 199.96
           },
           "180": {
             "count": 40,
@@ -5398,8 +5398,8 @@
           }
         },
         "prior_31_90": {
-          "count": 21,
-          "median": 189.99,
+          "count": 20,
+          "median": 192.47,
           "low": 165.5,
           "high": 239.99
         },
@@ -5887,13 +5887,13 @@
             "p75": null
           },
           "90": {
-            "count": 6,
+            "count": 5,
             "median": 299.99,
             "median_delivered": 305.99,
             "low": 245.5,
-            "high": 375.95,
-            "p25": 286.89,
-            "p75": 322.5
+            "high": 330.0,
+            "p25": 282.52,
+            "p75": 299.99
           },
           "180": {
             "count": 8,
@@ -5915,10 +5915,10 @@
           }
         },
         "prior_31_90": {
-          "count": 6,
+          "count": 5,
           "median": 299.99,
           "low": 245.5,
-          "high": 375.95
+          "high": 330.0
         },
         "recent_sales": [
           {
@@ -7113,12 +7113,12 @@
             "p75": null
           },
           "90": {
-            "count": 45,
-            "median": 1499.0,
-            "median_delivered": 1499.0,
+            "count": 43,
+            "median": 1450.0,
+            "median_delivered": 1468.0,
             "low": 1150.0,
             "high": 5399.0,
-            "p25": 1362.0,
+            "p25": 1356.5,
             "p75": 4200.0
           },
           "180": {
@@ -7141,8 +7141,8 @@
           }
         },
         "prior_31_90": {
-          "count": 45,
-          "median": 1499.0,
+          "count": 43,
+          "median": 1450.0,
           "low": 1150.0,
           "high": 5399.0
         },
@@ -8989,9 +8989,9 @@
             "p75": null
           },
           "90": {
-            "count": 76,
+            "count": 75,
             "median": 999.99,
-            "median_delivered": 1007.0,
+            "median_delivered": 1006.02,
             "low": 149.88,
             "high": 1600.0,
             "p25": 900.0,
@@ -9017,7 +9017,7 @@
           }
         },
         "prior_31_90": {
-          "count": 76,
+          "count": 75,
           "median": 999.99,
           "low": 149.88,
           "high": 1600.0
@@ -9927,13 +9927,13 @@
             "p75": null
           },
           "90": {
-            "count": 30,
+            "count": 28,
             "median": 335.0,
-            "median_delivered": 340.9,
+            "median_delivered": 340.44,
             "low": 76.0,
-            "high": 399.99,
-            "p25": 321.25,
-            "p75": 363.74
+            "high": 388.88,
+            "p25": 320.0,
+            "p75": 360.0
           },
           "180": {
             "count": 51,
@@ -9955,10 +9955,10 @@
           }
         },
         "prior_31_90": {
-          "count": 30,
+          "count": 28,
           "median": 335.0,
           "low": 76.0,
-          "high": 399.99
+          "high": 388.88
         },
         "recent_sales": [
           {
@@ -10396,13 +10396,13 @@
             "p75": null
           },
           "90": {
-            "count": 47,
+            "count": 46,
             "median": 249.99,
-            "median_delivered": 254.99,
+            "median_delivered": 254.9,
             "low": 205.01,
             "high": 305.0,
             "p25": 235.0,
-            "p75": 260.0
+            "p75": 259.99
           },
           "180": {
             "count": 78,
@@ -10424,7 +10424,7 @@
           }
         },
         "prior_31_90": {
-          "count": 47,
+          "count": 46,
           "median": 249.99,
           "low": 205.01,
           "high": 305.0
@@ -10865,12 +10865,12 @@
             "p75": null
           },
           "90": {
-            "count": 33,
+            "count": 31,
             "median": 625.0,
-            "median_delivered": 639.95,
+            "median_delivered": 635.15,
             "low": 500.0,
             "high": 690.0,
-            "p25": 599.99,
+            "p25": 595.0,
             "p75": 650.0
           },
           "180": {
@@ -10893,7 +10893,7 @@
           }
         },
         "prior_31_90": {
-          "count": 33,
+          "count": 31,
           "median": 625.0,
           "low": 500.0,
           "high": 690.0
@@ -11803,9 +11803,9 @@
             "p75": null
           },
           "90": {
-            "count": 48,
-            "median": 588.43,
-            "median_delivered": 599.0,
+            "count": 47,
+            "median": 589.99,
+            "median_delivered": 599.99,
             "low": 455.0,
             "high": 800.0,
             "p25": 550.0,
@@ -11831,8 +11831,8 @@
           }
         },
         "prior_31_90": {
-          "count": 48,
-          "median": 588.43,
+          "count": 47,
+          "median": 589.99,
           "low": 455.0,
           "high": 800.0
         },
@@ -12272,12 +12272,12 @@
             "p75": null
           },
           "90": {
-            "count": 59,
+            "count": 58,
             "median": 265.0,
             "median_delivered": 275.0,
             "low": 180.0,
             "high": 1325.0,
-            "p25": 252.75,
+            "p25": 251.62,
             "p75": 275.0
           },
           "180": {
@@ -12300,7 +12300,7 @@
           }
         },
         "prior_31_90": {
-          "count": 59,
+          "count": 58,
           "median": 265.0,
           "low": 180.0,
           "high": 1325.0
@@ -12741,7 +12741,7 @@
             "p75": null
           },
           "90": {
-            "count": 173,
+            "count": 167,
             "median": 480.0,
             "median_delivered": 490.28,
             "low": 250.0,
@@ -12769,7 +12769,7 @@
           }
         },
         "prior_31_90": {
-          "count": 173,
+          "count": 167,
           "median": 480.0,
           "low": 250.0,
           "high": 975.0
@@ -13210,13 +13210,13 @@
             "p75": null
           },
           "90": {
-            "count": 50,
-            "median": 264.5,
-            "median_delivered": 270.63,
+            "count": 48,
+            "median": 263.0,
+            "median_delivered": 270.08,
             "low": 220.0,
             "high": 300.0,
-            "p25": 252.37,
-            "p75": 273.74
+            "p25": 251.12,
+            "p75": 274.99
           },
           "180": {
             "count": 99,
@@ -13238,8 +13238,8 @@
           }
         },
         "prior_31_90": {
-          "count": 50,
-          "median": 264.5,
+          "count": 48,
+          "median": 263.0,
           "low": 220.0,
           "high": 300.0
         },
@@ -14148,9 +14148,9 @@
             "p75": null
           },
           "90": {
-            "count": 118,
-            "median": 215.47,
-            "median_delivered": 224.97,
+            "count": 115,
+            "median": 216.0,
+            "median_delivered": 225.14,
             "low": 115.88,
             "high": 321.98,
             "p25": 205.0,
@@ -14176,8 +14176,8 @@
           }
         },
         "prior_31_90": {
-          "count": 118,
-          "median": 215.47,
+          "count": 115,
+          "median": 216.0,
           "low": 115.88,
           "high": 321.98
         },
@@ -15086,12 +15086,12 @@
             "p75": null
           },
           "90": {
-            "count": 15,
+            "count": 13,
             "median": 808.42,
             "median_delivered": 858.48,
             "low": 663.8,
-            "high": 1095.0,
-            "p25": 740.0,
+            "high": 1000.0,
+            "p25": 750.0,
             "p75": 900.0
           },
           "180": {
@@ -15114,10 +15114,10 @@
           }
         },
         "prior_31_90": {
-          "count": 15,
+          "count": 13,
           "median": 808.42,
           "low": 663.8,
-          "high": 1095.0
+          "high": 1000.0
         },
         "recent_sales": [
           {
@@ -16024,12 +16024,12 @@
             "p75": null
           },
           "90": {
-            "count": 95,
-            "median": 324.95,
+            "count": 94,
+            "median": 324.97,
             "median_delivered": 332.0,
             "low": 120.0,
             "high": 649.99,
-            "p25": 315.5,
+            "p25": 316.25,
             "p75": 335.0
           },
           "180": {
@@ -16052,8 +16052,8 @@
           }
         },
         "prior_31_90": {
-          "count": 95,
-          "median": 324.95,
+          "count": 94,
+          "median": 324.97,
           "low": 120.0,
           "high": 649.99
         },
