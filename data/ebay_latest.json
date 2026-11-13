@@ -670,7 +670,7 @@
         "updated_at": "2026-11-13T06:45:50.539991+00:00",
         "listing_count": 9,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.44
       }
     },
     "2024-25-merlin-uefa-delight": {
@@ -1356,11 +1356,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 339.0,
-        "snapshot_date": "2026-11-12",
-        "updated_at": "2026-11-12T17:38:32.815588+00:00",
+        "snapshot_date": "2026-11-13",
+        "updated_at": "2026-11-13T17:15:10.000082+00:00",
         "listing_count": 3,
         "stale": false,
-        "freshness_days": 0.55
+        "freshness_days": 0.0
       }
     },
     "2024-25-inception-uefa-hobby": {
@@ -2634,7 +2634,7 @@
         "updated_at": "2026-11-12T23:41:00.156890+00:00",
         "listing_count": 3,
         "stale": false,
-        "freshness_days": 0.3
+        "freshness_days": 0.73
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3897,7 +3897,7 @@
         "updated_at": "2026-11-13T06:45:50.539991+00:00",
         "listing_count": 15,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.44
       }
     },
     "2025-26-chrome-uefa-hobby": {
@@ -6714,7 +6714,7 @@
       "status": "VERIFIED",
       "query": "\"2025-26\" \"Topps\" \"UEFA\" \"Blaster\" \"box\" -women -womens -\"women's\" -chrome -merlin -finest -sapphire -deco -museum -inception -pristine -\"stadium club\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22UEFA%22+%22Blaster%22+%22box%22+-women+-womens+-%22women%27s%22+-chrome+-merlin+-finest+-sapphire+-deco+-museum+-inception+-pristine+-%22stadium+club%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 25,
+      "candidate_count": 26,
       "best": {
         "title": "2025-26 Topps Flagship Edition UEFA Soccer Blaster Box FACTORY SEALED",
         "url": "https://www.ebay.com/itm/398305604934",
@@ -6766,11 +6766,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 25.0,
-        "snapshot_date": "2026-11-12",
-        "updated_at": "2026-11-12T17:38:32.815588+00:00",
-        "listing_count": 25,
+        "snapshot_date": "2026-11-13",
+        "updated_at": "2026-11-13T17:15:10.000082+00:00",
+        "listing_count": 26,
         "stale": false,
-        "freshness_days": 0.55
+        "freshness_days": 0.0
       }
     },
     "2025-26-uefa-flagship-hobby": {
@@ -7614,7 +7614,7 @@
         "updated_at": "2026-11-13T06:45:50.539991+00:00",
         "listing_count": 26,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.44
       }
     },
     "2026-27-premier-league-flagship-mega": {
@@ -7837,11 +7837,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 485.0,
-        "snapshot_date": "2026-11-12",
-        "updated_at": "2026-11-12T17:38:32.815588+00:00",
+        "snapshot_date": "2026-11-13",
+        "updated_at": "2026-11-13T17:15:10.000082+00:00",
         "listing_count": 9,
         "stale": false,
-        "freshness_days": 0.55
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-03": {
@@ -7967,7 +7967,7 @@
         "updated_at": "2026-11-12T23:41:00.156890+00:00",
         "listing_count": 24,
         "stale": false,
-        "freshness_days": 0.3
+        "freshness_days": 0.73
       }
     },
     "one-piece-op-05": {
@@ -8156,7 +8156,7 @@
         "updated_at": "2026-11-13T06:45:50.539991+00:00",
         "listing_count": 17,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.44
       }
     },
     "one-piece-op-08": {
@@ -8289,7 +8289,7 @@
       "status": "VERIFIED",
       "query": "\"OP-10\" \"One Piece\" \"Booster Box\" -Japanese -Japan -JP -case -\"starter deck\" -\"double pack\" -\"sleeved booster\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%22OP-10%22+%22One+Piece%22+%22Booster+Box%22+-Japanese+-Japan+-JP+-case+-%22starter+deck%22+-%22double+pack%22+-%22sleeved+booster%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 28,
+      "candidate_count": 29,
       "best": {
         "title": "OP-10 One Piece Card Game, Royal Blood, Box, Contains 24 Packs",
         "url": "https://www.ebay.com/itm/860045913662",
@@ -8341,11 +8341,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 178.49,
-        "snapshot_date": "2026-11-12",
-        "updated_at": "2026-11-12T17:38:32.815588+00:00",
-        "listing_count": 28,
+        "snapshot_date": "2026-11-13",
+        "updated_at": "2026-11-13T17:15:10.000082+00:00",
+        "listing_count": 29,
         "stale": false,
-        "freshness_days": 0.55
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-11": {
@@ -8471,7 +8471,7 @@
         "updated_at": "2026-11-12T23:41:00.156890+00:00",
         "listing_count": 26,
         "stale": false,
-        "freshness_days": 0.3
+        "freshness_days": 0.73
       }
     },
     "one-piece-op-13": {
@@ -8845,11 +8845,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 850.0,
-        "snapshot_date": "2026-11-12",
-        "updated_at": "2026-11-12T17:38:32.815588+00:00",
+        "snapshot_date": "2026-11-13",
+        "updated_at": "2026-11-13T17:15:10.000082+00:00",
         "listing_count": 15,
         "stale": false,
-        "freshness_days": 0.55
+        "freshness_days": 0.0
       }
     },
     "one-piece-eb-02": {
@@ -8975,7 +8975,7 @@
         "updated_at": "2026-11-12T23:41:00.156890+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.3
+        "freshness_days": 0.73
       }
     },
     "one-piece-prb-01": {

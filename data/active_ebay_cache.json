@@ -2201,7 +2201,7 @@
       ]
     },
     "one-piece-op-02": {
-      "checked_at": "2026-11-12T17:38:32.815588+00:00",
+      "checked_at": "2026-11-13T17:15:10.000082+00:00",
       "candidates": [
         {
           "title": "One Piece Paramount War Booster Box OP-02 New Sealed",
@@ -2216,6 +2216,21 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "840111708400",
+          "thumbnail_url": null
+        },
+        {
+          "title": "One Piece TCG: Paramount War Booster Box [OP-02]",
+          "url": "https://www.ebay.com/itm/820289096627",
+          "item_price": 494.95,
+          "shipping": 0.0,
+          "delivered_price": 494.95,
+          "comparison_price": 494.95,
+          "shipping_known": true,
+          "shipping_text": "FREE",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "820289096627",
           "thumbnail_url": null
         },
         {
@@ -2261,21 +2276,6 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "860063133279",
-          "thumbnail_url": null
-        },
-        {
-          "title": "One Piece TCG: Paramount War Booster Box [OP-02]",
-          "url": "https://www.ebay.com/itm/820289096627",
-          "item_price": 504.95,
-          "shipping": 0.0,
-          "delivered_price": 504.95,
-          "comparison_price": 504.95,
-          "shipping_known": true,
-          "shipping_text": "FREE",
-          "market_state": "ACTIVE_BIN_API",
-          "source": "ebaysoldlistingsapi_active",
-          "seller": null,
-          "listing_id": "820289096627",
           "thumbnail_url": null
         },
         {
@@ -2676,7 +2676,7 @@
       ]
     },
     "one-piece-op-10": {
-      "checked_at": "2026-11-12T17:38:32.815588+00:00",
+      "checked_at": "2026-11-13T17:15:10.000082+00:00",
       "candidates": [
         {
           "title": "OP-10 One Piece Card Game, Royal Blood, Box, Contains 24 Packs",
@@ -2751,6 +2751,21 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "147028883928",
+          "thumbnail_url": null
+        },
+        {
+          "title": "Royal Blood Booster Box One Piece OP10 English Factory Sealed Clean",
+          "url": "https://www.ebay.com/itm/366807770753",
+          "item_price": 250.0,
+          "shipping": 0.0,
+          "delivered_price": 250.0,
+          "comparison_price": 250.0,
+          "shipping_known": true,
+          "shipping_text": "FREE",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "366807770753",
           "thumbnail_url": null
         },
         {
@@ -3860,7 +3875,7 @@
       ]
     },
     "2024-25-finest-uefa-hobby": {
-      "checked_at": "2026-11-12T17:38:32.815588+00:00",
+      "checked_at": "2026-11-13T17:15:10.000082+00:00",
       "candidates": [
         {
           "title": "2024-25 Topps Finest UEFA Club Competitions Soccer Hobby Box 2 Autos",
@@ -5310,7 +5325,7 @@
       ]
     },
     "2025-26-uefa-flagship-value": {
-      "checked_at": "2026-11-12T17:38:32.815588+00:00",
+      "checked_at": "2026-11-13T17:15:10.000082+00:00",
       "candidates": [
         {
           "title": "2025-26 Topps Flagship Edition UEFA Soccer Blaster Box FACTORY SEALED",
@@ -5370,21 +5385,6 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "397719349118",
-          "thumbnail_url": null
-        },
-        {
-          "title": "2025-26 Topps UEFA Soccer Flagship Edition Blaster Box - Factory Sealed",
-          "url": "https://www.ebay.com/itm/287615096292",
-          "item_price": 32.99,
-          "shipping": 0.0,
-          "delivered_price": 32.99,
-          "comparison_price": 32.99,
-          "shipping_known": true,
-          "shipping_text": "FREE",
-          "market_state": "ACTIVE_BIN_API",
-          "source": "ebaysoldlistingsapi_active",
-          "seller": null,
-          "listing_id": "287615096292",
           "thumbnail_url": null
         },
         {
@@ -5535,6 +5535,36 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "257473712388",
+          "thumbnail_url": null
+        },
+        {
+          "title": "2025-26 Topps UEFA Club Competitions Soccer Blaster Box",
+          "url": "https://www.ebay.com/itm/880111909722",
+          "item_price": 40.99,
+          "shipping": 0.0,
+          "delivered_price": 40.99,
+          "comparison_price": 40.99,
+          "shipping_known": true,
+          "shipping_text": "FREE",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "880111909722",
+          "thumbnail_url": null
+        },
+        {
+          "title": "2025-26 Topps Flagship Edition UEFA Club Competitions Soccer Blaster Box",
+          "url": "https://www.ebay.com/itm/127755005096",
+          "item_price": 35.95,
+          "shipping": 7.99,
+          "delivered_price": 43.94,
+          "comparison_price": 43.94,
+          "shipping_known": true,
+          "shipping_text": "$7.99",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "127755005096",
           "thumbnail_url": null
         },
         {
@@ -10914,7 +10944,7 @@
       ]
     },
     "one-piece-eb-01": {
-      "checked_at": "2026-11-12T17:38:32.815588+00:00",
+      "checked_at": "2026-11-13T17:15:10.000082+00:00",
       "candidates": [
         {
           "title": "\ud83d\udd25ONE PIECE ENGLISH TCG: MEMORIAL COLLECTION (EB-01) Extra Booster Box Sealed\ud83d\udd25",
@@ -10994,10 +11024,10 @@
         {
           "title": "One Piece TCG: Memorial Collection Extra Booster Box (EB-01)",
           "url": "https://www.ebay.com/itm/820083369037",
-          "item_price": 942.95,
+          "item_price": 919.95,
           "shipping": 0.0,
-          "delivered_price": 942.95,
-          "comparison_price": 942.95,
+          "delivered_price": 919.95,
+          "comparison_price": 919.95,
           "shipping_known": true,
           "shipping_text": "FREE",
           "market_state": "ACTIVE_BIN_API",
