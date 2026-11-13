@@ -3960,7 +3960,7 @@
       ]
     },
     "2025-26-merlin-premier-league-value": {
-      "checked_at": "2026-11-12T23:41:00.156890+00:00",
+      "checked_at": "2026-11-13T23:34:26.242888+00:00",
       "candidates": [
         {
           "title": "2026 Topps Merlin Premier League Soccer Blaster Box New Factory Sealed",
@@ -4005,6 +4005,21 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "168527791474",
+          "thumbnail_url": null
+        },
+        {
+          "title": "2025-26 Topps Merlin Premier League Soccer Blaster Box",
+          "url": "https://www.ebay.com/itm/880111907591",
+          "item_price": 57.99,
+          "shipping": 0.0,
+          "delivered_price": 57.99,
+          "comparison_price": 57.99,
+          "shipping_known": true,
+          "shipping_text": "FREE",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "880111907591",
           "thumbnail_url": null
         }
       ]
@@ -5875,7 +5890,7 @@
       ]
     },
     "2025-26-chrome-premier-league-value": {
-      "checked_at": "2026-11-12T23:41:00.156890+00:00",
+      "checked_at": "2026-11-13T23:34:26.242888+00:00",
       "candidates": []
     },
     "2025-26-chrome-premier-league-hobby": {
@@ -7209,36 +7224,36 @@
       ]
     },
     "one-piece-op-04": {
-      "checked_at": "2026-11-12T23:41:00.156890+00:00",
+      "checked_at": "2026-11-13T23:34:26.242888+00:00",
       "candidates": [
         {
-          "title": "Bandai Namco One Piece Card Game OP-04 Kingdoms of Intrigue English Booster Box",
-          "url": "https://www.ebay.com/itm/137925630661",
-          "item_price": 399.99,
+          "title": "Bandai One Piece TCG: Kingdoms of Intrigue Booster Box (OP-04) English Version",
+          "url": "https://www.ebay.com/itm/128192216194",
+          "item_price": 440.0,
           "shipping": 0.0,
-          "delivered_price": 399.99,
-          "comparison_price": 399.99,
+          "delivered_price": 440.0,
+          "comparison_price": 440.0,
           "shipping_known": true,
           "shipping_text": "FREE",
           "market_state": "ACTIVE_BIN_API",
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
-          "listing_id": "137925630661",
+          "listing_id": "128192216194",
           "thumbnail_url": null
         },
         {
-          "title": "One Piece Card Game Kingdoms of Intrigue Booster Box (OP-04) Sealed",
-          "url": "https://www.ebay.com/itm/960124900692",
-          "item_price": 439.0,
+          "title": "One Piece Card Game Kingdoms of Intrigue Booster Box (OP-04) *New/Sealed",
+          "url": "https://www.ebay.com/itm/128002593397",
+          "item_price": 474.95,
           "shipping": 0.0,
-          "delivered_price": 439.0,
-          "comparison_price": 439.0,
+          "delivered_price": 474.95,
+          "comparison_price": 474.95,
           "shipping_known": true,
           "shipping_text": "FREE",
           "market_state": "ACTIVE_BIN_API",
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
-          "listing_id": "960124900692",
+          "listing_id": "128002593397",
           "thumbnail_url": null
         },
         {
@@ -7254,21 +7269,6 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "147603849165",
-          "thumbnail_url": null
-        },
-        {
-          "title": "One Piece Card Game Kingdoms of Intrigue Booster Box (OP-04) *New/Sealed",
-          "url": "https://www.ebay.com/itm/128002593397",
-          "item_price": 479.95,
-          "shipping": 0.0,
-          "delivered_price": 479.95,
-          "comparison_price": 479.95,
-          "shipping_known": true,
-          "shipping_text": "FREE",
-          "market_state": "ACTIVE_BIN_API",
-          "source": "ebaysoldlistingsapi_active",
-          "seller": null,
-          "listing_id": "128002593397",
           "thumbnail_url": null
         },
         {
@@ -9184,7 +9184,7 @@
       ]
     },
     "one-piece-op-12": {
-      "checked_at": "2026-11-12T23:41:00.156890+00:00",
+      "checked_at": "2026-11-13T23:34:26.242888+00:00",
       "candidates": [
         {
           "title": "One Piece Legacy Of The Master Booster Box New Sealed OP12",
@@ -9214,6 +9214,21 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "257846431528",
+          "thumbnail_url": null
+        },
+        {
+          "title": "Legacy of the Master Booster Box One Piece OP-12 English Sealed",
+          "url": "https://www.ebay.com/itm/366807757236",
+          "item_price": 260.0,
+          "shipping": 0.0,
+          "delivered_price": 260.0,
+          "comparison_price": 260.0,
+          "shipping_known": true,
+          "shipping_text": "FREE",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "366807757236",
           "thumbnail_url": null
         },
         {
@@ -11174,7 +11189,7 @@
       ]
     },
     "one-piece-eb-03": {
-      "checked_at": "2026-11-12T23:41:00.156890+00:00",
+      "checked_at": "2026-11-13T23:34:26.242888+00:00",
       "candidates": [
         {
           "title": "Extra Booster One Piece Heroines Edition Vol.2 Booster Box EB-03 Sealed English",
@@ -11189,21 +11204,6 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "900079313053",
-          "thumbnail_url": null
-        },
-        {
-          "title": "One Piece TCG EB-03 Heroines Edition Booster Box Factory Sealed English",
-          "url": "https://www.ebay.com/itm/227604858889",
-          "item_price": 289.99,
-          "shipping": 0.0,
-          "delivered_price": 289.99,
-          "comparison_price": 289.99,
-          "shipping_known": true,
-          "shipping_text": "FREE",
-          "market_state": "ACTIVE_BIN_API",
-          "source": "ebaysoldlistingsapi_active",
-          "seller": null,
-          "listing_id": "227604858889",
           "thumbnail_url": null
         },
         {
@@ -11234,6 +11234,21 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "137916531873",
+          "thumbnail_url": null
+        },
+        {
+          "title": "One Piece TCG EB-03 Heroines Edition BOOSTER BOX Factory Sealed English",
+          "url": "https://www.ebay.com/itm/227612049536",
+          "item_price": 300.0,
+          "shipping": 0.0,
+          "delivered_price": 300.0,
+          "comparison_price": 300.0,
+          "shipping_known": true,
+          "shipping_text": "FREE",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "227612049536",
           "thumbnail_url": null
         },
         {
@@ -11477,6 +11492,21 @@
           "thumbnail_url": null
         },
         {
+          "title": "One Piece TCG EB-03 Heroines Edition Booster Box Factory Sealed English",
+          "url": "https://www.ebay.com/itm/307279258284",
+          "item_price": 350.0,
+          "shipping": 5.87,
+          "delivered_price": 355.87,
+          "comparison_price": 355.87,
+          "shipping_known": true,
+          "shipping_text": "$5.87",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "307279258284",
+          "thumbnail_url": null
+        },
+        {
           "title": "One Piece TCG EB-03 Heroines Edition BOOSTER BOX Sealed English",
           "url": "https://www.ebay.com/itm/168660229490",
           "item_price": 350.0,
@@ -11582,6 +11612,21 @@
           "thumbnail_url": null
         },
         {
+          "title": "One Piece 2 Booster Boxes Heroines Edition EB-03 New Sealed English Edition",
+          "url": "https://www.ebay.com/itm/267842230833",
+          "item_price": 375.0,
+          "shipping": 0.0,
+          "delivered_price": 375.0,
+          "comparison_price": 375.0,
+          "shipping_known": true,
+          "shipping_text": "FREE",
+          "market_state": "ACTIVE_BIN_API",
+          "source": "ebaysoldlistingsapi_active",
+          "seller": null,
+          "listing_id": "267842230833",
+          "thumbnail_url": null
+        },
+        {
           "title": "One Piece Card Game Heroines Edition EB-03 Booster Box - English - Sealed/New",
           "url": "https://www.ebay.com/itm/318870986832",
           "item_price": 377.0,
@@ -11594,36 +11639,6 @@
           "source": "ebaysoldlistingsapi_active",
           "seller": null,
           "listing_id": "318870986832",
-          "thumbnail_url": null
-        },
-        {
-          "title": "ONE PIECE HEROINES EDITION booster box 24 packs EB-03 English W/ DASH PACK",
-          "url": "https://www.ebay.com/itm/117400813391",
-          "item_price": 380.0,
-          "shipping": 0.0,
-          "delivered_price": 380.0,
-          "comparison_price": 380.0,
-          "shipping_known": true,
-          "shipping_text": "FREE",
-          "market_state": "ACTIVE_BIN_API",
-          "source": "ebaysoldlistingsapi_active",
-          "seller": null,
-          "listing_id": "117400813391",
-          "thumbnail_url": null
-        },
-        {
-          "title": "One Piece EB03 Heroines Edition Booster Box",
-          "url": "https://www.ebay.com/itm/267736974660",
-          "item_price": 390.0,
-          "shipping": 5.99,
-          "delivered_price": 395.99,
-          "comparison_price": 395.99,
-          "shipping_known": true,
-          "shipping_text": "$5.99",
-          "market_state": "ACTIVE_BIN_API",
-          "source": "ebaysoldlistingsapi_active",
-          "seller": null,
-          "listing_id": "267736974660",
           "thumbnail_url": null
         }
       ]
