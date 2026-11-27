@@ -329,7 +329,7 @@
         "updated_at": "2026-11-27T01:46:31.817685+00:00",
         "listing_count": 2,
         "stale": false,
-        "freshness_days": 0.44
+        "freshness_days": 0.82
       }
     },
     "2023-24-deco-uefa-box": {
@@ -607,7 +607,7 @@
         "updated_at": "2026-11-26T03:36:08.975284+00:00",
         "listing_count": 16,
         "stale": true,
-        "freshness_days": 1.36
+        "freshness_days": 1.74
       }
     },
     "2024-25-merlin-uefa-hobby": {
@@ -1219,7 +1219,7 @@
         "updated_at": "2026-11-27T12:18:20.984367+00:00",
         "listing_count": 10,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.38
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -1360,7 +1360,7 @@
         "updated_at": "2026-11-26T16:55:12.122632+00:00",
         "listing_count": 9,
         "stale": false,
-        "freshness_days": 0.81
+        "freshness_days": 1.19
       }
     },
     "2024-25-inception-uefa-hobby": {
@@ -1594,7 +1594,7 @@
       "status": "VERIFIED",
       "query": "\"2025-26\" \"Topps\" \"Merlin\" \"Premier League\" \"Blaster\" \"box\" -women -womens -\"women's\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Merlin%22+%22Premier+League%22+%22Blaster%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 12,
+      "candidate_count": 13,
       "best": {
         "title": "2026 Topps Merlin English Premier League Sealed Value Box",
         "url": "https://www.ebay.com/itm/287536675837?nordt=true",
@@ -2630,11 +2630,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 44.0,
-        "snapshot_date": "2026-11-24",
-        "updated_at": "2026-11-24T23:56:22.770415+00:00",
-        "listing_count": 12,
-        "stale": true,
-        "freshness_days": 1.71
+        "snapshot_date": "2026-11-27",
+        "updated_at": "2026-11-27T21:23:45.332854+00:00",
+        "listing_count": 13,
+        "stale": false,
+        "freshness_days": 0.0
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3769,7 +3769,7 @@
         "updated_at": "2026-11-27T01:46:31.817685+00:00",
         "listing_count": 16,
         "stale": false,
-        "freshness_days": 0.44
+        "freshness_days": 0.82
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -3834,7 +3834,7 @@
         "updated_at": "2026-11-26T03:36:08.975284+00:00",
         "listing_count": 11,
         "stale": true,
-        "freshness_days": 1.36
+        "freshness_days": 1.74
       }
     },
     "2025-26-chrome-uefa-mega": {
@@ -5589,7 +5589,7 @@
         "updated_at": "2026-11-27T12:18:20.984367+00:00",
         "listing_count": 25,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.38
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -6770,7 +6770,7 @@
         "updated_at": "2026-11-26T16:55:12.122632+00:00",
         "listing_count": 21,
         "stale": false,
-        "freshness_days": 0.81
+        "freshness_days": 1.19
       }
     },
     "2025-26-uefa-flagship-hobby": {
@@ -6954,7 +6954,7 @@
       "status": "VERIFIED",
       "query": "\"2025-26\" \"Topps\" \"Chrome\" \"Premier League\" \"Blaster\" \"box\" -women -womens -\"women's\"",
       "search_url": "https://www.ebay.com/sch/i.html?_nkw=%222025-26%22+%22Topps%22+%22Chrome%22+%22Premier+League%22+%22Blaster%22+%22box%22+-women+-womens+-%22women%27s%22&LH_BIN=1&LH_ItemCondition=1000&_sop=15",
-      "candidate_count": 11,
+      "candidate_count": 9,
       "best": {
         "title": "2025-26 Topps Chrome English Premier League Sealed Value Box",
         "url": "https://www.ebay.com/itm/287645857684?nordt=true",
@@ -7006,11 +7006,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 36.0,
-        "snapshot_date": "2026-11-24",
-        "updated_at": "2026-11-24T23:56:22.770415+00:00",
-        "listing_count": 11,
-        "stale": true,
-        "freshness_days": 1.71
+        "snapshot_date": "2026-11-27",
+        "updated_at": "2026-11-27T21:23:45.332854+00:00",
+        "listing_count": 9,
+        "stale": false,
+        "freshness_days": 0.0
       }
     },
     "2025-26-chrome-premier-league-tin": {
@@ -7486,7 +7486,7 @@
         "updated_at": "2026-11-27T01:46:31.817685+00:00",
         "listing_count": 8,
         "stale": false,
-        "freshness_days": 0.44
+        "freshness_days": 0.82
       },
       "active_source": "ebaysoldlistingsapi_active",
       "public_ebay_reason": "authenticated active API snapshot"
@@ -7551,7 +7551,7 @@
         "updated_at": "2026-11-26T03:36:08.975284+00:00",
         "listing_count": 4,
         "stale": true,
-        "freshness_days": 1.36
+        "freshness_days": 1.74
       }
     },
     "2026-27-premier-league-flagship-value": {
@@ -7778,7 +7778,7 @@
         "updated_at": "2026-11-27T12:18:20.984367+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.38
       }
     },
     "one-piece-op-02": {
@@ -7841,7 +7841,7 @@
         "updated_at": "2026-11-26T16:55:12.122632+00:00",
         "listing_count": 25,
         "stale": false,
-        "freshness_days": 0.81
+        "freshness_days": 1.19
       }
     },
     "one-piece-op-03": {
@@ -7963,11 +7963,11 @@
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
         "floor": 449.0,
-        "snapshot_date": "2026-11-24",
-        "updated_at": "2026-11-24T23:56:22.770415+00:00",
+        "snapshot_date": "2026-11-27",
+        "updated_at": "2026-11-27T21:23:45.332854+00:00",
         "listing_count": 22,
-        "stale": true,
-        "freshness_days": 1.71
+        "stale": false,
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-05": {
@@ -8030,7 +8030,7 @@
         "updated_at": "2026-11-27T01:46:31.817685+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.44
+        "freshness_days": 0.82
       }
     },
     "one-piece-op-06": {
@@ -8093,7 +8093,7 @@
         "updated_at": "2026-11-26T03:36:08.975284+00:00",
         "listing_count": 25,
         "stale": true,
-        "freshness_days": 1.36
+        "freshness_days": 1.74
       }
     },
     "one-piece-op-07": {
@@ -8282,7 +8282,7 @@
         "updated_at": "2026-11-27T12:18:20.984367+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.38
       }
     },
     "one-piece-op-10": {
@@ -8345,7 +8345,7 @@
         "updated_at": "2026-11-26T16:55:12.122632+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.81
+        "freshness_days": 1.19
       }
     },
     "one-piece-op-11": {
@@ -8420,11 +8420,11 @@
         "title": "One Piece Legacy Of The Master Booster Box New Sealed OP12",
         "url": "https://www.ebay.com/itm/860095120338?nordt=true",
         "item_price": 240.0,
-        "shipping": 14.4,
-        "delivered_price": 254.4,
-        "comparison_price": 254.4,
+        "shipping": 12.75,
+        "delivered_price": 252.75,
+        "comparison_price": 252.75,
         "shipping_known": true,
-        "shipping_text": "$14.40",
+        "shipping_text": "$12.75",
         "market_state": "ACTIVE_BIN_API",
         "source": "ebaysoldlistingsapi_active",
         "seller": "miguel_4565",
@@ -8466,12 +8466,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 254.4,
-        "snapshot_date": "2026-11-24",
-        "updated_at": "2026-11-24T23:56:22.770415+00:00",
+        "floor": 252.75,
+        "snapshot_date": "2026-11-27",
+        "updated_at": "2026-11-27T21:23:45.332854+00:00",
         "listing_count": 30,
-        "stale": true,
-        "freshness_days": 1.71
+        "stale": false,
+        "freshness_days": 0.0
       }
     },
     "one-piece-op-13": {
@@ -8534,7 +8534,7 @@
         "updated_at": "2026-11-27T01:46:31.817685+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.44
+        "freshness_days": 0.82
       }
     },
     "one-piece-op-14": {
@@ -8597,7 +8597,7 @@
         "updated_at": "2026-11-26T03:36:08.975284+00:00",
         "listing_count": 30,
         "stale": true,
-        "freshness_days": 1.36
+        "freshness_days": 1.74
       }
     },
     "one-piece-op-15": {
@@ -8786,7 +8786,7 @@
         "updated_at": "2026-11-27T12:18:20.984367+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.0
+        "freshness_days": 0.38
       }
     },
     "one-piece-eb-01": {
@@ -8849,7 +8849,7 @@
         "updated_at": "2026-11-26T16:55:12.122632+00:00",
         "listing_count": 19,
         "stale": false,
-        "freshness_days": 0.81
+        "freshness_days": 1.19
       }
     },
     "one-piece-eb-02": {
@@ -8923,10 +8923,10 @@
       "best": {
         "title": "Extra Booster One Piece Heroines Edition Vol.2 Booster Box EB-03 Sealed English",
         "url": "https://www.ebay.com/itm/900079313053?nordt=true",
-        "item_price": 251.88,
+        "item_price": 248.88,
         "shipping": 0.0,
-        "delivered_price": 251.88,
-        "comparison_price": 251.88,
+        "delivered_price": 248.88,
+        "comparison_price": 248.88,
         "shipping_known": true,
         "shipping_text": "FREE",
         "market_state": "ACTIVE_BIN_API",
@@ -8970,12 +8970,12 @@
       "public_ebay_reason": "authenticated active API snapshot",
       "active_market": {
         "basis": "ebaysoldlistingsapi_active",
-        "floor": 251.88,
-        "snapshot_date": "2026-11-24",
-        "updated_at": "2026-11-24T23:56:22.770415+00:00",
+        "floor": 248.88,
+        "snapshot_date": "2026-11-27",
+        "updated_at": "2026-11-27T21:23:45.332854+00:00",
         "listing_count": 30,
-        "stale": true,
-        "freshness_days": 1.71
+        "stale": false,
+        "freshness_days": 0.0
       }
     },
     "one-piece-prb-01": {
@@ -9038,7 +9038,7 @@
         "updated_at": "2026-11-27T01:46:31.817685+00:00",
         "listing_count": 30,
         "stale": false,
-        "freshness_days": 0.44
+        "freshness_days": 0.82
       }
     },
     "one-piece-prb-02": {
@@ -9101,7 +9101,7 @@
         "updated_at": "2026-11-26T03:36:08.975284+00:00",
         "listing_count": 30,
         "stale": true,
-        "freshness_days": 1.36
+        "freshness_days": 1.74
       }
     }
   }
